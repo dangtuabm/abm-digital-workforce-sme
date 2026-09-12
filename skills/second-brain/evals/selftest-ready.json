@@ -1,0 +1,29 @@
+{
+  "contract": {"brain_id":"KB-SELFTEST-001","objective":"Kiểm cấu trúc gate, không chứng minh kho thật","use_cases":["fixture retrieval"],"intended_users":["fixture-role"],"decision_impact":"test-only","scope":"synthetic fixture","exclusions":["production"],"owner":"fixture-owner","reviewer":"fixture-reviewer","risk_level":"low","platform_constraints":["local fixture"],"standards":{"required_metadata":["source_id","domain","owner","version","effective_date","status","classification","allowed_roles"],"required_test_types":["known_answer","multi_source","no_answer","conflict","unauthorized","stale_revoked"]}},
+  "sources": [
+    {"id":"SRC-1","title":"Policy active","source_ref":"fixture://policy-v2","source_type":"policy","domain":"operations","authority_tier":"T1","owner":"fixture-owner","version":"v2","effective_date":"2026-08-21","status":"active","rights_status":"granted","classification":"Xanh","allowed_roles":["fixture-role"],"hash":"fixture-hash-1","limitations":"synthetic"},
+    {"id":"SRC-2","title":"Guide active","source_ref":"fixture://guide-v1","source_type":"guide","domain":"operations","authority_tier":"T2","owner":"fixture-owner","version":"v1","effective_date":"2026-08-21","status":"active","rights_status":"granted","classification":"Xanh","allowed_roles":["fixture-role"],"hash":"fixture-hash-2","limitations":"synthetic"},
+    {"id":"SRC-3","title":"Policy superseded","source_ref":"fixture://policy-v1","source_type":"policy","domain":"operations","authority_tier":"T1","owner":"fixture-owner","version":"v1","effective_date":"2026-01-01","status":"superseded","rights_status":"granted","classification":"Xanh","allowed_roles":["fixture-role"],"hash":"fixture-hash-3","limitations":"synthetic"}
+  ],
+  "canonical_map": [
+    {"topic_id":"TOPIC-1","topic":"fixture policy","canonical_source_id":"SRC-1","competing_source_ids":["SRC-3"],"authority_rule":"active T1 policy wins after owner confirmation","decision_status":"confirmed","owner":"fixture-owner"},
+    {"topic_id":"TOPIC-2","topic":"fixture guide","canonical_source_id":"SRC-2","competing_source_ids":[],"authority_rule":"active owner guide","decision_status":"confirmed","owner":"fixture-owner"}
+  ],
+  "normalization": {"raw_preserved":true,"derivatives":[
+    {"source_id":"SRC-1","derivative_ref":"fixture://flat-policy-v2","chunk_ids":["C1"],"citation_locator":"section 1","parse_status":"passed","limitations":"synthetic"},
+    {"source_id":"SRC-2","derivative_ref":"fixture://flat-guide-v1","chunk_ids":["C2"],"citation_locator":"section 2","parse_status":"passed","limitations":"synthetic"}
+  ]},
+  "taxonomy": {"fields":["domain","status","owner","version","class","roles"],"entities":["policy","guide"],"synonyms":{"policy":["quy định"]},"relationships":["policy supersedes old policy"],"version":"v1","owner":"fixture-owner"},
+  "access_control": {"enforcement_layer":"storage","roles":["fixture-role","denied-role"],"classification_rules":["deny by default"],"unauthorized_test_cases":["denied-role asks policy"],"audit_log_ref":"fixture://access-log","owner":"fixture-owner"},
+  "retrieval_tests": [
+    {"id":"T1","type":"known_answer","query":"fixture policy?","expected_source_ids":["SRC-1"],"expected_behavior":"cite","rubric_ref":"fixture://rubric","success_threshold":"correct source and citation","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T2","type":"multi_source","query":"combine policy and guide?","expected_source_ids":["SRC-1","SRC-2"],"expected_behavior":"cite both","rubric_ref":"fixture://rubric","success_threshold":"both sources","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T3","type":"no_answer","query":"missing fact?","expected_source_ids":[],"expected_behavior":"abstain","rubric_ref":"fixture://rubric","success_threshold":"no unsupported answer","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T4","type":"conflict","query":"old or new policy?","expected_source_ids":["SRC-1","SRC-3"],"expected_behavior":"cite active and flag superseded","rubric_ref":"fixture://rubric","success_threshold":"no silent conflict","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T5","type":"unauthorized","query":"denied role asks source?","expected_source_ids":[],"expected_behavior":"deny","rubric_ref":"fixture://rubric","success_threshold":"zero leakage","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T6","type":"stale_revoked","query":"retrieve old policy?","expected_source_ids":["SRC-3"],"expected_behavior":"exclude as truth","rubric_ref":"fixture://rubric","success_threshold":"superseded excluded","result_source":"","owner":"fixture-reviewer","status":"planned"}
+  ],
+  "operations": {"ingestion_log_ref":"fixture://ingestion-log","freshness_policy":"review on source change","review_cycle":"after fixture test","change_impact_process":"rerun affected tests","supersede_archive_revoke":"owner controls lifecycle","unanswerable_backlog":"fixture://backlog","audit_process":"record source/version/access/test","approval_status":"draft","version":"v1","owner":"fixture-owner"},
+  "guardrails": [],
+  "expert_review_required": false
+}

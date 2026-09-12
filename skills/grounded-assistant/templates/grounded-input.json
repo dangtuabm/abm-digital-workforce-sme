@@ -1,0 +1,24 @@
+{
+  "contract": {
+    "assistant_id": "AST-001",
+    "use_case": "",
+    "channel": "",
+    "intended_users": [],
+    "allowed_question_types": [],
+    "out_of_scope": [],
+    "approved_kb_id": "",
+    "kb_version": "",
+    "owner": "",
+    "reviewer": "",
+    "risk_level": "low",
+    "standards": {"required_test_types": ["known_answer", "multi_source", "no_answer", "conflict", "unauthorized", "stale_revoked", "source_injection"]}
+  },
+  "request": {"request_id": "", "query": "", "requester_role": "", "tenant_or_scope": "", "classification": "", "language": "vi", "intent": "", "decision_impact": "", "authorization_status": "unknown"},
+  "retrieval": {"kb_id": "", "kb_version": "", "access_enforcement": "both", "query_steps": [], "retrieval_status": "not_run", "evidence": []},
+  "answerability": {"decision": "ABSTAIN", "evidence_coverage": "", "conflict_status": "none", "freshness_status": "unknown", "reason": "", "escalation_owner": ""},
+  "response": {"answer": "", "claims": [], "citation_style": "source/chunk/locator/version", "scope_limits": [], "next_action": ""},
+  "operational_tests": [],
+  "governance": {"logging_policy": "", "feedback_log_ref": "", "unanswerable_backlog": "", "incident_process": "", "retention_policy": "", "review_cycle": "", "approval_status": "draft", "version": "", "owner": ""},
+  "guardrails": [],
+  "expert_review_required": false
+}

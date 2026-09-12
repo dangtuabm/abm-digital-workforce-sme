@@ -1,0 +1,3 @@
+segment_id,source_pointer,source_version,context,source_text,target_text,term_status,do_not_translate,placeholders,tags,char_limit,source_chars,target_chars,freedom_level,qa_status,issue_id,reviewer_status,reviewer_note
+SEG-001,"[file/key/page]",v1,"[context]","[source]","[target]","[APPROVED/CANDIDATE/NONE]","[locked terms]","[placeholders]","[tags]","[limit]","[count]","[count]","[LITERAL/ADAPTIVE/TRANSCREATION]",PENDING,"[issue]",PENDING,"[note]"
+

@@ -1,0 +1,69 @@
+{
+  "contract": {
+    "brief_id": "EB-DEMO-001",
+    "version": "1.0",
+    "as_of": "2026-08-21T07:00:00+07:00",
+    "snapshot_hash": "sha256:executive-snapshot-001",
+    "timezone": "Asia/Bangkok",
+    "horizon_hours": 24,
+    "audiences": ["CEO", "OPERATING_LEAD"],
+    "owner": "CHIEF-OF-STAFF-01",
+    "final_approver": "CEO-01",
+    "max_front_page_items": 6,
+    "freshness_sla_hours": 24,
+    "classification": "YELLOW",
+    "required_reviews": ["SOURCE_OWNER", "OPERATING_OWNER", "EDITORIAL", "FINAL_BRIEF"],
+    "prohibited_actions": ["auto_decide", "auto_approve", "auto_send", "hide_bad_news"]
+  },
+  "sources": [
+    {"source_id": "SRC-OPS", "title": "Operating Snapshot", "version": "1.3", "locator": "ops://snapshot/2026-08-21", "owner": "OPS-01", "observed_at": "2026-08-21T05:00:00+07:00", "age_hours": 2, "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-KPI", "title": "Validated KPI Extract", "version": "2.1", "locator": "data://kpi/2026-08-21", "owner": "DATA-01", "observed_at": "2026-08-21T04:00:00+07:00", "age_hours": 3, "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-CAL", "title": "Authorized Calendar Snapshot", "version": "1.0", "locator": "calendar://exec/2026-08-21", "owner": "EXEC-OPS-01", "observed_at": "2026-08-21T06:00:00+07:00", "age_hours": 1, "classification": "RED", "active": true},
+    {"source_id": "SRC-RISK", "title": "Risk and Opportunity Register", "version": "1.5", "locator": "risk://register/current", "owner": "RISK-01", "observed_at": "2026-08-20T20:00:00+07:00", "age_hours": 11, "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-REVIEW", "title": "Brief Review Evidence", "version": "1.0", "locator": "review://eb-demo-001", "owner": "QA-01", "observed_at": "2026-08-21T06:30:00+07:00", "age_hours": 0.5, "classification": "YELLOW", "active": true}
+  ],
+  "signals": [
+    {"signal_id": "SIG-01", "signal_type": "RISK", "statement": "Client deliverable may miss the contractual deadline unless a scope decision is made today.", "severity": "CRITICAL", "tier": "NOW", "impact": "Contract and trust exposure", "owner": "DELIVERY-01", "due_at": "2026-08-21T12:00:00+07:00", "status": "CURRENT", "source_refs": ["SRC-OPS", "SRC-RISK"], "confidence": "HIGH"},
+    {"signal_id": "SIG-02", "signal_type": "OVERDUE_COMMITMENT", "statement": "Two of ten launch actions are overdue.", "severity": "HIGH", "tier": "TODAY", "impact": "Launch dependency delay", "owner": "PM-01", "due_at": "2026-08-21T10:00:00+07:00", "status": "CURRENT", "source_refs": ["SRC-OPS"], "confidence": "HIGH"},
+    {"signal_id": "SIG-03", "signal_type": "OPPORTUNITY", "statement": "A partner requested a follow-up proposal within three days.", "severity": "MEDIUM", "tier": "MONITOR", "impact": "Potential qualified pipeline", "owner": "SALES-01", "due_at": "2026-08-24T17:00:00+07:00", "status": "CURRENT", "source_refs": ["SRC-OPS"], "confidence": "MEDIUM"},
+    {"signal_id": "SIG-04", "signal_type": "CALENDAR_CONFLICT", "statement": "Decision meeting overlaps the client escalation window.", "severity": "HIGH", "tier": "TODAY", "impact": "Decision latency", "owner": "EXEC-OPS-01", "due_at": "2026-08-21T09:00:00+07:00", "status": "CURRENT", "source_refs": ["SRC-CAL"], "confidence": "HIGH"}
+  ],
+  "metric_exceptions": [
+    {"exception_id": "MX-01", "metric": "On-time critical actions", "definition": "critical actions completed by due time / eligible critical actions", "actual": 0.8, "threshold": 0.95, "direction": "BELOW", "denominator": "10 eligible critical actions", "window": "2026-08-14/2026-08-21", "source_refs": ["SRC-KPI", "SRC-OPS"], "owner": "PM-01", "reported_breach": true},
+    {"exception_id": "MX-02", "metric": "Decision latency hours", "definition": "median hours from complete request to decision", "actual": 18, "threshold": 12, "direction": "ABOVE", "denominator": "8 complete decision requests", "window": "Rolling 30 days", "source_refs": ["SRC-KPI"], "owner": "CHIEF-OF-STAFF-01", "reported_breach": true},
+    {"exception_id": "MX-03", "metric": "Client escalation count", "definition": "material client escalations in horizon", "actual": 1, "threshold": 2, "direction": "ABOVE", "denominator": "All active client engagements", "window": "Current 24-hour horizon", "source_refs": ["SRC-KPI", "SRC-RISK"], "owner": "DELIVERY-01", "reported_breach": false}
+  ],
+  "decision_requests": [
+    {"decision_id": "DR-01", "question": "Should the client deliverable scope be reduced to protect the deadline?", "options": ["Reduce non-critical scope", "Keep scope and renegotiate deadline", "Add authorized capacity"], "recommendation": "Reduce non-critical scope and preserve contractual deadline.", "evidence_refs": ["SRC-OPS", "SRC-RISK"], "deadline": "2026-08-21T12:00:00+07:00", "owner": "CEO-01", "consequence_of_delay": "Higher contract and client-trust exposure", "reversible": true, "approval_status": "PENDING"},
+    {"decision_id": "DR-02", "question": "Which meeting should move to remove the decision conflict?", "options": ["Move internal operating review", "Delegate client escalation coverage"], "recommendation": "Move the internal operating review; preserve direct client escalation coverage.", "evidence_refs": ["SRC-CAL", "SRC-RISK"], "deadline": "2026-08-21T09:00:00+07:00", "owner": "CEO-01", "consequence_of_delay": "The critical scope decision may be delayed", "reversible": true, "approval_status": "PENDING"}
+  ],
+  "front_page": {
+    "headline": "One contractual deadline risk requires a scope decision before 12:00; two operating exceptions need owners today.",
+    "signal_ids": ["SIG-01", "SIG-02", "SIG-04"],
+    "decision_ids": ["DR-01", "DR-02"],
+    "unknowns": ["Final client acceptance of reduced scope is not yet confirmed"],
+    "owner": "CHIEF-OF-STAFF-01",
+    "status": "REVIEWED"
+  },
+  "actions": [
+    {"action_id": "AC-01", "action": "Prepare scope-reduction confirmation", "owner": "DELIVERY-01", "due_or_trigger": "After DR-01 decision", "dependency": "DR-01", "approval_needed": true, "source_refs": ["SRC-OPS", "SRC-RISK"]},
+    {"action_id": "AC-02", "action": "Recover two overdue launch actions", "owner": "PM-01", "due_or_trigger": "2026-08-21T17:00:00+07:00", "dependency": "Owner confirmation", "approval_needed": false, "source_refs": ["SRC-OPS"]},
+    {"action_id": "AC-03", "action": "Resolve calendar conflict", "owner": "EXEC-OPS-01", "due_or_trigger": "After DR-02 decision", "dependency": "DR-02", "approval_needed": true, "source_refs": ["SRC-CAL"]}
+  ],
+  "tests": [
+    {"test_type": "source_freshness", "passed": true, "evidence": "All sources age <= 24 hours", "reviewer": "QA-01", "date": "2026-08-21"},
+    {"test_type": "metric_exception", "passed": true, "evidence": "Three exceptions recalculated", "reviewer": "DATA-01", "date": "2026-08-21"},
+    {"test_type": "critical_front_page_coverage", "passed": true, "evidence": "SIG-01 present on front page", "reviewer": "OPS-01", "date": "2026-08-21"},
+    {"test_type": "decision_recommendation", "passed": true, "evidence": "Two decision requests have options and recommendation", "reviewer": "CHIEF-OF-STAFF-01", "date": "2026-08-21"},
+    {"test_type": "bad_news_unknown_integrity", "passed": true, "evidence": "Critical issue and unknown displayed", "reviewer": "EDITOR-01", "date": "2026-08-21"},
+    {"test_type": "privacy_distribution", "passed": true, "evidence": "Yellow brief distribution approved", "reviewer": "PRIVACY-01", "date": "2026-08-21"},
+    {"test_type": "approval_delivery_boundary", "passed": true, "evidence": "No decision or delivery state asserted", "reviewer": "QA-01", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "SOURCE_OWNER", "required": true, "reviewer": "DATA-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "OPERATING_OWNER", "required": true, "reviewer": "OPS-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "EDITORIAL", "required": true, "reviewer": "EDITOR-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FINAL_BRIEF", "required": true, "reviewer": "CEO-01", "status": "PENDING"}
+  ]
+}
+

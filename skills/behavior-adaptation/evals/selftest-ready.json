@@ -1,0 +1,72 @@
+{
+  "contract": {
+    "id": "BAD-038-SELFTEST",
+    "subject_pseudonym": "Role-A",
+    "subject_role": "Workflow Analyst",
+    "relationship": "Manager to direct report for one pilot assignment",
+    "mode": "delegation",
+    "context": "Assigning a bounded 30-day workflow pilot task",
+    "channel": "Live meeting with written recap",
+    "objective": "Increase correct first-pass understanding of outcome, acceptance criteria and next action",
+    "stakes": "Internal reversible pilot assignment; no employment or performance decision",
+    "data_classification": "internal",
+    "consent_basis": "Approved use of task communication records for interaction improvement; participant informed before trial",
+    "allowed_uses": ["Improve delegation format in this pilot context", "Design a reversible communication trial", "Record agreed response metrics"],
+    "prohibited_uses": ["Employment or performance decision", "Personality identity", "Sensitive inference", "Covert targeting", "Reuse outside context without review"],
+    "retention_expiry": "2026-11-30",
+    "non_negotiables": ["Pilot scope", "Acceptance criteria", "Owner", "Deadline", "Data handling rule", "Right to ask and escalate"],
+    "owner": "Operations Manager",
+    "reviewer": "People Lead",
+    "approval_route": "Participant acknowledgement, People review, Operations Manager trial approval",
+    "status": "approved_for_analysis"
+  },
+  "sources": [
+    {"id": "S1", "title": "Authorized delegation meeting notes", "version": "v1", "date": "2026-08-18", "owner": "Operations Manager", "authority": "approved internal interaction record", "locator": "DMN:1-32", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S2", "title": "Authorized task clarification log", "version": "v2", "date": "2026-08-19", "owner": "Project Owner", "authority": "approved task record", "locator": "TCL:1-24", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S3", "title": "Participant communication preference note", "version": "v1", "date": "2026-08-20", "owner": "Workflow Analyst", "authority": "self-reported and approved for this trial", "locator": "PCP:1-12", "classification": "internal", "authorized": true, "status": "active"}
+  ],
+  "conflicts": [],
+  "observations": [
+    {"id": "O1", "source_ref": "S1", "date": "2026-08-18", "context": "Delegation meeting for workflow analysis", "channel": "Live meeting", "exact_behavior": "Before discussing methods, Role-A asked: 'Kết quả cuối cùng cần trông như thế nào?'", "dimension": "decision_style", "counterexample": "In a technical troubleshooting session, Role-A explored context before asking for the outcome", "quality": "verbatim approved note", "authorized": true, "status": "active"},
+    {"id": "O2", "source_ref": "S2", "date": "2026-08-19", "context": "Clarifying two assigned tasks", "channel": "Task comments", "exact_behavior": "Role-A requested acceptance criteria and example output for both tasks", "dimension": "detail_structure", "counterexample": "No example was requested for a familiar recurring task", "quality": "two recorded task threads", "authorized": true, "status": "active"},
+    {"id": "O3", "source_ref": "S2", "date": "2026-08-19", "context": "Follow-up after delegation", "channel": "Written recap", "exact_behavior": "Role-A confirmed owner and deadline in the same thread after receiving a written recap", "dimension": "channel_feedback", "counterexample": "A prior live-only task was also completed correctly after a second verbal check", "quality": "recorded task thread", "authorized": true, "status": "active"},
+    {"id": "O4", "source_ref": "S1", "date": "2026-08-18", "context": "Choosing an analysis approach", "channel": "Live meeting", "exact_behavior": "Role-A selected one of two stated approaches and explained the trade-off", "dimension": "autonomy_control", "counterexample": "For a novel compliance topic, Role-A asked the manager to recommend one approach", "quality": "approved meeting note", "authorized": true, "status": "active"},
+    {"id": "O5", "source_ref": "S3", "date": "2026-08-20", "context": "Communication preference for this pilot", "channel": "Written self-report", "exact_behavior": "Role-A stated that a short written recap helps verify owner, deliverable and due date", "dimension": "channel_feedback", "counterexample": "Role-A did not request written recap for informal brainstorming", "quality": "self-reported and context-bounded", "authorized": true, "status": "active"}
+  ],
+  "hypotheses": [
+    {"id": "H1", "text": "In bounded delegation for this pilot, outcome-first framing plus explicit acceptance criteria may improve correct first-pass readback", "observation_refs": ["O1", "O2", "O4"], "alternative_explanations": ["The tasks were novel", "The original brief was unclear", "Workload made rapid structure more useful"], "confidence": "medium", "scope": "Delegation of bounded workflow pilot tasks only", "expiry_review": "After three trial interactions or 2026-09-30, whichever comes first", "falsifier": "Correct readback does not improve or Role-A asks for context-first framing in two trials", "next_evidence": "Compare readback accuracy and clarification count across two consented formats", "status": "active_hypothesis"},
+    {"id": "H2", "text": "A concise written recap after the live delegation may reduce ambiguity about owner, deliverable and deadline", "observation_refs": ["O2", "O3", "O5"], "alternative_explanations": ["The live meeting may have been noisy", "The task system itself prompted confirmation", "The preference may not transfer to urgent work"], "confidence": "medium", "scope": "Live delegation followed by internal written recap", "expiry_review": "After three trial interactions or 2026-09-30, whichever comes first", "falsifier": "Recap does not reduce clarification or causes duplicate-work confusion", "next_evidence": "Track clarification count and owner/deadline readback with participant consent", "status": "active_hypothesis"}
+  ],
+  "model_assessments": [
+    {"id": "M1", "model": "DISC", "purpose": "Optional shorthand for interaction dimensions only", "hypothesis_refs": ["H1", "H2"], "context_only": true, "confidence": "medium", "prohibited_use_ack": true, "status": "reference_only_not_identity"}
+  ],
+  "playbooks": [
+    {"id": "P1", "mode": "delegation", "hypothesis_refs": ["H1", "H2"], "objective": "Correct first-pass understanding and owned next action", "baseline_fallback": "State purpose, outcome, evidence, constraints, action, owner, deadline and invite questions", "do": ["Open with outcome and why it matters", "Give acceptance criteria before method detail", "Offer bounded choice where authority permits", "Send a concise written recap"], "avoid": ["Identity labels", "Withholding context or consequence", "Excessive detail before outcome", "Changing standards based on style"], "opening": "Kết quả cần đạt là X; thành công được nghiệm thu bằng Y và Z.", "information_structure": "Outcome, acceptance criteria, non-negotiables, two permitted approaches, support, action", "pace": "Short chunks with pause after acceptance criteria", "questions": "Ask Role-A to restate outcome, first action and any missing condition", "evidence_style": "Concrete example output plus source-linked criteria", "action_close": "Confirm owner, deliverable, deadline and escalation route", "comprehension_check": "Teach-back of outcome and next action; do not treat silence as agreement", "stop_escalation": "Stop adaptation if discomfort, misread or consent withdrawal; return to universal baseline and escalate to People Lead", "status": "ready_for_trial_design"}
+  ],
+  "experiments": [
+    {"id": "T1", "playbook_id": "P1", "hypothesis_id": "H1", "lever": "information order", "baseline": "Context and method first, outcome at the end", "adaptation": "Outcome and acceptance criteria first, then context and methods", "prediction": "Role-A correctly restates outcome and first action with fewer clarification turns", "success_metric": "Correct readback and clarification count", "threshold": "Correct outcome/action readback in first check and no more than one material clarification", "sample_or_window": "Two comparable consented pilot assignments", "risk": "Over-compression may hide necessary context", "consent": "Participant informed and may request another format", "owner": "Operations Manager", "stop_rule": "Stop if material condition is misunderstood or participant requests baseline format", "rollback": "Return to full context-first universal baseline and clarify all non-negotiables", "status": "planned"},
+    {"id": "T2", "playbook_id": "P1", "hypothesis_id": "H2", "lever": "written recap", "baseline": "Live delegation without structured written recap", "adaptation": "Live delegation plus five-line recap: outcome, owner, deliverable, deadline, escalation", "prediction": "Owner/deadline ambiguity and follow-up clarification decrease", "success_metric": "Owner/deadline readback and clarification count", "threshold": "Correct owner/deadline confirmation and no duplicate-work confusion", "sample_or_window": "Two comparable consented pilot assignments", "risk": "Recap may be treated as a new instruction if wording drifts", "consent": "Participant informed and may correct the recap", "owner": "Operations Manager", "stop_rule": "Stop if recap conflicts with live agreement or causes confusion", "rollback": "Mark recap superseded, restate the approved task and verify teach-back", "status": "planned"}
+  ],
+  "response_updates": [],
+  "tests": [
+    {"type": "observation_trace", "method": "Hypothesis-to-observation audit", "artifact_version": "v1", "sample": "All hypotheses and observations", "threshold": "100% refs with exact behavior/source/context; no adjective-as-observation", "reviewer": "People Lead", "status": "planned", "evidence": "Ledger ready"},
+    {"type": "hypothesis_humility", "method": "Alternative, confidence, falsifier and expiry review", "artifact_version": "v1", "sample": "All hypotheses", "threshold": "Every hypothesis has at least two alternatives and an actionable falsifier", "reviewer": "People Lead", "status": "planned", "evidence": "Register ready"},
+    {"type": "interaction_fit", "method": "Consented delegation trial", "artifact_version": "v1", "sample": "Two comparable interactions per lever", "threshold": "Meet trial-specific metric without dignity or comprehension regression", "reviewer": "Operations Manager", "status": "planned", "evidence": "Human trial pending"},
+    {"type": "outcome_action_accuracy", "method": "Teach-back and invariant audit", "artifact_version": "v1", "sample": "Every trial interaction", "threshold": "100% outcome, owner, deliverable, deadline and constraint accuracy", "reviewer": "Project Owner", "status": "planned", "evidence": "Human trial pending"},
+    {"type": "dignity_nonmanipulation", "method": "Consent, autonomy and fairness review", "artifact_version": "v1", "sample": "Contract, playbook and trials", "threshold": "No coercion, diagnosis, sensitive inference, unequal standard or retaliation", "reviewer": "People Lead", "status": "planned", "evidence": "Review pending"},
+    {"type": "accessibility_channel", "method": "Channel and fallback usability review", "artifact_version": "v1", "sample": "Live and written components", "threshold": "Participant can request accessible alternative without penalty", "reviewer": "Accessibility Reviewer", "status": "planned", "evidence": "Review pending"},
+    {"type": "update_transfer_boundary", "method": "Counterevidence and retention review", "artifact_version": "v1", "sample": "All trial outcomes", "threshold": "Each outcome yields retain/revise/reject; no transfer outside scope; expiry enforced", "reviewer": "People Lead", "status": "planned", "evidence": "Response log pending"}
+  ],
+  "review": {
+    "source_data_check": true,
+    "privacy_consent_check": true,
+    "hypothesis_check": true,
+    "fairness_nonmanipulation_check": true,
+    "accessibility_check": true,
+    "experiment_design_check": true,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "operation_approved": false
+  }
+}

@@ -1,0 +1,3 @@
+hypothesis_id,cause_candidate,mechanism,affected_outcome,segment,evidence_for,evidence_against,alternative_explanations,temporal_order,confounders,controllability,observable_prediction,falsification_criterion,test_method,owner,status,reviewer_note
+HYP-001,"[candidate]","[mechanism]","[outcome]","[segment]","[EVD-IDs]","[EVD-IDs]","[alternatives]","[order]","[confounders]","[HIGH/MEDIUM/LOW]","[prediction]","[fail criterion]","[test]","[owner]",UNTESTED,"[note]"
+

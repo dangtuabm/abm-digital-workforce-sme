@@ -1,0 +1,2 @@
+challenge_id,target_id,coverage_axis,attack_hypothesis,mechanism,evidence_ids,counterevidence,test_or_verification,severity,decision_impact,response_owner,due_date,response_status,closure_evidence,residual_risk
+CHG-001,ASM-001,logic,,,,,,MATERIAL,,,OPEN,,

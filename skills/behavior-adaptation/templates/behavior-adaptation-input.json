@@ -1,0 +1,52 @@
+{
+  "contract": {
+    "id": "BAD-...",
+    "subject_pseudonym": "",
+    "subject_role": "",
+    "relationship": "",
+    "mode": "presentation|delegation|feedback|coaching|negotiation|objection",
+    "context": "",
+    "channel": "",
+    "objective": "",
+    "stakes": "",
+    "data_classification": "public|internal|confidential|restricted",
+    "consent_basis": "",
+    "allowed_uses": [],
+    "prohibited_uses": [],
+    "retention_expiry": "",
+    "non_negotiables": [],
+    "owner": "",
+    "reviewer": "",
+    "approval_route": "",
+    "status": "approved_for_analysis"
+  },
+  "sources": [],
+  "conflicts": [],
+  "observations": [],
+  "hypotheses": [],
+  "model_assessments": [],
+  "playbooks": [],
+  "experiments": [],
+  "response_updates": [],
+  "tests": [
+    {"type": "observation_trace", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "hypothesis_humility", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "interaction_fit", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "outcome_action_accuracy", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "dignity_nonmanipulation", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "accessibility_channel", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "update_transfer_boundary", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""}
+  ],
+  "review": {
+    "source_data_check": false,
+    "privacy_consent_check": false,
+    "hypothesis_check": false,
+    "fairness_nonmanipulation_check": false,
+    "accessibility_check": false,
+    "experiment_design_check": false,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "operation_approved": false
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "contract": {
+    "id": "PRE-036-SELFTEST",
+    "mode": "executive_decision",
+    "use": "Executive review of an approved 30-day workflow pilot",
+    "objective": "Enable the leadership team to confirm scope, owners and activation conditions",
+    "decision_or_cta": "Confirm one workflow owner per department and authorize baseline collection",
+    "presenter": "Operations Director",
+    "primary_audience": "Executive Leadership Team",
+    "channel": "In-person leadership review",
+    "duration_minutes": 18,
+    "language": "Vietnamese",
+    "source_format": "Approved decision record and operating protocols",
+    "output_format": "images",
+    "aspect_ratio": "16:9",
+    "slide_count_min": 12,
+    "slide_count_max": 12,
+    "naming_rule": "Slide 1.png through Slide 12.png",
+    "brand_template": "Approved enterprise presentation template v3",
+    "accessibility_rule": "WCAG-informed contrast, color-independent meaning and chart alt summaries",
+    "classification": "internal",
+    "owner": "Operations Director",
+    "reviewer": "CEO Office",
+    "approval_route": "Operations review, Security review, CEO delivery approval",
+    "status": "approved_for_build"
+  },
+  "sources": [
+    {"id": "S1", "title": "Pilot decision record", "version": "v1", "date": "2026-08-20", "owner": "CEO Office", "authority": "approved executive decision", "locator": "DEC-2026-08:1-18", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S2", "title": "Operations baseline protocol", "version": "v3", "date": "2026-08-18", "owner": "Operations Director", "authority": "approved operating protocol", "locator": "OPS-BL:4-26", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S3", "title": "Data handling standard", "version": "v2", "date": "2026-08-15", "owner": "Security Owner", "authority": "approved security standard", "locator": "SEC-DH:7-31", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S4", "title": "Pilot measurement specification", "version": "v2", "date": "2026-08-19", "owner": "Performance Lead", "authority": "approved measurement specification", "locator": "PMS:3-22", "classification": "internal", "authorized": true, "status": "active"}
+  ],
+  "conflicts": [],
+  "audiences": [
+    {"id": "A1", "role": "primary", "name": "Executive Leadership Team", "knowledge": "Knows the pilot intent", "belief": "Needs proof that scope and controls are bounded", "concern": "Owner capacity, data risk and measurement burden", "need": "Decision-ready scope, controls and actions", "desired_action": "Confirm owners and activation conditions", "accessibility": "Large-screen room; concise Vietnamese; chart summaries in notes"},
+    {"id": "A2", "role": "secondary", "name": "Workflow Owners", "knowledge": "Understands departmental workflows", "belief": "Needs a clear baseline before work starts", "concern": "Ambiguous deliverables", "need": "Owner, deliverable, deadline and escalation route", "desired_action": "Prepare one approved baseline", "accessibility": "Plain operational Vietnamese"}
+  ],
+  "claims": [
+    {"id": "C1", "text": "The 30-day pilot is approved within a bounded scope", "label": "DỮ KIỆN", "material": true, "source_refs": ["S1"], "status": "supported", "qualifier": "No production scale-up is authorized"},
+    {"id": "C2", "text": "Each department pilots one priority workflow with one named owner", "label": "DỮ KIỆN", "material": true, "source_refs": ["S1"], "status": "supported", "qualifier": "Only departments listed in the decision record"},
+    {"id": "C3", "text": "A baseline record is required before execution", "label": "DỮ KIỆN", "material": true, "source_refs": ["S2"], "status": "supported", "qualifier": "Use protocol v3"},
+    {"id": "C4", "text": "Restricted data requires security approval before use", "label": "DỮ KIỆN", "material": true, "source_refs": ["S3"], "status": "supported", "qualifier": "Classification follows standard v2"},
+    {"id": "C5", "text": "The pilot compares accepted baseline and outcome measures", "label": "DỮ KIỆN", "material": true, "source_refs": ["S4"], "status": "supported", "qualifier": "Only measures defined in specification v2"}
+  ],
+  "assets": [
+    {"id": "AS1", "type": "brand template", "origin": "Internal design system", "owner": "Brand Owner", "license": "Internal approved use", "credit": "Not applicable", "authorized": true, "status": "approved"},
+    {"id": "AS2", "type": "workflow diagram", "origin": "Created from approved sources S1-S3", "owner": "Operations Director", "license": "Internal work product", "credit": "Source refs shown in notes", "authorized": true, "status": "approved"},
+    {"id": "AS3", "type": "measurement chart", "origin": "Created from specification S4", "owner": "Performance Lead", "license": "Internal work product", "credit": "PMS v2", "authorized": true, "status": "approved"}
+  ],
+  "journey": {
+    "before": "Leaders know the pilot idea but not the activation controls",
+    "after": "Leaders can state the bounded scope, controls, owners and decision required",
+    "primary_objection": "The pilot may create uncontrolled data and workload risk",
+    "decision_path": "Scope evidence, controls, workflow, measures, named actions, confirmation"
+  },
+  "blueprint": {
+    "one_sentence_promise": "Launch one bounded workflow pilot per department with evidence and control",
+    "opening_tension": "A pilot without a baseline, owner and data gate is activity rather than learning",
+    "sections": ["Decision and scope", "Control gates", "Execution and measurement", "Decision and actions"],
+    "decision_or_cta": "Confirm one owner per department and authorize baseline collection",
+    "close": "Start bounded, verify evidence, then decide whether to scale",
+    "slide_budget": 12,
+    "pace_rule": "18 minutes with two-minute decision buffer"
+  },
+  "visual_system": {
+    "canvas": "16:9 at 1920x1080 render",
+    "grid": "12-column grid with safe margins",
+    "master_layout": "Approved enterprise template v3; title, divider, framework, chart and CTA masters",
+    "fonts_fallback": "Approved brand fonts with tested system fallback",
+    "type_scale": "Room-readable title, body and annotation scale",
+    "palette_contrast": "Approved palette with contrast check and no color-only meaning",
+    "spacing": "Consistent 8-point spacing system",
+    "image_rule": "Meaningful visuals only; crop and attribution checked",
+    "chart_table_rule": "Zero-safe scale, units, denominator, timeframe, source and caveat",
+    "reading_order": "Title, evidence, implication, action",
+    "alt_summary_rule": "Every chart and framework has a one-sentence summary in notes"
+  },
+  "slides": [
+    {"id": "SL01", "order": 1, "section": "Opening", "function": "title", "message_title": "Một pilot có kiểm soát để tạo bằng chứng trước khi mở rộng", "literal_copy": "PILOT 30 NGÀY\nMột workflow · Một owner · Một baseline", "layout": "title", "claim_refs": ["C1", "C2"], "asset_refs": ["AS1"], "transition": "Nêu quyết định cần chốt", "speaker_notes": "Đặt phạm vi: đây không phải phê duyệt scale-up.", "timing_seconds": 60},
+    {"id": "SL02", "order": 2, "section": "Decision and scope", "function": "statement", "message_title": "Không có baseline và owner, pilot không tạo ra học hỏi tin cậy", "literal_copy": "ACTIVITY ≠ EVIDENCE", "layout": "hero", "claim_refs": ["C2", "C3"], "asset_refs": ["AS1"], "transition": "Từ vấn đề sang phạm vi đã duyệt", "speaker_notes": "Giải thích vì sao baseline và owner là điều kiện kích hoạt.", "timing_seconds": 70},
+    {"id": "SL03", "order": 3, "section": "Decision and scope", "function": "framework", "message_title": "Phạm vi được khóa ở ba đơn vị kiểm soát", "literal_copy": "1 PHÒNG BAN → 1 WORKFLOW → 1 OWNER", "layout": "three-part framework", "claim_refs": ["C1", "C2"], "asset_refs": ["AS2"], "transition": "Đi vào các gate", "speaker_notes": "Nhấn mạnh no production scale-up.", "timing_seconds": 80},
+    {"id": "SL04", "order": 4, "section": "Control gates", "function": "divider", "message_title": "Ba gate phải đóng trước khi chạy", "literal_copy": "SCOPE · DATA · BASELINE", "layout": "divider", "claim_refs": ["C1", "C3", "C4"], "asset_refs": ["AS1"], "transition": "Mở gate thứ nhất", "speaker_notes": "Đổi nhịp và báo cấu trúc.", "timing_seconds": 35},
+    {"id": "SL05", "order": 5, "section": "Control gates", "function": "process", "message_title": "Scope gate chặn mọi mở rộng ngoài quyết định", "literal_copy": "APPROVED SCOPE\nKhông thêm workflow · Không tự scale", "layout": "gate diagram", "claim_refs": ["C1", "C2"], "asset_refs": ["AS2"], "transition": "Từ scope sang data", "speaker_notes": "Nêu owner của ngoại lệ.", "timing_seconds": 80},
+    {"id": "SL06", "order": 6, "section": "Control gates", "function": "process", "message_title": "Data gate giữ dữ liệu hạn chế ngoài pilot nếu chưa được duyệt", "literal_copy": "RESTRICTED DATA → SECURITY APPROVAL", "layout": "gate diagram", "claim_refs": ["C4"], "asset_refs": ["AS2"], "transition": "Từ data sang baseline", "speaker_notes": "Không nêu dữ liệu nhạy cảm cụ thể.", "timing_seconds": 80},
+    {"id": "SL07", "order": 7, "section": "Control gates", "function": "checklist", "message_title": "Baseline gate biến kỳ vọng thành điểm xuất phát đo được", "literal_copy": "Owner · Workflow · Measure · Evidence", "layout": "four-item checklist", "claim_refs": ["C3", "C5"], "asset_refs": ["AS2"], "transition": "Chuyển sang vòng chạy", "speaker_notes": "Giải thích protocol và không hứa outcome.", "timing_seconds": 80},
+    {"id": "SL08", "order": 8, "section": "Execution and measurement", "function": "process", "message_title": "Vòng pilot khép kín từ baseline đến review", "literal_copy": "BASELINE → RUN → VERIFY → REVIEW", "layout": "cycle", "claim_refs": ["C3", "C5"], "asset_refs": ["AS2"], "transition": "Đi vào đo lường", "speaker_notes": "Mỗi bước có evidence owner.", "timing_seconds": 90},
+    {"id": "SL09", "order": 9, "section": "Execution and measurement", "function": "chart", "message_title": "Chỉ so sánh những thước đo đã được định nghĩa và chấp nhận", "literal_copy": "BASELINE ↔ OUTCOME\nCùng định nghĩa · Cùng mẫu số · Cùng phạm vi", "layout": "comparison chart", "claim_refs": ["C5"], "asset_refs": ["AS3"], "transition": "Từ đo sang trách nhiệm", "speaker_notes": "Alt summary: chart minh họa quy tắc so sánh, không phải kết quả thật.", "timing_seconds": 100},
+    {"id": "SL10", "order": 10, "section": "Execution and measurement", "function": "roles", "message_title": "Mỗi quyết định và bằng chứng đều có một owner", "literal_copy": "Department Head: xác nhận\nWorkflow Owner: thực thi\nOperations: kiểm soát\nSecurity: duyệt ngoại lệ dữ liệu", "layout": "role grid", "claim_refs": ["C2", "C3", "C4"], "asset_refs": ["AS2"], "transition": "Chốt các action", "speaker_notes": "Phân biệt decision owner và execution owner.", "timing_seconds": 95},
+    {"id": "SL11", "order": 11, "section": "Decision and actions", "function": "cta", "message_title": "Ban điều hành cần chốt hai việc để pilot bắt đầu", "literal_copy": "1. Xác nhận một owner mỗi phòng ban\n2. Cho phép thu baseline theo protocol", "layout": "two-action CTA", "claim_refs": ["C2", "C3"], "asset_refs": ["AS1"], "transition": "Mời xác nhận và nêu ngoại lệ", "speaker_notes": "Dừng để lấy quyết định; không tự diễn giải im lặng là đồng ý.", "timing_seconds": 110},
+    {"id": "SL12", "order": 12, "section": "Close", "function": "close", "message_title": "Bắt đầu có giới hạn, xác minh bằng chứng, rồi mới quyết định mở rộng", "literal_copy": "BOUND → VERIFY → DECIDE", "layout": "closing statement", "claim_refs": ["C1", "C5"], "asset_refs": ["AS1"], "transition": "Kết thúc", "speaker_notes": "Nhắc lại no scale-up và approval route.", "timing_seconds": 60}
+  ],
+  "build": {
+    "tool_version": "Approved renderer 1.0",
+    "template_version": "Enterprise template v3",
+    "input_hash": "sha256:selftest-input",
+    "output_hash": "sha256:selftest-render-package",
+    "source_deck": "selftest-source-deck.pptx",
+    "render_package": "selftest-rendered-slides.zip",
+    "contact_sheet": "selftest-contact-sheet.png",
+    "manifest_version": "v1",
+    "slide_count": 12,
+    "missing_count": 0,
+    "extra_count": 0,
+    "font_media_links_ok": true
+  },
+  "renders": [
+    {"slide_id": "SL01", "order": 1, "file": "Slide 1.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r01", "qa_status": "passed"},
+    {"slide_id": "SL02", "order": 2, "file": "Slide 2.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r02", "qa_status": "passed"},
+    {"slide_id": "SL03", "order": 3, "file": "Slide 3.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r03", "qa_status": "passed"},
+    {"slide_id": "SL04", "order": 4, "file": "Slide 4.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r04", "qa_status": "passed"},
+    {"slide_id": "SL05", "order": 5, "file": "Slide 5.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r05", "qa_status": "passed"},
+    {"slide_id": "SL06", "order": 6, "file": "Slide 6.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r06", "qa_status": "passed"},
+    {"slide_id": "SL07", "order": 7, "file": "Slide 7.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r07", "qa_status": "passed"},
+    {"slide_id": "SL08", "order": 8, "file": "Slide 8.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r08", "qa_status": "passed"},
+    {"slide_id": "SL09", "order": 9, "file": "Slide 9.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r09", "qa_status": "passed"},
+    {"slide_id": "SL10", "order": 10, "file": "Slide 10.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r10", "qa_status": "passed"},
+    {"slide_id": "SL11", "order": 11, "file": "Slide 11.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r11", "qa_status": "passed"},
+    {"slide_id": "SL12", "order": 12, "file": "Slide 12.png", "aspect_ratio": "16:9", "width": 1920, "height": 1080, "hash": "sha256:r12", "qa_status": "passed"}
+  ],
+  "tests": [
+    {"type": "narrative_recall", "method": "Audience recall after one pass", "sample": "Owner-approved leadership reviewers", "threshold": "Correct promise, four sections and close", "reviewer": "CEO Office", "status": "planned", "evidence": "Rehearsal record pending"},
+    {"type": "claim_trace", "method": "Claim-to-source audit", "sample": "All material claims", "threshold": "100% source/version/locator/qualifier coverage", "reviewer": "Operations Director", "status": "planned", "evidence": "Ledger ready"},
+    {"type": "slide_integrity", "method": "Manifest and render audit", "sample": "All 12 slides", "threshold": "12/12, missing 0, extra 0, 1920x1080", "reviewer": "Production Reviewer", "status": "planned", "evidence": "Manifest and contact sheet ready"},
+    {"type": "visual_comprehension", "method": "Silent message and chart read", "sample": "Risk-based slide sample plus all charts", "threshold": "Correct message without presenter rescue", "reviewer": "Executive Reviewer", "status": "planned", "evidence": "Review pending"},
+    {"type": "accessibility_readability", "method": "Contrast, distance, color and reading-order check", "sample": "All masters and risk slides", "threshold": "No critical readability defect", "reviewer": "Accessibility Reviewer", "status": "planned", "evidence": "Review pending"},
+    {"type": "timing_rehearsal", "method": "Presenter rehearsal on final render", "sample": "One full run and two risk sections", "threshold": "16 minutes content plus two-minute buffer", "reviewer": "Operations Director", "status": "planned", "evidence": "Rehearsal pending"},
+    {"type": "decision_action", "method": "Decision and action readback", "sample": "Owner-approved leadership reviewers", "threshold": "Correct two actions and approval boundary", "reviewer": "CEO Office", "status": "planned", "evidence": "Review pending"}
+  ],
+  "review": {
+    "content_check": true,
+    "brand_check": true,
+    "asset_license_check": true,
+    "accessibility_check": true,
+    "render_check": true,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "delivery_approved": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "contract": {
+    "brain_id": "KB-001",
+    "objective": "",
+    "use_cases": [],
+    "intended_users": [],
+    "decision_impact": "",
+    "scope": "",
+    "exclusions": [],
+    "owner": "",
+    "reviewer": "",
+    "risk_level": "low",
+    "platform_constraints": [],
+    "standards": {"required_metadata": ["source_id", "domain", "owner", "version", "effective_date", "status", "classification", "allowed_roles"], "required_test_types": ["known_answer", "multi_source", "no_answer", "conflict", "unauthorized", "stale_revoked"]}
+  },
+  "sources": [],
+  "canonical_map": [],
+  "normalization": {"raw_preserved": false, "derivatives": []},
+  "taxonomy": {"fields": [], "entities": [], "synonyms": {}, "relationships": [], "version": "", "owner": ""},
+  "access_control": {"enforcement_layer": "", "roles": [], "classification_rules": [], "unauthorized_test_cases": [], "audit_log_ref": "", "owner": ""},
+  "retrieval_tests": [],
+  "operations": {"ingestion_log_ref": "", "freshness_policy": "", "review_cycle": "", "change_impact_process": "", "supersede_archive_revoke": "", "unanswerable_backlog": "", "audit_process": "", "approval_status": "draft", "version": "", "owner": ""},
+  "guardrails": [],
+  "expert_review_required": false
+}

@@ -1,0 +1,1564 @@
+{
+  "artifact": "Human–A.I Work Design & Control Pack",
+  "design_contract": {
+    "use_case_id": "UC-001",
+    "version": "v1",
+    "outcome": "Controlled work outcome",
+    "scope": "Named workflow and roles",
+    "workflow_boundary": "Named start/end",
+    "system_boundary": "Authorized systems only",
+    "sponsor": "Executive Sponsor",
+    "owner": "Process Owner",
+    "approver": "Human Design Authority",
+    "cutoff": "2026-08-22",
+    "dod": "Tasks, authority, controls, change and tests reviewed",
+    "exclusions": [
+      "No production permission",
+      "No staffing decision"
+    ],
+    "confidentiality": "YELLOW_INTERNAL",
+    "action_boundary": "Design proposal only"
+  },
+  "authority_map": {
+    "business_owner": "Business Owner",
+    "process_owner": "Process Owner",
+    "role_owner": "Role Owner",
+    "data_owner": "Data Owner",
+    "system_owner": "System Owner",
+    "risk_owner": "Risk Owner",
+    "people_owner": "People Owner",
+    "operations_owner": "Operations Owner",
+    "high_impact_boundary": "Human-only qualified decision",
+    "external_effect_boundary": "Human approval before effect"
+  },
+  "control_model": {
+    "dispositions": [
+      "ELIMINATE",
+      "HUMAN_ONLY",
+      "A.I_ASSIST",
+      "A.I_EXECUTE_HUMAN_APPROVE",
+      "A.I_BOUNDED_AUTONOMY",
+      "A.I_MONITOR_ALERT",
+      "EXCEPTION_TO_HUMAN"
+    ],
+    "maker_checker_rule": "Independent where risk requires",
+    "sod_rule": "No self-approval",
+    "autonomy_rule": "Bounded contract with expiry",
+    "exception_rule": "Exception to named human",
+    "test_rule": "Critical failure blocks ready",
+    "production_boundary": "No permission or deployment"
+  },
+  "evidence_sources": [
+    {
+      "id": "EVD-1",
+      "source": "authorized-work-source-1",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 1",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-2",
+      "source": "authorized-work-source-2",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 2",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-3",
+      "source": "authorized-work-source-3",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 3",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-4",
+      "source": "authorized-work-source-4",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 4",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-5",
+      "source": "authorized-work-source-5",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "CALCULATED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 5",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-6",
+      "source": "authorized-work-source-6",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "ESTIMATED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 6",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-7",
+      "source": "authorized-work-source-7",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "UNVERIFIED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 7",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-8",
+      "source": "authorized-work-source-8",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 8",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-9",
+      "source": "authorized-work-source-9",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 9",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-10",
+      "source": "authorized-work-source-10",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 10",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-11",
+      "source": "authorized-work-source-11",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 11",
+      "quality": "Limitations recorded",
+      "conflict": "Conflict disclosed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-12",
+      "source": "authorized-work-source-12",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_DESIGN",
+      "evidence_type": "CALCULATED",
+      "date": "2026-08-22",
+      "coverage": "Role/work sample 12",
+      "quality": "Limitations recorded",
+      "conflict": "None",
+      "status": "REGISTERED"
+    }
+  ],
+  "work_units": [
+    {
+      "id": "WU-1",
+      "outcome": "Outcome 1",
+      "workflow": "Workflow 1",
+      "role": "Role 1",
+      "user": "User segment 1",
+      "task_or_decision": "Bounded task 1",
+      "trigger": "Trigger 1",
+      "inputs": [
+        "Input 1"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 1",
+      "action": "Bounded action 1",
+      "consumer": "Consumer 1",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "data_system": "Authorized system 1",
+      "authority": "Human authority named",
+      "risk": "Risk 1",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-2",
+      "outcome": "Outcome 2",
+      "workflow": "Workflow 2",
+      "role": "Role 2",
+      "user": "User segment 2",
+      "task_or_decision": "Bounded task 2",
+      "trigger": "Trigger 2",
+      "inputs": [
+        "Input 2"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 2",
+      "action": "Bounded action 2",
+      "consumer": "Consumer 2",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "data_system": "Authorized system 2",
+      "authority": "Human authority named",
+      "risk": "Risk 2",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-3",
+      "outcome": "Outcome 3",
+      "workflow": "Workflow 3",
+      "role": "Role 3",
+      "user": "User segment 3",
+      "task_or_decision": "Bounded task 3",
+      "trigger": "Trigger 3",
+      "inputs": [
+        "Input 3"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 3",
+      "action": "Bounded action 3",
+      "consumer": "Consumer 3",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "data_system": "Authorized system 3",
+      "authority": "Human authority named",
+      "risk": "Risk 3",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-4",
+      "outcome": "Outcome 4",
+      "workflow": "Workflow 4",
+      "role": "Role 4",
+      "user": "User segment 4",
+      "task_or_decision": "Bounded task 4",
+      "trigger": "Trigger 4",
+      "inputs": [
+        "Input 4"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 4",
+      "action": "Bounded action 4",
+      "consumer": "Consumer 4",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "data_system": "Authorized system 4",
+      "authority": "Human authority named",
+      "risk": "Risk 4",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-5",
+      "outcome": "Outcome 5",
+      "workflow": "Workflow 5",
+      "role": "Role 5",
+      "user": "User segment 5",
+      "task_or_decision": "Bounded task 5",
+      "trigger": "Trigger 5",
+      "inputs": [
+        "Input 5"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 5",
+      "action": "Bounded action 5",
+      "consumer": "Consumer 5",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "data_system": "Authorized system 5",
+      "authority": "Human authority named",
+      "risk": "Risk 5",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-6",
+      "outcome": "Outcome 6",
+      "workflow": "Workflow 6",
+      "role": "Role 6",
+      "user": "User segment 6",
+      "task_or_decision": "Bounded task 6",
+      "trigger": "Trigger 6",
+      "inputs": [
+        "Input 6"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 6",
+      "action": "Bounded action 6",
+      "consumer": "Consumer 6",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "data_system": "Authorized system 6",
+      "authority": "Human authority named",
+      "risk": "Risk 6",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-7",
+      "outcome": "Outcome 7",
+      "workflow": "Workflow 7",
+      "role": "Role 7",
+      "user": "User segment 7",
+      "task_or_decision": "Bounded task 7",
+      "trigger": "Trigger 7",
+      "inputs": [
+        "Input 7"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 7",
+      "action": "Bounded action 7",
+      "consumer": "Consumer 7",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "data_system": "Authorized system 7",
+      "authority": "Human authority named",
+      "risk": "Risk 7",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-8",
+      "outcome": "Outcome 8",
+      "workflow": "Workflow 8",
+      "role": "Role 8",
+      "user": "User segment 8",
+      "task_or_decision": "Bounded task 8",
+      "trigger": "Trigger 8",
+      "inputs": [
+        "Input 8"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 8",
+      "action": "Bounded action 8",
+      "consumer": "Consumer 8",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "data_system": "Authorized system 8",
+      "authority": "Human authority named",
+      "risk": "Risk 8",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-9",
+      "outcome": "Outcome 9",
+      "workflow": "Workflow 9",
+      "role": "Role 9",
+      "user": "User segment 9",
+      "task_or_decision": "Bounded task 9",
+      "trigger": "Trigger 9",
+      "inputs": [
+        "Input 9"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 9",
+      "action": "Bounded action 9",
+      "consumer": "Consumer 9",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-9"
+      ],
+      "data_system": "Authorized system 9",
+      "authority": "Human authority named",
+      "risk": "Risk 9",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "WU-10",
+      "outcome": "Outcome 10",
+      "workflow": "Workflow 10",
+      "role": "Role 10",
+      "user": "User segment 10",
+      "task_or_decision": "Bounded task 10",
+      "trigger": "Trigger 10",
+      "inputs": [
+        "Input 10"
+      ],
+      "steps": [
+        "Prepare",
+        "Perform",
+        "Check"
+      ],
+      "handoffs": [
+        "Named handoff"
+      ],
+      "exceptions": [
+        "Named exception"
+      ],
+      "output": "Output 10",
+      "action": "Bounded action 10",
+      "consumer": "Consumer 10",
+      "workload": "Source-bound workload",
+      "evidence_refs": [
+        "EVD-10"
+      ],
+      "data_system": "Authorized system 10",
+      "authority": "Human authority named",
+      "risk": "Risk 10",
+      "owner": "Process Owner",
+      "status": "DOCUMENTED"
+    }
+  ],
+  "allocations": [
+    {
+      "id": "AL-1",
+      "work_ref": "WU-1",
+      "disposition": "ELIMINATE",
+      "reason": "Evidence-based reason 1",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "ai_role": "No execution",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 1",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 1",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-2",
+      "work_ref": "WU-2",
+      "disposition": "HUMAN_ONLY",
+      "reason": "Evidence-based reason 2",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "ai_role": "No execution",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 2",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 2",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-3",
+      "work_ref": "WU-3",
+      "disposition": "A.I_ASSIST",
+      "reason": "Evidence-based reason 3",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 3",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 3",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-4",
+      "work_ref": "WU-4",
+      "disposition": "A.I_EXECUTE_HUMAN_APPROVE",
+      "reason": "Evidence-based reason 4",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 4",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 4",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-5",
+      "work_ref": "WU-5",
+      "disposition": "A.I_BOUNDED_AUTONOMY",
+      "reason": "Evidence-based reason 5",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 5",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 5",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-6",
+      "work_ref": "WU-6",
+      "disposition": "A.I_MONITOR_ALERT",
+      "reason": "Evidence-based reason 6",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 6",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 6",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-7",
+      "work_ref": "WU-7",
+      "disposition": "EXCEPTION_TO_HUMAN",
+      "reason": "Evidence-based reason 7",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 7",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 7",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-8",
+      "work_ref": "WU-8",
+      "disposition": "A.I_ASSIST",
+      "reason": "Evidence-based reason 8",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 8",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 8",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-9",
+      "work_ref": "WU-9",
+      "disposition": "A.I_EXECUTE_HUMAN_APPROVE",
+      "reason": "Evidence-based reason 9",
+      "evidence_refs": [
+        "EVD-9"
+      ],
+      "ai_role": "Bounded draft or action",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 9",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 9",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "AL-10",
+      "work_ref": "WU-10",
+      "disposition": "HUMAN_ONLY",
+      "reason": "Evidence-based reason 10",
+      "evidence_refs": [
+        "EVD-10"
+      ],
+      "ai_role": "No execution",
+      "human_role": "Accountable decision and exception",
+      "acceptance": "Acceptance 10",
+      "accountable": "Human Process Owner",
+      "maker": "Named maker",
+      "checker": "Independent checker",
+      "sod": "Maker and checker separated",
+      "risk": "Residual risk 10",
+      "status": "PROPOSED"
+    }
+  ],
+  "autonomy_contracts": [
+    {
+      "id": "AUTO-1",
+      "work_ref": "WU-3",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-2",
+      "work_ref": "WU-4",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-3",
+      "work_ref": "WU-5",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-4",
+      "work_ref": "WU-6",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-5",
+      "work_ref": "WU-7",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-6",
+      "work_ref": "WU-8",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-7",
+      "work_ref": "WU-9",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "AUTO-8",
+      "work_ref": "WU-10",
+      "allowed_input": "Authorized task input",
+      "allowed_data": "Minimum necessary data",
+      "allowed_system": "Named sandbox or approved system",
+      "allowed_action": "Bounded draft/action",
+      "allowed_output": "Contracted output",
+      "threshold": "Approved threshold",
+      "abstain": "Abstain on uncertainty",
+      "rate_limit": "Approved volume limit",
+      "time_limit": "Approved window",
+      "expiry": "Revalidate before pilot",
+      "approval": "Human approval where required",
+      "prohibited_actions": [
+        "No policy or high-impact decision"
+      ],
+      "logging": "Immutable audit reference",
+      "retry": "Bounded retry",
+      "fallback": "Manual safe mode",
+      "escalation": "Named human owner",
+      "kill_switch": "Human emergency stop",
+      "rollback": "Restore prior state",
+      "reconciliation": "Compare expected and actual",
+      "owner": "Control Owner",
+      "status": "DRAFT_CONTROLLED"
+    }
+  ],
+  "exception_routes": [
+    {
+      "id": "EX-1",
+      "work_ref": "WU-1",
+      "event": "Failure or exception 1",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-2",
+      "work_ref": "WU-2",
+      "event": "Failure or exception 2",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-3",
+      "work_ref": "WU-3",
+      "event": "Failure or exception 3",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-4",
+      "work_ref": "WU-4",
+      "event": "Failure or exception 4",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-5",
+      "work_ref": "WU-5",
+      "event": "Failure or exception 5",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-6",
+      "work_ref": "WU-6",
+      "event": "Failure or exception 6",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-7",
+      "work_ref": "WU-7",
+      "event": "Failure or exception 7",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    },
+    {
+      "id": "EX-8",
+      "work_ref": "WU-8",
+      "event": "Failure or exception 8",
+      "detect": "Validation/monitor detects",
+      "retry": "Bounded retry",
+      "fallback": "Safe fallback",
+      "manual_mode": "Documented manual procedure",
+      "escalation": "Named escalation path",
+      "owner": "Operations Owner",
+      "sla": "Approved response target",
+      "dlq": "Evidence queue",
+      "evidence": "Audit event",
+      "recovery": "Controlled recovery",
+      "reconciliation": "Post-recovery check",
+      "status": "DRAFT_CONTROLLED"
+    }
+  ],
+  "capability_changes": [
+    {
+      "id": "CH-1",
+      "role": "Role 1",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-1",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-2",
+      "role": "Role 2",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-2",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-3",
+      "role": "Role 3",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-3",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-4",
+      "role": "Role 4",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-4",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-5",
+      "role": "Role 5",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-5",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-6",
+      "role": "Role 6",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-6",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-7",
+      "role": "Role 7",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-7",
+      "status": "DRAFT"
+    },
+    {
+      "id": "CH-8",
+      "role": "Role 8",
+      "removed_work": "Waste task only",
+      "added_work": "Review and exception work",
+      "changed_decision_rights": "Authority clarified, not transferred silently",
+      "workload_impact": "Measured before/after",
+      "cognitive_impact": "Review burden assessed",
+      "exception_burden": "Capacity reserved",
+      "deskilling": "Practice and rotation control",
+      "skill_training": "Task-specific training and assessment",
+      "adoption": "Feedback and support",
+      "accessibility_fairness": "Accessibility and bias review",
+      "feedback": "Named feedback loop",
+      "owner": "People Change Owner",
+      "evidence": "EVD-8",
+      "status": "DRAFT"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Design control decision 1",
+      "evidence_refs": [
+        "AL-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Production and staffing remain pending"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Design control decision 2",
+      "evidence_refs": [
+        "AL-2"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Production and staffing remain pending"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Design control decision 3",
+      "evidence_refs": [
+        "AL-3"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "PENDING",
+      "consequence": "Production and staffing remain pending"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Design control decision 4",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "PENDING",
+      "consequence": "Production and staffing remain pending"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Design control decision 5",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "PENDING",
+      "consequence": "Production and staffing remain pending"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Design control decision 6",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named design contract",
+      "status": "PENDING",
+      "consequence": "Production and staffing remain pending"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "contract",
+      "requirement_ref": "WU-1",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "trace",
+      "requirement_ref": "WU-2",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "disposition",
+      "requirement_ref": "WU-3",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "authority",
+      "requirement_ref": "WU-4",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "autonomy",
+      "requirement_ref": "WU-5",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "exception",
+      "requirement_ref": "AUTO-1",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "capability",
+      "requirement_ref": "AUTO-2",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "security",
+      "requirement_ref": "AUTO-3",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "kill",
+      "requirement_ref": "AUTO-4",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "uat",
+      "requirement_ref": "AUTO-5",
+      "setup": "Controlled fixture",
+      "expected": "Auditable work-design control",
+      "actual": "Control found",
+      "evidence": "test-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "SCOPE_WORK_EVIDENCE",
+      "risk": "Work design risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "AUTHORITY_SOD_HIGH_IMPACT",
+      "risk": "Work design risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "DATA_PERMISSION_SECURITY",
+      "risk": "Work design risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "AUTONOMY_FAILURE_RECOVERY",
+      "risk": "Work design risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "WORKLOAD_DESKILLING_FAIRNESS",
+      "risk": "Work design risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "TEST_CHANGE_PRODUCTION_HANDOFF",
+      "risk": "Work design risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could harm people or operations",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "design_contract",
+      "status": "PASS",
+      "evidence": "design_contract verified"
+    },
+    {
+      "id": "work_trace",
+      "status": "PASS",
+      "evidence": "work_trace verified"
+    },
+    {
+      "id": "disposition_authority",
+      "status": "PASS",
+      "evidence": "disposition_authority verified"
+    },
+    {
+      "id": "autonomy_control",
+      "status": "PASS",
+      "evidence": "autonomy_control verified"
+    },
+    {
+      "id": "exception_recovery",
+      "status": "PASS",
+      "evidence": "exception_recovery verified"
+    },
+    {
+      "id": "people_capability",
+      "status": "PASS",
+      "evidence": "people_capability verified"
+    },
+    {
+      "id": "security_injection",
+      "status": "PASS",
+      "evidence": "security_injection verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "BUSINESS_PROCESS_OWNER",
+      "status": "PASS",
+      "evidence": "BUSINESS_PROCESS_OWNER reviewed"
+    },
+    {
+      "id": "ROLE_USER_REPRESENTATIVE",
+      "status": "PASS",
+      "evidence": "ROLE_USER_REPRESENTATIVE reviewed"
+    },
+    {
+      "id": "DATA_SYSTEM_OWNER",
+      "status": "PASS",
+      "evidence": "DATA_SYSTEM_OWNER reviewed"
+    },
+    {
+      "id": "RISK_CONTROL_OWNER",
+      "status": "PASS",
+      "evidence": "RISK_CONTROL_OWNER reviewed"
+    },
+    {
+      "id": "PEOPLE_CHANGE_OWNER",
+      "status": "PASS",
+      "evidence": "PEOPLE_CHANGE_OWNER reviewed"
+    },
+    {
+      "id": "DELIVERY_OPERATIONS_OWNER",
+      "status": "PASS",
+      "evidence": "DELIVERY_OPERATIONS_OWNER reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "whole_job_automated": false,
+    "employee_surveillance": false,
+    "sensitive_inference": false,
+    "protected_proxy_used": false,
+    "discrimination_enabled": false,
+    "high_impact_auto_decision": false,
+    "ai_accountable_person": false,
+    "self_review_as_independent": false,
+    "approval_bypassed": false,
+    "production_permission_granted": false,
+    "policy_changed": false,
+    "people_assigned": false,
+    "employee_terminated": false,
+    "deployment_started": false,
+    "design_sent": false,
+    "design_published": false,
+    "evidence_mutated": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

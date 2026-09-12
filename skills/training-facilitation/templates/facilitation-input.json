@@ -1,0 +1,23 @@
+{
+  "contract": {
+    "session_id": "FAC-DEMO-001",
+    "source_ref": "LX-DEMO-001-v1.0",
+    "session_outcomes": ["LO-1", "LO-2"],
+    "cohort": "12 managers with CARE snapshot",
+    "delivery_mode": "hybrid",
+    "total_minutes": 90,
+    "owner": "learning-owner",
+    "risk_level": "medium",
+    "standards": {
+      "max_monologue_minutes": 20,
+      "required_incidents": ["dominant_voice", "silence", "conflict", "tech_failure", "accessibility_failure", "wellbeing_concern"]
+    }
+  },
+  "roles": {},
+  "readiness": {},
+  "segments": [],
+  "incident_playbooks": [],
+  "measurement": {},
+  "guardrails": [],
+  "expert_review": "approved"
+}

@@ -1,0 +1,79 @@
+{
+  "contract": {
+    "id": "PZN-...",
+    "unit": "",
+    "brand_level": "corporate|product|personal",
+    "business_objective": "",
+    "decision_owner": "",
+    "reviewers": [],
+    "scope": "",
+    "status": "approved_for_design"
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "type": "customer|market|competitor|internal",
+      "title": "",
+      "version": "",
+      "owner": "",
+      "authority": "",
+      "locator": "",
+      "authorized": true,
+      "status": "active",
+      "strength": "high|medium|low"
+    }
+  ],
+  "conflicts": [],
+  "target": {
+    "primary_segment": "",
+    "decision_unit": [],
+    "problem": "",
+    "occasion": "",
+    "desired_progress": "",
+    "choice_criteria": [],
+    "exclusion": ""
+  },
+  "frame": {
+    "category": "",
+    "alternatives": [],
+    "points_of_parity": [],
+    "point_of_difference": "",
+    "barrier": ""
+  },
+  "territories": [],
+  "scorecard": {
+    "criteria": [],
+    "scores": [],
+    "recommended_id": ""
+  },
+  "position": {
+    "territory_id": "",
+    "target": "",
+    "frame": "",
+    "problem": "",
+    "promise": "",
+    "difference": "",
+    "reasons_to_believe": [],
+    "sacrifice": "",
+    "statement": "",
+    "memory_hook": "",
+    "status": "hypothesis"
+  },
+  "claims": [],
+  "tests": [
+    {"type": "category_clarity", "method": "", "sample": "", "threshold": "", "owner": "", "status": "planned"},
+    {"type": "relevance", "method": "", "sample": "", "threshold": "", "owner": "", "status": "planned"},
+    {"type": "distinctiveness_substitution", "method": "", "sample": "", "threshold": "", "owner": "", "status": "planned"},
+    {"type": "credibility_proof", "method": "", "sample": "", "threshold": "", "owner": "", "status": "planned"},
+    {"type": "unaided_recall", "method": "", "sample": "", "threshold": "", "owner": "", "status": "planned"}
+  ],
+  "governance": {
+    "brand_owner": "",
+    "customer_reviewer": "",
+    "legal_commercial_reviewer": "",
+    "validation_state": "not_run",
+    "publish_approved": false,
+    "decision_log": true
+  }
+}
+

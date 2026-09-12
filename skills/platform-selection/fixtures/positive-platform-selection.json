@@ -1,0 +1,1550 @@
+{
+  "artifact": "Evidence-Based Platform Selection & Exit Pack",
+  "decision_contract": {
+    "decision_id": "PLAT-001",
+    "scope": "Named enterprise platform decision",
+    "outcomes": [
+      "Controlled task value"
+    ],
+    "use_cases": [
+      "Selected use case set"
+    ],
+    "workloads": [
+      "Representative workloads"
+    ],
+    "owner": "Decision Owner",
+    "approver": "Human Platform Authority",
+    "horizon": "Decision horizon",
+    "cutoff": "2026-08-22",
+    "dod": "Evidence, gates, TCO, pilot and exit reviewed",
+    "exclusions": [
+      "No procurement",
+      "No provisioning"
+    ],
+    "confidentiality": "YELLOW_INTERNAL",
+    "action_boundary": "Recommendation only"
+  },
+  "scoring_contract": {
+    "version": "SC-v1",
+    "criteria": [
+      "TASK_OUTPUT_FIT",
+      "DATA_SECURITY_PRIVACY",
+      "IDENTITY_ADMIN_AUDIT",
+      "INTEGRATION_INTEROPERABILITY",
+      "RELIABILITY_OPERATIONS_SUPPORT",
+      "TCO_ECONOMICS",
+      "WORKFORCE_ADOPTION_ACCESSIBILITY",
+      "PORTABILITY_EXIT"
+    ],
+    "weights": {
+      "TASK_OUTPUT_FIT": 15,
+      "DATA_SECURITY_PRIVACY": 15,
+      "IDENTITY_ADMIN_AUDIT": 10,
+      "INTEGRATION_INTEROPERABILITY": 15,
+      "RELIABILITY_OPERATIONS_SUPPORT": 15,
+      "TCO_ECONOMICS": 10,
+      "WORKFORCE_ADOPTION_ACCESSIBILITY": 10,
+      "PORTABILITY_EXIT": 10
+    },
+    "formula": "sum score times weight divided by 5",
+    "scale": "0-5 anchored",
+    "missing_rule": "UNKNOWN_NOT_ZERO",
+    "double_count_rule": "One primary driver unless independent evidence",
+    "tie_rule": "Keep tie without approved rule",
+    "approved_by": "Human Platform Authority",
+    "input_hash": "fixture-input-hash",
+    "engine_version": "selection-engine-v2.3",
+    "engine_hash": "fixture-engine-hash"
+  },
+  "authority_map": {
+    "business_owner": "Business Owner",
+    "data_security_owner": "Data/Security Owner",
+    "legal_contract_owner": "Legal/Contract Owner",
+    "finance_procurement_owner": "Finance/Procurement Owner",
+    "technical_operations_owner": "Technical/Operations Owner",
+    "user_change_owner": "User/Change Owner",
+    "external_action_boundary": "No purchase/sign/provision/upload/migrate/send"
+  },
+  "evidence_sources": [
+    {
+      "id": "SRC-1",
+      "source": "official-or-contract-source-1",
+      "source_type": "CONTRACT",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 1",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 1",
+      "claim": "Verified claim 1",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-2",
+      "source": "official-or-contract-source-2",
+      "source_type": "DPA_TERMS",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 2",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 2",
+      "claim": "Verified claim 2",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-3",
+      "source": "official-or-contract-source-3",
+      "source_type": "ADMIN_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 3",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 3",
+      "claim": "Verified claim 3",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-4",
+      "source": "official-or-contract-source-4",
+      "source_type": "SECURITY_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 4",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 4",
+      "claim": "Verified claim 4",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-5",
+      "source": "official-or-contract-source-5",
+      "source_type": "PRICING_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 5",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 5",
+      "claim": "Verified claim 5",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-6",
+      "source": "official-or-contract-source-6",
+      "source_type": "SERVICE_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 6",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 6",
+      "claim": "Verified claim 6",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-7",
+      "source": "official-or-contract-source-7",
+      "source_type": "OFFICIAL_PRODUCT_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 7",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 7",
+      "claim": "Verified claim 7",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-8",
+      "source": "official-or-contract-source-8",
+      "source_type": "CONTRACT",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 8",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 8",
+      "claim": "Verified claim 8",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-9",
+      "source": "official-or-contract-source-9",
+      "source_type": "DPA_TERMS",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 9",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 9",
+      "claim": "Verified claim 9",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-10",
+      "source": "official-or-contract-source-10",
+      "source_type": "ADMIN_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 10",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 10",
+      "claim": "Verified claim 10",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-11",
+      "source": "official-or-contract-source-11",
+      "source_type": "SECURITY_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 11",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 11",
+      "claim": "Verified claim 11",
+      "confidence": "HIGH",
+      "conflict": "Conflict disclosed and resolved by owner",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "SRC-12",
+      "source": "official-or-contract-source-12",
+      "source_type": "PRICING_DOC",
+      "owner": "Evidence Owner",
+      "plan_region_version": "Plan/region/version 12",
+      "accessed_effective_date": "2026-08-22",
+      "scope": "Claim scope 12",
+      "claim": "Verified claim 12",
+      "confidence": "HIGH",
+      "conflict": "None",
+      "status": "REGISTERED"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-1",
+      "requirement": "Requirement 1",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 1",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-2",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-2",
+      "requirement": "Requirement 2",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 2",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-3",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-3",
+      "requirement": "Requirement 3",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 3",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-4",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-4",
+      "requirement": "Requirement 4",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 4",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-5",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-5",
+      "requirement": "Requirement 5",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 5",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-6",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-6",
+      "requirement": "Requirement 6",
+      "priority": "MUST",
+      "acceptance": "Testable acceptance 6",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": true,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-7",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-7",
+      "requirement": "Requirement 7",
+      "priority": "SHOULD",
+      "acceptance": "Testable acceptance 7",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": false,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-8",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-8",
+      "requirement": "Requirement 8",
+      "priority": "SHOULD",
+      "acceptance": "Testable acceptance 8",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": false,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-9",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-9",
+      "requirement": "Requirement 9",
+      "priority": "SHOULD",
+      "acceptance": "Testable acceptance 9",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": false,
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "REQ-10",
+      "outcome_ref": "OUT-1",
+      "workload_ref": "WL-10",
+      "requirement": "Requirement 10",
+      "priority": "SHOULD",
+      "acceptance": "Testable acceptance 10",
+      "evidence_rule": "Official/contract and dated",
+      "owner": "Requirement Owner",
+      "critical": false,
+      "status": "APPROVED_HUMAN"
+    }
+  ],
+  "options": [
+    {
+      "id": "OPT-1",
+      "option_type": "ENTERPRISE_SAAS",
+      "vendor_product": "Neutral Option 1",
+      "plan": "Plan 1",
+      "region": "Region 1",
+      "version": "Version 1",
+      "evidence_refs": [
+        "SRC-1",
+        "SRC-2"
+      ],
+      "relationship_disclosure": "No affiliate; delivery capability disclosed separately",
+      "current_stack_fit": "Fit note 1",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "OPT-2",
+      "option_type": "MODEL_SERVICE",
+      "vendor_product": "Neutral Option 2",
+      "plan": "Plan 2",
+      "region": "Region 2",
+      "version": "Version 2",
+      "evidence_refs": [
+        "SRC-3",
+        "SRC-4"
+      ],
+      "relationship_disclosure": "No affiliate; delivery capability disclosed separately",
+      "current_stack_fit": "Fit note 2",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "OPT-3",
+      "option_type": "SELF_HOSTED",
+      "vendor_product": "Neutral Option 3",
+      "plan": "Plan 3",
+      "region": "Region 3",
+      "version": "Version 3",
+      "evidence_refs": [
+        "SRC-5",
+        "SRC-6"
+      ],
+      "relationship_disclosure": "No affiliate; delivery capability disclosed separately",
+      "current_stack_fit": "Fit note 3",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "OPT-4",
+      "option_type": "HYBRID",
+      "vendor_product": "Neutral Option 4",
+      "plan": "Plan 4",
+      "region": "Region 4",
+      "version": "Version 4",
+      "evidence_refs": [
+        "SRC-7",
+        "SRC-8"
+      ],
+      "relationship_disclosure": "No affiliate; delivery capability disclosed separately",
+      "current_stack_fit": "Fit note 4",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "OPT-5",
+      "option_type": "CURRENT_STACK",
+      "vendor_product": "Neutral Option 5",
+      "plan": "Plan 5",
+      "region": "Region 5",
+      "version": "Version 5",
+      "evidence_refs": [
+        "SRC-9",
+        "SRC-10"
+      ],
+      "relationship_disclosure": "No affiliate; delivery capability disclosed separately",
+      "current_stack_fit": "Fit note 5",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "gates": [
+    {
+      "id": "GATE-1",
+      "option_ref": "OPT-1",
+      "task_output": "PASS",
+      "data_rights_security": "PASS",
+      "identity_admin_audit": "PASS",
+      "legal_contract": "PASS",
+      "integration_continuity": "PASS",
+      "exit_deletion": "PASS",
+      "evidence_refs": [
+        "SRC-1",
+        "SRC-2"
+      ],
+      "critical": true,
+      "owner": "Gate Owner",
+      "status": "PASS",
+      "reason": "All critical requirements evidenced"
+    },
+    {
+      "id": "GATE-2",
+      "option_ref": "OPT-2",
+      "task_output": "PASS",
+      "data_rights_security": "PASS",
+      "identity_admin_audit": "PASS",
+      "legal_contract": "PASS",
+      "integration_continuity": "PASS",
+      "exit_deletion": "PASS",
+      "evidence_refs": [
+        "SRC-3",
+        "SRC-4"
+      ],
+      "critical": true,
+      "owner": "Gate Owner",
+      "status": "PASS",
+      "reason": "All critical requirements evidenced"
+    },
+    {
+      "id": "GATE-3",
+      "option_ref": "OPT-3",
+      "task_output": "PASS",
+      "data_rights_security": "PASS",
+      "identity_admin_audit": "PASS",
+      "legal_contract": "PASS",
+      "integration_continuity": "PASS",
+      "exit_deletion": "PASS",
+      "evidence_refs": [
+        "SRC-5",
+        "SRC-6"
+      ],
+      "critical": true,
+      "owner": "Gate Owner",
+      "status": "PASS",
+      "reason": "All critical requirements evidenced"
+    },
+    {
+      "id": "GATE-4",
+      "option_ref": "OPT-4",
+      "task_output": "PASS",
+      "data_rights_security": "PASS",
+      "identity_admin_audit": "PASS",
+      "legal_contract": "PASS",
+      "integration_continuity": "PASS",
+      "exit_deletion": "PASS",
+      "evidence_refs": [
+        "SRC-7",
+        "SRC-8"
+      ],
+      "critical": true,
+      "owner": "Gate Owner",
+      "status": "PASS",
+      "reason": "All critical requirements evidenced"
+    },
+    {
+      "id": "GATE-5",
+      "option_ref": "OPT-5",
+      "task_output": "PASS",
+      "data_rights_security": "PASS",
+      "identity_admin_audit": "PASS",
+      "legal_contract": "PASS",
+      "integration_continuity": "PASS",
+      "exit_deletion": "PASS",
+      "evidence_refs": [
+        "SRC-9",
+        "SRC-10"
+      ],
+      "critical": true,
+      "owner": "Gate Owner",
+      "status": "PASS",
+      "reason": "All critical requirements evidenced"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "ASS-1",
+      "option_ref": "OPT-1",
+      "criterion_scores": {
+        "TASK_OUTPUT_FIT": 5,
+        "DATA_SECURITY_PRIVACY": 5,
+        "IDENTITY_ADMIN_AUDIT": 5,
+        "INTEGRATION_INTEROPERABILITY": 5,
+        "RELIABILITY_OPERATIONS_SUPPORT": 5,
+        "TCO_ECONOMICS": 5,
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": 5,
+        "PORTABILITY_EXIT": 5
+      },
+      "score_evidence": {
+        "TASK_OUTPUT_FIT": [
+          "SRC-1"
+        ],
+        "DATA_SECURITY_PRIVACY": [
+          "SRC-2"
+        ],
+        "IDENTITY_ADMIN_AUDIT": [
+          "SRC-3"
+        ],
+        "INTEGRATION_INTEROPERABILITY": [
+          "SRC-4"
+        ],
+        "RELIABILITY_OPERATIONS_SUPPORT": [
+          "SRC-5"
+        ],
+        "TCO_ECONOMICS": [
+          "SRC-6"
+        ],
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": [
+          "SRC-7"
+        ],
+        "PORTABILITY_EXIT": [
+          "SRC-8"
+        ]
+      },
+      "weighted_score": 100,
+      "confidence": "HIGH",
+      "gaps": [
+        "Gap 1 with workaround"
+      ],
+      "tradeoffs": [
+        "Trade-off 1"
+      ],
+      "effort": "Implementation effort range 1",
+      "risk": "Residual risk 1",
+      "recommendation": "PILOT",
+      "owner": "Decision Analyst",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ASS-2",
+      "option_ref": "OPT-2",
+      "criterion_scores": {
+        "TASK_OUTPUT_FIT": 4.5,
+        "DATA_SECURITY_PRIVACY": 4.5,
+        "IDENTITY_ADMIN_AUDIT": 4.5,
+        "INTEGRATION_INTEROPERABILITY": 4.5,
+        "RELIABILITY_OPERATIONS_SUPPORT": 4.5,
+        "TCO_ECONOMICS": 4.5,
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": 4.5,
+        "PORTABILITY_EXIT": 4.5
+      },
+      "score_evidence": {
+        "TASK_OUTPUT_FIT": [
+          "SRC-2"
+        ],
+        "DATA_SECURITY_PRIVACY": [
+          "SRC-3"
+        ],
+        "IDENTITY_ADMIN_AUDIT": [
+          "SRC-4"
+        ],
+        "INTEGRATION_INTEROPERABILITY": [
+          "SRC-5"
+        ],
+        "RELIABILITY_OPERATIONS_SUPPORT": [
+          "SRC-6"
+        ],
+        "TCO_ECONOMICS": [
+          "SRC-7"
+        ],
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": [
+          "SRC-8"
+        ],
+        "PORTABILITY_EXIT": [
+          "SRC-9"
+        ]
+      },
+      "weighted_score": 90,
+      "confidence": "HIGH",
+      "gaps": [
+        "Gap 2 with workaround"
+      ],
+      "tradeoffs": [
+        "Trade-off 2"
+      ],
+      "effort": "Implementation effort range 2",
+      "risk": "Residual risk 2",
+      "recommendation": "PILOT",
+      "owner": "Decision Analyst",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ASS-3",
+      "option_ref": "OPT-3",
+      "criterion_scores": {
+        "TASK_OUTPUT_FIT": 4,
+        "DATA_SECURITY_PRIVACY": 4,
+        "IDENTITY_ADMIN_AUDIT": 4,
+        "INTEGRATION_INTEROPERABILITY": 4,
+        "RELIABILITY_OPERATIONS_SUPPORT": 4,
+        "TCO_ECONOMICS": 4,
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": 4,
+        "PORTABILITY_EXIT": 4
+      },
+      "score_evidence": {
+        "TASK_OUTPUT_FIT": [
+          "SRC-3"
+        ],
+        "DATA_SECURITY_PRIVACY": [
+          "SRC-4"
+        ],
+        "IDENTITY_ADMIN_AUDIT": [
+          "SRC-5"
+        ],
+        "INTEGRATION_INTEROPERABILITY": [
+          "SRC-6"
+        ],
+        "RELIABILITY_OPERATIONS_SUPPORT": [
+          "SRC-7"
+        ],
+        "TCO_ECONOMICS": [
+          "SRC-8"
+        ],
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": [
+          "SRC-9"
+        ],
+        "PORTABILITY_EXIT": [
+          "SRC-10"
+        ]
+      },
+      "weighted_score": 80,
+      "confidence": "HIGH",
+      "gaps": [
+        "Gap 3 with workaround"
+      ],
+      "tradeoffs": [
+        "Trade-off 3"
+      ],
+      "effort": "Implementation effort range 3",
+      "risk": "Residual risk 3",
+      "recommendation": "SHORTLIST",
+      "owner": "Decision Analyst",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ASS-4",
+      "option_ref": "OPT-4",
+      "criterion_scores": {
+        "TASK_OUTPUT_FIT": 3.5,
+        "DATA_SECURITY_PRIVACY": 3.5,
+        "IDENTITY_ADMIN_AUDIT": 3.5,
+        "INTEGRATION_INTEROPERABILITY": 3.5,
+        "RELIABILITY_OPERATIONS_SUPPORT": 3.5,
+        "TCO_ECONOMICS": 3.5,
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": 3.5,
+        "PORTABILITY_EXIT": 3.5
+      },
+      "score_evidence": {
+        "TASK_OUTPUT_FIT": [
+          "SRC-4"
+        ],
+        "DATA_SECURITY_PRIVACY": [
+          "SRC-5"
+        ],
+        "IDENTITY_ADMIN_AUDIT": [
+          "SRC-6"
+        ],
+        "INTEGRATION_INTEROPERABILITY": [
+          "SRC-7"
+        ],
+        "RELIABILITY_OPERATIONS_SUPPORT": [
+          "SRC-8"
+        ],
+        "TCO_ECONOMICS": [
+          "SRC-9"
+        ],
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": [
+          "SRC-10"
+        ],
+        "PORTABILITY_EXIT": [
+          "SRC-11"
+        ]
+      },
+      "weighted_score": 70,
+      "confidence": "HIGH",
+      "gaps": [
+        "Gap 4 with workaround"
+      ],
+      "tradeoffs": [
+        "Trade-off 4"
+      ],
+      "effort": "Implementation effort range 4",
+      "risk": "Residual risk 4",
+      "recommendation": "SHORTLIST",
+      "owner": "Decision Analyst",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ASS-5",
+      "option_ref": "OPT-5",
+      "criterion_scores": {
+        "TASK_OUTPUT_FIT": 3,
+        "DATA_SECURITY_PRIVACY": 3,
+        "IDENTITY_ADMIN_AUDIT": 3,
+        "INTEGRATION_INTEROPERABILITY": 3,
+        "RELIABILITY_OPERATIONS_SUPPORT": 3,
+        "TCO_ECONOMICS": 3,
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": 3,
+        "PORTABILITY_EXIT": 3
+      },
+      "score_evidence": {
+        "TASK_OUTPUT_FIT": [
+          "SRC-5"
+        ],
+        "DATA_SECURITY_PRIVACY": [
+          "SRC-6"
+        ],
+        "IDENTITY_ADMIN_AUDIT": [
+          "SRC-7"
+        ],
+        "INTEGRATION_INTEROPERABILITY": [
+          "SRC-8"
+        ],
+        "RELIABILITY_OPERATIONS_SUPPORT": [
+          "SRC-9"
+        ],
+        "TCO_ECONOMICS": [
+          "SRC-10"
+        ],
+        "WORKFORCE_ADOPTION_ACCESSIBILITY": [
+          "SRC-11"
+        ],
+        "PORTABILITY_EXIT": [
+          "SRC-12"
+        ]
+      },
+      "weighted_score": 60,
+      "confidence": "HIGH",
+      "gaps": [
+        "Gap 5 with workaround"
+      ],
+      "tradeoffs": [
+        "Trade-off 5"
+      ],
+      "effort": "Implementation effort range 5",
+      "risk": "Residual risk 5",
+      "recommendation": "SHORTLIST",
+      "owner": "Decision Analyst",
+      "status": "PROPOSED"
+    }
+  ],
+  "tco_models": [
+    {
+      "id": "TCO-1",
+      "option_ref": "OPT-1",
+      "components": [
+        "license/consumption",
+        "implementation/integration",
+        "migration/data/network",
+        "security/compliance",
+        "operations/support",
+        "training/change",
+        "downtime/risk reserve",
+        "exit"
+      ],
+      "formula": "Sum scenario component ranges",
+      "assumptions": [
+        "Usage assumption 1"
+      ],
+      "range": "Low-base-high range 1",
+      "currency": "Organization-approved currency",
+      "window": "Three-year decision horizon",
+      "sources": [
+        "SRC-1",
+        "SRC-2"
+      ],
+      "owner": "Finance Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "TCO-2",
+      "option_ref": "OPT-2",
+      "components": [
+        "license/consumption",
+        "implementation/integration",
+        "migration/data/network",
+        "security/compliance",
+        "operations/support",
+        "training/change",
+        "downtime/risk reserve",
+        "exit"
+      ],
+      "formula": "Sum scenario component ranges",
+      "assumptions": [
+        "Usage assumption 2"
+      ],
+      "range": "Low-base-high range 2",
+      "currency": "Organization-approved currency",
+      "window": "Three-year decision horizon",
+      "sources": [
+        "SRC-3",
+        "SRC-4"
+      ],
+      "owner": "Finance Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "TCO-3",
+      "option_ref": "OPT-3",
+      "components": [
+        "license/consumption",
+        "implementation/integration",
+        "migration/data/network",
+        "security/compliance",
+        "operations/support",
+        "training/change",
+        "downtime/risk reserve",
+        "exit"
+      ],
+      "formula": "Sum scenario component ranges",
+      "assumptions": [
+        "Usage assumption 3"
+      ],
+      "range": "Low-base-high range 3",
+      "currency": "Organization-approved currency",
+      "window": "Three-year decision horizon",
+      "sources": [
+        "SRC-5",
+        "SRC-6"
+      ],
+      "owner": "Finance Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "TCO-4",
+      "option_ref": "OPT-4",
+      "components": [
+        "license/consumption",
+        "implementation/integration",
+        "migration/data/network",
+        "security/compliance",
+        "operations/support",
+        "training/change",
+        "downtime/risk reserve",
+        "exit"
+      ],
+      "formula": "Sum scenario component ranges",
+      "assumptions": [
+        "Usage assumption 4"
+      ],
+      "range": "Low-base-high range 4",
+      "currency": "Organization-approved currency",
+      "window": "Three-year decision horizon",
+      "sources": [
+        "SRC-7",
+        "SRC-8"
+      ],
+      "owner": "Finance Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "TCO-5",
+      "option_ref": "OPT-5",
+      "components": [
+        "license/consumption",
+        "implementation/integration",
+        "migration/data/network",
+        "security/compliance",
+        "operations/support",
+        "training/change",
+        "downtime/risk reserve",
+        "exit"
+      ],
+      "formula": "Sum scenario component ranges",
+      "assumptions": [
+        "Usage assumption 5"
+      ],
+      "range": "Low-base-high range 5",
+      "currency": "Organization-approved currency",
+      "window": "Three-year decision horizon",
+      "sources": [
+        "SRC-9",
+        "SRC-10"
+      ],
+      "owner": "Finance Owner",
+      "status": "DRAFT"
+    }
+  ],
+  "pilot_tests": [
+    {
+      "id": "PIL-1",
+      "option_ref": "OPT-1",
+      "category": "QUALITY",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-1",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-2",
+      "option_ref": "OPT-2",
+      "category": "LATENCY",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-2",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-3",
+      "option_ref": "OPT-3",
+      "category": "RELIABILITY",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-3",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-4",
+      "option_ref": "OPT-4",
+      "category": "COST",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-4",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-5",
+      "option_ref": "OPT-5",
+      "category": "SECURITY",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-5",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-6",
+      "option_ref": "OPT-1",
+      "category": "PRIVACY",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-6",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-7",
+      "option_ref": "OPT-2",
+      "category": "INTEGRATION",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-7",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-8",
+      "option_ref": "OPT-3",
+      "category": "ADMIN_AUDIT",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-8",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-9",
+      "option_ref": "OPT-4",
+      "category": "HUMAN_UAT",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-9",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    },
+    {
+      "id": "PIL-10",
+      "option_ref": "OPT-5",
+      "category": "EXIT_ROLLBACK",
+      "workload": "Representative authorized workload",
+      "baseline": "Locked baseline",
+      "threshold": "Human-approved pass/fail",
+      "method": "Controlled test",
+      "data_rights": "Approved test data only",
+      "expected": "Meets requirement",
+      "actual": "PASS fixture evidence",
+      "evidence": "pilot-evidence-10",
+      "owner": "Pilot Owner",
+      "status": "PASS"
+    }
+  ],
+  "sensitivity_scenarios": [
+    {
+      "id": "SEN-1",
+      "scenario": "Weight and unknown change",
+      "changed_inputs": [
+        "Input set 1"
+      ],
+      "rank_movement": "At most one rank in fixture",
+      "shortlist_change": "No change",
+      "threshold": "Two ranks or shortlist change",
+      "stability": "STABLE",
+      "trigger": "Re-run on material change",
+      "owner": "Decision Analyst",
+      "status": "TESTED"
+    },
+    {
+      "id": "SEN-2",
+      "scenario": "Usage/price/FX/scale",
+      "changed_inputs": [
+        "Input set 2"
+      ],
+      "rank_movement": "At most one rank in fixture",
+      "shortlist_change": "No change",
+      "threshold": "Two ranks or shortlist change",
+      "stability": "STABLE",
+      "trigger": "Re-run on material change",
+      "owner": "Decision Analyst",
+      "status": "TESTED"
+    },
+    {
+      "id": "SEN-3",
+      "scenario": "Migration/risk/exit shock",
+      "changed_inputs": [
+        "Input set 3"
+      ],
+      "rank_movement": "At most one rank in fixture",
+      "shortlist_change": "No change",
+      "threshold": "Two ranks or shortlist change",
+      "stability": "STABLE",
+      "trigger": "Re-run on material change",
+      "owner": "Decision Analyst",
+      "status": "TESTED"
+    }
+  ],
+  "exit_plans": [
+    {
+      "id": "EXIT-1",
+      "option_ref": "OPT-1",
+      "portability": "Data/config/prompt/model dependency assessed",
+      "export": "Format/API export test",
+      "deletion_verification": "Retention/deletion evidence required",
+      "revoke_identity_connectors": "IAM/connector revoke plan",
+      "dependency_replacement": "Replacement route mapped",
+      "migration": "Phased migration plan",
+      "rollback": "Return to prior platform",
+      "manual_coverage": "Manual safe mode",
+      "cost_time": "Exit range 1",
+      "evidence": [
+        "SRC-1",
+        "SRC-2"
+      ],
+      "owner": "Exit Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "EXIT-2",
+      "option_ref": "OPT-2",
+      "portability": "Data/config/prompt/model dependency assessed",
+      "export": "Format/API export test",
+      "deletion_verification": "Retention/deletion evidence required",
+      "revoke_identity_connectors": "IAM/connector revoke plan",
+      "dependency_replacement": "Replacement route mapped",
+      "migration": "Phased migration plan",
+      "rollback": "Return to prior platform",
+      "manual_coverage": "Manual safe mode",
+      "cost_time": "Exit range 2",
+      "evidence": [
+        "SRC-3",
+        "SRC-4"
+      ],
+      "owner": "Exit Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "EXIT-3",
+      "option_ref": "OPT-3",
+      "portability": "Data/config/prompt/model dependency assessed",
+      "export": "Format/API export test",
+      "deletion_verification": "Retention/deletion evidence required",
+      "revoke_identity_connectors": "IAM/connector revoke plan",
+      "dependency_replacement": "Replacement route mapped",
+      "migration": "Phased migration plan",
+      "rollback": "Return to prior platform",
+      "manual_coverage": "Manual safe mode",
+      "cost_time": "Exit range 3",
+      "evidence": [
+        "SRC-5",
+        "SRC-6"
+      ],
+      "owner": "Exit Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "EXIT-4",
+      "option_ref": "OPT-4",
+      "portability": "Data/config/prompt/model dependency assessed",
+      "export": "Format/API export test",
+      "deletion_verification": "Retention/deletion evidence required",
+      "revoke_identity_connectors": "IAM/connector revoke plan",
+      "dependency_replacement": "Replacement route mapped",
+      "migration": "Phased migration plan",
+      "rollback": "Return to prior platform",
+      "manual_coverage": "Manual safe mode",
+      "cost_time": "Exit range 4",
+      "evidence": [
+        "SRC-7",
+        "SRC-8"
+      ],
+      "owner": "Exit Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "EXIT-5",
+      "option_ref": "OPT-5",
+      "portability": "Data/config/prompt/model dependency assessed",
+      "export": "Format/API export test",
+      "deletion_verification": "Retention/deletion evidence required",
+      "revoke_identity_connectors": "IAM/connector revoke plan",
+      "dependency_replacement": "Replacement route mapped",
+      "migration": "Phased migration plan",
+      "rollback": "Return to prior platform",
+      "manual_coverage": "Manual safe mode",
+      "cost_time": "Exit range 5",
+      "evidence": [
+        "SRC-9",
+        "SRC-10"
+      ],
+      "owner": "Exit Owner",
+      "status": "DRAFT"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Platform control decision 1",
+      "evidence_refs": [
+        "ASS-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Procurement and provisioning remain pending"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Platform control decision 2",
+      "evidence_refs": [
+        "ASS-2"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Procurement and provisioning remain pending"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Platform control decision 3",
+      "evidence_refs": [
+        "ASS-3"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "PENDING",
+      "consequence": "Procurement and provisioning remain pending"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Platform control decision 4",
+      "evidence_refs": [
+        "ASS-4"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "PENDING",
+      "consequence": "Procurement and provisioning remain pending"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Platform control decision 5",
+      "evidence_refs": [
+        "ASS-5"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "PENDING",
+      "consequence": "Procurement and provisioning remain pending"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Platform control decision 6",
+      "evidence_refs": [
+        "SRC-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Decision contract",
+      "status": "PENDING",
+      "consequence": "Procurement and provisioning remain pending"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "QUALITY",
+      "requirement_ref": "OPT-1",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "LATENCY",
+      "requirement_ref": "OPT-2",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "RELIABILITY",
+      "requirement_ref": "OPT-3",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "COST",
+      "requirement_ref": "OPT-4",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "SECURITY",
+      "requirement_ref": "OPT-5",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "PRIVACY",
+      "requirement_ref": "REQ-6",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "INTEGRATION",
+      "requirement_ref": "REQ-7",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "ADMIN_AUDIT",
+      "requirement_ref": "REQ-8",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "HUMAN_UAT",
+      "requirement_ref": "REQ-9",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "EXIT_ROLLBACK",
+      "requirement_ref": "REQ-10",
+      "setup": "Controlled fixture",
+      "expected": "Auditable selection control",
+      "actual": "Control found",
+      "evidence": "test-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "SCOPE_REQUIREMENT_BIAS",
+      "risk": "Selection risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "STALE_VENDOR_EVIDENCE",
+      "risk": "Selection risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "DATA_SECURITY_LEGAL_GATE",
+      "risk": "Selection risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "SCORING_TCO_FALSE_PRECISION",
+      "risk": "Selection risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "PILOT_GENERALIZATION",
+      "risk": "Selection risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "LOCKIN_EXIT_COMMERCIAL_BIAS",
+      "risk": "Selection risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could misdirect platform decision",
+      "control": "Named preventive/review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "decision_requirements",
+      "status": "PASS",
+      "evidence": "decision_requirements verified"
+    },
+    {
+      "id": "current_evidence",
+      "status": "PASS",
+      "evidence": "current_evidence verified"
+    },
+    {
+      "id": "critical_gates",
+      "status": "PASS",
+      "evidence": "critical_gates verified"
+    },
+    {
+      "id": "scoring_tco",
+      "status": "PASS",
+      "evidence": "scoring_tco verified"
+    },
+    {
+      "id": "pilot_sensitivity",
+      "status": "PASS",
+      "evidence": "pilot_sensitivity verified"
+    },
+    {
+      "id": "exit_boundary",
+      "status": "PASS",
+      "evidence": "exit_boundary verified"
+    },
+    {
+      "id": "security_injection",
+      "status": "PASS",
+      "evidence": "security_injection verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "BUSINESS_PROCESS",
+      "status": "PASS",
+      "evidence": "BUSINESS_PROCESS reviewed"
+    },
+    {
+      "id": "DATA_SECURITY",
+      "status": "PASS",
+      "evidence": "DATA_SECURITY reviewed"
+    },
+    {
+      "id": "LEGAL_CONTRACT",
+      "status": "PASS",
+      "evidence": "LEGAL_CONTRACT reviewed"
+    },
+    {
+      "id": "FINANCE_PROCUREMENT",
+      "status": "PASS",
+      "evidence": "FINANCE_PROCUREMENT reviewed"
+    },
+    {
+      "id": "TECHNICAL_OPERATIONS",
+      "status": "PASS",
+      "evidence": "TECHNICAL_OPERATIONS reviewed"
+    },
+    {
+      "id": "USER_CHANGE",
+      "status": "PASS",
+      "evidence": "USER_CHANGE reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "hardcoded_vendor_score": false,
+    "universal_industry_rule": false,
+    "feature_invented": false,
+    "price_invented": false,
+    "certification_invented": false,
+    "residency_invented": false,
+    "legal_fit_claimed": false,
+    "unknown_as_zero": false,
+    "critical_gate_averaged_away": false,
+    "migration_loss_invented": false,
+    "affiliate_bias_hidden": false,
+    "vendor_selected": false,
+    "purchase_approved": false,
+    "contract_signed": false,
+    "account_provisioned": false,
+    "client_data_uploaded": false,
+    "demo_requested": false,
+    "architecture_committed": false,
+    "migration_started": false,
+    "recommendation_sent": false,
+    "recommendation_published": false,
+    "evidence_mutated": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

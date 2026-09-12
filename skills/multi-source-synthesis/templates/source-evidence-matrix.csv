@@ -1,0 +1,3 @@
+claim_id,src_id,evidence_family,source_pointer,raw_claim,raw_value,construct,definition,unit,denominator,population,geography,time_period,source_version,method,comparability_status,relationship_status,conflict_type,evidence_weight,decision_relevance,review_status,reviewer_note
+CLM-001,SRC-001,FAM-001,"p./section/table","[verbatim or faithful paraphrase]","[raw value]","[construct]","[definition]","[unit]","[denominator]","[population]","[geography]","[time]","[version]","[method]",UNKNOWN,"[AGREEMENT/COMPLEMENT/CONFLICT/GAP/NOT_APPLICABLE]","[FACT/DEFINITION/SCOPE/METHOD/TIME_VERSION/VALUE_JUDGMENT/NONE]",UNASSESSED,"[HIGH/MEDIUM/LOW]",PENDING,"[note]"
+

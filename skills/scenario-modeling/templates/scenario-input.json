@@ -1,0 +1,24 @@
+{
+  "model_id": "MOD-DEMO",
+  "drivers": {
+    "price": {"unit": "currency/order", "min": 80, "max": 120, "source_id": "EVD-1"},
+    "volume": {"unit": "orders", "min": 600, "max": 1300, "source_id": "EVD-2"},
+    "unit_cost": {"unit": "currency/order", "min": 45, "max": 70, "source_id": "EVD-3"},
+    "fixed_cost": {"unit": "currency", "min": 25000, "max": 35000, "source_id": "EVD-4"}
+  },
+  "equations": [
+    {"id": "revenue", "formula": "price * volume"},
+    {"id": "profit", "formula": "revenue - unit_cost * volume - fixed_cost"}
+  ],
+  "outputs": ["revenue", "profit"],
+  "scenarios": [
+    {"id": "DOWNSIDE", "values": {"price": 85, "volume": 750, "unit_cost": 68, "fixed_cost": 35000}},
+    {"id": "BASE", "values": {"price": 100, "volume": 1000, "unit_cost": 55, "fixed_cost": 30000}},
+    {"id": "UPSIDE", "values": {"price": 112, "volume": 1200, "unit_cost": 50, "fixed_cost": 28000}}
+  ],
+  "sensitivity": [{"scenario": "BASE", "driver": "volume", "values": [800, 1000, 1200]}],
+  "break_even": [{"scenario": "BASE", "driver": "volume", "output": "profit", "target": 0, "low": 600, "high": 1300}],
+  "triggers": [{"id": "TRG-LOSS", "metric": "profit", "operator": "<", "threshold": 0}]
+}
+
+

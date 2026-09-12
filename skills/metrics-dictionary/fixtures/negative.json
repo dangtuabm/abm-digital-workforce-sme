@@ -1,0 +1,25 @@
+{
+  "mandate": {},
+  "sources": [{"id":"SRC-X","classification_purpose_rights":{"rights":"UNAUTHORIZED"}}],
+  "metric_census": [{"id":"CEN-X"}],
+  "metric_contracts": [{"canonical_metric_id":"MET-X","metric_type":"UNKNOWN","source_lineage_ids":["SRC-MISSING"],"human_state":"APPROVED"}],
+  "dimensions": [{"id":"DIM-X","source_ids":["SRC-MISSING"],"metric_ids":["MET-MISSING"]}],
+  "lineage": [{"id":"LIN-X","metric_ids":["MET-MISSING"],"source_ids":["SRC-MISSING"]}],
+  "validation_cases": [{"id":"VAL-X","test_type":"MADE_UP","metric_ids_versions":{"metric_ids":["MET-MISSING"]}}],
+  "reconciliations": [{"id":"REC-X","metric_ids_versions":{"metric_ids":["MET-MISSING"]}}],
+  "change_records": [{"id":"CHG-X","metric_ids_versions":{"metric_ids":["MET-MISSING"]},"owner_human_state":{"human_state":"APPROVED"}}],
+  "adoption_bindings": [{"id":"ADP-X","metric_ids_versions":{"metric_ids":["MET-MISSING"]}}],
+  "risks": [{"risk_type":"UNKNOWN"}],
+  "decision_queue": [{"id":"DEC-X","recommendation":"AUTO_PUBLISH","evidence_source_ids":["SRC-MISSING"],"metric_ids":["MET-MISSING"],"human_state":"APPROVED"}],
+  "output_sections": [],
+  "gate_tests": {},
+  "reviews": {"FINAL_HUMAN_METRIC_GOVERNANCE_DECISION":"APPROVED"},
+  "forbidden_flags": [
+    "scope_fabricated","owner_fabricated","steward_fabricated","approver_fabricated","system_of_record_fabricated","rights_fabricated","source_fabricated","locator_fabricated","snapshot_fabricated","hash_fabricated","schema_fabricated","table_fabricated","field_fabricated","event_fabricated","key_fabricated","grain_fabricated","metric_id_fabricated","metric_name_fabricated","alias_fabricated","business_question_fabricated","definition_fabricated","classification_fabricated","numerator_fabricated","denominator_fabricated","formula_fabricated","aggregation_fabricated","dimension_fabricated","hierarchy_fabricated","code_list_fabricated","filter_fabricated","inclusion_fabricated","exclusion_fabricated","cohort_fabricated","time_basis_fabricated","window_fabricated","timezone_fabricated","unit_fabricated","currency_fabricated","fx_source_fabricated","rounding_fabricated","null_rule_fabricated","zero_rule_fabricated","duplicate_rule_fabricated","late_rule_fabricated","restatement_rule_fabricated","target_fabricated","baseline_fabricated","benchmark_fabricated","status_band_fabricated","threshold_fabricated","tolerance_fabricated","sql_fabricated","query_hash_fabricated","model_hash_fabricated","lineage_fabricated","test_fabricated","fixture_fabricated","expected_fabricated","actual_fabricated","reconciliation_fabricated","delta_hidden","version_fabricated","effective_date_fabricated","sunset_date_fabricated","semantic_diff_hidden","breaking_change_hidden","dependency_hidden","consumer_hidden","adoption_fabricated","acknowledgement_fabricated","rollback_fabricated","deprecation_fabricated","actual_forecast_mixed","actual_target_mixed","missing_called_zero","average_ratio_misaggregated","distinct_count_additivity_assumed","denominator_zero_hidden","denominator_manipulated","filter_manipulated","cohort_leakage_hidden","double_count_hidden","late_data_hidden","restatement_hidden","provisional_called_final","dashboard_called_truth","conflict_suppressed","duplicate_auto_merged","metric_history_deleted","review_bypassed","finance_review_bypassed","legal_review_bypassed","source_instruction_executed","comment_instruction_executed","macro_executed","formula_executed","sql_executed","code_executed","secret_exposed","credential_exposed","pii_exposed","public_llm_unapproved","auto_metric_created","auto_metric_renamed","auto_metric_redefined","auto_formula_changed","auto_denominator_changed","auto_grain_changed","auto_filter_changed","auto_target_changed","auto_threshold_changed","auto_sor_selected","auto_owner_changed","auto_accounting_treatment_changed","auto_fx_rule_changed","auto_model_changed","auto_semantic_layer_changed","auto_dashboard_changed","auto_sql_deployed","auto_history_backfilled","auto_data_restated","auto_metric_approved","auto_metric_deprecated","auto_report_certified","auto_report_published","auto_external_sent","audit_log_mutated","evidence_altered","evidence_deleted"
+  ],
+  "forbidden_states": [
+    "METRIC_CREATED","METRIC_RENAMED","METRIC_REDEFINED","FORMULA_CHANGED","DENOMINATOR_CHANGED","GRAIN_CHANGED","FILTER_CHANGED","TARGET_CHANGED","THRESHOLD_CHANGED","SOR_SELECTED","OWNER_CHANGED","ACCOUNTING_TREATMENT_CHANGED","FX_RULE_CHANGED","MODEL_CHANGED","SEMANTIC_LAYER_CHANGED","DASHBOARD_CHANGED","SQL_DEPLOYED","HISTORY_BACKFILLED","DATA_RESTATED","METRIC_APPROVED","METRIC_DEPRECATED","REPORT_CERTIFIED","REPORT_PUBLISHED","EXTERNAL_SENT","AUDIT_LOG_MUTATED","EVIDENCE_ALTERED","EVIDENCE_DELETED"
+  ],
+  "operational_state": "REPORT_PUBLISHED"
+}
+

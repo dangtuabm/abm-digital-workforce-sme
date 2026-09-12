@@ -1,0 +1,36 @@
+{
+  "contract": {"scope":"Priority service operations","as_of":"2026-08-21","sponsor":"ROLE-COO","decision_owner":"ROLE-COO","risk_appetite":"No critical customer outage beyond 30 minutes","required_reviews":["DOMAIN_CONTROL","RISK_COMPLIANCE","DATA_SECURITY","FINAL_EXCEPTION_DECISION"],"prohibited_actions":["no auto alert","no auto containment","no auto closure"],"data_classification":"YELLOW"},
+  "thresholds": [
+    {"id":"TH-01","version":"3","metric_id":"M-RECOVERY","direction":"ABOVE","value":30,"unit":"minutes","window":"per-event","authority":"control-board-2026","effective_date":"2026-07-01"},
+    {"id":"TH-02","version":"2","metric_id":"M-REPEAT","direction":"ABOVE","value":2,"unit":"count","window":"30-days","authority":"risk-policy-2026","effective_date":"2026-06-01"}
+  ],
+  "signals": [
+    {"id":"SIG-01","threshold_id":"TH-01","entity":"SERVICE-A","observed":47,"unit":"minutes","window":"per-event","period":"2026-08-21T10:00","source":"service-platform","source_version":"evt-881","freshness":"CURRENT","access":"AUTHORIZED","confidence":"HIGH"},
+    {"id":"SIG-01R","threshold_id":"TH-01","entity":"SERVICE-A","observed":47,"unit":"minutes","window":"per-event","period":"2026-08-21T10:00","source":"service-platform-retry","source_version":"evt-881-r","freshness":"CURRENT","access":"AUTHORIZED","confidence":"HIGH"},
+    {"id":"SIG-02","threshold_id":"TH-02","entity":"SERVICE-A","observed":3,"unit":"count","window":"30-days","period":"2026-07-23/2026-08-21","source":"problem-register","source_version":"pr-44","freshness":"CURRENT","access":"AUTHORIZED","confidence":"MEDIUM"}
+  ],
+  "duplicate_groups": [{"key":"TH-01|SERVICE-A|2026-08-21T10:00","signal_ids":["SIG-01","SIG-01R"],"status":"CONTROLLED","canonical_signal":"SIG-01"}],
+  "exceptions": [
+    {"id":"EX-01","threshold_id":"TH-01","signal_ids":["SIG-01","SIG-01R"],"key":"TH-01|SERVICE-A|2026-08-21T10:00","variance":17,"impact":"Critical customer delay","severity":"HIGH","urgency":"URGENT","reversibility":"HIGH","owner":"ROLE-OPS-LEAD","decision_type":"SERVICE_CONTAINMENT","state":"CLASSIFIED","source":"exception-register"},
+    {"id":"EX-02","threshold_id":"TH-02","signal_ids":["SIG-02"],"key":"TH-02|SERVICE-A|2026-07-23/2026-08-21","variance":1,"impact":"Repeat failure exposure","severity":"MEDIUM","urgency":"SOON","reversibility":"MEDIUM","owner":"ROLE-RISK-LEAD","decision_type":"PREVENTION_PRIORITY","state":"CLASSIFIED","source":"exception-register"}
+  ],
+  "correlations": [{"id":"COR-01","exception_ids":["EX-01","EX-02"],"relationship":"possible common cause; not yet proven","shared_impact_rule":"count customer impact once","evidence":"problem-link-analysis"}],
+  "authority_matrix": [
+    {"decision_type":"SERVICE_CONTAINMENT","decision_owner":"ROLE-COO","limit":"priority service","escalation_level":"L2","sla":"30 minutes","fallback":"invoke continuity plan","source":"authority-matrix-2026"},
+    {"decision_type":"PREVENTION_PRIORITY","decision_owner":"ROLE-RISK-LEAD","limit":"within approved capacity","escalation_level":"L1","sla":"1 business day","fallback":"escalate to ROLE-COO","source":"authority-matrix-2026"}
+  ],
+  "controls": [
+    {"exception_id":"EX-01","objective":"limit customer harm","option":"route traffic to approved standby","risk":"standby capacity pressure","prerequisites":["human approval","capacity check"],"owner":"ROLE-OPS-LEAD","duration":"up to 2 hours","rollback":"restore primary route after verification","authorization_status":"PENDING_HUMAN_DECISION"},
+    {"exception_id":"EX-02","objective":"prevent recurrence","option":"prioritize root-cause control review","risk":"delays lower priority work","prerequisites":["capacity approval"],"owner":"ROLE-RISK-LEAD","duration":"one review cycle","rollback":"return backlog order","authorization_status":"DRAFT"}
+  ],
+  "requested_gate":"DECISION",
+  "closure":{"status":"NOT_APPLICABLE"},
+  "tests":[
+    {"type":"contract_threshold","status":"PASS","evidence":"2 versioned authorized thresholds"},{"type":"signal_trace","status":"PASS","evidence":"3 current authorized signals"},{"type":"identity_correlation","status":"PASS","evidence":"1 controlled duplicate group and 1 correlation"},{"type":"priority_impact","status":"PASS","evidence":"2 exceptions classified by rubric"},{"type":"authority_containment","status":"PASS","evidence":"2 authority rules and 2 non-executed controls"},{"type":"resolution_closure","status":"PASS","evidence":"decision gate; closure not applicable"},{"type":"implementation_boundary","status":"PASS","evidence":"no alert, containment, spend, resolution or closure mutation"}
+  ],
+  "reviews":[
+    {"type":"DOMAIN_CONTROL","reviewer":"ROLE-OPS-LEAD","status":"PASS","evidence":"domain review record"},{"type":"RISK_COMPLIANCE","reviewer":"ROLE-RISK-LEAD","status":"PASS","evidence":"risk review record"},{"type":"DATA_SECURITY","reviewer":"ROLE-SECURITY","status":"PASS","evidence":"data review record"},{"type":"FINAL_EXCEPTION_DECISION","reviewer":"ROLE-COO","status":"PENDING","evidence":"decision request queued; no action issued"}
+  ],
+  "forbidden_flags":[],"published_states":["CLASSIFIED"],
+  "output_sections":["executive_brief","threshold_source_trace","exception_register","correlation_map","containment_decision","resolution_closure","tests_reviews_audit"]
+}

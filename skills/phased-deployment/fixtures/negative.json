@@ -1,0 +1,7 @@
+{
+  "artifact":"Generic rollout calendar",
+  "deployment_contract":{},"baseline_value":{},"authority_map":{},
+  "evidence_sources":[],"release_units":[],"stage_gates":[],"wave_records":[],"cutover_steps":[],"monitoring_controls":[],"change_adoption":[],"rollback_records":[],"decisions":[],"test_cases":[],"risks":[],"tests":[],"reviews":[],
+  "external_actions_status":"GO_LIVE","release_state":"SCALED",
+  "fixed_wave_rule":true,"fixed_timeline_rule":true,"fixed_threshold_rule":true,"unknown_as_pass":true,"critical_gate_averaged_away":true,"evidence_invented":true,"evidence_backdated":true,"incident_hidden":true,"pilot_success_auto_scale":true,"absence_complaint_success":true,"usage_equals_value":true,"rollback_claimed_without_test":true,"gate_bypassed":true,"auto_go_live":true,"auto_scaled":true,"permission_increased":true,"command_executed":true,"production_data_written":true,"production_data_deleted":true,"migration_started":true,"old_system_decommissioned":true,"message_sent":true,"purchase_approved":true,"contract_signed":true,"result_published":true,"source_instruction_executed":true,"secret_exposed":true,"api_key":"DO-NOT-STORE"
+}

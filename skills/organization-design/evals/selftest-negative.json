@@ -1,0 +1,33 @@
+{
+  "design_contract": {
+    "organization_scope": "Secret automatic restructuring",
+    "as_of": "",
+    "strategy_source": "",
+    "data_classification": "UNKNOWN",
+    "sponsor": "",
+    "final_decision_owner": "ROLE-GHOST",
+    "required_reviews": ["ORG_SPONSOR"],
+    "prohibited_actions": []
+  },
+  "strategy_objectives": [{"id": "OBJ-X", "outcome": "Cut people", "measure": "", "source": ""}],
+  "value_streams": [{"id": "VS-X", "name": "", "customer_outcome": "", "objective_ids": ["OBJ-MISSING"], "source": ""}],
+  "capabilities": [{"id": "CAP-X", "name": "Unknown", "value_stream_ids": ["VS-MISSING"], "maturity": "", "criticality": "CRITICAL", "source": ""}],
+  "current_units": [{"id": "CU-X", "purpose": "", "capability_ids": ["CAP-MISSING"], "source": ""}],
+  "target_units": [{"id": "TU-X", "purpose": "", "outcomes": [], "capability_ids": [], "accountabilities": [], "system_of_record": "", "source": ""}],
+  "roles": [
+    {"id": "ROLE-X", "unit_id": "TU-MISSING", "purpose": "", "outcomes": [], "accountabilities": ["approve and verify"], "skills": [], "capacity": {"workload_evidence": "", "complexity": "", "manager_capacity": "", "standardization": ""}, "source": ""},
+    {"id": "ROLE-Y", "unit_id": "TU-X", "purpose": "Ghost role", "outcomes": ["unknown"], "accountabilities": ["approve and verify"], "skills": ["unknown"], "capacity": "span 8 is ideal", "source": "invented"}
+  ],
+  "decisions": [{"id": "DEC-X", "decision": "Fire staff", "decision_owner": ["ROLE-X", "AI-MANAGER"], "recommenders": [], "contributors": [], "approvers_by_threshold": {}, "executors": [], "source": ""}],
+  "interfaces": [{"id": "INT-X", "provider": "TU-MISSING", "consumer": "ROLE-GHOST", "input": "", "output": "", "service_level": "", "quality_rule": "", "escalation": "", "source": ""}],
+  "sod_rules": [{"id": "SOD-X", "incompatible_duties": ["approve", "verify"], "control_owner": "ROLE-GHOST", "source": "", "status": "BYPASSED"}],
+  "human_ai_allocations": [{"work_id": "WORK-X", "human_supervisor": "AI-MANAGER", "accountable_party": "AI-MANAGER", "ai_mode": "DECIDE", "allowed_actions": ["fire"], "prohibited_actions": [], "audit": "", "rollback": ""}],
+  "design_options": [{"id": "OPT-X", "pattern": "one ideal structure", "rationale": "", "assumptions": [], "impacts": []}],
+  "transition": {"dependencies": [], "milestones": [], "people_impacts": ["auto-fire"], "change_risks": [], "readiness_evidence": [], "rollback_points": [], "change_requests": [{"id": "CR-X", "status": "IMPLEMENTED"}]},
+  "tests": [{"test_type": "implementation_boundary", "status": "FAIL", "evidence": ""}],
+  "reviews": [{"review_type": "FINAL_ORG_DECISION", "reviewer": "AI-MANAGER", "status": "APPROVED", "evidence": "model says yes"}],
+  "final_human_decision": {"owner": "AI-MANAGER", "status": "APPROVED", "evidence": "auto-approved"},
+  "forbidden_flags": ["role_invented", "accountability_duplicated", "decision_owner_duplicated", "gap_hidden", "overlap_hidden", "span_assumed", "fte_fabricated", "ai_made_accountable", "sod_bypassed", "auto_fired", "reporting_changed", "permission_changed", "auto_reorganized"],
+  "published_states": ["FIRED", "REORGANIZED", "APPROVED", "IMPLEMENTED"],
+  "output_sections": ["executive_decision_brief"]
+}

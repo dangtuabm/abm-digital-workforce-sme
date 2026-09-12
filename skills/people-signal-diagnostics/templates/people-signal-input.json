@@ -1,0 +1,51 @@
+{
+  "use_contract":{"purpose":"Identify team-level delivery friction and support needs","population":"Service delivery teams","as_of":"2026-08-21","window":"12 weeks","lawful_basis":"approved operational improvement review with workforce notice","data_classification":"YELLOW","minimum_cohort":5,"allowed_uses":["group support design","process improvement"],"prohibited_uses":["individual scoring","adverse action","re-identification"],"owner":"ROLE-PEOPLE-ANALYTICS","retention":"90 days then review","correction_route":"team/member may challenge source or interpretation","required_reviews":["PEOPLE_ANALYTICS","PRIVACY_LEGAL","DOMAIN_MANAGER","FINAL_HUMAN_PEOPLE_REVIEW"]},
+  "sources":[
+    {"id":"SRC-OUT","version":"2026-W34","locator":"approved delivery mart","owner":"ROLE-DATA","access":"AUTHORIZED","freshness":"CURRENT","coverage":0.96,"quality":"validated","retention":"90 days"},
+    {"id":"SRC-LOAD","version":"2026-W34","locator":"approved workload aggregate","owner":"ROLE-OPS","access":"AUTHORIZED","freshness":"CURRENT","coverage":0.93,"quality":"validated","retention":"90 days"},
+    {"id":"SRC-LEARN","version":"2026-W34","locator":"learning access aggregate","owner":"ROLE-LEARNING","access":"AUTHORIZED","freshness":"CURRENT","coverage":0.91,"quality":"validated","retention":"90 days"}
+  ],
+  "metrics":[
+    {"id":"M-QUALITY","definition":"verified first-pass handoffs","formula":"verified first-pass / eligible handoffs","unit":"rate","grain":"cohort-week","window":"4-week rolling","denominator":"eligible handoffs","baseline":0.88,"direction":"HIGHER_BETTER","aggregation":"weighted by eligible handoffs","owner":"ROLE-OPS"},
+    {"id":"M-LOAD","definition":"committed work demand per available capacity unit","formula":"demand hours / available capacity hours","unit":"ratio","grain":"cohort-week","window":"4-week rolling","denominator":"available capacity hours","baseline":0.85,"direction":"TARGET_RANGE","aggregation":"sum demand / sum capacity","owner":"ROLE-OPS"},
+    {"id":"M-LEARN","definition":"approved practice access","formula":"completed practice opportunities / eligible members","unit":"rate","grain":"cohort-month","window":"monthly","denominator":"eligible members","baseline":0.75,"direction":"HIGHER_BETTER","aggregation":"weighted by eligible members","owner":"ROLE-LEARNING"}
+  ],
+  "cohorts":[
+    {"id":"COH-A","dimensions":["team","role-family"],"member_count":6,"role_context":"service coordination","minimum_status":"PASS","suppression_rule":"suppress intersections below 5"},
+    {"id":"COH-B","dimensions":["team","role-family"],"member_count":7,"role_context":"service coordination","minimum_status":"PASS","suppression_rule":"suppress intersections below 5"}
+  ],
+  "observations":[
+    {"cohort_id":"COH-A","metric_id":"M-QUALITY","period":"W31-W34","value":0.74,"denominator":54,"source_id":"SRC-OUT","missingness":0.04,"confidence":"HIGH"},
+    {"cohort_id":"COH-B","metric_id":"M-QUALITY","period":"W31-W34","value":0.87,"denominator":61,"source_id":"SRC-OUT","missingness":0.03,"confidence":"HIGH"},
+    {"cohort_id":"COH-A","metric_id":"M-LOAD","period":"W31-W34","value":1.18,"denominator":920,"source_id":"SRC-LOAD","missingness":0.07,"confidence":"MEDIUM"},
+    {"cohort_id":"COH-B","metric_id":"M-LOAD","period":"W31-W34","value":0.91,"denominator":1030,"source_id":"SRC-LOAD","missingness":0.05,"confidence":"HIGH"},
+    {"cohort_id":"COH-A","metric_id":"M-LEARN","period":"2026-08","value":0.50,"denominator":6,"source_id":"SRC-LEARN","missingness":0.09,"confidence":"MEDIUM"},
+    {"cohort_id":"COH-B","metric_id":"M-LEARN","period":"2026-08","value":0.71,"denominator":7,"source_id":"SRC-LEARN","missingness":0.08,"confidence":"MEDIUM"}
+  ],
+  "contexts":[
+    {"cohort_id":"COH-A","role_mix":"same role family; two new workflow assignments","demand":"18% demand increase","capacity":"one planned vacancy; no individual data","seasonality":"normal","process_changes":"new handoff form in W32","system_changes":"none","source":"approved operations review"},
+    {"cohort_id":"COH-B","role_mix":"same role family; stable assignments","demand":"4% demand increase","capacity":"stable","seasonality":"normal","process_changes":"new handoff form in W32","system_changes":"none","source":"approved operations review"}
+  ],
+  "signals":[
+    {"id":"SG-01","cohort_id":"COH-A","metric_id":"M-LOAD","trend":"4-week increase","magnitude":"1.18 vs 0.85 baseline","confidence":"MEDIUM","evidence":["observations M-LOAD","context demand/capacity"],"limitations":"7% missingness","system_interpretation":"possible demand-capacity mismatch"},
+    {"id":"SG-02","cohort_id":"COH-A","metric_id":"M-QUALITY","trend":"below baseline after W32","magnitude":"0.74 vs 0.88 baseline","confidence":"MEDIUM","evidence":["observations M-QUALITY","process change W32"],"limitations":"process adoption not directly measured","system_interpretation":"possible workflow transition friction"},
+    {"id":"SG-03","cohort_id":"COH-A","metric_id":"M-LEARN","trend":"below comparable cohort","magnitude":"0.50 vs 0.71","confidence":"LOW","evidence":["learning access aggregate"],"limitations":"small lawful cohort and monthly window","system_interpretation":"possible unequal practice access"}
+  ],
+  "hypotheses":[
+    {"id":"H-01","signal_ids":["SG-01","SG-02"],"statement":"Demand-capacity mismatch plus workflow transition may reduce first-pass quality","alternatives":["metric capture changed","case complexity increased"],"confounders":["new assignments","W32 process change"],"evidence_for":["load and quality moved together"],"evidence_against":["causal sequence not proven"],"confidence":"MEDIUM","validation_question":"Does quality recover when demand/capacity and handoff support are controlled for two cycles?"},
+    {"id":"H-02","signal_ids":["SG-03"],"statement":"Practice access may be constrained by workload scheduling","alternatives":["opportunity recording incomplete","member choice"],"confounders":["monthly window","9% missingness"],"evidence_for":["lower aggregate access"],"evidence_against":["no schedule-level ground truth"],"confidence":"LOW","validation_question":"Are approved practice slots equally available after controlling for workload?"}
+  ],
+  "support_experiments":[
+    {"scope":"COH-A system support","option":"two-cycle demand rebalance and handoff office hour","owner":"ROLE-DOMAIN-MANAGER","success_measure":"load ratio and first-pass quality within approved range","window":"2 cycles","communication":"transparent team notice","consent":"feedback voluntary","rollback":"restore prior allocation","status":"PENDING_HUMAN_REVIEW","targets_individual":false},
+    {"scope":"COH-A learning access","option":"protected practice slot pilot","owner":"ROLE-LEARNING","success_measure":"practice access and quality trend","window":"1 month","communication":"open to eligible cohort","consent":"participation voluntary","rollback":"end pilot","status":"DRAFT","targets_individual":false}
+  ],
+  "fairness":{"measurement_bias":"checked source visibility by cohort","opportunity_exposure":"denominators normalized","selection_bias":"learning participation may self-select","small_group_risk":"minimum 5 and no individual export","reviewer":"ROLE-PRIVACY","status":"PASS","evidence":"fairness checklist"},
+  "tests":[
+    {"type":"contract_privacy","status":"PASS","evidence":"purpose/lawful use/minimum/retention locked"},{"type":"source_quality","status":"PASS","evidence":"3 authorized current sources"},{"type":"metric_comparability","status":"PASS","evidence":"3 metrics with denominator and context"},{"type":"aggregation_reidentification","status":"PASS","evidence":"2 cohorts >=5; no identity"},{"type":"confounder_fairness","status":"PASS","evidence":"context and fairness checks recorded"},{"type":"hypothesis_validation","status":"PASS","evidence":"2 falsifiable hypotheses with alternatives"},{"type":"decision_boundary","status":"PASS","evidence":"support-only; no individual/adverse action"}
+  ],
+  "reviews":[
+    {"type":"PEOPLE_ANALYTICS","reviewer":"ROLE-PEOPLE-ANALYTICS","status":"PASS","evidence":"method review"},{"type":"PRIVACY_LEGAL","reviewer":"ROLE-PRIVACY","status":"PASS","evidence":"purpose/minimization review"},{"type":"DOMAIN_MANAGER","reviewer":"ROLE-DOMAIN-MANAGER","status":"PASS","evidence":"operational context review"},{"type":"FINAL_HUMAN_PEOPLE_REVIEW","reviewer":"ROLE-PEOPLE-LEAD","status":"PENDING","evidence":"brief queued; no action authorized"}
+  ],
+  "label":"[A.I Suggested]","forbidden_flags":[],"published_states":["DRAFT"],
+  "output_sections":["use_contract","source_metric_cohort","coverage_missingness","normalized_signals","context_confounders","hypothesis_register","fairness_support_reviews_audit"]
+}

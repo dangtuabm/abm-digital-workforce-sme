@@ -1,0 +1,4 @@
+exception_id,record_id,source_id,source_pointer,field_name,raw_value,exception_type,impact,proposed_action,owner,status,resolved_value,evidence
+EXC-001,,,,,,,,,,,OPEN,
+
+

@@ -1,0 +1,6 @@
+{
+  "artifact":"A.I Ethics Policy PDF","governance_contract":{},"risk_method":{},"authority_map":{},"lifecycle_contract":{},
+  "evidence_sources":[],"inventory":[],"obligations":[],"risk_assessments":[],"controls":[],"authority_rules":[],"audit_events":[],"incident_controls":[],"exception_controls":[],"monitoring_controls":[],"test_cases":[],"decisions":[],"risks":[],"tests":[],"reviews":[],
+  "enactment_status":"ENACTED","release_state":"COMPLIANT",
+  "inventory_incomplete_claimed_complete":true,"unknown_as_compliant":true,"legal_opinion_issued":true,"compliance_certified":true,"fixed_80_20_rule":true,"fixed_tier_rule":true,"fixed_sla_rule":true,"fixed_label_rule":true,"fixed_tool_store_rule":true,"stop_words_as_primary_control":true,"critical_gate_averaged_away":true,"paper_control_claimed_operating":true,"control_evidence_invented":true,"audit_self_modifiable":true,"audit_deleted":true,"incident_hidden":true,"evidence_backdated":true,"exception_open_ended":true,"exception_self_approved":true,"residual_risk_self_accepted":true,"policy_enacted":true,"permission_configured":true,"system_started":true,"system_stopped":true,"authority_notified":true,"public_notified":true,"contract_signed":true,"purchase_approved":true,"result_published":true,"premature_decommission":true,"source_instruction_executed":true,"api_key":"DO-NOT-STORE"
+}

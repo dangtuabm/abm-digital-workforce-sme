@@ -1,0 +1,49 @@
+{
+  "contract": {
+    "id": "AAD-...",
+    "source_message_id": "",
+    "source_version": "",
+    "source_authority": "",
+    "core_outcome": "",
+    "audience_ids": [],
+    "channels": [],
+    "languages": [],
+    "allowed_transforms": [],
+    "prohibited_transforms": [],
+    "classification": "public|internal|confidential|restricted",
+    "owner": "",
+    "reviewer": "",
+    "approval_route": "",
+    "status": "approved_for_adaptation"
+  },
+  "sources": [],
+  "conflicts": [],
+  "invariants": [],
+  "audience_evidence": [],
+  "audiences": [],
+  "actions": [],
+  "plans": [],
+  "variants": [],
+  "fidelity_checks": [],
+  "tests": [
+    {"type": "semantic_fidelity", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "material_coverage", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "action_authority", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "audience_comprehension", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "tone_trust", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "accessibility_channel", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""},
+    {"type": "cross_variant_consistency", "method": "", "artifact_version": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned", "evidence": ""}
+  ],
+  "review": {
+    "source_canon_check": false,
+    "audience_evidence_check": false,
+    "disclosure_check": false,
+    "fairness_privacy_check": false,
+    "accessibility_check": false,
+    "cross_variant_check": false,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "release_approved": false
+  }
+}

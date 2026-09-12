@@ -1,0 +1,19 @@
+{
+  "mandate":{"purpose":"","target":"","as_of":"","users":[],"decision_owner":"","prohibited_uses":[],"retention":"","required_reviews":[]},
+  "entities":[{"id":"ENT-X","name":"","stable_keys":["name only"],"geography":"","confidence":"","ambiguity_status":""}],
+  "sources":[{"id":"SRC-X","locator":"","version":"","date":"","rights":"SCRAPED_WITHOUT_PERMISSION","freshness":"","source_type":"","confidence":"","subject":""}],
+  "claims":[{"id":"CL-X","entity_id":"ENT-MISSING","statement":"","claim_type":"ESTIMATE","source_ids":["SRC-MISSING"],"confidence":"","as_of":"","conflict":true}],
+  "organization_context":[{"entity_id":"ENT-MISSING","business_model":"","offerings":[],"geography":"","scale_range":"","lifecycle":"","evidence_ids":["SRC-MISSING"]}],
+  "jobs":[{"id":"JOB-X","entity_id":"ENT-MISSING","statement":"","desired_outcome":"","current_alternative":"","evidence_ids":["SRC-MISSING"],"confidence":"","status":"CERTAIN"}],
+  "buying_roles":[{"role":"CEO","responsibility":"","authority_status":"ASSUMED","evidence_ids":["SRC-MISSING"],"unknown_question":""}],
+  "buying_process":{"trigger_status":"","stage_status":"","criteria":[],"approval_path":"","procurement_path":"","security_legal_path":"","budget_status":"","timeline_status":"","evidence_gaps":[]},
+  "signals":[{"id":"SIG-X","observed_event":"","date":"","source_ids":["SRC-MISSING"],"alternative_explanations":[],"confidence":""}],
+  "hypotheses":[{"id":"H-X","claim":"","evidence_for":[],"evidence_against":[],"confidence":"","impact":"","question_test":"","owner":"","expiry":""}],
+  "risks":[{"risk_type":"PRIVACY_SENSITIVITY","statement":"","trigger":"","mitigation":"","owner":"","status":""}],
+  "output_sections":[],
+  "tests":{"mandate_entity":"FAIL","source_claim":"FAIL","organization_job":"FAIL","buying_context":"FAIL","signal_hypothesis":"FAIL","privacy_fairness":"FAIL","decision_boundary":"FAIL"},
+  "reviews":{"DOMAIN_ENTITY":"FAIL","DATA_PRIVACY":"FAIL","COMMERCIAL_USE":"FAIL","FINAL_HUMAN_CUSTOMER_USE_DECISION":"PASS"},
+  "forbidden_flags":["entity_merged_without_evidence","source_fabricated","claim_fabricated","revenue_fabricated","headcount_fabricated","market_share_fabricated","kpi_fabricated","pain_fabricated","intent_fabricated","budget_fabricated","timeline_fabricated","authority_fabricated","relationship_fabricated","public_equals_consent","rights_bypassed","private_contact_enriched","protected_trait_inferred","sensitive_trait_inferred","psychology_inferred","disc_inferred","personal_life_profiled","vulnerability_manipulated","discriminatory_eligibility","illegal_surveillance","contradiction_hidden","stale_source_hidden","auto_scored","auto_targeted","auto_personalized","auto_contacted","auto_enriched","auto_disqualified"],
+  "forbidden_states":["SCORED","TARGETED","PERSONALIZED","CONTACTED","ENRICHED","DISQUALIFIED","APPROVED"],
+  "published_state":"APPROVED"
+}

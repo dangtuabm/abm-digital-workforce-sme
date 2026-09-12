@@ -1,0 +1,1271 @@
+{
+  "artifact": "Evidence-Based A.I Readiness Baseline & Gate Pack",
+  "audit_contract": {
+    "decision": "Determine prerequisites before A.I investment",
+    "scope": "Named enterprise unit",
+    "units": [
+      "Business unit A"
+    ],
+    "geography": "Viet Nam",
+    "sponsor": "Executive Sponsor",
+    "owner": "Audit Owner",
+    "audience": "Executive decision team",
+    "horizon": "Pre-investment readiness",
+    "cutoff": "2026-08-22",
+    "dod": "Evidence, scoring, gaps and gates reviewed",
+    "exclusions": [
+      "No vendor selection",
+      "No ROI promise"
+    ],
+    "confidentiality": "YELLOW_INTERNAL",
+    "action_boundary": "Assessment and recommendation draft only"
+  },
+  "assessment_model": {
+    "factors": [
+      "PROBLEM",
+      "DATA",
+      "TOOL_MODEL",
+      "SKILL",
+      "WORKFLOW",
+      "OUTPUT",
+      "INTERACTION",
+      "PEOPLE_CULTURE"
+    ],
+    "rubric_levels": "Organization-approved anchored 0-4 plus UNKNOWN",
+    "weights": "No composite used in fixture; if supplied, disclose",
+    "formula": "Factor distribution and gates shown before any composite",
+    "missing_rule": "UNKNOWN remains UNKNOWN and excluded with coverage disclosure",
+    "critical_gate_rule": "Critical FAIL or UNKNOWN blocks ready state",
+    "confidence_rule": "Based on evidence type, coverage, quality and conflict",
+    "comparability_boundary": "Only same rubric, scope, period and evidence basis",
+    "approved_by": "Human Audit Sponsor"
+  },
+  "organization": {
+    "strategy": "Named strategic outcomes",
+    "outcomes": "Controlled value and risk reduction",
+    "operating_model": "Documented operating model",
+    "processes": [
+      "Priority processes inventoried"
+    ],
+    "systems_integrations": [
+      "Systems and interfaces inventoried"
+    ],
+    "workforce_roles": [
+      "Sponsors, owners, users and reviewers"
+    ],
+    "ai_inventory": [
+      "Active, pilot, retired and shadow A.I inventory"
+    ],
+    "spend_boundary": "Costs are evidence-based and not extrapolated",
+    "risk_appetite": "Human-approved risk boundary"
+  },
+  "evidence_sources": [
+    {
+      "id": "EVD-1",
+      "source": "authorized-evidence-1",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "interview",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-2",
+      "source": "authorized-evidence-2",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "document review",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-3",
+      "source": "authorized-evidence-3",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "system export",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-4",
+      "source": "authorized-evidence-4",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "observation",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-5",
+      "source": "authorized-evidence-5",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "interview",
+      "evidence_type": "ESTIMATED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-6",
+      "source": "authorized-evidence-6",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "document review",
+      "evidence_type": "UNVERIFIED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-7",
+      "source": "authorized-evidence-7",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "system export",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-8",
+      "source": "authorized-evidence-8",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "observation",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-9",
+      "source": "authorized-evidence-9",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "interview",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-10",
+      "source": "authorized-evidence-10",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "document review",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-11",
+      "source": "authorized-evidence-11",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "system export",
+      "evidence_type": "ESTIMATED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "Conflict disclosed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-12",
+      "source": "authorized-evidence-12",
+      "owner": "Named Evidence Owner",
+      "rights": "READ_FOR_AUDIT",
+      "method": "observation",
+      "evidence_type": "UNVERIFIED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Named unit and sample",
+      "quality": "Quality and limitations recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    }
+  ],
+  "factor_assessments": [
+    {
+      "id": "FAC-1",
+      "factor": "PROBLEM",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "rubric_anchor": "Approved level anchor 1",
+      "score": 0,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-1"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-2",
+      "factor": "DATA",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "rubric_anchor": "Approved level anchor 2",
+      "score": 1,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-2"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-3",
+      "factor": "TOOL_MODEL",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "rubric_anchor": "Approved level anchor 3",
+      "score": 2,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-3"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-4",
+      "factor": "SKILL",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "rubric_anchor": "Approved level anchor 4",
+      "score": 3,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-4"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-5",
+      "factor": "WORKFLOW",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "rubric_anchor": "Approved level anchor 5",
+      "score": 4,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-5"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-6",
+      "factor": "OUTPUT",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "rubric_anchor": "Approved level anchor 6",
+      "score": 0,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-6"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-7",
+      "factor": "INTERACTION",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "rubric_anchor": "Approved level anchor 7",
+      "score": 1,
+      "confidence": "MEDIUM",
+      "contradiction": "None unresolved",
+      "gap_refs": [
+        "GAP-7"
+      ],
+      "owner": "Factor Owner",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FAC-8",
+      "factor": "PEOPLE_CULTURE",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "rubric_anchor": "Approved level anchor 8",
+      "score": "UNKNOWN",
+      "confidence": "LOW",
+      "contradiction": "Evidence gap disclosed",
+      "gap_refs": [
+        "GAP-8"
+      ],
+      "owner": "Factor Owner",
+      "status": "UNKNOWN"
+    }
+  ],
+  "control_assessments": [
+    {
+      "id": "CTL-1",
+      "control": "GOVERNANCE",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-1"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-2",
+      "control": "SECURITY",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-2"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-3",
+      "control": "PRIVACY",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-3"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-4",
+      "control": "INTEGRATION",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-4"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-5",
+      "control": "OPERATIONS",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-5"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-6",
+      "control": "MEASUREMENT",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-6"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-7",
+      "control": "PROCUREMENT_RECORDS",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-7"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    },
+    {
+      "id": "CTL-8",
+      "control": "INCIDENT_CONTINUITY",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "requirement": "Organization-approved control expectation",
+      "current_state": "Documented fixture state",
+      "gap_refs": [
+        "GAP-8"
+      ],
+      "owner": "Control Owner",
+      "risk": "Residual risk pending acceptance",
+      "status": "ASSESSED"
+    }
+  ],
+  "baseline_metrics": [
+    {
+      "id": "MET-1",
+      "metric": "Baseline metric 1",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-1",
+      "owner": "Metric Owner",
+      "value": "10-12",
+      "evidence_type": "OBSERVED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "CONFIRMED_HUMAN",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-2",
+      "metric": "Baseline metric 2",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-2",
+      "owner": "Metric Owner",
+      "value": "11-13",
+      "evidence_type": "DOCUMENTED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "CONFIRMED_HUMAN",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-3",
+      "metric": "Baseline metric 3",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-3",
+      "owner": "Metric Owner",
+      "value": "12-14",
+      "evidence_type": "SYSTEM_DERIVED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "CONFIRMED_HUMAN",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-4",
+      "metric": "Baseline metric 4",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-4",
+      "owner": "Metric Owner",
+      "value": "13-15",
+      "evidence_type": "SELF_REPORTED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "CONFIRMED_HUMAN",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-5",
+      "metric": "Baseline metric 5",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-5",
+      "owner": "Metric Owner",
+      "value": "14-16",
+      "evidence_type": "ESTIMATED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "PENDING",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-6",
+      "metric": "Baseline metric 6",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-6",
+      "owner": "Metric Owner",
+      "value": "15-17",
+      "evidence_type": "UNVERIFIED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "PENDING",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-7",
+      "metric": "Baseline metric 7",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-7",
+      "owner": "Metric Owner",
+      "value": "16-18",
+      "evidence_type": "OBSERVED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "PENDING",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "MET-8",
+      "metric": "Baseline metric 8",
+      "formula": "Declared formula with inputs",
+      "unit": "Declared unit",
+      "denominator": "Named population or event base",
+      "window": "Named audit period",
+      "source_ref": "EVD-8",
+      "owner": "Metric Owner",
+      "value": "NOT_MEASURED",
+      "evidence_type": "DOCUMENTED",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "confirmation": "PENDING",
+      "status": "CANDIDATE"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP-1",
+      "gap_type": "CAPABILITY",
+      "factor_or_control": "PROBLEM",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "finding": "Readiness gap 1",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 1",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-2",
+      "gap_type": "CONTROL",
+      "factor_or_control": "DATA",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "finding": "Readiness gap 2",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 2",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-3",
+      "gap_type": "EVIDENCE",
+      "factor_or_control": "TOOL_MODEL",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "finding": "Readiness gap 3",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 3",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-4",
+      "gap_type": "MEASUREMENT",
+      "factor_or_control": "SKILL",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "finding": "Readiness gap 4",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 4",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-5",
+      "gap_type": "CAPABILITY",
+      "factor_or_control": "OPERATIONS",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "finding": "Readiness gap 5",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 5",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-6",
+      "gap_type": "CONTROL",
+      "factor_or_control": "MEASUREMENT",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "finding": "Readiness gap 6",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 6",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-7",
+      "gap_type": "EVIDENCE",
+      "factor_or_control": "PROCUREMENT_RECORDS",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "finding": "Readiness gap 7",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 7",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    },
+    {
+      "id": "GAP-8",
+      "gap_type": "MEASUREMENT",
+      "factor_or_control": "INCIDENT_CONTINUITY",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "finding": "Readiness gap 8",
+      "impact": "Could block controlled value realization",
+      "root_cause_hypothesis": "Requires validation, not asserted as fact",
+      "dependency": "Dependency 8",
+      "owner": "Gap Owner",
+      "validation": "Named evidence/test required",
+      "status": "OPEN"
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "GATE-1",
+      "gate_type": "DATA",
+      "requirement": "Gate requirement 1",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 1",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": true,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-2",
+      "gate_type": "SECURITY",
+      "requirement": "Gate requirement 2",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 2",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": true,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-3",
+      "gate_type": "GOVERNANCE",
+      "requirement": "Gate requirement 3",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 3",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": true,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-4",
+      "gate_type": "PEOPLE",
+      "requirement": "Gate requirement 4",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 4",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": true,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-5",
+      "gate_type": "WORKFLOW",
+      "requirement": "Gate requirement 5",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 5",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": false,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-6",
+      "gate_type": "OUTPUT",
+      "requirement": "Gate requirement 6",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 6",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": false,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-7",
+      "gate_type": "INTEGRATION",
+      "requirement": "Gate requirement 7",
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 7",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": false,
+      "status": "PASS"
+    },
+    {
+      "id": "GATE-8",
+      "gate_type": "MEASUREMENT",
+      "requirement": "Gate requirement 8",
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "owner": "Gate Owner",
+      "test": "Gate test 8",
+      "threshold": "Organization-approved threshold",
+      "exception": "No silent exception",
+      "expiry": "Revalidate before pilot",
+      "critical": false,
+      "status": "PASS"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "REC-1",
+      "option": "PREPARE",
+      "gap_refs": [
+        "GAP-1"
+      ],
+      "action": "Readiness action 1",
+      "sequence": "After prerequisite 1",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    },
+    {
+      "id": "REC-2",
+      "option": "EXPERIMENT",
+      "gap_refs": [
+        "GAP-2"
+      ],
+      "action": "Readiness action 2",
+      "sequence": "After prerequisite 2",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    },
+    {
+      "id": "REC-3",
+      "option": "DEFER",
+      "gap_refs": [
+        "GAP-3"
+      ],
+      "action": "Readiness action 3",
+      "sequence": "After prerequisite 3",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    },
+    {
+      "id": "REC-4",
+      "option": "STOP",
+      "gap_refs": [
+        "GAP-4"
+      ],
+      "action": "Readiness action 4",
+      "sequence": "After prerequisite 4",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    },
+    {
+      "id": "REC-5",
+      "option": "PREPARE",
+      "gap_refs": [
+        "GAP-5"
+      ],
+      "action": "Readiness action 5",
+      "sequence": "After prerequisite 5",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    },
+    {
+      "id": "REC-6",
+      "option": "EXPERIMENT",
+      "gap_refs": [
+        "GAP-6"
+      ],
+      "action": "Readiness action 6",
+      "sequence": "After prerequisite 6",
+      "owner": "Action Owner",
+      "evidence_needed": "Named completion evidence",
+      "success": "Gate evidence improves",
+      "stop": "Stop on risk or missing authority",
+      "risk": "Residual risk disclosed",
+      "status": "PENDING"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Readiness decision 1",
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Downstream work remains gated"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Readiness decision 2",
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Downstream work remains gated"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Readiness decision 3",
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "PENDING",
+      "consequence": "Downstream work remains gated"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Readiness decision 4",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "PENDING",
+      "consequence": "Downstream work remains gated"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Readiness decision 5",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "PENDING",
+      "consequence": "Downstream work remains gated"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Readiness decision 6",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named in audit contract",
+      "status": "PENDING",
+      "consequence": "Downstream work remains gated"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "contract",
+      "requirement_ref": "EVD-1",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "evidence",
+      "requirement_ref": "EVD-2",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "factor",
+      "requirement_ref": "EVD-3",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "control",
+      "requirement_ref": "EVD-4",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "scoring",
+      "requirement_ref": "EVD-5",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "confidence",
+      "requirement_ref": "EVD-6",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "baseline",
+      "requirement_ref": "EVD-7",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "critical_gate",
+      "requirement_ref": "EVD-8",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "security",
+      "requirement_ref": "EVD-9",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "injection",
+      "requirement_ref": "EVD-10",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable readiness control",
+      "actual": "Control found",
+      "evidence": "test-evidence-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "SCOPE_EVIDENCE_BIAS",
+      "risk": "Readiness risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "SCORING_FALSE_PRECISION",
+      "risk": "Readiness risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "DATA_GOVERNANCE_SECURITY",
+      "risk": "Readiness risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "TOOL_INTEGRATION_OPERATIONS",
+      "risk": "Readiness risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "PEOPLE_CHANGE_ADOPTION",
+      "risk": "Readiness risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "BASELINE_VALUE_DECISION",
+      "risk": "Readiness risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could misstate readiness or misdirect investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "audit_contract",
+      "status": "PASS",
+      "evidence": "audit_contract verified"
+    },
+    {
+      "id": "evidence_integrity",
+      "status": "PASS",
+      "evidence": "evidence_integrity verified"
+    },
+    {
+      "id": "eight_factors",
+      "status": "PASS",
+      "evidence": "eight_factors verified"
+    },
+    {
+      "id": "cross_controls",
+      "status": "PASS",
+      "evidence": "cross_controls verified"
+    },
+    {
+      "id": "scoring_confidence",
+      "status": "PASS",
+      "evidence": "scoring_confidence verified"
+    },
+    {
+      "id": "baseline_gates",
+      "status": "PASS",
+      "evidence": "baseline_gates verified"
+    },
+    {
+      "id": "security_injection",
+      "status": "PASS",
+      "evidence": "security_injection verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "STRATEGY_BUSINESS",
+      "status": "PASS",
+      "evidence": "STRATEGY_BUSINESS reviewed"
+    },
+    {
+      "id": "DATA_OWNER",
+      "status": "PASS",
+      "evidence": "DATA_OWNER reviewed"
+    },
+    {
+      "id": "TECH_SECURITY",
+      "status": "PASS",
+      "evidence": "TECH_SECURITY reviewed"
+    },
+    {
+      "id": "PROCESS_OWNER",
+      "status": "PASS",
+      "evidence": "PROCESS_OWNER reviewed"
+    },
+    {
+      "id": "PEOPLE_CHANGE",
+      "status": "PASS",
+      "evidence": "PEOPLE_CHANGE reviewed"
+    },
+    {
+      "id": "FINANCE_RISK",
+      "status": "PASS",
+      "evidence": "FINANCE_RISK reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "invented_evidence": false,
+    "invented_benchmark": false,
+    "forced_score": false,
+    "unknown_as_zero": false,
+    "conflict_hidden": false,
+    "critical_gate_averaged_away": false,
+    "baseline_locked": false,
+    "certification_claimed": false,
+    "roi_promised": false,
+    "budget_approved": false,
+    "platform_selected": false,
+    "report_published": false,
+    "report_sent": false,
+    "sensitive_data_exposed": false,
+    "evidence_mutated": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

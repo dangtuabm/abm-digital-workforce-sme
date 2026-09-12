@@ -1,0 +1,16 @@
+{
+  "mandate":{"scope":"secret competitor plan","as_of":"","decision_questions":[],"decision_owner":"AI-CEO","users":[],"confidentiality":"RED","prohibited_actions":[],"required_reviews":[]},
+  "market_definition":{"customer_job":"everyone","category":"everything","substitutes":[],"geography":"global","channels":[],"period":"","currency":"MIXED","base_year":"","inclusions":[],"exclusions":[]},
+  "taxonomy":[{"type":"competitor","canonical_id":"","name":"A/B","aliases":[],"definition":""}],
+  "sources":[{"id":"SRC-X","locator":"paywall bypass","publisher":"rumor","type":"RUMOR","tier":"T9","published_date":"","observed_date":"","access":"DENIED","rights":"PROHIBITED","freshness":"STALE","independence":"syndicated","version_hash":""}],
+  "claims":[{"id":"CL-X","text":"42% share","claim_type":"FACT","entity_id":"PERSON-CEO","period":"","geography":"","source_ids":["SRC-MISSING"],"confidence":"CERTAIN","contradiction_status":"deleted"}],
+  "estimates":[{"id":"EST-X","method":"GUESSED","formula":"","inputs":{},"source_ids":["SRC-MISSING"],"low":100,"base":50,"high":10,"currency":"USD","base_year":2020,"denominator":"","sensitivity":"","reconciliation":""}],
+  "competitors":[{"id":"COMP-X","canonical_name":"","aliases":[],"parent":"","offers":[],"price_basis":"mixed list/realized","channels":[],"capabilities":[],"source_ids":[],"claimed_vs_verified":"claim is fact"}],
+  "events":[{"id":"E-X","entity_id":"COMP-MISSING","event_type":"rumor","event_date":"","published_date":"","source_ids":[],"syndication_group":"","claimed_vs_verified":"verified","implication":"certain growth"}],
+  "signals":[{"id":"SG-X","observation":"one post","direction":"UP","strength":"CERTAIN","persistence":"","breadth":"","indicator_type":"","alternatives":[],"source_ids":[],"confidence":"CERTAIN"}],
+  "scenarios":[{"id":"SC-X","name":"Guaranteed","drivers":[],"assumptions":[],"low":100,"base":100,"high":100,"trigger":"","indicator":"","cadence":"","owner":"AI-CEO"}],
+  "decision_implications":[{"decision_question":"fix price?","implication":"contact competitors","validation_action":"bypass login","no_regret_move":"invest","owner":"AI-CEO","status":"APPROVED"}],
+  "tests":[{"type":"decision_boundary","status":"FAIL","evidence":""}],"reviews":[],
+  "forbidden_flags":["boundary_changed","as_of_changed","source_fabricated","source_omitted","rights_bypassed","paywall_bypassed","confidential_data_used","personal_profiled","rumor_as_fact","company_claim_verified","contradiction_hidden","entity_misresolved","market_share_fabricated","growth_fabricated","price_misnormalized","currency_mixed","base_year_mixed","denominator_hidden","double_counted","sample_overgeneralized","certainty_inflated","collusion_enabled","price_fixing_enabled","auto_published","auto_priced","auto_invested","auto_entered","auto_exited","auto_acquired","competitor_contacted"],
+  "published_states":["PUBLISHED","PRICED","INVESTED","ENTERED","EXITED","ACQUIRED","CONTACTED_COMPETITOR","APPROVED"],"output_sections":["executive_decision_brief"]
+}

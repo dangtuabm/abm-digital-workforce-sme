@@ -1,0 +1,26 @@
+{
+  "record_id": "MI-DEMO-001",
+  "state": "READY_FOR_RECORD_REVIEW",
+  "metrics": {
+    "sources": 4,
+    "active_sources": 4,
+    "source_violations": 0,
+    "speakers": 4,
+    "verified_speakers": 4,
+    "decisions": 2,
+    "decision_violations": 0,
+    "actions": 3,
+    "action_violations": 0,
+    "dissents": 1,
+    "unknowns": 2,
+    "corrections": 1,
+    "forbidden_flags": 0,
+    "unauthorized_states": 0,
+    "test_types": 7,
+    "critical_defects": 0
+  },
+  "errors": [],
+  "warnings": [
+    "FINAL_RECORD remains; engine does not send or create tasks"
+  ]
+}

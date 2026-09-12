@@ -1,0 +1,184 @@
+{
+  "contract": {
+    "case_id": "",
+    "version": "",
+    "outcome": "",
+    "issue_or_decision": "",
+    "scope": "",
+    "stakes": "",
+    "current_state": "",
+    "desired_state": "",
+    "source_canon_id": "",
+    "classification": "",
+    "authority_owner": "",
+    "communication_owner": "",
+    "approver": "",
+    "sender": "",
+    "allowed_channels": [],
+    "prohibited_actions": [],
+    "non_negotiables": [],
+    "data_authorized": false,
+    "retention": ""
+  },
+  "sources": [
+    {
+      "source_id": "",
+      "title": "",
+      "version": "",
+      "locator": "",
+      "owner": "",
+      "classification": "",
+      "active": true,
+      "hash": ""
+    }
+  ],
+  "stakeholders": [
+    {
+      "stakeholder_id": "",
+      "role": "",
+      "organization": "",
+      "evidence_refs": [],
+      "power": "UNKNOWN",
+      "interest": "UNKNOWN",
+      "impact": "UNKNOWN",
+      "legitimacy": "UNKNOWN",
+      "urgency": "UNKNOWN",
+      "stance": "UNKNOWN",
+      "influence_path": "UNKNOWN",
+      "decision_rights": [],
+      "communication_needs": [],
+      "disclosure_level": "",
+      "channel_preferences": [],
+      "accessibility_needs": [],
+      "relationship_owner": "",
+      "review_owner": "",
+      "confidence": "LOW",
+      "counterevidence": [],
+      "last_verified": ""
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "",
+      "statement": "",
+      "evidence_refs": [],
+      "facts": [],
+      "uncertainties": [],
+      "decision_needed": "",
+      "non_negotiables": [],
+      "sensitivity": "",
+      "owner": ""
+    }
+  ],
+  "decision_rights": [
+    {
+      "issue_id": "",
+      "stakeholder_id": "",
+      "right": "CONSULT",
+      "evidence_ref": "",
+      "owner_confirmed": false
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "",
+      "issue_id": "",
+      "stakeholder_ids": [],
+      "purpose": "",
+      "state_now": "",
+      "must_know": [],
+      "core_message": "",
+      "evidence_refs": [],
+      "qualifiers": [],
+      "impact": "",
+      "unchanged": [],
+      "ask": {
+        "action": "",
+        "owner": "",
+        "due": ""
+      },
+      "sender": "",
+      "owner": "",
+      "channel": "",
+      "timing": "",
+      "disclosure_level": "",
+      "accessibility": [],
+      "fallback": "",
+      "approval_required": true,
+      "approval_status": "PENDING"
+    }
+  ],
+  "sequence": [
+    {
+      "sequence_id": "",
+      "order": 1,
+      "message_ids": [],
+      "stakeholder_ids": [],
+      "dependencies": [],
+      "precondition": "",
+      "reason": "",
+      "owner": "",
+      "no_surprise": true,
+      "approval_status": "PENDING",
+      "status": "PLANNED"
+    }
+  ],
+  "feedback_items": [
+    {
+      "item_id": "",
+      "stakeholder_id": "",
+      "issue_id": "",
+      "question_or_objection": "",
+      "source_ref": "",
+      "owner": "",
+      "due": "",
+      "status": "OPEN",
+      "response_evidence": ""
+    }
+  ],
+  "commitments": [
+    {
+      "commitment_id": "",
+      "stakeholder_id": "",
+      "issue_id": "",
+      "commitment": "",
+      "source_ref": "",
+      "owner": "",
+      "due": "",
+      "approver": "",
+      "status": "OPEN",
+      "closure_evidence": ""
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "",
+      "type": "",
+      "trigger": "",
+      "affected_party": "",
+      "harm": "",
+      "prevention": "",
+      "stop_or_rollback": "",
+      "escalation_owner": "",
+      "evidence_refs": []
+    }
+  ],
+  "tests": [
+    {
+      "test_type": "stakeholder_evidence_trace",
+      "passed": false,
+      "evidence": "",
+      "reviewer": "",
+      "date": ""
+    }
+  ],
+  "reviews": [
+    {
+      "review_type": "FACT_SOURCE",
+      "required": true,
+      "reviewer": "",
+      "status": "PENDING",
+      "evidence_ref": ""
+    }
+  ]
+}

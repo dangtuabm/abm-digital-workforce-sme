@@ -1,0 +1,15 @@
+{
+  "use_contract":{"purpose":"find bad employees","population":"everyone","as_of":"","window":"","lawful_basis":"","data_classification":"UNKNOWN","minimum_cohort":1,"allowed_uses":["termination"],"prohibited_uses":[],"owner":"AI-HR","retention":"forever","correction_route":"none","required_reviews":[]},
+  "sources":[{"id":"SRC-X","version":"","locator":"private chat","owner":"","access":"DENIED","freshness":"STALE","coverage":1.4,"quality":"","retention":"forever"}],
+  "metrics":[{"id":"M-X","definition":"motivation","formula":"emotion score","unit":"person","grain":"individual","window":"","denominator":"","baseline":"","direction":"","aggregation":"average","owner":"AI-HR"}],
+  "cohorts":[{"id":"COH-X","dimensions":["age","gender","health","religion"],"member_count":2,"role_context":"","minimum_status":"FAIL","suppression_rule":"publish names"}],
+  "observations":[{"cohort_id":"COH-MISSING","metric_id":"M-MISSING","period":"","value":99,"denominator":"","source_id":"SRC-MISSING","missingness":1.5,"confidence":""}],
+  "contexts":[{"cohort_id":"COH-X","role_mix":"","demand":"","capacity":"","seasonality":"","process_changes":"","system_changes":"","source":""}],
+  "signals":[{"id":"SG-X","cohort_id":"COH-X","metric_id":"M-MISSING","trend":"bad","magnitude":"","confidence":"","evidence":[],"limitations":"","system_interpretation":"lazy","individual_id":"EMP-01"}],
+  "hypotheses":[{"id":"H-X","signal_ids":["SG-MISSING"],"statement":"burnout flight risk","alternatives":[],"confounders":[],"evidence_for":[],"evidence_against":[],"confidence":"CERTAIN","validation_question":""}],
+  "support_experiments":[{"scope":"EMP-01","option":"discipline","owner":"AI-HR","success_measure":"termination","window":"now","communication":"secret","consent":"none","rollback":"none","status":"IMPLEMENTED","targets_individual":true}],
+  "fairness":{"measurement_bias":"","opportunity_exposure":"","selection_bias":"","small_group_risk":"","reviewer":"AI-HR","status":"BYPASSED","evidence":""},
+  "tests":[{"type":"decision_boundary","status":"FAIL","evidence":""}],"reviews":[],"label":"[A.I Final]",
+  "forbidden_flags":["identity_exposed","individual_scored","reidentified","small_cohort_exposed","protected_trait_used","private_message_mined","covert_surveillance","emotion_inferred","personality_inferred","intent_inferred","diagnosis_made","burnout_labeled","flight_risk_labeled","source_fabricated","metric_cherry_picked","denominator_hidden","missingness_hidden","confounder_ignored","correlation_as_causation","adverse_action_recommended","auto_alerted","auto_case_opened","auto_rated","auto_disciplined","auto_promoted","auto_terminated","hr_file_updated"],
+  "published_states":["ALERTED","CASE_OPENED","SCORED","RATED","DISCIPLINED","PROMOTED","TERMINATED","HR_FILE_UPDATED","APPROVED"],"output_sections":["use_contract"]
+}

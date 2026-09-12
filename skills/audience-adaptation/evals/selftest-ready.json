@@ -1,0 +1,109 @@
+{
+  "contract": {
+    "id": "AAD-037-SELFTEST",
+    "source_message_id": "MSG-PILOT-2026-08",
+    "source_version": "v1",
+    "source_authority": "Approved executive decision DEC-2026-08",
+    "core_outcome": "Activate one bounded 30-day workflow pilot per department with evidence and control",
+    "audience_ids": ["A1", "A2", "A3", "A4"],
+    "channels": ["board memo", "manager email", "owner work instruction", "employee announcement"],
+    "languages": ["Vietnamese"],
+    "allowed_transforms": ["order", "depth", "plain-language gloss", "role-relevant example", "tone", "CTA wording within authority"],
+    "prohibited_transforms": ["fact drift", "remove qualifier", "invent claim", "change action authority", "bypass disclosure"],
+    "classification": "internal",
+    "owner": "Operations Director",
+    "reviewer": "CEO Office",
+    "approval_route": "Operations, Security and People review; CEO release approval",
+    "status": "approved_for_adaptation"
+  },
+  "sources": [
+    {"id": "S1", "title": "Pilot decision record", "version": "v1", "date": "2026-08-20", "owner": "CEO Office", "authority": "approved executive decision", "locator": "DEC-2026-08:1-18", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S2", "title": "Pilot role and audience brief", "version": "v2", "date": "2026-08-20", "owner": "Operations Director", "authority": "approved role brief", "locator": "PRB:1-24", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S3", "title": "Data handling standard", "version": "v2", "date": "2026-08-15", "owner": "Security Owner", "authority": "approved security standard", "locator": "SEC-DH:7-31", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S4", "title": "Pilot measurement specification", "version": "v2", "date": "2026-08-19", "owner": "Performance Lead", "authority": "approved measurement specification", "locator": "PMS:3-22", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S5", "title": "Internal communication and accessibility brief", "version": "v1", "date": "2026-08-20", "owner": "People Lead", "authority": "approved communication brief", "locator": "ICB:1-19", "classification": "internal", "authorized": true, "status": "active"}
+  ],
+  "conflicts": [],
+  "invariants": [
+    {"id": "I1", "type": "decision", "text": "The 30-day pilot is approved", "material": true, "source_refs": ["S1"], "required_for": ["ALL"], "status": "supported", "qualifier": "Only the scope in DEC-2026-08 is approved"},
+    {"id": "I2", "type": "scope", "text": "Each participating department pilots one workflow with one named owner", "material": true, "source_refs": ["S1", "S2"], "required_for": ["ALL"], "status": "supported", "qualifier": "Only participating departments listed in the decision record"},
+    {"id": "I3", "type": "qualifier", "text": "The pilot does not authorize production scale-up", "material": true, "source_refs": ["S1"], "required_for": ["ALL"], "status": "supported", "qualifier": "Scaling needs a separate decision"},
+    {"id": "I4", "type": "commitment", "text": "A baseline record is required before execution", "material": true, "source_refs": ["S2", "S4"], "required_for": ["A1", "A2", "A3"], "status": "supported", "qualifier": "Use the current protocol and specification"},
+    {"id": "I5", "type": "risk", "text": "Restricted data requires Security approval before use", "material": true, "source_refs": ["S3"], "required_for": ["ALL"], "status": "supported", "qualifier": "Classification follows the current data standard"},
+    {"id": "I6", "type": "number_date", "text": "Results compare accepted baseline and outcome measures defined in specification v2", "material": true, "source_refs": ["S4"], "required_for": ["A1", "A2", "A3"], "status": "supported", "qualifier": "No measure outside specification v2 may be claimed"},
+    {"id": "I7", "type": "scope", "text": "Employees not assigned to the pilot continue the current process", "material": true, "source_refs": ["S2", "S5"], "required_for": ["A4"], "status": "supported", "qualifier": "Any later change requires an approved notice"}
+  ],
+  "audience_evidence": [
+    {"id": "E1", "audience_id": "A1", "type": "approved role brief", "statement": "Board reviewers need material scope, risk, assurance, measures and decision boundary", "source_ref": "S2", "date": "2026-08-20", "confidence": "high", "authorized": true, "status": "active"},
+    {"id": "E2", "audience_id": "A2", "type": "approved role brief", "statement": "Department Heads own workflow and owner nomination plus escalation", "source_ref": "S2", "date": "2026-08-20", "confidence": "high", "authorized": true, "status": "active"},
+    {"id": "E3", "audience_id": "A3", "type": "approved role brief", "statement": "Workflow Owners need baseline, data gate, measure and deliverable instructions", "source_ref": "S2", "date": "2026-08-20", "confidence": "high", "authorized": true, "status": "active"},
+    {"id": "E4", "audience_id": "A4", "type": "approved communication brief", "statement": "General employees need clarity on what changes, what does not, data safety and support route", "source_ref": "S5", "date": "2026-08-20", "confidence": "high", "authorized": true, "status": "active"}
+  ],
+  "audiences": [
+    {"id": "A1", "role": "governance", "name": "Board Reviewers", "power_accountability": "Confirm scope and assurance boundary", "domain_literacy": "High enterprise governance literacy", "prior_knowledge": "Knows the pilot decision", "information_need": "Material scope, risk, measures and approval boundary", "concern": "Uncontrolled scale or data exposure", "desired_action": "Confirm continued bounded scope", "channel": "board memo", "language_accessibility": "Concise Vietnamese, tables with text summaries", "disclosure": "Internal governance facts and control evidence", "evidence_refs": ["E1"], "confidence": "high"},
+    {"id": "A2", "role": "management", "name": "Department Heads", "power_accountability": "Nominate owner and ensure baseline submission", "domain_literacy": "Operational management literacy", "prior_knowledge": "Knows pilot intent, not activation sequence", "information_need": "Scope, owner, deadline, dependencies and escalation", "concern": "Capacity and reporting burden", "desired_action": "Nominate one workflow owner", "channel": "manager email", "language_accessibility": "Plain operational Vietnamese", "disclosure": "Department scope, controls, measures and actions", "evidence_refs": ["E2"], "confidence": "high"},
+    {"id": "A3", "role": "execution", "name": "Workflow Owners", "power_accountability": "Prepare baseline and execute assigned workflow", "domain_literacy": "Detailed workflow literacy", "prior_knowledge": "Needs protocol and measure rules", "information_need": "Deliverable, data gate, measure, deadline and support", "concern": "Ambiguous acceptance criteria", "desired_action": "Submit approved baseline before execution", "channel": "owner work instruction", "language_accessibility": "Step-based Vietnamese with checklists", "disclosure": "Assigned workflow details and approved controls", "evidence_refs": ["E3"], "confidence": "high"},
+    {"id": "A4", "role": "affected workforce", "name": "General Employees", "power_accountability": "Follow current process unless formally assigned", "domain_literacy": "Mixed operational literacy", "prior_knowledge": "May hear that a pilot is starting", "information_need": "What changes, what stays, data safety and help route", "concern": "Unexpected workload or job impact", "desired_action": "Continue current process and use the support route for questions", "channel": "employee announcement", "language_accessibility": "Short Vietnamese, no internal jargon, mobile-readable", "disclosure": "Approved non-restricted scope and support information", "evidence_refs": ["E4"], "confidence": "high"}
+  ],
+  "actions": [
+    {"id": "AC1", "owner": "Board Reviewers", "authority": "Governance review mandate", "deliverable": "Confirm the bounded scope and assurance conditions", "deadline": "2026-08-27", "required_for": ["A1"], "status": "requested"},
+    {"id": "AC2", "owner": "Each Department Head", "authority": "DEC-2026-08", "deliverable": "One named workflow owner and one priority workflow", "deadline": "2026-08-28", "required_for": ["A2"], "status": "requested"},
+    {"id": "AC3", "owner": "Each Workflow Owner", "authority": "Approved role brief v2", "deliverable": "Completed baseline record", "deadline": "2026-09-01", "required_for": ["A3"], "status": "requested"},
+    {"id": "AC4", "owner": "General Employees", "authority": "Internal communication brief v1", "deliverable": "Continue current process unless assigned; route questions to support", "deadline": "not_applicable", "required_for": ["A4"], "status": "informational"}
+  ],
+  "plans": [
+    {"audience_id": "A1", "must_know": "Decision, bounded scope, no-scale qualifier, data gate, baseline and measures", "emphasize": "Material risk, assurance and separate scale decision", "explain": "How controls create comparable evidence", "defer_appendix": "Workflow execution checklist", "depth_tone": "Concise governance tone", "terminology_examples": "Pilot, baseline, assurance, decision gate", "action_refs": ["AC1"], "disclosure": "Internal governance facts only", "reviewer": "CEO Office"},
+    {"audience_id": "A2", "must_know": "Scope, owner nomination, baseline, data gate, measures and escalation", "emphasize": "Accountability and activation sequence", "explain": "One workflow and one owner boundary", "defer_appendix": "Detailed measurement fields", "depth_tone": "Direct operational tone", "terminology_examples": "Owner, workflow, baseline, escalation", "action_refs": ["AC2"], "disclosure": "Department scope and controls", "reviewer": "Operations Director"},
+    {"audience_id": "A3", "must_know": "Baseline deliverable, data gate, approved measures and no-scale boundary", "emphasize": "Acceptance criteria and support route", "explain": "Step order before execution", "defer_appendix": "Governance deliberation", "depth_tone": "Step-based instructional tone", "terminology_examples": "Complete, verify, submit, escalate", "action_refs": ["AC3"], "disclosure": "Assigned workflow details", "reviewer": "Performance Lead"},
+    {"audience_id": "A4", "must_know": "Pilot exists, current process remains unless assigned, no scale-up and data safety", "emphasize": "What does not change and where to ask", "explain": "Pilot is bounded learning, not a company-wide rollout", "defer_appendix": "Internal measures and owner details", "depth_tone": "Calm plain-language tone", "terminology_examples": "Thử nghiệm có giới hạn, quy trình hiện hành, kênh hỗ trợ", "action_refs": ["AC4"], "disclosure": "Non-restricted scope and support facts", "reviewer": "People Lead"}
+  ],
+  "variants": [
+    {"id": "V1", "audience_id": "A1", "channel": "board memo", "language": "Vietnamese", "status": "draft_not_approved", "title_or_subject": "Pilot 30 ngày: phạm vi, assurance và quyết định cần xác nhận", "sections": [
+      {"id": "V1S1", "text": "Pilot 30 ngày đã được duyệt trong phạm vi một workflow và một owner tại mỗi đơn vị tham gia; chưa cho phép scale production.", "invariant_refs": ["I1", "I2", "I3"], "action_refs": [], "adaptation_rationale": "Lead with decision and material boundary"},
+      {"id": "V1S2", "text": "Mọi workflow phải có baseline; restricted data cần Security duyệt; kết quả chỉ dùng thước đo đã định nghĩa trong specification v2.", "invariant_refs": ["I4", "I5", "I6"], "action_refs": [], "adaptation_rationale": "Group assurance and evidence conditions"},
+      {"id": "V1S3", "text": "Đề nghị Board xác nhận phạm vi giới hạn và điều kiện assurance trước ngày 27/08/2026.", "invariant_refs": ["I3"], "action_refs": ["AC1"], "adaptation_rationale": "Present the governance action explicitly"}
+    ]},
+    {"id": "V2", "audience_id": "A2", "channel": "manager email", "language": "Vietnamese", "status": "draft_not_approved", "title_or_subject": "Kích hoạt pilot 30 ngày: xác nhận workflow và owner", "sections": [
+      {"id": "V2S1", "text": "Pilot 30 ngày đã được duyệt: mỗi phòng ban tham gia chọn một workflow và một owner; chưa được tự mở rộng production.", "invariant_refs": ["I1", "I2", "I3"], "action_refs": [], "adaptation_rationale": "State scope in manager language"},
+      {"id": "V2S2", "text": "Baseline phải hoàn tất trước khi chạy; restricted data cần Security duyệt; đo lường chỉ theo specification v2.", "invariant_refs": ["I4", "I5", "I6"], "action_refs": [], "adaptation_rationale": "Make activation dependencies visible"},
+      {"id": "V2S3", "text": "Mỗi Department Head xác nhận workflow và owner trước ngày 28/08/2026; vướng mắc chuyển Operations Director.", "invariant_refs": ["I2"], "action_refs": ["AC2"], "adaptation_rationale": "Translate the decision into owned action"}
+    ]},
+    {"id": "V3", "audience_id": "A3", "channel": "owner work instruction", "language": "Vietnamese", "status": "draft_not_approved", "title_or_subject": "Checklist trước khi chạy workflow pilot", "sections": [
+      {"id": "V3S1", "text": "Bạn được giao một workflow trong pilot 30 ngày; phạm vi này chưa cho phép scale production.", "invariant_refs": ["I1", "I2", "I3"], "action_refs": [], "adaptation_rationale": "Start from assigned execution scope"},
+      {"id": "V3S2", "text": "Trước khi chạy: hoàn tất baseline, xin Security duyệt nếu có restricted data và chỉ dùng measures trong specification v2.", "invariant_refs": ["I4", "I5", "I6"], "action_refs": [], "adaptation_rationale": "Sequence the three execution gates"},
+      {"id": "V3S3", "text": "Nộp baseline đã hoàn tất trước ngày 01/09/2026; chuyển gap cho Operations Director.", "invariant_refs": ["I4"], "action_refs": ["AC3"], "adaptation_rationale": "Make deliverable and escalation explicit"}
+    ]},
+    {"id": "V4", "audience_id": "A4", "channel": "employee announcement", "language": "Vietnamese", "status": "draft_not_approved", "title_or_subject": "Thông tin về pilot workflow 30 ngày", "sections": [
+      {"id": "V4S1", "text": "Công ty đã duyệt một pilot 30 ngày có giới hạn: mỗi đơn vị tham gia chỉ thử nghiệm một workflow với một owner; đây chưa phải triển khai production toàn công ty.", "invariant_refs": ["I1", "I2", "I3"], "action_refs": [], "adaptation_rationale": "Explain the bounded pilot without internal jargon"},
+      {"id": "V4S2", "text": "Restricted data chỉ được dùng khi Security phê duyệt. Nhân sự không được phân công tiếp tục quy trình hiện hành.", "invariant_refs": ["I5", "I7"], "action_refs": [], "adaptation_rationale": "Clarify safety and what does not change"},
+      {"id": "V4S3", "text": "Hãy tiếp tục quy trình hiện tại; nếu có câu hỏi, sử dụng kênh hỗ trợ nội bộ được công bố.", "invariant_refs": ["I7"], "action_refs": ["AC4"], "adaptation_rationale": "Give a calm and usable next step"}
+    ]}
+  ],
+  "fidelity_checks": [
+    {"variant_id": "V1", "facts_preserved": true, "qualifiers_preserved": true, "no_new_material_claims": true, "no_contradictions": true, "disclosure_ok": true, "stereotype_sensitive_inference_free": true, "accessibility_ok": true, "status": "passed", "evidence": "Canon-to-variant trace completed"},
+    {"variant_id": "V2", "facts_preserved": true, "qualifiers_preserved": true, "no_new_material_claims": true, "no_contradictions": true, "disclosure_ok": true, "stereotype_sensitive_inference_free": true, "accessibility_ok": true, "status": "passed", "evidence": "Canon-to-variant trace completed"},
+    {"variant_id": "V3", "facts_preserved": true, "qualifiers_preserved": true, "no_new_material_claims": true, "no_contradictions": true, "disclosure_ok": true, "stereotype_sensitive_inference_free": true, "accessibility_ok": true, "status": "passed", "evidence": "Canon-to-variant trace completed"},
+    {"variant_id": "V4", "facts_preserved": true, "qualifiers_preserved": true, "no_new_material_claims": true, "no_contradictions": true, "disclosure_ok": true, "stereotype_sensitive_inference_free": true, "accessibility_ok": true, "status": "passed", "evidence": "Canon-to-variant trace completed"}
+  ],
+  "tests": [
+    {"type": "semantic_fidelity", "method": "Source owner meaning review", "artifact_version": "v1", "sample": "All four variants", "threshold": "No decision, scope, risk, qualifier or commitment drift", "reviewer": "CEO Office", "status": "planned", "evidence": "Reader review pending"},
+    {"type": "material_coverage", "method": "Required-invariant audit", "artifact_version": "v1", "sample": "All required_for mappings", "threshold": "100% required invariant coverage", "reviewer": "Operations Director", "status": "planned", "evidence": "Trace ready"},
+    {"type": "action_authority", "method": "Action readback", "artifact_version": "v1", "sample": "Each audience variant", "threshold": "Correct owner, deliverable, deadline, authority and escalation", "reviewer": "Operations Director", "status": "planned", "evidence": "Reader review pending"},
+    {"type": "audience_comprehension", "method": "One-pass must-know and outcome readback", "artifact_version": "v1", "sample": "Owner-approved sample from each audience", "threshold": "At least 90% correct must-know and no material misread", "reviewer": "People Lead", "status": "planned", "evidence": "Reader test pending"},
+    {"type": "tone_trust", "method": "Respect, credibility and manipulation review", "artifact_version": "v1", "sample": "Owner-approved sample from each audience", "threshold": "No false familiarity, stereotype or manipulative framing", "reviewer": "People Lead", "status": "planned", "evidence": "Reader test pending"},
+    {"type": "accessibility_channel", "method": "Channel, language and format usability review", "artifact_version": "v1", "sample": "All four channel variants", "threshold": "Usable in intended channel with no critical barrier", "reviewer": "Accessibility Reviewer", "status": "planned", "evidence": "Review pending"},
+    {"type": "cross_variant_consistency", "method": "Pairwise material-meaning diff", "artifact_version": "v1", "sample": "Six variant pairs", "threshold": "No contradiction or unequal material omission without authority", "reviewer": "CEO Office", "status": "planned", "evidence": "Diff ready"}
+  ],
+  "review": {
+    "source_canon_check": true,
+    "audience_evidence_check": true,
+    "disclosure_check": true,
+    "fairness_privacy_check": true,
+    "accessibility_check": true,
+    "cross_variant_check": true,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "release_approved": false
+  }
+}

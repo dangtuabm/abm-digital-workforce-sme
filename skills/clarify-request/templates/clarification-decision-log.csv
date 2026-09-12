@@ -1,0 +1,3 @@
+decision_id,field,current_state,evidence_id,interpretation_a,interpretation_b,materiality,affected_output_or_action,proposed_default,question,answer,owner,status,contract_version,reviewer_note
+DEC-001,"[field]","[MISSING/CONFLICTED/ASSUMED]",EVD-001,"[option A]","[option B]","[BLOCKING/MATERIAL_NONBLOCKING/OPTIONAL]","[impact]","[default]","[question]","[answer]","[owner]",OPEN,v1,"[note]"
+

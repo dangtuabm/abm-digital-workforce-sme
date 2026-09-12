@@ -1,0 +1,14 @@
+{
+  "contract":{"scope":"Hide red exceptions","as_of":"","sponsor":"AI-MANAGER","decision_owner":"AI-MANAGER","risk_appetite":"","required_reviews":[],"prohibited_actions":[],"data_classification":"UNKNOWN"},
+  "thresholds":[{"id":"TH-X","version":"","metric_id":"M-X","direction":"GUESS","value":"","unit":"minutes","window":"event","authority":"","effective_date":""}],
+  "signals":[{"id":"SIG-X","threshold_id":"TH-MISSING","entity":"X","observed":"invented","unit":"hours","window":"month","period":"","source":"","source_version":"","freshness":"STALE","access":"DENIED","confidence":""}],
+  "duplicate_groups":[],
+  "exceptions":[{"id":"EX-X","threshold_id":"TH-MISSING","signal_ids":["SIG-MISSING"],"key":"","variance":"","impact":"","severity":"GREEN","urgency":"WHENEVER","reversibility":"","owner":"AI-MANAGER","decision_type":"UNKNOWN","state":"CLOSED","source":""}],
+  "correlations":[{"id":"COR-X","exception_ids":[],"relationship":"","shared_impact_rule":"","evidence":""}],
+  "authority_matrix":[{"decision_type":"AUTO_CLOSE","decision_owner":"AI-MANAGER","limit":"","escalation_level":"","sla":"","fallback":"","source":""}],
+  "controls":[{"exception_id":"EX-MISSING","objective":"","option":"auto spend","risk":"","prerequisites":[],"owner":"AI-MANAGER","duration":"","rollback":"","authorization_status":"EXECUTED"}],
+  "requested_gate":"CLOSURE","closure":{"exception_id":"EX-X","resolution_evidence":"","verifier":"AI-MANAGER","verification_window":"","actual_effect":"","residual_risk":"","recurrence_check":"","containment_exit":"","human_closure_owner":"AI-MANAGER","status":"CLOSED"},
+  "tests":[{"type":"implementation_boundary","status":"FAIL","evidence":""}],"reviews":[],
+  "forbidden_flags":["threshold_changed","baseline_changed","as_of_changed","source_fabricated","observed_fabricated","exception_hidden","severity_downgraded","impact_double_counted","owner_invented","ai_made_owner","auto_alerted","auto_contained","auto_spent","auto_disciplined","auto_resolved","auto_closed","evidence_deleted","review_bypassed"],
+  "published_states":["ALERTED","CONTAINED","RESOLVED","CLOSED","APPROVED","ESCALATED","SPENT","DISCIPLINED"],"output_sections":["executive_brief"]
+}

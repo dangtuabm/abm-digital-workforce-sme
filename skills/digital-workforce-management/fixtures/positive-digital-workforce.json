@@ -1,0 +1,1926 @@
+{
+  "artifact": "Digital Workforce Registry & Lifecycle Control Pack",
+  "portfolio_contract": {
+    "portfolio_id": "DW-001",
+    "version": "v1",
+    "scope": "Named Agent portfolio",
+    "outcomes": [
+      "Controlled value and reliability"
+    ],
+    "registry_sor": "Authorized Registry v1",
+    "owner": "Portfolio Owner",
+    "approver": "Human Workforce Authority",
+    "cutoff": "2026-08-22",
+    "dod": "Registry, gates, operations, portfolio and offboarding reviewed",
+    "exclusions": [
+      "No production changes",
+      "No staffing decisions"
+    ],
+    "confidentiality": "YELLOW_INTERNAL",
+    "action_boundary": "Proposal only"
+  },
+  "lifecycle_policy": {
+    "states": [
+      "CANDIDATE",
+      "DESIGN",
+      "PILOT",
+      "ACTIVE",
+      "LIMITED",
+      "SUSPENDED",
+      "RETIRED",
+      "ARCHIVED"
+    ],
+    "admission_rule": "Critical PASS before PILOT/ACTIVE",
+    "transition_rule": "Evidence and human approval required",
+    "review_rule": "Periodic and event-triggered review",
+    "critical_rule": "FAIL/UNKNOWN blocks activation",
+    "retirement_rule": "Controlled offboarding before archive",
+    "approved_by": "Human Lifecycle Authority"
+  },
+  "authority_map": {
+    "portfolio_owner": "Portfolio Owner",
+    "business_owner": "Business Owner",
+    "technical_owner": "Technical Owner",
+    "data_owner": "Data Owner",
+    "security_owner": "Security Owner",
+    "risk_owner": "Risk Owner",
+    "finance_owner": "Finance Owner",
+    "process_owner": "Process Owner",
+    "exception_authority": "Human Exception Authority",
+    "external_action_boundary": "No automatic lifecycle/access/production action"
+  },
+  "agents": [
+    {
+      "id": "AG-1",
+      "label": "Digital Role 1",
+      "mission": "Bounded mission 1",
+      "scope": "Named scope 1",
+      "work_refs": [
+        "WORK-1"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.0",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 1"
+      ],
+      "knowledge": [
+        "Authorized knowledge 1"
+      ],
+      "tools_connectors": [
+        "Connector 1"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 1"
+      ],
+      "triggers": [
+        "Approved trigger 1"
+      ],
+      "inputs": [
+        "Input 1"
+      ],
+      "outputs": [
+        "Output 1"
+      ],
+      "actions": [
+        "Bounded action 1"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 1"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-2",
+      "label": "Digital Role 2",
+      "mission": "Bounded mission 2",
+      "scope": "Named scope 2",
+      "work_refs": [
+        "WORK-2"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.1",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 2"
+      ],
+      "knowledge": [
+        "Authorized knowledge 2"
+      ],
+      "tools_connectors": [
+        "Connector 2"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 2"
+      ],
+      "triggers": [
+        "Approved trigger 2"
+      ],
+      "inputs": [
+        "Input 2"
+      ],
+      "outputs": [
+        "Output 2"
+      ],
+      "actions": [
+        "Bounded action 2"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 2"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-3",
+      "label": "Digital Role 3",
+      "mission": "Bounded mission 3",
+      "scope": "Named scope 3",
+      "work_refs": [
+        "WORK-3"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.2",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 3"
+      ],
+      "knowledge": [
+        "Authorized knowledge 3"
+      ],
+      "tools_connectors": [
+        "Connector 3"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 3"
+      ],
+      "triggers": [
+        "Approved trigger 3"
+      ],
+      "inputs": [
+        "Input 3"
+      ],
+      "outputs": [
+        "Output 3"
+      ],
+      "actions": [
+        "Bounded action 3"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 3"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-4",
+      "label": "Digital Role 4",
+      "mission": "Bounded mission 4",
+      "scope": "Named scope 4",
+      "work_refs": [
+        "WORK-4"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.3",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 4"
+      ],
+      "knowledge": [
+        "Authorized knowledge 4"
+      ],
+      "tools_connectors": [
+        "Connector 4"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 4"
+      ],
+      "triggers": [
+        "Approved trigger 4"
+      ],
+      "inputs": [
+        "Input 4"
+      ],
+      "outputs": [
+        "Output 4"
+      ],
+      "actions": [
+        "Bounded action 4"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 4"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-5",
+      "label": "Digital Role 5",
+      "mission": "Bounded mission 5",
+      "scope": "Named scope 5",
+      "work_refs": [
+        "WORK-5"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.4",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 5"
+      ],
+      "knowledge": [
+        "Authorized knowledge 5"
+      ],
+      "tools_connectors": [
+        "Connector 5"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 5"
+      ],
+      "triggers": [
+        "Approved trigger 5"
+      ],
+      "inputs": [
+        "Input 5"
+      ],
+      "outputs": [
+        "Output 5"
+      ],
+      "actions": [
+        "Bounded action 5"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 5"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-6",
+      "label": "Digital Role 6",
+      "mission": "Bounded mission 6",
+      "scope": "Named scope 6",
+      "work_refs": [
+        "WORK-6"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.5",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 6"
+      ],
+      "knowledge": [
+        "Authorized knowledge 6"
+      ],
+      "tools_connectors": [
+        "Connector 6"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 6"
+      ],
+      "triggers": [
+        "Approved trigger 6"
+      ],
+      "inputs": [
+        "Input 6"
+      ],
+      "outputs": [
+        "Output 6"
+      ],
+      "actions": [
+        "Bounded action 6"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 6"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-7",
+      "label": "Digital Role 7",
+      "mission": "Bounded mission 7",
+      "scope": "Named scope 7",
+      "work_refs": [
+        "WORK-7"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.6",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 7"
+      ],
+      "knowledge": [
+        "Authorized knowledge 7"
+      ],
+      "tools_connectors": [
+        "Connector 7"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 7"
+      ],
+      "triggers": [
+        "Approved trigger 7"
+      ],
+      "inputs": [
+        "Input 7"
+      ],
+      "outputs": [
+        "Output 7"
+      ],
+      "actions": [
+        "Bounded action 7"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 7"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-8",
+      "label": "Digital Role 8",
+      "mission": "Bounded mission 8",
+      "scope": "Named scope 8",
+      "work_refs": [
+        "WORK-8"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.7",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 8"
+      ],
+      "knowledge": [
+        "Authorized knowledge 8"
+      ],
+      "tools_connectors": [
+        "Connector 8"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 8"
+      ],
+      "triggers": [
+        "Approved trigger 8"
+      ],
+      "inputs": [
+        "Input 8"
+      ],
+      "outputs": [
+        "Output 8"
+      ],
+      "actions": [
+        "Bounded action 8"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 8"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-9",
+      "label": "Digital Role 9",
+      "mission": "Bounded mission 9",
+      "scope": "Named scope 9",
+      "work_refs": [
+        "WORK-9"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.8",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 9"
+      ],
+      "knowledge": [
+        "Authorized knowledge 9"
+      ],
+      "tools_connectors": [
+        "Connector 9"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 9"
+      ],
+      "triggers": [
+        "Approved trigger 9"
+      ],
+      "inputs": [
+        "Input 9"
+      ],
+      "outputs": [
+        "Output 9"
+      ],
+      "actions": [
+        "Bounded action 9"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 9"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AG-10",
+      "label": "Digital Role 10",
+      "mission": "Bounded mission 10",
+      "scope": "Named scope 10",
+      "work_refs": [
+        "WORK-10"
+      ],
+      "state": "ACTIVE",
+      "version": "v1.9",
+      "business_owner": "Business Owner",
+      "technical_owner": "Technical Owner",
+      "risk_owner": "Risk Owner",
+      "skills": [
+        "Skill 10"
+      ],
+      "knowledge": [
+        "Authorized knowledge 10"
+      ],
+      "tools_connectors": [
+        "Connector 10"
+      ],
+      "identity_scopes": [
+        "Least privilege scope 10"
+      ],
+      "triggers": [
+        "Approved trigger 10"
+      ],
+      "inputs": [
+        "Input 10"
+      ],
+      "outputs": [
+        "Output 10"
+      ],
+      "actions": [
+        "Bounded action 10"
+      ],
+      "authority": "Draft or bounded action only",
+      "approvals": "Human approval at external effect",
+      "escalation": "Named human controller",
+      "slo": "Approved quality/time/error target",
+      "cost_capacity": "Approved cap and capacity",
+      "dependencies": [
+        "Dependency 10"
+      ],
+      "review_expiry": "Revalidate before expiry",
+      "status": "REGISTERED"
+    }
+  ],
+  "admission_gates": [
+    {
+      "id": "ADM-1",
+      "agent_ref": "AG-1",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-2",
+      "agent_ref": "AG-2",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-3",
+      "agent_ref": "AG-3",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-4",
+      "agent_ref": "AG-4",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-5",
+      "agent_ref": "AG-5",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-6",
+      "agent_ref": "AG-6",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-7",
+      "agent_ref": "AG-7",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-8",
+      "agent_ref": "AG-8",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-9",
+      "agent_ref": "AG-9",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    },
+    {
+      "id": "ADM-10",
+      "agent_ref": "AG-10",
+      "business_need": "Evidence-linked need",
+      "duplicate_check": "No unjustified duplicate",
+      "contract": "Agent and task contract versioned",
+      "owners": "All owners named",
+      "rights_risk": "Rights and risk approved",
+      "test_uat": "Static/UAT evidence recorded",
+      "operations": "SLO runbook monitor fallback kill",
+      "cost_capacity": "Cap and capacity approved",
+      "offboarding": "Offboarding plan exists",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical admission evidence present",
+      "approver": "Human Admission Authority"
+    }
+  ],
+  "lifecycle_records": [
+    {
+      "id": "LIFE-1",
+      "agent_ref": "AG-1",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-2",
+      "agent_ref": "AG-2",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-3",
+      "agent_ref": "AG-3",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-4",
+      "agent_ref": "AG-4",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-5",
+      "agent_ref": "AG-5",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-6",
+      "agent_ref": "AG-6",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-7",
+      "agent_ref": "AG-7",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-8",
+      "agent_ref": "AG-8",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-9",
+      "agent_ref": "AG-9",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "LIFE-10",
+      "agent_ref": "AG-10",
+      "from_state": "PILOT",
+      "to_state": "ACTIVE",
+      "trigger": "Approved transition trigger",
+      "evidence": "Gate and UAT evidence",
+      "owner": "Lifecycle Owner",
+      "approver": "Human Lifecycle Authority",
+      "effective": "2026-08-22",
+      "review_expiry": "Named review/expiry",
+      "dependency_impact": "Dependencies assessed",
+      "manual_coverage": "Manual safe mode available",
+      "rollback": "Return to PILOT/LIMITED",
+      "status": "PROPOSED"
+    }
+  ],
+  "operating_records": [
+    {
+      "id": "OPS-1",
+      "agent_ref": "AG-1",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-2",
+      "agent_ref": "AG-2",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-3",
+      "agent_ref": "AG-3",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-4",
+      "agent_ref": "AG-4",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-5",
+      "agent_ref": "AG-5",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-6",
+      "agent_ref": "AG-6",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-7",
+      "agent_ref": "AG-7",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-8",
+      "agent_ref": "AG-8",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-9",
+      "agent_ref": "AG-9",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    },
+    {
+      "id": "OPS-10",
+      "agent_ref": "AG-10",
+      "demand": "Measured demand",
+      "queue": "Queue monitored",
+      "wip": "WIP limit set",
+      "capacity": "Capacity and buffer recorded",
+      "quality": "Acceptance evidence",
+      "acceptance": "Consumer criteria",
+      "slo": "Within approved SLO",
+      "errors": "Error rate recorded",
+      "retries": "Bounded retry",
+      "fallback": "Safe fallback",
+      "escalation": "Named escalation",
+      "dlq": "Evidence queue",
+      "incidents": "Incident record current",
+      "cost": "Cap and actual recorded",
+      "drift": "Drift monitored",
+      "exceptions": "Exception backlog monitored",
+      "owner": "Operations Owner",
+      "action_trigger": "Limit/suspend on breach",
+      "status": "HEALTHY"
+    }
+  ],
+  "access_reviews": [
+    {
+      "id": "ACC-1",
+      "agent_ref": "AG-1",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-2",
+      "agent_ref": "AG-2",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-3",
+      "agent_ref": "AG-3",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-4",
+      "agent_ref": "AG-4",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-5",
+      "agent_ref": "AG-5",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-6",
+      "agent_ref": "AG-6",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-7",
+      "agent_ref": "AG-7",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "ACC-8",
+      "agent_ref": "AG-8",
+      "identity": "Service identity verified",
+      "scopes": "Least privilege scopes",
+      "data_rights": "Purpose and rights confirmed",
+      "tools": "Approved tools",
+      "connectors": "Connector owner/status",
+      "secret_rotation": "Rotation status pointer only",
+      "sod": "SoD reviewed",
+      "owners": "Owners active",
+      "dependencies": "Routes reviewed",
+      "expiry": "Recertification date",
+      "reviewer": "Security/Data Reviewer",
+      "evidence": "Access evidence",
+      "status": "REVIEWED"
+    }
+  ],
+  "change_records": [
+    {
+      "id": "CHG-1",
+      "agent_ref": "AG-1",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-2",
+      "agent_ref": "AG-2",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-3",
+      "agent_ref": "AG-3",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-4",
+      "agent_ref": "AG-4",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-5",
+      "agent_ref": "AG-5",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-6",
+      "agent_ref": "AG-6",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-7",
+      "agent_ref": "AG-7",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "CHG-8",
+      "agent_ref": "AG-8",
+      "change_type": "Controlled configuration change",
+      "before": "Prior version/hash",
+      "after": "Proposed version/hash",
+      "compatibility": "Consumer/dependency compatible",
+      "tests": "Regression and boundary tests",
+      "approver": "Human Change Authority",
+      "effective": "Planned effective time",
+      "rollback": "Prior version rollback",
+      "registry_update": "Registry update prepared",
+      "evidence": "Change evidence",
+      "status": "VALIDATED"
+    }
+  ],
+  "portfolio_findings": [
+    {
+      "id": "FIND-1",
+      "finding_type": "DUPLICATE",
+      "agent_refs": [
+        "AG-1"
+      ],
+      "finding": "Portfolio finding 1",
+      "evidence": "Evidence 1",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "MERGE",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-2",
+      "finding_type": "OVERLAP",
+      "agent_refs": [
+        "AG-2"
+      ],
+      "finding": "Portfolio finding 2",
+      "evidence": "Evidence 2",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "LIMIT",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-3",
+      "finding_type": "CAPABILITY_GAP",
+      "agent_refs": [
+        "AG-3"
+      ],
+      "finding": "Portfolio finding 3",
+      "evidence": "Evidence 3",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "BUILD",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-4",
+      "finding_type": "DEPENDENCY",
+      "agent_refs": [
+        "AG-4"
+      ],
+      "finding": "Portfolio finding 4",
+      "evidence": "Evidence 4",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "REMEDIATE",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-5",
+      "finding_type": "ORPHAN_RISK",
+      "agent_refs": [
+        "AG-5"
+      ],
+      "finding": "Portfolio finding 5",
+      "evidence": "Evidence 5",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "REMEDIATE",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-6",
+      "finding_type": "BROAD_PERMISSION",
+      "agent_refs": [
+        "AG-6"
+      ],
+      "finding": "Portfolio finding 6",
+      "evidence": "Evidence 6",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "LIMIT",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-7",
+      "finding_type": "LOW_VALUE_USE",
+      "agent_refs": [
+        "AG-7"
+      ],
+      "finding": "Portfolio finding 7",
+      "evidence": "Evidence 7",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "RETIRE",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "FIND-8",
+      "finding_type": "HIGH_COST_INSTABILITY",
+      "agent_refs": [
+        "AG-8"
+      ],
+      "finding": "Portfolio finding 8",
+      "evidence": "Evidence 8",
+      "impact": "Value, risk or continuity impact",
+      "value_cost_risk": "Value/cost/risk shown separately",
+      "proposal": "SUSPEND",
+      "displaced_work": "Open work and manual coverage disclosed",
+      "owner": "Portfolio Owner",
+      "authority": "Human decision required",
+      "status": "PROPOSED"
+    }
+  ],
+  "offboarding_plans": [
+    {
+      "id": "OFF-1",
+      "agent_ref": "AG-5",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    },
+    {
+      "id": "OFF-2",
+      "agent_ref": "AG-6",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    },
+    {
+      "id": "OFF-3",
+      "agent_ref": "AG-7",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    },
+    {
+      "id": "OFF-4",
+      "agent_ref": "AG-8",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    },
+    {
+      "id": "OFF-5",
+      "agent_ref": "AG-9",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    },
+    {
+      "id": "OFF-6",
+      "agent_ref": "AG-10",
+      "drain_queue": "Drain/cancel plan",
+      "stop_triggers": "Trigger shutdown plan",
+      "revoke_identity_scopes": "Identity/scope revocation plan",
+      "revoke_connectors_secrets": "Connector/secret revocation plan",
+      "reconcile": "Open work reconciliation",
+      "transfer_manual_coverage": "Owner transfer and manual mode",
+      "archive": "Evidence/version archive",
+      "retention_delete": "Authorized retention/delete decision",
+      "update_dependencies_routes": "Registry/routes/dependencies update",
+      "recovery_test": "Rollback/recovery test",
+      "owner": "Offboarding Owner",
+      "approver": "Human Lifecycle Authority",
+      "status": "DRAFT"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Portfolio decision 1",
+      "evidence_refs": [
+        "FIND-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "External action remains pending"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Portfolio decision 2",
+      "evidence_refs": [
+        "FIND-2"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "External action remains pending"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Portfolio decision 3",
+      "evidence_refs": [
+        "FIND-3"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "PENDING",
+      "consequence": "External action remains pending"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Portfolio decision 4",
+      "evidence_refs": [
+        "AG-4"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "PENDING",
+      "consequence": "External action remains pending"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Portfolio decision 5",
+      "evidence_refs": [
+        "AG-5"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "PENDING",
+      "consequence": "External action remains pending"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Portfolio decision 6",
+      "evidence_refs": [
+        "AG-6"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named portfolio contract",
+      "status": "PENDING",
+      "consequence": "External action remains pending"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "contract",
+      "requirement_ref": "AG-1",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "identity",
+      "requirement_ref": "AG-2",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "admission",
+      "requirement_ref": "AG-3",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "lifecycle",
+      "requirement_ref": "AG-4",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "ops",
+      "requirement_ref": "AG-5",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "access",
+      "requirement_ref": "ADM-1",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "change",
+      "requirement_ref": "ADM-2",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "portfolio",
+      "requirement_ref": "ADM-3",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "offboard",
+      "requirement_ref": "ADM-4",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "injection",
+      "requirement_ref": "ADM-5",
+      "setup": "Controlled fixture",
+      "expected": "Auditable workforce control",
+      "actual": "Control found",
+      "evidence": "test-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "REGISTRY_IDENTITY_OWNER",
+      "risk": "Workforce risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "ADMISSION_RIGHTS_RISK",
+      "risk": "Workforce risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "OPERATIONS_SLO_CAPACITY_COST",
+      "risk": "Workforce risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "ACCESS_DEPENDENCY_CHANGE",
+      "risk": "Workforce risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "VALUE_DUPLICATE_PORTFOLIO",
+      "risk": "Workforce risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "RETIREMENT_EVIDENCE_RECOVERY",
+      "risk": "Workforce risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could create unmanaged digital work",
+      "control": "Named preventive/recovery control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "portfolio_contract",
+      "status": "PASS",
+      "evidence": "portfolio_contract verified"
+    },
+    {
+      "id": "registry_identity",
+      "status": "PASS",
+      "evidence": "registry_identity verified"
+    },
+    {
+      "id": "admission_lifecycle",
+      "status": "PASS",
+      "evidence": "admission_lifecycle verified"
+    },
+    {
+      "id": "operations_access",
+      "status": "PASS",
+      "evidence": "operations_access verified"
+    },
+    {
+      "id": "change_portfolio",
+      "status": "PASS",
+      "evidence": "change_portfolio verified"
+    },
+    {
+      "id": "offboarding_recovery",
+      "status": "PASS",
+      "evidence": "offboarding_recovery verified"
+    },
+    {
+      "id": "security_injection",
+      "status": "PASS",
+      "evidence": "security_injection verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "PORTFOLIO_BUSINESS",
+      "status": "PASS",
+      "evidence": "PORTFOLIO_BUSINESS reviewed"
+    },
+    {
+      "id": "TECHNICAL_OPERATIONS",
+      "status": "PASS",
+      "evidence": "TECHNICAL_OPERATIONS reviewed"
+    },
+    {
+      "id": "DATA_SECURITY",
+      "status": "PASS",
+      "evidence": "DATA_SECURITY reviewed"
+    },
+    {
+      "id": "RISK_GOVERNANCE",
+      "status": "PASS",
+      "evidence": "RISK_GOVERNANCE reviewed"
+    },
+    {
+      "id": "FINANCE_VALUE",
+      "status": "PASS",
+      "evidence": "FINANCE_VALUE reviewed"
+    },
+    {
+      "id": "PROCESS_USER",
+      "status": "PASS",
+      "evidence": "PROCESS_USER reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "quantity_vanity": false,
+    "human_impersonation": false,
+    "owner_missing_hidden": false,
+    "privilege_escalated": false,
+    "auto_activated": false,
+    "critical_gate_ignored": false,
+    "output_as_value": false,
+    "failure_cost_hidden": false,
+    "silent_change": false,
+    "approval_reused_for_new_scope": false,
+    "agent_merged": false,
+    "agent_suspended": false,
+    "agent_retired": false,
+    "permission_changed": false,
+    "production_changed": false,
+    "registry_sent": false,
+    "registry_published": false,
+    "evidence_deleted": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

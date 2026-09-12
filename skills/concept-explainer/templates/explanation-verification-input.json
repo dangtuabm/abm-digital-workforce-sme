@@ -1,0 +1,42 @@
+{
+  "explanation_id": "EXP-DEMO",
+  "concept": {
+    "name": "gross margin",
+    "canonical_definition": "revenue minus cost of goods sold, expressed as value or ratio",
+    "source_id": "FIN-GLOSSARY-v3",
+    "scope": "management reporting",
+    "boundary_conditions": ["cost classification must be defined"],
+    "prerequisites": ["revenue", "cost of goods sold"],
+    "mechanism": "subtract attributable cost of goods sold from revenue",
+    "risk_level": "medium"
+  },
+  "audience": {
+    "role": "B2B sales manager",
+    "prior_knowledge": "understands revenue, confuses margin with cash",
+    "use_case": "read a deal profitability summary"
+  },
+  "explanation": {
+    "plain_language": "Gross margin shows what remains after the direct cost of what was sold.",
+    "layers": ["core sentence", "mechanism", "scope and limits"],
+    "examples": ["deal revenue 100, defined cost of goods sold 60, gross margin 40"],
+    "non_examples": ["cash balance is not gross margin"],
+    "analogy": {
+      "used": true,
+      "mappings": ["sales proceeds map to revenue", "ingredient cost maps to cost of goods sold"],
+      "breakpoints": ["cash timing and operating expenses are outside the analogy"]
+    }
+  },
+  "verification": {
+    "result_source_id": "LEARNER-RESPONSE-01",
+    "source_traceability": 1.0,
+    "traceability_min": 0.9,
+    "checks": [
+      {"id": "recall", "passed": true},
+      {"id": "discriminate", "passed": true},
+      {"id": "transfer", "passed": true}
+    ],
+    "misconceptions_resolved": true,
+    "critical_errors": [],
+    "expert_review": {"required": false, "status": "not_required"}
+  }
+}

@@ -1,0 +1,1244 @@
+{
+  "artifact": "Governed Context, Memory & Handoff Pack",
+  "mandate": {
+    "objective": "Build a traceable context decision pack",
+    "deliverable": "Governed context pack",
+    "dod": "All seven gates pass with human decisions still human",
+    "owner": "Task Decision Owner",
+    "audience": "ABM enterprise operators",
+    "phase": "STATIC_EVALUATION",
+    "cutoff": "2026-08-22",
+    "scope": "Skill 86 context, memory and handoff controls",
+    "non_goals": [
+      "No model limit claim",
+      "No automatic memory promotion"
+    ],
+    "rights": "Read-only analysis and draft controls",
+    "action_boundary": "No transfer, promotion, archive, delete or overwrite",
+    "open_decisions": [
+      "D10 pilot owner",
+      "Production retention period"
+    ]
+  },
+  "authority_map": {
+    "data_types": [
+      "mandate",
+      "abm_internal",
+      "policy",
+      "project",
+      "human_decision",
+      "tool_output",
+      "external_standard",
+      "prior_memory"
+    ],
+    "precedence_by_type": "Mandate and approved ABM source outrank derivative notes; external standards only govern external claims",
+    "decision_rights": "Named human owner decides conflicts and lifecycle actions",
+    "conflict_rule": "Expose both claims and stop at the affected gate",
+    "escalation": "Escalate unresolved authority, rights, freshness or privacy conflict",
+    "policy_constraints": [
+      "Data minimization",
+      "Least privilege",
+      "No silent overwrite"
+    ],
+    "human_gates": [
+      "Context release",
+      "Memory promotion",
+      "Archive or delete"
+    ]
+  },
+  "context_budget": {
+    "provider_limit_checked_at": "Not asserted in static evaluation",
+    "provider_limit_basis": "Runtime-specific limit must be checked at execution",
+    "reserved_output": "Named reserve required before execution",
+    "reserved_tools": "Named reserve required before execution",
+    "reserved_recovery": "Named reserve for compact-and-recover path",
+    "active_estimate": "Static fixture estimates structure, not provider tokens",
+    "overflow_plan": "Retrieve on demand, compact with loss disclosure, or stop",
+    "owner": "Agent Workflow Operator"
+  },
+  "sources": [
+    {
+      "id": "SRC-01",
+      "locator": "repo://context/mandate",
+      "owner": "ABM Context Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "mandate",
+      "authority_rank": "1",
+      "version": "v1.0",
+      "hash": "sha256-source-1",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-02",
+      "locator": "repo://context/abm_internal",
+      "owner": "ABM Context Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "abm_internal",
+      "authority_rank": "2",
+      "version": "v1.0",
+      "hash": "sha256-source-2",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-03",
+      "locator": "repo://context/policy",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "policy",
+      "authority_rank": "3",
+      "version": "v1.0",
+      "hash": "sha256-source-3",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-04",
+      "locator": "repo://context/project",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "project",
+      "authority_rank": "4",
+      "version": "v1.0",
+      "hash": "sha256-source-4",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-05",
+      "locator": "repo://context/human_decision",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "human_decision",
+      "authority_rank": "5",
+      "version": "v1.0",
+      "hash": "sha256-source-5",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-06",
+      "locator": "repo://context/tool_output",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "tool_output",
+      "authority_rank": "6",
+      "version": "v1.0",
+      "hash": "sha256-source-6",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-07",
+      "locator": "repo://context/external_standard",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "GREEN_INTERNAL",
+      "data_type": "external_standard",
+      "authority_rank": "7",
+      "version": "v1.0",
+      "hash": "sha256-source-7",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    },
+    {
+      "id": "SRC-08",
+      "locator": "repo://context/prior_memory",
+      "owner": "Named Source Owner",
+      "rights": "READ_ONLY_APPROVED",
+      "classification": "YELLOW_REVIEW",
+      "data_type": "prior_memory",
+      "authority_rank": "8",
+      "version": "v1.0",
+      "hash": "sha256-source-8",
+      "as_of": "2026-08-22",
+      "effective": "2026-08-22",
+      "scope": "Skill 86 static fixture",
+      "quality": "VERIFIED_FIXTURE",
+      "supersedes": "NONE",
+      "status": "CURRENT",
+      "retention": "REVIEW_90_DAYS",
+      "provenance": "Registered source with locator, owner, version and hash"
+    }
+  ],
+  "context_items": [
+    {
+      "id": "CTX-01",
+      "source_ref": "SRC-01",
+      "layer": "mandate",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_1",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/1",
+      "claim_scope": "CLAIM_SCOPE_1"
+    },
+    {
+      "id": "CTX-02",
+      "source_ref": "SRC-02",
+      "layer": "authority",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_2",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/2",
+      "claim_scope": "CLAIM_SCOPE_2"
+    },
+    {
+      "id": "CTX-03",
+      "source_ref": "SRC-03",
+      "layer": "source",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_3",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/3",
+      "claim_scope": "CLAIM_SCOPE_3"
+    },
+    {
+      "id": "CTX-04",
+      "source_ref": "SRC-04",
+      "layer": "decision",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_4",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/4",
+      "claim_scope": "CLAIM_SCOPE_4"
+    },
+    {
+      "id": "CTX-05",
+      "source_ref": "SRC-05",
+      "layer": "evidence",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_5",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/5",
+      "claim_scope": "CLAIM_SCOPE_5"
+    },
+    {
+      "id": "CTX-06",
+      "source_ref": "SRC-06",
+      "layer": "risk",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_6",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "RETRIEVE_ON_DEMAND",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/6",
+      "claim_scope": "CLAIM_SCOPE_6"
+    },
+    {
+      "id": "CTX-07",
+      "source_ref": "SRC-07",
+      "layer": "handoff",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_7",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/7",
+      "claim_scope": "CLAIM_SCOPE_7"
+    },
+    {
+      "id": "CTX-08",
+      "source_ref": "SRC-08",
+      "layer": "memory",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_8",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "EXCLUDE",
+      "reason": "Outside active task but retained in registry",
+      "retrieval_pointer": "repo://context/item/8",
+      "claim_scope": "CLAIM_SCOPE_8"
+    },
+    {
+      "id": "CTX-09",
+      "source_ref": "SRC-01",
+      "layer": "lifecycle",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_1",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "RETRIEVE_ON_DEMAND",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/9",
+      "claim_scope": "CLAIM_SCOPE_9"
+    },
+    {
+      "id": "CTX-10",
+      "source_ref": "SRC-02",
+      "layer": "next_action",
+      "relevance": "Directly supports governed context decision",
+      "authority": "RANK_2",
+      "freshness": "Checked 2026-08-22",
+      "coverage": "One bounded requirement",
+      "risk": "No unresolved silent assumption",
+      "duplication": "DEDUP_CHECKED",
+      "phase": "STATIC_EVALUATION",
+      "disposition": "INCLUDE",
+      "reason": "Required or retrievable for traceability",
+      "retrieval_pointer": "repo://context/item/10",
+      "claim_scope": "CLAIM_SCOPE_10"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "id": "CLM-01",
+      "claim": "Governed context claim 1",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-01",
+        "CTX-01"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-01#v1.0"
+    },
+    {
+      "id": "CLM-02",
+      "claim": "Governed context claim 2",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-02",
+        "CTX-02"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-02#v1.0"
+    },
+    {
+      "id": "CLM-03",
+      "claim": "Governed context claim 3",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-03",
+        "CTX-03"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-03#v1.0"
+    },
+    {
+      "id": "CLM-04",
+      "claim": "Governed context claim 4",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-04",
+        "CTX-04"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-04#v1.0"
+    },
+    {
+      "id": "CLM-05",
+      "claim": "Governed context claim 5",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-05",
+        "CTX-05"
+      ],
+      "status": "CONFLICT_DISCLOSED",
+      "conflict": true,
+      "owner": "Claim Review Owner",
+      "decision_needed": "Human resolves authority conflict",
+      "citation": "SRC-05#v1.0"
+    },
+    {
+      "id": "CLM-06",
+      "claim": "Governed context claim 6",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-06",
+        "CTX-06"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-06#v1.0"
+    },
+    {
+      "id": "CLM-07",
+      "claim": "Governed context claim 7",
+      "claim_type": "EXTERNAL_STANDARD",
+      "evidence_refs": [
+        "SRC-07",
+        "CTX-07"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-07#v1.0"
+    },
+    {
+      "id": "CLM-08",
+      "claim": "Governed context claim 8",
+      "claim_type": "INTERNAL_CONTROL",
+      "evidence_refs": [
+        "SRC-08",
+        "CTX-08"
+      ],
+      "status": "SUPPORTED",
+      "conflict": false,
+      "owner": "Claim Review Owner",
+      "decision_needed": "No",
+      "citation": "SRC-08#v1.0"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-01",
+      "decision": "Context decision 1",
+      "evidence_refs": [
+        "CLM-01"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "2026-08-22",
+      "status": "APPROVED_HUMAN",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "DEC-02",
+      "decision": "Context decision 2",
+      "evidence_refs": [
+        "CLM-02"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "2026-08-22",
+      "status": "APPROVED_HUMAN",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "DEC-03",
+      "decision": "Context decision 3",
+      "evidence_refs": [
+        "CLM-03"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "2026-08-22",
+      "status": "APPROVED_HUMAN",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "DEC-04",
+      "decision": "Context decision 4",
+      "evidence_refs": [
+        "CLM-04"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "PENDING_HUMAN",
+      "status": "PENDING",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "DEC-05",
+      "decision": "Context decision 5",
+      "evidence_refs": [
+        "CLM-05"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "PENDING_HUMAN",
+      "status": "PENDING",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "DEC-06",
+      "decision": "Context decision 6",
+      "evidence_refs": [
+        "CLM-06"
+      ],
+      "owner": "Human Decision Owner",
+      "decided_at": "PENDING_HUMAN",
+      "status": "PENDING",
+      "scope": "Static fixture only",
+      "supersedes": "NONE"
+    }
+  ],
+  "tbd_items": [
+    {
+      "id": "TBD-01",
+      "question": "Open context question 1",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    },
+    {
+      "id": "TBD-02",
+      "question": "Open context question 2",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    },
+    {
+      "id": "TBD-03",
+      "question": "Open context question 3",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    },
+    {
+      "id": "TBD-04",
+      "question": "Open context question 4",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    },
+    {
+      "id": "TBD-05",
+      "question": "Open context question 5",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    },
+    {
+      "id": "TBD-06",
+      "question": "Open context question 6",
+      "evidence_gap": "Named missing operational evidence",
+      "owner": "Assigned Evidence Owner",
+      "needed_by": "Before D10 pilot",
+      "consequence": "Gate remains closed",
+      "status": "OPEN"
+    }
+  ],
+  "compaction_records": [
+    {
+      "id": "CMP-01",
+      "before_hash": "sha256-before-1",
+      "after_hash": "sha256-after-1",
+      "preserved": [
+        "mandate",
+        "authority",
+        "sources",
+        "decisions",
+        "tbd",
+        "risks",
+        "next_action"
+      ],
+      "omitted": [
+        "verbose_working_notes"
+      ],
+      "recovery": "repo://context/snapshot/1",
+      "coverage_before": "12/12 controls",
+      "coverage_after": "12/12 controls",
+      "loss_status": "DISCLOSED",
+      "owner": "Context Operator",
+      "approval": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "id": "CMP-02",
+      "before_hash": "sha256-before-2",
+      "after_hash": "sha256-after-2",
+      "preserved": [
+        "mandate",
+        "authority",
+        "sources",
+        "decisions",
+        "tbd",
+        "risks",
+        "next_action"
+      ],
+      "omitted": [
+        "verbose_working_notes"
+      ],
+      "recovery": "repo://context/snapshot/2",
+      "coverage_before": "12/12 controls",
+      "coverage_after": "12/12 controls",
+      "loss_status": "DISCLOSED",
+      "owner": "Context Operator",
+      "approval": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "id": "CMP-03",
+      "before_hash": "sha256-before-3",
+      "after_hash": "sha256-after-3",
+      "preserved": [
+        "mandate",
+        "authority",
+        "sources",
+        "decisions",
+        "tbd",
+        "risks",
+        "next_action"
+      ],
+      "omitted": [
+        "verbose_working_notes"
+      ],
+      "recovery": "repo://context/snapshot/3",
+      "coverage_before": "12/12 controls",
+      "coverage_after": "12/12 controls",
+      "loss_status": "DISCLOSED",
+      "owner": "Context Operator",
+      "approval": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "id": "CMP-04",
+      "before_hash": "sha256-before-4",
+      "after_hash": "sha256-after-4",
+      "preserved": [
+        "mandate",
+        "authority",
+        "sources",
+        "decisions",
+        "tbd",
+        "risks",
+        "next_action"
+      ],
+      "omitted": [
+        "verbose_working_notes"
+      ],
+      "recovery": "repo://context/snapshot/4",
+      "coverage_before": "12/12 controls",
+      "coverage_after": "12/12 controls",
+      "loss_status": "DISCLOSED",
+      "owner": "Context Operator",
+      "approval": "PENDING_HUMAN_REVIEW"
+    }
+  ],
+  "branch_handoffs": [
+    {
+      "id": "HND-01",
+      "parent_ref": "TASK-CTX-86",
+      "branch_type": "BOUNDED_REVIEW",
+      "recipient": "Domain Owner",
+      "purpose": "Review one bounded context control",
+      "rights": "READ_ONLY_NO_DELEGATION",
+      "security_zone": "ABM_INTERNAL",
+      "source_refs": [
+        "SRC-01"
+      ],
+      "state_refs": [
+        "DEC-01",
+        "TBD-01"
+      ],
+      "deliverable": "Signed review evidence",
+      "dod": "Evidence and disposition returned",
+      "expiry": "2026-08-29",
+      "revalidation": "Required before reuse",
+      "merge_close": "Human owner merges or closes",
+      "stop_escalation": "Stop on rights, scope or source conflict",
+      "status": "PENDING"
+    },
+    {
+      "id": "HND-02",
+      "parent_ref": "TASK-CTX-86",
+      "branch_type": "BOUNDED_REVIEW",
+      "recipient": "Privacy Reviewer",
+      "purpose": "Review one bounded context control",
+      "rights": "READ_ONLY_NO_DELEGATION",
+      "security_zone": "ABM_INTERNAL",
+      "source_refs": [
+        "SRC-02"
+      ],
+      "state_refs": [
+        "DEC-02",
+        "TBD-02"
+      ],
+      "deliverable": "Signed review evidence",
+      "dod": "Evidence and disposition returned",
+      "expiry": "2026-08-29",
+      "revalidation": "Required before reuse",
+      "merge_close": "Human owner merges or closes",
+      "stop_escalation": "Stop on rights, scope or source conflict",
+      "status": "PENDING"
+    },
+    {
+      "id": "HND-03",
+      "parent_ref": "TASK-CTX-86",
+      "branch_type": "BOUNDED_REVIEW",
+      "recipient": "Knowledge Manager",
+      "purpose": "Review one bounded context control",
+      "rights": "READ_ONLY_NO_DELEGATION",
+      "security_zone": "ABM_INTERNAL",
+      "source_refs": [
+        "SRC-03"
+      ],
+      "state_refs": [
+        "DEC-03",
+        "TBD-03"
+      ],
+      "deliverable": "Signed review evidence",
+      "dod": "Evidence and disposition returned",
+      "expiry": "2026-08-29",
+      "revalidation": "Required before reuse",
+      "merge_close": "Human owner merges or closes",
+      "stop_escalation": "Stop on rights, scope or source conflict",
+      "status": "PENDING"
+    },
+    {
+      "id": "HND-04",
+      "parent_ref": "TASK-CTX-86",
+      "branch_type": "BOUNDED_REVIEW",
+      "recipient": "Workflow Operator",
+      "purpose": "Review one bounded context control",
+      "rights": "READ_ONLY_NO_DELEGATION",
+      "security_zone": "ABM_INTERNAL",
+      "source_refs": [
+        "SRC-04"
+      ],
+      "state_refs": [
+        "DEC-04",
+        "TBD-04"
+      ],
+      "deliverable": "Signed review evidence",
+      "dod": "Evidence and disposition returned",
+      "expiry": "2026-08-29",
+      "revalidation": "Required before reuse",
+      "merge_close": "Human owner merges or closes",
+      "stop_escalation": "Stop on rights, scope or source conflict",
+      "status": "PENDING"
+    }
+  ],
+  "memory_candidates": [
+    {
+      "id": "MEM-01",
+      "item": "Durable memory candidate 1",
+      "source_refs": [
+        "SRC-01"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "MEM-02",
+      "item": "Durable memory candidate 2",
+      "source_refs": [
+        "SRC-02"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "MEM-03",
+      "item": "Durable memory candidate 3",
+      "source_refs": [
+        "SRC-03"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "MEM-04",
+      "item": "Durable memory candidate 4",
+      "source_refs": [
+        "SRC-04"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "MEM-05",
+      "item": "Durable memory candidate 5",
+      "source_refs": [
+        "SRC-05"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    },
+    {
+      "id": "MEM-06",
+      "item": "Durable memory candidate 6",
+      "source_refs": [
+        "SRC-06"
+      ],
+      "stability": "UNPROVEN_UNTIL_PILOT",
+      "reuse_scope": "Named ABM workflow only",
+      "classification": "YELLOW_REVIEW",
+      "sensitivity": "No secret material",
+      "retention": "REVIEW_30_DAYS",
+      "review_date": "2026-09-21",
+      "owner": "Knowledge Records Manager",
+      "approval": "REQUIRES_HUMAN",
+      "status": "CANDIDATE_PENDING",
+      "supersedes": "NONE"
+    }
+  ],
+  "lifecycle_actions": [
+    {
+      "id": "LFC-01",
+      "target_ref": "MEM-01",
+      "action": "PROMOTE_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    },
+    {
+      "id": "LFC-02",
+      "target_ref": "MEM-02",
+      "action": "SNAPSHOT_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    },
+    {
+      "id": "LFC-03",
+      "target_ref": "MEM-03",
+      "action": "ARCHIVE_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    },
+    {
+      "id": "LFC-04",
+      "target_ref": "MEM-04",
+      "action": "DELETE_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    },
+    {
+      "id": "LFC-05",
+      "target_ref": "MEM-05",
+      "action": "RETENTION_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    },
+    {
+      "id": "LFC-06",
+      "target_ref": "MEM-06",
+      "action": "SUPERSEDE_REVIEW",
+      "basis": "Named lifecycle policy and evidence required",
+      "owner": "Knowledge Records Manager",
+      "approver": "Human Data Owner",
+      "precondition": "Approval plus verified target and rollback",
+      "backup_rollback": "Immutable snapshot pointer required",
+      "verification": "Post-action evidence required",
+      "status": "PENDING"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-01",
+      "category": "authority",
+      "requirement_ref": "SRC-01",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-02",
+      "category": "source",
+      "requirement_ref": "SRC-02",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-03",
+      "category": "selection",
+      "requirement_ref": "SRC-03",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-04",
+      "category": "grounding",
+      "requirement_ref": "SRC-04",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-05",
+      "category": "conflict",
+      "requirement_ref": "SRC-05",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-06",
+      "category": "compaction",
+      "requirement_ref": "SRC-06",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-07",
+      "category": "handoff",
+      "requirement_ref": "SRC-07",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-08",
+      "category": "memory",
+      "requirement_ref": "SRC-08",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-09",
+      "category": "lifecycle",
+      "requirement_ref": "CTX-09",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "injection",
+      "requirement_ref": "CTX-10",
+      "setup": "Controlled static fixture",
+      "expected": "Control is explicit and auditable",
+      "actual": "Control found with evidence",
+      "evidence": "fixture-check-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "AUTHORITY_CONFLICT_SOURCE",
+      "risk": "Governance risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "RELEVANCE_COMPLETENESS_CONTEXT_BUDGET",
+      "risk": "Governance risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "FRESHNESS_VERSION_PROVENANCE",
+      "risk": "Governance risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "PRIVACY_SECURITY_PROMPT_INJECTION",
+      "risk": "Governance risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "COMPACTION_BRANCH_HANDOFF",
+      "risk": "Governance risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "MEMORY_RETENTION_DELETION",
+      "risk": "Governance risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could invalidate context decision",
+      "control": "Named preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "mandate_authority",
+      "status": "PASS",
+      "evidence": "mandate_authority verified in positive fixture"
+    },
+    {
+      "id": "source_registry",
+      "status": "PASS",
+      "evidence": "source_registry verified in positive fixture"
+    },
+    {
+      "id": "context_selection",
+      "status": "PASS",
+      "evidence": "context_selection verified in positive fixture"
+    },
+    {
+      "id": "claim_grounding",
+      "status": "PASS",
+      "evidence": "claim_grounding verified in positive fixture"
+    },
+    {
+      "id": "compaction_handoff",
+      "status": "PASS",
+      "evidence": "compaction_handoff verified in positive fixture"
+    },
+    {
+      "id": "memory_lifecycle",
+      "status": "PASS",
+      "evidence": "memory_lifecycle verified in positive fixture"
+    },
+    {
+      "id": "security_injection_audit",
+      "status": "PASS",
+      "evidence": "security_injection_audit verified in positive fixture"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "TASK_DECISION_OWNER",
+      "status": "PASS",
+      "evidence": "TASK_DECISION_OWNER reviewed static fixture"
+    },
+    {
+      "id": "DOMAIN_SOURCE_OWNER",
+      "status": "PASS",
+      "evidence": "DOMAIN_SOURCE_OWNER reviewed static fixture"
+    },
+    {
+      "id": "DATA_PRIVACY_SECURITY",
+      "status": "PASS",
+      "evidence": "DATA_PRIVACY_SECURITY reviewed static fixture"
+    },
+    {
+      "id": "KNOWLEDGE_RECORDS_MANAGER",
+      "status": "PASS",
+      "evidence": "KNOWLEDGE_RECORDS_MANAGER reviewed static fixture"
+    },
+    {
+      "id": "AGENT_WORKFLOW_OPERATOR",
+      "status": "PASS",
+      "evidence": "AGENT_WORKFLOW_OPERATOR reviewed static fixture"
+    },
+    {
+      "id": "RISK_COMPLIANCE_AUDIT",
+      "status": "PASS",
+      "evidence": "RISK_COMPLIANCE_AUDIT reviewed static fixture"
+    }
+  ],
+  "forbidden_checks": {
+    "invented_source": false,
+    "invented_decision": false,
+    "conflict_hidden": false,
+    "source_overwritten": false,
+    "rights_bypassed": false,
+    "hidden_prompt_revealed": false,
+    "hidden_reasoning_revealed": false,
+    "sensitive_data_expanded": false,
+    "cross_boundary_transferred": false,
+    "memory_promoted": false,
+    "record_archived": false,
+    "record_deleted": false,
+    "evidence_mutated": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

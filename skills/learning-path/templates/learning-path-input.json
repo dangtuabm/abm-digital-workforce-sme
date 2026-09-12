@@ -1,0 +1,47 @@
+{
+  "path_id": "PATH-DEMO",
+  "contract": {
+    "learner_or_role": "sales-manager",
+    "target_capability": "produce an evidence-based pipeline review",
+    "target_evidence": ["review artifact", "manager observation"],
+    "baseline_ref": "BASELINE-01",
+    "owner": "sales-director",
+    "risk_level": "medium",
+    "capacity_hours": 24
+  },
+  "gaps": [
+    {"id": "G1", "current_level": "basic", "target_level": "applied", "evidence": "BASELINE-01"}
+  ],
+  "stages": [
+    {
+      "id": "S1",
+      "prerequisites": [],
+      "outcomes": ["interpret pipeline fields correctly"],
+      "practice": ["analyze a sandbox pipeline"],
+      "artifact": "annotated pipeline review",
+      "assessment": "rubric-scored review",
+      "gate": "all critical rubric items pass",
+      "effort_hours": 8
+    },
+    {
+      "id": "S2",
+      "prerequisites": ["S1"],
+      "outcomes": ["recommend evidence-based actions"],
+      "practice": ["run a simulated management review"],
+      "artifact": "decision brief",
+      "assessment": "manager simulation rubric",
+      "gate": "no critical evidence or escalation error",
+      "effort_hours": 12
+    }
+  ],
+  "transfer": {
+    "workplace_application": "next low-risk pipeline review",
+    "manager_or_mentor": "sales-director",
+    "feedback_cadence": "after each stage and first live review",
+    "reinforcement": "spaced case retrieval",
+    "success_measure": "critical rubric items sustained on live artifact",
+    "recheck_trigger": "pipeline process or role changes"
+  },
+  "guardrails": [],
+  "expert_review": {"required": false, "status": "not_required"}
+}

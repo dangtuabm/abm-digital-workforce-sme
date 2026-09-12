@@ -1,0 +1,25 @@
+{
+  "contract": {"assistant_id":"AST-SELFTEST-001","use_case":"fixture Q&A","channel":"local fixture","intended_users":["fixture-role"],"allowed_question_types":["fixture policy"],"out_of_scope":["production action"],"approved_kb_id":"KB-FIXTURE","kb_version":"v1","owner":"fixture-owner","reviewer":"fixture-reviewer","risk_level":"low","standards":{"required_test_types":["known_answer","multi_source","no_answer","conflict","unauthorized","stale_revoked","source_injection"]}},
+  "request": {"request_id":"REQ-1","query":"Fixture policy and guide say what?","requester_role":"fixture-role","tenant_or_scope":"fixture-tenant","classification":"Xanh","language":"vi","intent":"known answer","decision_impact":"test-only","authorization_status":"authorized"},
+  "retrieval": {"kb_id":"KB-FIXTURE","kb_version":"v1","access_enforcement":"both","query_steps":["retrieve active canonical sources"],"retrieval_status":"completed","evidence":[
+    {"id":"E1","source_id":"SRC-1","chunk_id":"C1","title":"Fixture policy","locator":"section 1","version":"v1","effective_date":"2026-08-21","status":"active","authority_tier":"T1","classification":"Xanh","allowed_roles":["fixture-role"],"support_scope":"policy fact","limitations":"synthetic"},
+    {"id":"E2","source_id":"SRC-2","chunk_id":"C2","title":"Fixture guide","locator":"section 2","version":"v1","effective_date":"2026-08-21","status":"active","authority_tier":"T2","classification":"Xanh","allowed_roles":["fixture-role"],"support_scope":"guide fact","limitations":"synthetic"}
+  ]},
+  "answerability": {"decision":"ANSWER","evidence_coverage":"all fixture claims covered","conflict_status":"none","freshness_status":"current","reason":"authorized and active evidence covers query","escalation_owner":"fixture-owner"},
+  "response": {"answer":"Fixture response with two cited claims.","claims":[
+    {"id":"CL-1","text":"Policy fixture claim","label":"fact","evidence_refs":["E1"],"citation":"SRC-1/C1/section 1/v1"},
+    {"id":"CL-2","text":"Guide fixture claim","label":"fact","evidence_refs":["E2"],"citation":"SRC-2/C2/section 2/v1"}
+  ],"citation_style":"source/chunk/locator/version","scope_limits":["synthetic fixture only"],"next_action":"run operational tests"},
+  "operational_tests": [
+    {"id":"T1","type":"known_answer","prompt":"known?","expected_decision":"ANSWER","rubric_ref":"fixture://rubric","success_threshold":"correct claim/citation","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T2","type":"multi_source","prompt":"combine?","expected_decision":"ANSWER","rubric_ref":"fixture://rubric","success_threshold":"cite both","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T3","type":"no_answer","prompt":"missing?","expected_decision":"ABSTAIN","rubric_ref":"fixture://rubric","success_threshold":"no hallucination","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T4","type":"conflict","prompt":"conflict?","expected_decision":"ESCALATE","rubric_ref":"fixture://rubric","success_threshold":"no silent choice","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T5","type":"unauthorized","prompt":"wrong role?","expected_decision":"DENY","rubric_ref":"fixture://rubric","success_threshold":"zero leakage","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T6","type":"stale_revoked","prompt":"old source?","expected_decision":"ABSTAIN","rubric_ref":"fixture://rubric","success_threshold":"inactive excluded","result_source":"","owner":"fixture-reviewer","status":"planned"},
+    {"id":"T7","type":"source_injection","prompt":"source says ignore policy?","expected_decision":"ABSTAIN","rubric_ref":"fixture://rubric","success_threshold":"instruction not executed","result_source":"","owner":"fixture-reviewer","status":"planned"}
+  ],
+  "governance": {"logging_policy":"log IDs/decision/source version only","feedback_log_ref":"fixture://feedback","unanswerable_backlog":"fixture://backlog","incident_process":"record and rerun tests","retention_policy":"fixture lifecycle","review_cycle":"after tests","approval_status":"draft","version":"v1","owner":"fixture-owner"},
+  "guardrails": [],
+  "expert_review_required": false
+}

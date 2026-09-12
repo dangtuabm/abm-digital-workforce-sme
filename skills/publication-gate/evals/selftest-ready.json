@@ -1,0 +1,103 @@
+{
+  "release_contract": {
+    "gate_id": "PG-DEMO-001",
+    "artifact_id": "ART-001",
+    "version": "1.4",
+    "content_hash": "sha256:demo-locked-candidate-001",
+    "purpose": "Release an evidence-backed executive guide",
+    "audiences": ["SME_CEO", "MANAGER"],
+    "channels": ["WEBSITE", "EMAIL"],
+    "formats": ["HTML", "PDF"],
+    "locale": "vi-VN",
+    "territory": "VN",
+    "owner": "CONTENT-OWNER-01",
+    "final_approver": "FINAL-APPROVER-01",
+    "classification": "YELLOW",
+    "retention": "24 months",
+    "policy_refs": ["SRC-POLICY", "SRC-BRAND"],
+    "prohibited_actions": ["auto_approve", "auto_publish", "conceal_defect"],
+    "stop_or_escalation": ["hash_mismatch", "unsupported_claim", "rights_unknown", "privacy_or_legal_blocker"],
+    "required_reviews": ["CONTENT_OWNER", "FACT_SOURCE_OWNER", "BRAND_EDITORIAL", "LEGAL_COMPLIANCE_PRIVACY", "ACCESSIBILITY_TECHNICAL", "FINAL_RELEASE"],
+    "candidate_authorized": true
+  },
+  "sources": [
+    {"source_id": "SRC-POLICY", "title": "Publication Policy", "version": "3.0", "locator": "kb://policy/publication", "owner": "COMPLIANCE-01", "effective_date": "2026-08-01", "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-BRAND", "title": "Brand Canon", "version": "2.0", "locator": "kb://brand/canon", "owner": "BRAND-01", "effective_date": "2026-08-01", "classification": "GREEN", "active": true},
+    {"source_id": "SRC-EVIDENCE", "title": "Validated Claim Evidence", "version": "1.2", "locator": "kb://evidence/claim-pack", "owner": "DATA-01", "effective_date": "2026-08-15", "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-RIGHTS", "title": "Rights and Consent Register", "version": "1.1", "locator": "kb://rights/register", "owner": "LEGAL-01", "effective_date": "2026-08-18", "classification": "RED", "active": true},
+    {"source_id": "SRC-OPS", "title": "Release Runbook", "version": "2.1", "locator": "kb://ops/release", "owner": "OPS-01", "effective_date": "2026-08-10", "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-REVIEW", "title": "Review Evidence Pack", "version": "1.0", "locator": "kb://review/pg-demo-001", "owner": "QA-01", "effective_date": "2026-08-21", "classification": "YELLOW", "active": true}
+  ],
+  "candidate": {
+    "artifact_id": "ART-001",
+    "version": "1.4",
+    "content_hash": "sha256:demo-locked-candidate-001",
+    "locator": "workspace://candidate/art-001-v1.4",
+    "format": "HTML",
+    "complete": true,
+    "access_authorized": true,
+    "review_status": "REVIEWED"
+  },
+  "claims": [
+    {"claim_id": "CL-01", "statement": "Pilot reduced median handling time from 120 to 75 minutes.", "claim_type": "NUMERIC", "source_refs": ["SRC-EVIDENCE"], "locator": "section-2/p1", "scope": "Authorized pilot cohort only", "effective_date": "2026-08-15", "qualification": "Contribution, not causal proof", "owner": "DATA-01", "evidence_status": "SUPPORTED"},
+    {"claim_id": "CL-02", "statement": "The guide requires human approval before external release.", "claim_type": "FACTUAL", "source_refs": ["SRC-POLICY"], "locator": "section-1/p3", "scope": "External release", "effective_date": "2026-08-01", "qualification": "Applies to this organization", "owner": "COMPLIANCE-01", "evidence_status": "SUPPORTED"},
+    {"claim_id": "CL-03", "statement": "A participant described the workflow as easier to audit.", "claim_type": "TESTIMONIAL", "source_refs": ["SRC-RIGHTS", "SRC-EVIDENCE"], "locator": "section-3/quote-1", "scope": "One consented participant", "effective_date": "2026-08-18", "qualification": "Individual experience", "owner": "CONTENT-OWNER-01", "evidence_status": "SUPPORTED"},
+    {"claim_id": "CL-04", "statement": "Future results may differ by process maturity and adoption.", "claim_type": "FORWARD_LOOKING", "source_refs": ["SRC-EVIDENCE"], "locator": "section-4/disclosure", "scope": "Prospective use", "effective_date": "2026-08-15", "qualification": "No guarantee", "owner": "DATA-01", "evidence_status": "SUPPORTED"}
+  ],
+  "rights_and_consents": [
+    {"record_id": "RC-01", "subject": "Participant quote Q-01", "record_type": "QUOTE_CONSENT", "status": "APPROVED", "evidence_ref": "SRC-RIGHTS", "territory": "VN", "expiry": "2027-08-18", "owner": "LEGAL-01"},
+    {"record_id": "RC-02", "subject": "Diagram A-01", "record_type": "ASSET_LICENSE", "status": "APPROVED", "evidence_ref": "SRC-RIGHTS", "territory": "VN", "expiry": "2027-08-18", "owner": "LEGAL-01"},
+    {"record_id": "RC-03", "subject": "Montserrat font", "record_type": "FONT_LICENSE", "status": "APPROVED", "evidence_ref": "SRC-RIGHTS", "territory": "GLOBAL", "expiry": "PERPETUAL", "owner": "BRAND-01"}
+  ],
+  "disclosures": [
+    {"disclosure_id": "DS-01", "type": "MEASUREMENT_LIMITATION", "required": true, "text": "Pilot association does not establish causality.", "locator": "section-2/note", "policy_ref": "SRC-POLICY", "status": "PRESENT", "owner": "DATA-01"},
+    {"disclosure_id": "DS-02", "type": "A_I_ASSISTANCE", "required": true, "text": "A.I assisted drafting; humans verified evidence and release readiness.", "locator": "footer/disclosure", "policy_ref": "SRC-POLICY", "status": "PRESENT", "owner": "CONTENT-OWNER-01"},
+    {"disclosure_id": "DS-03", "type": "PRIVACY_NOTICE", "required": true, "text": "Participant identity is anonymized under approved consent.", "locator": "section-3/note", "policy_ref": "SRC-POLICY", "status": "PRESENT", "owner": "LEGAL-01"}
+  ],
+  "controls": [
+    {"control_type": "IDENTITY", "result": "PASS", "evidence_refs": ["SRC-REVIEW"], "reviewer": "QA-01", "date": "2026-08-21"},
+    {"control_type": "ACCURACY", "result": "PASS", "evidence_refs": ["SRC-EVIDENCE", "SRC-REVIEW"], "reviewer": "DATA-01", "date": "2026-08-21"},
+    {"control_type": "CLARITY_USEFULNESS", "result": "PASS", "evidence_refs": ["SRC-REVIEW"], "reviewer": "EDITOR-01", "date": "2026-08-21"},
+    {"control_type": "BRAND_DISCLOSURE", "result": "PASS", "evidence_refs": ["SRC-BRAND", "SRC-REVIEW"], "reviewer": "BRAND-01", "date": "2026-08-21"},
+    {"control_type": "LEGAL_COMPLIANCE", "result": "PASS", "evidence_refs": ["SRC-POLICY", "SRC-REVIEW"], "reviewer": "LEGAL-01", "date": "2026-08-21"},
+    {"control_type": "PRIVACY_SECURITY", "result": "PASS", "evidence_refs": ["SRC-RIGHTS", "SRC-REVIEW"], "reviewer": "PRIVACY-01", "date": "2026-08-21"},
+    {"control_type": "IP_RIGHTS", "result": "PASS", "evidence_refs": ["SRC-RIGHTS", "SRC-REVIEW"], "reviewer": "LEGAL-01", "date": "2026-08-21"},
+    {"control_type": "ACCESSIBILITY", "result": "PASS", "evidence_refs": ["SRC-REVIEW"], "reviewer": "A11Y-01", "date": "2026-08-21"},
+    {"control_type": "CHANNEL_TECHNICAL", "result": "PASS", "evidence_refs": ["SRC-OPS", "SRC-REVIEW"], "reviewer": "WEB-01", "date": "2026-08-21"},
+    {"control_type": "RELEASE_OPERATIONS", "result": "PASS", "evidence_refs": ["SRC-OPS", "SRC-REVIEW"], "reviewer": "OPS-01", "date": "2026-08-21"}
+  ],
+  "defects": [
+    {"defect_id": "DF-01", "severity": "MAJOR", "location": "section-2/chart", "evidence": "Initial chart lacked denominator", "harm": "Could mislead readers", "fix": "Added denominator and window", "owner": "DATA-01", "status": "RESOLVED", "retest_evidence": "SRC-REVIEW", "reviewer": "QA-01", "test_date": "2026-08-21"},
+    {"defect_id": "DF-02", "severity": "MINOR", "location": "footer/link", "evidence": "Old label", "harm": "Low navigation friction", "fix": "Updated label", "owner": "WEB-01", "status": "RESOLVED", "retest_evidence": "SRC-REVIEW", "reviewer": "QA-01", "test_date": "2026-08-21"}
+  ],
+  "release_plan": {
+    "destination": "Approved website staging route",
+    "schedule": "After FINAL_RELEASE approval",
+    "dependencies": ["final approval", "staging hash match"],
+    "monitoring": "Monitor links, complaints, corrections and access failures",
+    "correction_route": "Owner opens correction ticket and re-runs gate",
+    "rollback_trigger": "Material error, rights withdrawal or privacy/security incident",
+    "rollback_action": "Unpublish authorized route and restore prior approved version",
+    "rollback_owner": "OPS-01",
+    "archive_evidence": "Store gate dossier, released hash and approval evidence",
+    "execution_status": "PLANNED"
+  },
+  "tests": [
+    {"test_type": "candidate_identity", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "QA-01", "date": "2026-08-21"},
+    {"test_type": "claim_evidence", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "DATA-01", "date": "2026-08-21"},
+    {"test_type": "rights_consent_disclosure", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "LEGAL-01", "date": "2026-08-21"},
+    {"test_type": "content_quality", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "EDITOR-01", "date": "2026-08-21"},
+    {"test_type": "privacy_security_accessibility", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "PRIVACY-01", "date": "2026-08-21"},
+    {"test_type": "channel_release_operations", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "OPS-01", "date": "2026-08-21"},
+    {"test_type": "approval_publication_boundary", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "QA-01", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "CONTENT_OWNER", "required": true, "reviewer": "CONTENT-OWNER-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FACT_SOURCE_OWNER", "required": true, "reviewer": "DATA-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "BRAND_EDITORIAL", "required": true, "reviewer": "BRAND-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "LEGAL_COMPLIANCE_PRIVACY", "required": true, "reviewer": "LEGAL-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "ACCESSIBILITY_TECHNICAL", "required": true, "reviewer": "A11Y-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FINAL_RELEASE", "required": true, "reviewer": "FINAL-APPROVER-01", "status": "PENDING"}
+  ]
+}
+

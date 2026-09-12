@@ -1,0 +1,102 @@
+{
+  "contract": {
+    "closure_set_id": "AC-DEMO-001",
+    "source_id": "MEET-REC-001",
+    "source_version": "1.0",
+    "source_hash": "sha256:meeting-action-register-001",
+    "source_status": "ACTIVE",
+    "scope": "Two recovery actions accepted in MEET-001",
+    "classification": "YELLOW",
+    "owner": "P-01",
+    "correction_owner": "P-01",
+    "retention": "24 months",
+    "prohibited_actions": ["Send reminder", "Mutate task status", "Change owner/due/DoD", "Close or waive action"]
+  },
+  "actions": [
+    {
+      "action_id": "ACT-01",
+      "outcome": "Approved recovery scope preserving all contractual outcomes",
+      "owner_id": "D-01",
+      "owner_acceptance_status": "EXPLICIT_ACCEPTED",
+      "owner_acceptance_evidence": "meeting://MEET-001/00:46:02",
+      "due_or_trigger": "2026-08-25T16:00:00+07:00",
+      "dod_criteria_ids": ["CR-01", "CR-02"],
+      "reviewer": "R-01",
+      "authority_evidence": "delegation://AD-DEMO-001/AUTH-01",
+      "status": "RECORDED"
+    },
+    {
+      "action_id": "ACT-02",
+      "outcome": "Feasible recovery schedule with owned dependencies and controls",
+      "owner_id": "D-02",
+      "owner_acceptance_status": "EXPLICIT_ACCEPTED",
+      "owner_acceptance_evidence": "meeting://MEET-001/00:47:10",
+      "due_or_trigger": "2026-08-26T12:00:00+07:00",
+      "dod_criteria_ids": ["CR-03", "CR-04"],
+      "reviewer": "R-02",
+      "authority_evidence": "delegation://AD-DEMO-001/AUTH-01",
+      "status": "RECORDED"
+    }
+  ],
+  "sources": [
+    {"source_id": "SRC-01", "version": "3.0", "hash": "sha256:scope-v3", "locator": "vault://recovery/scope-v3", "owner": "D-01", "captured_at": "2026-08-25T15:30:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-02", "version": "1.0", "hash": "sha256:trace-001", "locator": "vault://recovery/trace-001", "owner": "R-01", "captured_at": "2026-08-25T15:45:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-03", "version": "2.0", "hash": "sha256:schedule-v2", "locator": "vault://recovery/schedule-v2", "owner": "D-02", "captured_at": "2026-08-26T11:20:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-04", "version": "1.0", "hash": "sha256:risk-ledger-001", "locator": "vault://recovery/risk-001", "owner": "R-02", "captured_at": "2026-08-26T11:35:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true}
+  ],
+  "progress_events": [
+    {"event_id": "EV-01", "action_id": "ACT-01", "actor": "D-01", "timestamp": "2026-08-25T12:00:00+07:00", "reported_state": "IN_PROGRESS", "forecast": "2026-08-25T16:00:00+07:00", "evidence_refs": ["SRC-01"], "verification_state": "VERIFIED"},
+    {"event_id": "EV-02", "action_id": "ACT-01", "actor": "R-01", "timestamp": "2026-08-25T15:50:00+07:00", "reported_state": "COMPLETE", "forecast": "2026-08-25T16:00:00+07:00", "evidence_refs": ["SRC-01", "SRC-02"], "verification_state": "VERIFIED"},
+    {"event_id": "EV-03", "action_id": "ACT-02", "actor": "R-02", "timestamp": "2026-08-26T11:45:00+07:00", "reported_state": "COMPLETE", "forecast": "2026-08-26T12:00:00+07:00", "evidence_refs": ["SRC-03", "SRC-04"], "verification_state": "VERIFIED"}
+  ],
+  "dependencies": [
+    {"dependency_id": "DEP-01", "owner": "R-01", "state": "RESOLVED", "evidence": "Requirement baseline v3 frozen", "fallback": "Escalate conflict to P-01"},
+    {"dependency_id": "DEP-02", "owner": "R-02", "state": "READY", "evidence": "Capacity and critical path verified", "fallback": "Pause optional work"}
+  ],
+  "blockers": [
+    {"blocker_id": "BLK-01", "owner": "R-02", "state": "RESOLVED", "impact": "Two-hour schedule delay", "control": "Re-sequenced optional work with approval", "escalation_id": "ESC-02"}
+  ],
+  "criteria": [
+    {"criterion_id": "CR-01", "action_id": "ACT-01", "criterion": "All contractual outcomes retained", "result": "PASS", "evidence_refs": ["SRC-01", "SRC-02"], "reviewer": "R-01", "review_status": "VERIFIED"},
+    {"criterion_id": "CR-02", "action_id": "ACT-01", "criterion": "Exclusions and approval evidence explicit", "result": "PASS", "evidence_refs": ["SRC-01"], "reviewer": "R-01", "review_status": "VERIFIED"},
+    {"criterion_id": "CR-03", "action_id": "ACT-02", "criterion": "Every milestone has owner and due", "result": "PASS", "evidence_refs": ["SRC-03"], "reviewer": "R-02", "review_status": "VERIFIED"},
+    {"criterion_id": "CR-04", "action_id": "ACT-02", "criterion": "Dependencies and risk controls are owned", "result": "PASS", "evidence_refs": ["SRC-03", "SRC-04"], "reviewer": "R-02", "review_status": "VERIFIED"}
+  ],
+  "exceptions": [
+    {"exception_id": "EXC-01", "action_id": "ACT-02", "type": "LATE_INTERMEDIATE_MILESTONE", "reason": "Dependency confirmation arrived two hours late", "impact": "No final due-date impact", "authority_evidence": "change://CHG-001/P-01", "source_locator": "vault://recovery/change-001", "status": "REVIEWED"}
+  ],
+  "escalations": [
+    {"escalation_id": "ESC-01", "trigger": "Contractual outcome missing", "destination": "P-01", "response_sla": "2 business hours", "safe_fallback": "Freeze closure candidate", "stop_condition": "No written resolution"},
+    {"escalation_id": "ESC-02", "trigger": "Forecast variance exceeds two hours", "destination": "R-02", "response_sla": "30 minutes", "safe_fallback": "Pause optional work", "stop_condition": "Critical path unresolved"}
+  ],
+  "closure_candidate": {"status": "COMPLETE", "action_ids": ["ACT-01", "ACT-02"], "prepared_by": "QA-01", "prepared_at": "2026-08-26T12:10:00+07:00"},
+  "record": {
+    "action_ids": ["ACT-01", "ACT-02"],
+    "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04"],
+    "event_ids": ["EV-01", "EV-02", "EV-03"],
+    "dependency_ids": ["DEP-01", "DEP-02"],
+    "blocker_ids": ["BLK-01"],
+    "criterion_ids": ["CR-01", "CR-02", "CR-03", "CR-04"],
+    "exception_ids": ["EXC-01"],
+    "owner": "P-01",
+    "status": "REVIEWED"
+  },
+  "lessons": [
+    {"problem": "Dependency confirmation arrived late", "hypothesis": "Earlier evidence deadline reduces schedule variance", "result": "No final due-date impact after resequencing", "lesson": "Set dependency evidence checkpoint before critical-path lock", "owner": "R-02"}
+  ],
+  "tests": [
+    {"test_type": "action_contract", "passed": true, "evidence": "Two accepted actions with DoD/reviewer/authority", "reviewer": "QA-01", "date": "2026-08-26"},
+    {"test_type": "evidence_provenance", "passed": true, "evidence": "Four current authorized sources with hash/locator", "reviewer": "QA-01", "date": "2026-08-26"},
+    {"test_type": "progress_verification", "passed": true, "evidence": "Three events separate reported and verified", "reviewer": "QA-02", "date": "2026-08-26"},
+    {"test_type": "dependency_blocker", "passed": true, "evidence": "Two dependencies and one blocker owned/controlled", "reviewer": "QA-02", "date": "2026-08-26"},
+    {"test_type": "dod_closure", "passed": true, "evidence": "Four criteria verified PASS", "reviewer": "QA-03", "date": "2026-08-26"},
+    {"test_type": "exception_change_control", "passed": true, "evidence": "Late milestone exception retains authority and impact", "reviewer": "QA-03", "date": "2026-08-26"},
+    {"test_type": "execution_boundary", "passed": true, "evidence": "No reminder, escalation, mutation, waiver or closure", "reviewer": "QA-04", "date": "2026-08-26"}
+  ],
+  "reviews": [
+    {"review_type": "ACTION_OWNER", "reviewer": "D-01,D-02", "status": "PASS", "evidence": "Owners attest submitted evidence"},
+    {"review_type": "DOD_REVIEWER", "reviewer": "R-01,R-02", "status": "PASS", "evidence": "All four criteria verified"},
+    {"review_type": "DOMAIN_SECURITY", "reviewer": "SEC-01", "status": "PASS", "evidence": "Source access and classification verified"},
+    {"review_type": "FINAL_CLOSURE", "reviewer": "P-01", "status": "PENDING", "evidence": "Human closure decision remains"}
+  ]
+}

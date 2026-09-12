@@ -1,0 +1,105 @@
+{
+  "contract": {
+    "initiative_id": "OFE-DEMO-001",
+    "source_id": "PLAN-001",
+    "source_version": "2.0",
+    "source_hash": "sha256:plan-001-v2",
+    "source_status": "ACTIVE",
+    "classification": "YELLOW",
+    "outcome_owner": "O-01",
+    "decision_owner": "D-01",
+    "review_cadence": "Twice weekly and at milestone gates",
+    "correction_owner": "O-01",
+    "retention": "24 months",
+    "prohibited_actions": ["Mutate plan", "Reallocate resource", "Approve gate", "Rebaseline, pivot, pause or stop"]
+  },
+  "outcome": {
+    "business_reason": "Recover client delivery while preserving contractual value",
+    "outcome_statement": "Deliver an accepted recovery package by the contractual date",
+    "beneficiary": "Client operations team",
+    "value_metric_id": "MET-01",
+    "baseline": "Five-day forecast delay and 60% accepted outcome coverage",
+    "target": "100% mandatory outcome coverage accepted by 2026-08-28",
+    "due": "2026-08-28T17:00:00+07:00",
+    "in_scope": ["Scope recovery", "Schedule recovery", "Acceptance pack"],
+    "non_goals": ["Contract change", "Extra budget approval", "Client release"],
+    "stop_criteria_ids": ["STOP-01", "STOP-02"]
+  },
+  "sources": [
+    {"source_id": "SRC-01", "version": "2.0", "hash": "sha256:requirements-v2", "locator": "vault://ofe/requirements-v2", "captured_at": "2026-08-26T09:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-02", "version": "3.0", "hash": "sha256:scope-v3", "locator": "vault://ofe/scope-v3", "captured_at": "2026-08-26T14:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-03", "version": "2.0", "hash": "sha256:schedule-v2", "locator": "vault://ofe/schedule-v2", "captured_at": "2026-08-26T15:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-04", "version": "1.0", "hash": "sha256:acceptance-001", "locator": "vault://ofe/acceptance-001", "captured_at": "2026-08-27T11:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-05", "version": "1.0", "hash": "sha256:capacity-001", "locator": "vault://ofe/capacity-001", "captured_at": "2026-08-26T10:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true}
+  ],
+  "metrics": [
+    {"metric_id": "MET-01", "definition": "Share of mandatory outcome criteria accepted", "formula": "accepted mandatory criteria / total mandatory criteria", "unit": "ratio", "grain": "initiative", "owner": "M-01", "system_of_record": "Acceptance ledger", "baseline_value": 0.60, "baseline_at": "2026-08-25T09:00:00+07:00", "target_value": 1.00, "target_at": "2026-08-28T17:00:00+07:00", "actual_value": 0.75, "actual_at": "2026-08-27T11:00:00+07:00", "freshness_status": "CURRENT", "source_refs": ["SRC-01", "SRC-04"]},
+    {"metric_id": "MET-02", "definition": "Forecast delivery variance from contractual date", "formula": "forecast completion timestamp minus contractual timestamp", "unit": "hours", "grain": "initiative", "owner": "M-02", "system_of_record": "Versioned schedule", "baseline_value": 120, "baseline_at": "2026-08-25T09:00:00+07:00", "target_value": 0, "target_at": "2026-08-28T17:00:00+07:00", "actual_value": 4, "actual_at": "2026-08-27T10:00:00+07:00", "freshness_status": "CURRENT", "source_refs": ["SRC-03"]}
+  ],
+  "work_packages": [
+    {"work_package_id": "WP-01", "deliverable": "Recovery scope and requirement trace", "owner": "W-01", "dod": "All mandatory outcomes mapped with approved exclusions", "milestone_id": "MS-01", "outcome_metric_ids": ["MET-01"], "dependency_ids": ["DEP-01"], "resource_ids": ["RES-01"], "status": "ACTIVE"},
+    {"work_package_id": "WP-02", "deliverable": "Critical-path recovery schedule", "owner": "W-02", "dod": "Every milestone has owner, due, dependency and fallback", "milestone_id": "MS-01", "outcome_metric_ids": ["MET-02"], "dependency_ids": ["DEP-02"], "resource_ids": ["RES-02"], "status": "ACTIVE"},
+    {"work_package_id": "WP-03", "deliverable": "Outcome acceptance pack", "owner": "W-03", "dod": "All criteria have evidence and independent reviewer", "milestone_id": "MS-02", "outcome_metric_ids": ["MET-01", "MET-02"], "dependency_ids": ["DEP-01", "DEP-02"], "resource_ids": ["RES-01", "RES-02"], "status": "ACTIVE"}
+  ],
+  "milestones": [
+    {"milestone_id": "MS-01", "prerequisite_ids": [], "criterion_ids": ["CR-01", "CR-02"], "threshold_authorized": "All critical criteria PASS", "evidence_refs": ["SRC-02", "SRC-03"], "reviewer": "R-01", "status": "GATE_EVIDENCED"},
+    {"milestone_id": "MS-02", "prerequisite_ids": ["MS-01"], "criterion_ids": ["CR-03", "CR-04"], "threshold_authorized": "All critical criteria PASS", "evidence_refs": ["SRC-04"], "reviewer": "R-02", "status": "GATE_EVIDENCED"}
+  ],
+  "criteria": [
+    {"criterion_id": "CR-01", "milestone_id": "MS-01", "critical": true, "result": "PASS", "evidence_refs": ["SRC-01", "SRC-02"], "reviewer": "R-01", "verification_status": "VERIFIED"},
+    {"criterion_id": "CR-02", "milestone_id": "MS-01", "critical": true, "result": "PASS", "evidence_refs": ["SRC-03"], "reviewer": "R-01", "verification_status": "VERIFIED"},
+    {"criterion_id": "CR-03", "milestone_id": "MS-02", "critical": true, "result": "PASS", "evidence_refs": ["SRC-04"], "reviewer": "R-02", "verification_status": "VERIFIED"},
+    {"criterion_id": "CR-04", "milestone_id": "MS-02", "critical": false, "result": "PASS", "evidence_refs": ["SRC-04"], "reviewer": "R-02", "verification_status": "VERIFIED"}
+  ],
+  "dependencies": [
+    {"dependency_id": "DEP-01", "owner": "W-01", "state": "RESOLVED", "critical_path": true, "slack": "0 hours", "evidence": "Requirement baseline frozen", "fallback": "Escalate scope conflict to D-01"},
+    {"dependency_id": "DEP-02", "owner": "W-02", "state": "READY", "critical_path": true, "slack": "4 hours", "evidence": "Capacity and handoff confirmed", "fallback": "Pause non-critical work"}
+  ],
+  "resources": [
+    {"resource_id": "RES-01", "owner": "RM-01", "capacity_available": true, "wip": 2, "wip_limit": 3, "access_status": "AUTHORIZED", "evidence": "Capacity snapshot SRC-05"},
+    {"resource_id": "RES-02", "owner": "RM-02", "capacity_available": true, "wip": 1, "wip_limit": 2, "access_status": "AUTHORIZED", "evidence": "Capacity snapshot SRC-05"}
+  ],
+  "forecasts": [
+    {"forecast_id": "FC-01", "metric_id": "MET-01", "range_low": 0.95, "range_high": 1.00, "confidence": 0.75, "assumptions": ["MS-01 remains valid", "Review capacity available"], "evidence_refs": ["SRC-02", "SRC-04", "SRC-05"], "evidence_at": "2026-08-27T11:00:00+07:00", "scenario": "BASE"},
+    {"forecast_id": "FC-02", "metric_id": "MET-02", "range_low": 0, "range_high": 4, "confidence": 0.80, "assumptions": ["No new scope", "DEP-02 stays READY"], "evidence_refs": ["SRC-03", "SRC-05"], "evidence_at": "2026-08-27T10:00:00+07:00", "scenario": "BASE"}
+  ],
+  "variances": [
+    {"variance_id": "VAR-01", "metric_id": "MET-01", "type": "VALUE", "baseline": 0.60, "actual_or_forecast": 0.75, "cause": "Final acceptance evidence pending", "impact": "25% of mandatory criteria not yet accepted", "trigger": "Actual below target at review", "evidence_refs": ["SRC-04"], "status": "OPEN_CONTROLLED"},
+    {"variance_id": "VAR-02", "metric_id": "MET-02", "type": "SCHEDULE", "baseline": 120, "actual_or_forecast": 4, "cause": "Late dependency confirmation", "impact": "Up to four-hour delivery variance", "trigger": "Forecast above zero", "evidence_refs": ["SRC-03"], "status": "OPEN_CONTROLLED"}
+  ],
+  "risks": [
+    {"risk_id": "RSK-01", "severity": "HIGH", "trigger": "Mandatory outcome removed", "impact": "Contractual value loss", "control": "Requirement trace and decision-owner approval", "owner": "R-01", "evidence_refs": ["SRC-01", "SRC-02"]},
+    {"risk_id": "RSK-02", "severity": "MEDIUM", "trigger": "Critical-path slack reaches zero", "impact": "Delivery delay", "control": "Twice-daily forecast review", "owner": "R-02", "evidence_refs": ["SRC-03"]}
+  ],
+  "stop_criteria": [
+    {"stop_id": "STOP-01", "trigger": "Mandatory contractual outcome cannot be preserved", "evidence_refs": ["SRC-01"], "owner": "D-01", "response_sla": "2 business hours", "safe_state": "Freeze scope mutation"},
+    {"stop_id": "STOP-02", "trigger": "Authorized access or critical capacity unavailable", "evidence_refs": ["SRC-05"], "owner": "D-01", "response_sla": "1 business hour", "safe_state": "Pause affected work package"}
+  ],
+  "options": [
+    {"option_id": "OPT-01", "decision": "CONTINUE", "outcome_impact": "Maintain target with four-hour forecast range", "time_cost_resource": "No extra budget; existing capacity", "risk": "Review latency", "reversibility": "High", "prerequisites": ["DEP-02 remains READY"], "rationale": "Current evidence supports recovery", "status": "PROPOSED"},
+    {"option_id": "OPT-02", "decision": "CORRECT", "outcome_impact": "Increase acceptance confidence", "time_cost_resource": "Add independent review within current WIP limit", "risk": "Short review queue", "reversibility": "High", "prerequisites": ["RES-01 capacity confirmed"], "rationale": "Reduces value variance without scope change", "status": "PROPOSED"},
+    {"option_id": "OPT-03", "decision": "RESEQUENCE", "outcome_impact": "Protect critical outcome before optional evidence", "time_cost_resource": "No extra cost; schedule reorder", "risk": "Optional artifact delay", "reversibility": "Medium", "prerequisites": ["Written decision-owner approval"], "rationale": "Use only if slack reaches zero", "status": "PROPOSED"}
+  ],
+  "changes": [
+    {"change_id": "CHG-01", "reason": "Dependency confirmation arrived late", "evidence_refs": ["SRC-03"], "before": "Optional work ran before critical-path lock", "change": "Sequence critical-path verification first", "after": "Optional work starts after gate evidence", "impact": "No outcome/target/budget change", "approver": "D-01", "status": "REVIEWED", "verification": "Schedule v2 shows critical path first", "rollback": "Restore prior sequence if capacity conflict emerges"}
+  ],
+  "execution_snapshot": {"status": "COMPLETE", "metric_ids": ["MET-01", "MET-02"], "milestone_ids": ["MS-01", "MS-02"], "prepared_by": "QA-01", "prepared_at": "2026-08-27T12:00:00+07:00"},
+  "record": {
+    "metric_ids": ["MET-01", "MET-02"], "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04", "SRC-05"], "work_package_ids": ["WP-01", "WP-02", "WP-03"], "milestone_ids": ["MS-01", "MS-02"], "criterion_ids": ["CR-01", "CR-02", "CR-03", "CR-04"], "dependency_ids": ["DEP-01", "DEP-02"], "resource_ids": ["RES-01", "RES-02"], "forecast_ids": ["FC-01", "FC-02"], "variance_ids": ["VAR-01", "VAR-02"], "risk_ids": ["RSK-01", "RSK-02"], "stop_ids": ["STOP-01", "STOP-02"], "option_ids": ["OPT-01", "OPT-02", "OPT-03"], "change_ids": ["CHG-01"], "owner": "O-01", "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "outcome_metric", "passed": true, "evidence": "Outcome and two current metrics verified", "reviewer": "QA-01", "date": "2026-08-27"},
+    {"test_type": "value_trace", "passed": true, "evidence": "Three work packages trace to outcome metrics", "reviewer": "QA-01", "date": "2026-08-27"},
+    {"test_type": "milestone_gate", "passed": true, "evidence": "Two gates and four criteria verified", "reviewer": "QA-02", "date": "2026-08-27"},
+    {"test_type": "readiness_capacity", "passed": true, "evidence": "Dependencies, access, capacity and WIP verified", "reviewer": "QA-02", "date": "2026-08-27"},
+    {"test_type": "forecast_variance", "passed": true, "evidence": "Two ranged forecasts and variances verified", "reviewer": "QA-03", "date": "2026-08-27"},
+    {"test_type": "change_stop_control", "passed": true, "evidence": "Change and two stop criteria retain authority", "reviewer": "QA-03", "date": "2026-08-27"},
+    {"test_type": "execution_boundary", "passed": true, "evidence": "No mutation, reallocation, approval, pivot, pause or stop", "reviewer": "QA-04", "date": "2026-08-27"}
+  ],
+  "reviews": [
+    {"review_type": "OUTCOME_OWNER", "reviewer": "O-01", "status": "PASS", "evidence": "Outcome invariant and options verified"},
+    {"review_type": "METRIC_DATA", "reviewer": "M-01", "status": "PASS", "evidence": "Metric definitions, sources and actuals verified"},
+    {"review_type": "DOMAIN_RESOURCE", "reviewer": "R-01", "status": "PASS", "evidence": "Gates, dependencies, capacity and risks verified"},
+    {"review_type": "FINAL_EXECUTION_DECISION", "reviewer": "D-01", "status": "PENDING", "evidence": "Human execution decision remains"}
+  ]
+}

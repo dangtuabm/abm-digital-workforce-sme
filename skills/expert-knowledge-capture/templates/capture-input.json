@@ -1,0 +1,42 @@
+{
+  "contract": {
+    "capture_id": "CAP-001",
+    "capability_scope": "",
+    "intended_users": [],
+    "use_case": "",
+    "expert_contributors": [],
+    "rights_status": "granted",
+    "attribution": "",
+    "confidentiality_class": "Xanh",
+    "target_artifacts": [],
+    "owner": "",
+    "reviewer": "",
+    "risk_level": "low",
+    "standards": {"min_cases": 2, "required_knowledge_types": ["signal", "mental_model", "decision_rule", "exception", "failure_mode", "escalation"]}
+  },
+  "sources": [],
+  "knowledge_units": [],
+  "conflict_review": {"status": "none", "notes": "", "owner": ""},
+  "expert_validation": {
+    "scope_confirmed": false,
+    "accuracy_confirmed": false,
+    "exceptions_confirmed": false,
+    "rights_confirmed": false,
+    "allowed_audiences": [],
+    "corrections": [],
+    "expert_or_delegate": "",
+    "date_or_version": ""
+  },
+  "transfer_test": {
+    "scenarios": [],
+    "rubric_ref": "",
+    "participants": [],
+    "success_threshold": "",
+    "result_source": "",
+    "owner": "",
+    "status": "not_run"
+  },
+  "packaging": {"assets": [], "access_policy": "", "version": "", "review_cycle": "", "revocation_process": "", "owner": ""},
+  "guardrails": [],
+  "expert_review_required": false
+}

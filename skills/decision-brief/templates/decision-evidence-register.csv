@@ -1,0 +1,2 @@
+claim_id,claim_type,claim_text,evidence_id,source_pointer,source_version_date,scope_segment,freshness,reliability,counterevidence_or_conflict,assumption_or_unknown,decision_impact,owner,next_evidence,state
+CLM-001,DỮ KIỆN,,EVD-001,,,,CURRENT,,,,,,,OPEN

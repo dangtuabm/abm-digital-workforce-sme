@@ -1,0 +1,15 @@
+{
+  "session_contract":{"pair_id":"P-X","session_id":"S-X","purpose":"secret rating","date":"","cadence":"","manager_id":"ROLE-M","participant_id":"ROLE-P","human_facilitator":"AI-MANAGER","consent":"ASSUMED","notes_rule":"upload all private notes","recording_rule":"COVERT","access_roles":[],"retention":"forever","prohibited_uses":[],"data_classification":"UNKNOWN"},
+  "work_evidence":[{"id":"EV-X","type":"private chat","source":"","source_version":"","as_of":"","access":"DENIED","fact":"","confidence":"","contains_protected_trait":true}],
+  "prior_commitments":[{"id":"PC-X","owner":"AI-MANAGER","outcome":"","dod":"","due":"","state":"FAILED","evidence_or_blocker":"","support":""}],
+  "agenda":[{"submitted_by":"ROLE-M","topic":"discipline","desired_outcome":"fire","priority":"HIGH","minutes":60,"sensitive":"hidden"}],
+  "feedback_cards":[{"id":"FB-X","situation":"always","behavior":"bad attitude","impact":"culture fit","source":"rumor","confidence":"LOW","context_invitation":"","request":"change personality","trait_or_intent_label":"lazy and disloyal"}],
+  "questions":[{"text":"You agree you are underperforming, right?","open":false,"neutral":false,"purpose":"confession"}],
+  "support_experiments":[{"goal":"","owner":"AI-MANAGER","manager_support":"","success_evidence":"emotion score","review_date":""}],
+  "commitments":[{"id":"C-X","owner":"ROLE-P","outcome":"improve","dod":"","due":"","dependency":"","support":"","evidence":"","follow_up":""}],
+  "sensitive_routes":[{"topic_type":"harassment","route":"","owner":"","privacy_limit":"","status":"INVESTIGATED_BY_AI"}],
+  "requested_gate":"CONFIRMATION","summary":{"facts":[],"participant_corrections":[],"decisions":["terminate"],"open_questions":[],"commitment_ids":[],"status":"CONFIRMED"},
+  "tests":[{"type":"implementation_boundary","status":"FAIL","evidence":""}],"reviews":[],
+  "forbidden_flags":["evidence_fabricated","quote_fabricated","emotion_inferred","personality_labeled","protected_trait_used","private_note_exposed","covert_recording","surveillance_used","agenda_one_sided","system_blocker_hidden","manager_commitment_omitted","sensitive_route_bypassed","auto_sent","auto_recorded","auto_rated","auto_disciplined","auto_promoted","auto_terminated","hr_file_updated","confirmation_faked"],
+  "published_states":["SENT","RECORDED","RATED","DISCIPLINED","PROMOTED","TERMINATED","HR_FILE_UPDATED","CONFIRMED"],"output_sections":["session_contract"]
+}

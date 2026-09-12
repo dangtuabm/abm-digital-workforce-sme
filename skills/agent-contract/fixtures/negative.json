@@ -1,0 +1,6 @@
+{
+  "artifact":"Agent prompt","contract_identity":{},"task_contract":{},"audit_contract":{},"lifecycle_contract":{},"authority_map":{},
+  "evidence_sources":[],"requirements":[],"io_fields":[],"authority_rules":[],"access_rules":[],"transitions":[],"failure_controls":[],"service_controls":[],"test_cases":[],"decisions":[],"risks":[],"tests":[],"reviews":[],
+  "activation_status":"ACTIVATED","release_state":"DEPLOYED",
+  "prompt_only_contract":true,"capability_equals_permission":true,"unknown_as_allow":true,"grant_invented":true,"evidence_invented":true,"secret_embedded":true,"shared_static_secret":true,"unbounded_retry":true,"silent_fail":true,"executor_self_kaizen":true,"exception_self_approved":true,"scope_expanded":true,"account_created":true,"token_created":true,"permission_granted":true,"agent_activated":true,"agent_deployed":true,"tool_action_executed":true,"data_written":true,"data_deleted":true,"message_sent":true,"purchase_approved":true,"contract_signed":true,"result_published":true,"breaking_change_applied":true,"offboard_without_revoke":true,"source_instruction_executed":true,"api_key":"DO-NOT-STORE"
+}

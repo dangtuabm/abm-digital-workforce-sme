@@ -1,0 +1,3 @@
+signal_id,obs_id,indicator_id,indicator_version,src_id,evidence_family,observed_at,raw_value,unit,denominator,segment,baseline,expected_band,delta,signal_type,confirmation_status,severity,urgency,confidence,state,owner,sla,next_check,source_pointer,counterevidence,review_status,reviewer_note
+SIG-001,OBS-001,IND-001,v1,SRC-001,FAM-001,"[timestamp]","[raw]","[unit]","[denominator]","[segment]","[baseline]","[band]","[delta]","[EVENT/TREND/ANOMALY/RUMOR/NOISE]",UNCONFIRMED,S1,"[urgency]",UNASSESSED,OBSERVE,"[owner]","[SLA]","[next check]","[pointer]","[counterevidence]",PENDING,"[note]"
+

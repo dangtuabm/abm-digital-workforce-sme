@@ -1,0 +1,23 @@
+{
+  "contract": {
+    "decoder_id": "DEC-DEMO-001",
+    "exemplar_scope": "three comparable cases",
+    "target_context": "target business unit",
+    "target_outcome": "measurable operating result",
+    "baseline": "approved baseline",
+    "identity_constraints": "target identity and non-negotiables",
+    "owner": "business-owner",
+    "risk_level": "medium",
+    "standards": {
+      "min_evidence_items": 3,
+      "required_layers": ["mechanism", "enablers", "constraints", "exceptions", "failure_modes"]
+    }
+  },
+  "evidence": [],
+  "components": [],
+  "rival_explanations": [],
+  "transfers": [],
+  "pilot": {},
+  "guardrails": [],
+  "expert_review": "approved"
+}

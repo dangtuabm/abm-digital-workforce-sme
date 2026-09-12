@@ -1,0 +1,17 @@
+{
+  "mandate":{"objective":"","decision":"","market_boundary":"","geography":"","as_of":"","horizon":"","unit":"","decision_owner":"","prohibited_uses":[],"required_reviews":[]},
+  "data_sources":[{"id":"DS-X","locator":"","version":"","date":"","rights":"SCRAPED","frame":"","denominator":"","coverage":"","sample":"","missingness":"","bias":"","metric_definitions":{}}],
+  "model":{"method":"","bases":[],"rationale":"","membership_rule":"","overlap_policy":"","unknown_policy":"","outlier_policy":"","minimum_cell":"","privacy_rule":"","stability_rule":"","refresh_rule":""},
+  "segments":[{"id":"SEG-X","name":"","definition":"","membership_rule":"","inclusion":[],"exclusion":[],"jobs":[],"alternatives":[],"evidence_ids":["DS-MISSING"],"confidence":"","quality_tests":{}}],
+  "coverage":{"population_count_or_range":"","assigned_pct":60,"overlap_pct":"","unknown_pct":20,"reconciliation":"","as_of":""},
+  "estimates":[{"segment_id":"SEG-MISSING","metric":"","low":9,"base":4,"high":1,"unit":"","denominator":"","method":"","source_ids":["DS-MISSING"],"base_year":"","horizon":"","confidence":""}],
+  "assessments":[{"segment_id":"SEG-MISSING","attractiveness":{},"ability_to_win":{},"evidence_ids":["DS-MISSING"],"gaps":[]}],
+  "scoring":{"criteria":[{"name":"","definition":"","weight":10,"direction":"","scale":""}],"normalization":"","missing_rule":"","thresholds":{},"sensitivity_cases":[],"rank_stability":""},
+  "candidates":[{"segment_id":"SEG-MISSING","status":"TARGETED","trade_off":"","gaps":[],"validation":"","owner":""}],
+  "risks":[{"risk_type":"PRIVACY_FAIRNESS","statement":"","trigger":"","mitigation":"","owner":"","status":""}],
+  "output_sections":[],
+  "tests":{"mandate_boundary":"FAIL","data_quality":"FAIL","model_coverage":"FAIL","segment_quality":"FAIL","estimate_fit":"FAIL","score_sensitivity":"FAIL","decision_boundary":"FAIL"},
+  "reviews":{"MARKET_CUSTOMER":"FAIL","DATA_ANALYTICS":"FAIL","FINANCE_STRATEGY":"FAIL","LEGAL_PRIVACY":"FAIL","FINAL_HUMAN_SEGMENT_DECISION":"PASS"},
+  "forbidden_flags":["population_fabricated","size_fabricated","growth_fabricated","share_fabricated","pain_fabricated","wtp_fabricated","access_fabricated","competition_fabricated","capability_fabricated","sample_called_population","denominator_hidden","coverage_hidden","overlap_hidden","unknown_hidden","missingness_hidden","bias_hidden","sensitivity_hidden","weights_manipulated","segment_forced","segment_merged_to_fit","segment_split_to_fit","protected_trait_used","sensitive_trait_used","proxy_discrimination","tiny_cell_exposed","row_identity_exposed","auto_targeted","auto_excluded","auto_funded","auto_priced","auto_contacted","auto_launched","auto_exited"],
+  "forbidden_states":["TARGETED","EXCLUDED","FUNDED","PRICED","CONTACTED","LAUNCHED","EXITED","APPROVED"],"published_state":"APPROVED"
+}

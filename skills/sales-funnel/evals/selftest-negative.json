@@ -1,0 +1,19 @@
+{
+  "mandate":{"objective":"","decision":"","product":"","segment":"","geography":"","journey_start":"","journey_end":"","as_of":"","horizon":"","funnel_owner":"","activation_authority":"","constraints":[],"prohibited_actions":[],"required_reviews":[]},
+  "sources":[{"id":"SRC-X","system":"","locator":"","version":"","as_of":"","freshness":"","rights":"STOLEN","unit":"","confidence":""}],
+  "journey":[{"id":"J-X","customer_job_question":"","touchpoint":"","channel":"","offer_or_content":"","expected_action":"","friction":"","handoff":"","accessibility":"","evidence_ids":["SRC-MISSING"]}],
+  "stages":[{"id":"ST-X","name":"","unit":"","entry_rule":"","exit_rule":"","valid_transitions":[],"owner":"","sla":"","required_evidence":[],"loss_rule":"","recycle_rule":"","system_of_record":""}],
+  "events":[{"id":"EV-X","event_name":"","entity_unit":"","timestamp_rule":"","source_id":"SRC-MISSING","schema_version":"","required_properties":[],"identity_rule":"","consent_rule":"","retention_rule":"","dedup_rule":"","late_correction_deletion_rule":""}],
+  "metrics":[{"id":"M-X","name":"","formula":"","unit":"","grain":"","numerator":"","denominator":"","cohort":"","window":"","source_ids":["SRC-MISSING"],"owner":"","target_threshold":"","confidence":""}],
+  "cohorts":[{"id":"COH-X","definition":"","unit":"","start":"","end":"","timezone":"","source_ids":["SRC-MISSING"],"missingness":"","bias":""}],
+  "baselines":[{"id":"B-X","stage_id":"ST-MISSING","cohort_id":"","eligible_entries":100,"valid_exits":80,"in_stage":50,"loss_recycle":20,"conversion":"","velocity":"","window":"","source_ids":["SRC-MISSING"],"confidence":""}],
+  "economics":[{"id":"ECO-X","channel_segment":"","spend_cost":"","capacity":"","value_revenue_definition":"","cac_or_cost_per_progression":"","payback_or_contribution":"","attribution_method":"","attribution_limits":"","currency":"","base_year":"","horizon":"","source_ids":["SRC-MISSING"],"sensitivity":""}],
+  "leakages":[{"id":"L-X","stage_transition":"","eligible_volume":"","rate_gap":"","value_per_progression":"","impact_formula":"","impact_range":"","root_cause_hypotheses":[],"evidence_for":[],"evidence_against":[],"owner":"","confidence":""}],
+  "experiments":[{"id":"EXP-X","hypothesis":"","audience":"","assignment":"","control":"","change":"","sample_rationale":"","primary_metric":"","baseline":"","success":"","kill":"","guardrails":[],"duration":"","max_budget":"","consent_fairness":"","owner":"","status":"RUNNING"}],
+  "risks":[{"risk_type":"PRIVACY_CONSENT","statement":"","trigger":"","mitigation":"","contingency":"","owner":"","status":""}],
+  "output_sections":[],
+  "tests":{"mandate_journey":"FAIL","stage_contract":"FAIL","event_identity":"FAIL","metric_cohort":"FAIL","reconciliation_economics":"FAIL","diagnosis_experiment":"FAIL","decision_boundary":"FAIL"},
+  "reviews":{"CUSTOMER_JOURNEY":"FAIL","DATA_ANALYTICS":"FAIL","PRIVACY_LEGAL":"FAIL","MARKETING_SALES":"FAIL","FINANCE_REVENUE_OPS":"FAIL","FINAL_HUMAN_FUNNEL_ACTIVATION":"PASS"},
+  "forbidden_flags":["traffic_fabricated","lead_fabricated","account_fabricated","conversion_fabricated","cost_fabricated","revenue_fabricated","attribution_fabricated","benchmark_fabricated","sample_fabricated","experiment_result_fabricated","unit_mixed","cohort_mixed","window_mixed","denominator_changed","loss_deleted","duplicate_deleted_to_improve","activity_called_intent","last_touch_called_causal","spam","illegal_tracking","consent_bypassed","retention_bypassed","unsubscribe_bypassed","dark_pattern","fake_urgency","fake_social_proof","protected_trait_targeting","sensitive_trait_inference","discriminatory_targeting","metric_gaming","criteria_changed","guardrail_hidden","auto_published","auto_sent","auto_enrolled","auto_routed","auto_scored","auto_advanced","auto_closed_won","auto_activated"],
+  "forbidden_states":["PUBLISHED","SENT","ENROLLED","ROUTED","SCORED","ADVANCED","CLOSED_WON","ACTIVATED"],"published_state":"ACTIVATED"
+}

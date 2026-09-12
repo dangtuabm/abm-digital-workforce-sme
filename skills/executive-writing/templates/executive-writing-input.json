@@ -1,0 +1,83 @@
+{
+  "contract": {
+    "id": "EXW-...",
+    "mode": "email|memo_decision_note|directive|announcement|report_message|administrative_letter|public_draft",
+    "channel": "",
+    "use": "",
+    "sender_role": "",
+    "authority_basis": "",
+    "signature_role": "",
+    "primary_audience": "",
+    "purpose": "",
+    "desired_outcome": "",
+    "decision_or_request": "",
+    "owner": "",
+    "reviewer": "",
+    "approval_route": "",
+    "sensitivity": "public|internal|confidential|restricted",
+    "status": "approved_for_drafting"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "",
+      "version": "",
+      "date": "",
+      "owner": "",
+      "authority": "",
+      "locator": "",
+      "classification": "",
+      "authorized": true,
+      "status": "active"
+    }
+  ],
+  "conflicts": [],
+  "audiences": [
+    {"id": "A1", "role": "primary", "name": "", "power": "", "knowledge": "", "concern": "", "need": "", "language_accessibility": ""}
+  ],
+  "authority_statements": [
+    {"id": "AU1", "text": "", "basis": "", "status": "within_authority|proposal"}
+  ],
+  "claims": [],
+  "actions": [],
+  "message_map": {
+    "bottom_line": "",
+    "decision_or_request": "",
+    "why_now": "",
+    "support_blocks": [],
+    "risk_or_limit": "",
+    "action_ids": [],
+    "do_not_say": [],
+    "approval_route": ""
+  },
+  "document": {
+    "mode": "",
+    "subject_or_title": "",
+    "status": "draft_not_approved",
+    "opening_bottom_line": "",
+    "sections": [],
+    "closing": "",
+    "signature_role": ""
+  },
+  "tests": [
+    {"type": "bottom_line_5_second", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"},
+    {"type": "skim_comprehension", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"},
+    {"type": "claim_trace", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"},
+    {"type": "actionability", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"},
+    {"type": "ambiguity_hostile_read", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"},
+    {"type": "audience_tone", "method": "", "sample": "", "threshold": "", "reviewer": "", "status": "planned"}
+  ],
+  "review": {
+    "source_check": false,
+    "authority_check": false,
+    "sensitivity_check": false,
+    "redactions_complete": false,
+    "recipient_check": false,
+    "attachment_check": false,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "send_approved": false
+  }
+}
+

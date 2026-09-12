@@ -1,0 +1,133 @@
+{
+  "contract": {
+    "contract_id": "AD-DEMO-001",
+    "version": "1.0",
+    "principal_id": "P-01",
+    "authority_evidence": "Program sponsor mandate M-2026-08",
+    "authority_locator": "vault://delegation/mandate/M-2026-08",
+    "classification": "YELLOW",
+    "valid_until": "2026-09-15T18:00:00+07:00",
+    "validity_status": "ACTIVE",
+    "correction_owner": "P-01",
+    "prohibited_actions": ["Unapproved spend", "Client communication", "Production access mutation"]
+  },
+  "outcome": {
+    "business_reason": "Recover a delayed client deliverable without reducing contractual outcomes",
+    "outcome_statement": "Produce an approved recovery package ready for client-owner release",
+    "success_metric": "All mandatory outcomes retained and delivery variance reduced to zero days",
+    "baseline": "Five-day forecast delay",
+    "target": "Approved package by 2026-08-26T16:00:00+07:00",
+    "due_or_trigger": "2026-08-26T16:00:00+07:00",
+    "in_scope": ["Scope adjustment proposal", "Recovery schedule", "Risk and approval pack"],
+    "non_goals": ["Send to client", "Change contract", "Approve extra budget"]
+  },
+  "delegate": {
+    "delegate_id": "D-01",
+    "delegate_type": "HUMAN",
+    "competence_status": "VERIFIED",
+    "competence_evidence": "Two accepted recovery plans in the approved capability record",
+    "capacity_status": "AVAILABLE",
+    "availability": "40% capacity reserved through 2026-08-26",
+    "conflict_status": "CLEAR",
+    "acceptance_status": "EXPLICIT_ACCEPTED",
+    "acceptance_statement": "I accept the outcome, boundaries, deliverables and escalation duties.",
+    "accepted_at": "2026-08-25T09:20:00+07:00",
+    "acceptance_locator": "meeting://MEET-AD-001/00:18:12"
+  },
+  "deliverables": [
+    {
+      "deliverable_id": "DEL-01",
+      "deliverable": "Recovery scope proposal",
+      "acceptance_criteria": "Retains every contractual outcome, lists exclusions and has sponsor review evidence",
+      "evidence_required": "Versioned document plus requirement trace",
+      "reviewer": "R-01",
+      "due_or_trigger": "2026-08-25T16:00:00+07:00",
+      "status": "RECORDED",
+      "dependencies": ["DEP-01"]
+    },
+    {
+      "deliverable_id": "DEL-02",
+      "deliverable": "Recovery schedule and risk pack",
+      "acceptance_criteria": "Every milestone has owner, due, dependency, risk control and evidence",
+      "evidence_required": "Approved schedule and risk ledger",
+      "reviewer": "R-02",
+      "due_or_trigger": "2026-08-26T12:00:00+07:00",
+      "status": "RECORDED",
+      "dependencies": ["DEP-02"]
+    }
+  ],
+  "authority_envelope": [
+    {
+      "authority_id": "AUTH-01",
+      "class": "ALLOWED",
+      "action": "Draft and revise internal recovery artifacts",
+      "limit": "Approved sources and project workspace only",
+      "evidence": "Mandate M-2026-08 section 3",
+      "expiry": "2026-09-15T18:00:00+07:00"
+    },
+    {
+      "authority_id": "AUTH-02",
+      "class": "APPROVAL_REQUIRED",
+      "action": "Change scope, budget, milestone or client-facing wording",
+      "limit": "Written sponsor approval before mutation",
+      "evidence": "Mandate M-2026-08 section 4",
+      "expiry": "2026-09-15T18:00:00+07:00"
+    },
+    {
+      "authority_id": "AUTH-03",
+      "class": "PROHIBITED",
+      "action": "Send to client, sign commitment, spend or grant production access",
+      "limit": "No exception within this contract",
+      "evidence": "Mandate M-2026-08 red-line annex",
+      "expiry": "2026-09-15T18:00:00+07:00"
+    }
+  ],
+  "resources": [
+    {"resource_id": "RES-01", "owner": "P-01", "access_status": "AUTHORIZED", "evidence": "Access ticket AT-101", "locator": "vault://access/AT-101", "active": true},
+    {"resource_id": "RES-02", "owner": "R-01", "access_status": "AUTHORIZED", "evidence": "Approved requirement baseline v3", "locator": "vault://project/requirements-v3", "active": true},
+    {"resource_id": "RES-03", "owner": "R-02", "access_status": "AUTHORIZED", "evidence": "Approved schedule snapshot", "locator": "vault://project/schedule-20260825", "active": true}
+  ],
+  "dependencies": [
+    {"dependency_id": "DEP-01", "owner": "R-01", "state": "READY", "evidence": "Requirement trace frozen at v3", "fallback": "Escalate conflicting requirement to P-01"},
+    {"dependency_id": "DEP-02", "owner": "R-02", "state": "READY", "evidence": "Team capacity confirmed", "fallback": "Remove optional work after sponsor approval"}
+  ],
+  "risks": [
+    {"risk_id": "RSK-01", "severity": "HIGH", "control": "Requirement trace and sponsor approval", "owner": "R-01", "trigger": "Any mandatory outcome removed"},
+    {"risk_id": "RSK-02", "severity": "MEDIUM", "control": "Daily milestone evidence review", "owner": "R-02", "trigger": "Forecast variance exceeds four hours"}
+  ],
+  "checkpoints": [
+    {"checkpoint_id": "CP-01", "trigger_or_milestone": "DEL-01 draft ready", "evidence": "Requirement trace", "reviewer": "R-01", "purpose": "Confirm contractual outcome coverage"},
+    {"checkpoint_id": "CP-02", "trigger_or_milestone": "Schedule critical path locked", "evidence": "Versioned schedule", "reviewer": "R-02", "purpose": "Confirm feasibility and dependency readiness"},
+    {"checkpoint_id": "CP-03", "trigger_or_milestone": "Package ready for activation review", "evidence": "Combined approval pack", "reviewer": "P-01", "purpose": "Human release decision"}
+  ],
+  "escalations": [
+    {"escalation_id": "ESC-01", "trigger": "Scope or contractual outcome conflict", "destination": "P-01", "response_sla": "2 business hours", "safe_fallback": "Freeze affected deliverable", "stop_condition": "No written mandate"},
+    {"escalation_id": "ESC-02", "trigger": "Cost or access outside envelope", "destination": "SEC-01", "response_sla": "1 business hour", "safe_fallback": "Keep access read-only", "stop_condition": "Approval absent"},
+    {"escalation_id": "ESC-03", "trigger": "Forecast variance exceeds four hours", "destination": "R-02", "response_sla": "30 minutes", "safe_fallback": "Pause optional work", "stop_condition": "Critical path unresolved"}
+  ],
+  "record": {
+    "deliverable_ids": ["DEL-01", "DEL-02"],
+    "resource_ids": ["RES-01", "RES-02", "RES-03"],
+    "dependency_ids": ["DEP-01", "DEP-02"],
+    "risk_ids": ["RSK-01", "RSK-02"],
+    "checkpoint_ids": ["CP-01", "CP-02", "CP-03"],
+    "escalation_ids": ["ESC-01", "ESC-02", "ESC-03"],
+    "owner": "P-01",
+    "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "mandate_authority", "passed": true, "evidence": "Mandate and locator verified", "reviewer": "QA-01", "date": "2026-08-25"},
+    {"test_type": "outcome_dod", "passed": true, "evidence": "Outcome, metric and two DoDs verified", "reviewer": "QA-01", "date": "2026-08-25"},
+    {"test_type": "delegate_fit_acceptance", "passed": true, "evidence": "Fit, capacity, conflict and explicit acceptance verified", "reviewer": "QA-02", "date": "2026-08-25"},
+    {"test_type": "authority_boundary", "passed": true, "evidence": "Three authority classes and expiry verified", "reviewer": "QA-02", "date": "2026-08-25"},
+    {"test_type": "resource_dependency", "passed": true, "evidence": "Three resources and two dependencies ready", "reviewer": "QA-03", "date": "2026-08-25"},
+    {"test_type": "escalation_rollback", "passed": true, "evidence": "Three escalation paths and fallbacks verified", "reviewer": "QA-03", "date": "2026-08-25"},
+    {"test_type": "execution_boundary", "passed": true, "evidence": "No assignment, access grant, spend or execution", "reviewer": "QA-04", "date": "2026-08-25"}
+  ],
+  "reviews": [
+    {"review_type": "MANDATE_OWNER", "reviewer": "P-01", "status": "PASS", "evidence": "Mandate and outcome approved for delegation"},
+    {"review_type": "DELEGATE_ACCEPTANCE", "reviewer": "D-01", "status": "PASS", "evidence": "Explicit acceptance at meeting locator"},
+    {"review_type": "SECURITY_ACCESS", "reviewer": "SEC-01", "status": "PASS", "evidence": "Authorized sources and read-only boundary verified"},
+    {"review_type": "FINAL_ACTIVATION", "reviewer": "P-01", "status": "PENDING", "evidence": "Human activation decision remains"}
+  ]
+}

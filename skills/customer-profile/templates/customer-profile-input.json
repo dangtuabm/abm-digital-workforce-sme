@@ -1,0 +1,59 @@
+{
+  "mandate":{"purpose":"prepare an authorized discovery workshop","target":"Orion Manufacturing Vietnam legal entity","as_of":"2026-08-21","users":["ROLE-ACCOUNT","ROLE-DOMAIN"],"decision_owner":"ROLE-COMMERCIAL-DIRECTOR","prohibited_uses":["no automated scoring","no outreach","no personal profiling","no high-impact eligibility"],"retention":"review after 90 days; delete withdrawn personal data","required_reviews":["DOMAIN_ENTITY","DATA_PRIVACY","COMMERCIAL_USE"]},
+  "entities":[{"id":"ENT-01","name":"Orion Manufacturing Vietnam Co., Ltd. (synthetic case)","stable_keys":["orion-manufacturing.example","Vietnam industrial operations"],"geography":"Vietnam","relationships":["regional subsidiary hypothesis; verify"],"confidence":"HIGH","ambiguity_status":"namesake and parent relation checked; parent relation remains hypothesis"}],
+  "sources":[
+    {"id":"SRC-01","locator":"authorized company profile packet section 1","version":"2026-08-10","date":"2026-08-10","rights":"INTERNAL_AUTHORIZED","freshness":"CURRENT","source_type":"PRIMARY","confidence":"HIGH","subject":"entity and offerings"},
+    {"id":"SRC-02","locator":"company website / solutions and locations","version":"captured-2026-08-20","date":"2026-08-20","rights":"PUBLIC_TERMS_OK","freshness":"CURRENT","source_type":"PRIMARY_PUBLIC","confidence":"HIGH","subject":"offerings and geography"},
+    {"id":"SRC-03","locator":"authorized discovery notes D-014","version":"1.0","date":"2026-08-18","rights":"INTERNAL_AUTHORIZED","freshness":"CURRENT","source_type":"PRIMARY_INTERVIEW","confidence":"MEDIUM","subject":"jobs, frictions and alternatives"},
+    {"id":"SRC-04","locator":"public recruitment page operations roles","version":"captured-2026-08-19","date":"2026-08-19","rights":"PUBLIC_TERMS_OK","freshness":"CURRENT","source_type":"OBSERVED_PUBLIC","confidence":"MEDIUM","subject":"capability signal"},
+    {"id":"SRC-05","locator":"authorized procurement checklist P-03","version":"2.1","date":"2026-07-30","rights":"INTERNAL_AUTHORIZED","freshness":"CURRENT","source_type":"PRIMARY_INTERNAL","confidence":"HIGH","subject":"buying criteria and approval path"},
+    {"id":"SRC-06","locator":"sector benchmark 2026 page 22","version":"2026","date":"2026-06-01","rights":"AUTHORIZED","freshness":"CURRENT","source_type":"SECONDARY","confidence":"MEDIUM","subject":"industry context only"}
+  ],
+  "claims":[
+    {"id":"CL-01","entity_id":"ENT-01","statement":"operates industrial sites in Vietnam","claim_type":"FACT","source_ids":["SRC-01","SRC-02"],"confidence":"HIGH","as_of":"2026-08-21","conflict":false},
+    {"id":"CL-02","entity_id":"ENT-01","statement":"offers contract manufacturing and assembly","claim_type":"FACT","source_ids":["SRC-01","SRC-02"],"confidence":"HIGH","as_of":"2026-08-21","conflict":false},
+    {"id":"CL-03","entity_id":"ENT-01","statement":"operational reporting requires manual consolidation","claim_type":"FACT","source_ids":["SRC-03"],"confidence":"MEDIUM","as_of":"2026-08-18","conflict":false},
+    {"id":"CL-04","entity_id":"ENT-01","statement":"workforce scale is between 300 and 700","claim_type":"ESTIMATE","source_ids":["SRC-01","SRC-04"],"confidence":"LOW","as_of":"2026-08-21","method":"authorized site information plus public role counts; not a headcount fact","range":"300-700","conflict":false},
+    {"id":"CL-05","entity_id":"ENT-01","statement":"traceable governance evidence is a buying criterion","claim_type":"FACT","source_ids":["SRC-05"],"confidence":"HIGH","as_of":"2026-07-30","conflict":false},
+    {"id":"CL-06","entity_id":"ENT-01","statement":"operations leader may champion a controlled reporting pilot","claim_type":"HYPOTHESIS","source_ids":["SRC-03"],"confidence":"LOW","as_of":"2026-08-21","conflict":false},
+    {"id":"CL-07","entity_id":"ENT-01","statement":"approved budget and purchase timeline","claim_type":"UNKNOWN","source_ids":[],"confidence":"UNKNOWN","as_of":"2026-08-21","conflict":false},
+    {"id":"CL-08","entity_id":"ENT-01","statement":"regional parent relationship","claim_type":"HYPOTHESIS","source_ids":["SRC-01"],"confidence":"LOW","as_of":"2026-08-21","conflict":true,"conflict_note":"profile packet and public site use different group labels; verify legal relation"}
+  ],
+  "organization_context":[{"entity_id":"ENT-01","business_model":"B2B contract manufacturing","offerings":["assembly","industrial services"],"geography":"Vietnam","scale_range":"300-700 estimate, low confidence","lifecycle":"operating; transformation status unknown","capabilities":["operations","quality","procurement"],"constraints":["governance evidence","security review"],"evidence_ids":["SRC-01","SRC-02","SRC-05"]}],
+  "jobs":[
+    {"id":"JOB-01","entity_id":"ENT-01","statement":"consolidate operating status across sites","desired_outcome":"faster traceable management view","friction":"manual reconciliation","current_alternative":"spreadsheets and recurring coordination","evidence_ids":["SRC-03"],"confidence":"MEDIUM","status":"VERIFIED"},
+    {"id":"JOB-02","entity_id":"ENT-01","statement":"prepare governance evidence for approval","desired_outcome":"review-ready audit trail","friction":"evidence distributed across owners","current_alternative":"manual document collection","evidence_ids":["SRC-05"],"confidence":"HIGH","status":"VERIFIED"},
+    {"id":"JOB-03","entity_id":"ENT-01","statement":"reduce reporting effort without losing controls","desired_outcome":"capacity released with accuracy maintained","friction":"not quantified","current_alternative":"current process","evidence_ids":["SRC-03","SRC-06"],"confidence":"LOW","status":"HYPOTHESIS"}
+  ],
+  "buying_roles":[
+    {"role":"USER_OPERATIONS","responsibility":"uses operating reports","authority_status":"VERIFIED","evidence_ids":["SRC-03"],"unknown_question":"Who represents each site?"},
+    {"role":"CHAMPION","responsibility":"frames the use case and coordinates validation","authority_status":"HYPOTHESIS","evidence_ids":["SRC-03"],"unknown_question":"Who will own validation?"},
+    {"role":"EVALUATOR_DATA_SECURITY","responsibility":"checks data and security controls","authority_status":"VERIFIED","evidence_ids":["SRC-05"],"unknown_question":"What controls and evidence are mandatory?"},
+    {"role":"APPROVER","responsibility":"approves business case","authority_status":"UNKNOWN","evidence_ids":["SRC-05"],"unknown_question":"Which role has final approval authority?"},
+    {"role":"PROCUREMENT","responsibility":"runs vendor and contract process","authority_status":"VERIFIED","evidence_ids":["SRC-05"],"unknown_question":"What thresholds and lead times apply?"},
+    {"role":"BLOCKER","responsibility":"may stop use on control grounds","authority_status":"UNKNOWN","evidence_ids":["SRC-05"],"unknown_question":"Which legal, security or operations role can stop the process?"}
+  ],
+  "buying_process":{"trigger_status":"operating reporting friction observed; purchase trigger unknown","stage_status":"problem discovery","criteria":["traceability","security","operational fit","evidence of value"],"approval_path":"business owner then control reviews; final approver unknown","procurement_path":"authorized checklist exists; thresholds unknown","security_legal_path":"mandatory before any live data test","budget_status":"UNKNOWN — ask","timeline_status":"UNKNOWN — ask","evidence_gaps":["final approver","budget","timeline","data classification","success baseline"]},
+  "signals":[
+    {"id":"SIG-01","observed_event":"operations roles publicly advertised","date":"2026-08-19","source_ids":["SRC-04"],"alternative_explanations":["replacement hiring","growth","ordinary turnover"],"confidence":"MEDIUM"},
+    {"id":"SIG-02","observed_event":"manual consolidation described in authorized discovery notes","date":"2026-08-18","source_ids":["SRC-03"],"alternative_explanations":["localized issue","temporary peak"],"confidence":"MEDIUM"},
+    {"id":"SIG-03","observed_event":"procurement checklist requires governance evidence","date":"2026-07-30","source_ids":["SRC-05"],"alternative_explanations":["standard policy not specific purchase intent"],"confidence":"HIGH"}
+  ],
+  "hypotheses":[
+    {"id":"H-01","claim":"manual consolidation is important enough to validate","evidence_for":["SRC-03"],"evidence_against":["no quantified baseline"],"confidence":"MEDIUM","impact":"HIGH","question_test":"quantify cycle time, rework and decision delay","owner":"ROLE-ACCOUNT","expiry":"2026-09-30"},
+    {"id":"H-02","claim":"operations leader can sponsor controlled discovery","evidence_for":["SRC-03"],"evidence_against":["authority not verified"],"confidence":"LOW","impact":"HIGH","question_test":"confirm sponsor, authority and acceptance role","owner":"ROLE-COMMERCIAL","expiry":"2026-09-15"},
+    {"id":"H-03","claim":"traceability and security outweigh feature breadth","evidence_for":["SRC-05"],"evidence_against":["no ranked criteria"],"confidence":"MEDIUM","impact":"MEDIUM","question_test":"rank purchase criteria with evaluators","owner":"ROLE-DOMAIN","expiry":"2026-09-30"},
+    {"id":"H-04","claim":"a non-live-data prototype can produce useful evidence","evidence_for":["SRC-05"],"evidence_against":["workflow baseline missing"],"confidence":"LOW","impact":"HIGH","question_test":"review synthetic-data protocol and baseline before proposing any test","owner":"ROLE-DATA","expiry":"2026-09-30"}
+  ],
+  "risks":[
+    {"risk_type":"PRIVACY_SENSITIVITY","statement":"notes may contain unnecessary personal data","trigger":"personal identifier or private detail found","mitigation":"minimize, redact, restrict and review","owner":"ROLE-DATA-PRIVACY","status":"CONTROLLED"},
+    {"risk_type":"FAIRNESS_HIGH_IMPACT","statement":"profile reused for automated eligibility or lead exclusion","trigger":"score or eligibility request","mitigation":"purpose restriction and human review","owner":"ROLE-COMMERCIAL","status":"CONTROLLED"},
+    {"risk_type":"LEGAL_TERMS","statement":"public source terms may not allow enrichment or reuse","trigger":"unclear terms or access method","mitigation":"rights review or exclude source","owner":"ROLE-LEGAL","status":"CONTROLLED"},
+    {"risk_type":"SECURITY_REPUTATION","statement":"stale or false profile damages trust","trigger":"contradiction, complaint or expiry","mitigation":"correction log, source withdrawal and refresh","owner":"ROLE-PROFILE-OWNER","status":"CONTROLLED"}
+  ],
+  "output_sections":["entity_card","source_claim_ledger","organization_snapshot","jobs_alternatives","buying_group_process","signals_hypotheses_gaps","privacy_reviews_audit","refresh_human_use_decision"],
+  "tests":{"mandate_entity":"PASS","source_claim":"PASS","organization_job":"PASS","buying_context":"PASS","signal_hypothesis":"PASS","privacy_fairness":"PASS","decision_boundary":"PASS"},
+  "reviews":{"DOMAIN_ENTITY":"PASS","DATA_PRIVACY":"PASS","COMMERCIAL_USE":"PASS","FINAL_HUMAN_CUSTOMER_USE_DECISION":"PENDING"},
+  "forbidden_flags":[],
+  "published_state":"DRAFT"
+}

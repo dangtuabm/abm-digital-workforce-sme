@@ -1,0 +1,20 @@
+{
+  "mandate":{"objective":"","product":"","segment":"","geography":"","currency":"","as_of":"","horizon":"","price_authority":"","constraints":[],"prohibited_actions":[],"required_reviews":[]},
+  "sources":[{"id":"SRC-X","locator":"","version":"","date":"","rights":"STOLEN","evidence_type":"","confidence":"","subject":""}],
+  "value_cases":[{"id":"VAL-X","job":"","outcome":"","alternative":"","value_driver":"","low":9,"base":4,"high":1,"unit":"","method":"","source_ids":["SRC-MISSING"],"confidence":""}],
+  "packages":[{"id":"PKG-X","name":"","core_outcome":"","scope":[],"entitlements":[],"limits":[],"deliverables":[],"service_level":"","dependencies":[],"exclusions":[],"capacity":"","bonus_value_cost":{}}],
+  "price_metrics":[{"id":"MET-X","metric":"","structure":"","alignment":"","predictability":"","measurability":"","gaming_risk":"","billing_feasibility":"","recommendation":""}],
+  "economics":[{"package_id":"PKG-MISSING","formula":"","inputs":{},"source_ids":["SRC-MISSING"],"currency":"","base_year":"","horizon":"","price_low":9,"price_base":4,"price_high":1,"variable_cost":"","incremental_cost":"","fixed_allocation":"","contribution_margin_low":0.8,"contribution_margin_base":0.2,"contribution_margin_high":-0.1,"break_even":"","cash_timing":"","capacity_exposure":"","sensitivity":""}],
+  "market_wtp":[{"id":"WTP-X","method":"","finding":"","range":"","currency":"","date":"","source_ids":["SRC-MISSING"],"bias_limit":"","confidence":""}],
+  "corridors":[{"package_id":"PKG-MISSING","economic_floor":100,"validation_floor":90,"target":80,"ceiling_hypothesis":70,"currency":"","tax_treatment":"","term":"","volume":"","valid_until":"","evidence_ids":["SRC-MISSING"],"confidence":"","below_floor_rule":""}],
+  "discount_rules":[{"id":"DISC-X","reason_code":"","eligible_fence":"","max_rate":"","approver":"","floor_check":"","expiry":"","audit":""}],
+  "guarantees":[{"id":"GUA-X","claim":"","evidence":"","conditions":"","liability_cap":"","capacity_check":"","legal_status":"","owner":""}],
+  "scenarios":[{"id":"SCN-X","assumptions":"","demand":"","conversion":"","churn_or_refund":"","usage_support":"","discount":"","tax_channel":"","margin_cash":"","capacity":"","break_even":"","downside":""}],
+  "experiments":[{"id":"EXP-X","assumption":"","method":"","sample":"","rights_fairness":"","metric":"","baseline":"","success":"","kill":"","max_time":"","max_budget":"","owner":"","status":"RUNNING"}],
+  "risks":[{"risk_type":"FINANCE_ECONOMICS","statement":"","trigger":"","mitigation":"","contingency":"","owner":"","status":""}],
+  "output_sections":[],
+  "tests":{"mandate_evidence":"FAIL","value_offer":"FAIL","metric_economics":"FAIL","wtp_corridor":"FAIL","commercial_controls":"FAIL","scenario_experiment":"FAIL","decision_boundary":"FAIL"},
+  "reviews":{"PRODUCT_CUSTOMER":"FAIL","FINANCE_PRICING":"FAIL","DELIVERY_OPERATIONS":"FAIL","LEGAL_TAX_COMPETITION":"FAIL","COMMERCIAL_GOVERNANCE":"FAIL","FINAL_HUMAN_PRICE_DECISION":"PASS"},
+  "forbidden_flags":["value_fabricated","price_fabricated","cost_fabricated","margin_fabricated","wtp_fabricated","competitor_price_fabricated","demand_fabricated","conversion_fabricated","churn_fabricated","capacity_fabricated","bonus_value_fabricated","guarantee_result_fabricated","fake_anchor","fake_discount","fake_scarcity","fake_deadline","hidden_fee","hidden_term","unsafe_guarantee","dark_pattern","collusion","price_fixing","resale_price_coercion","confidential_competitor_data_used","protected_trait_pricing","sensitive_trait_pricing","vulnerability_exploited","floor_bypassed","approval_bypassed","criteria_changed","auto_published","auto_quoted","auto_discounted","auto_contracted","auto_invoiced","auto_charged","auto_promoted"],
+  "forbidden_states":["PUBLISHED","QUOTED","DISCOUNTED","CONTRACTED","INVOICED","CHARGED","PROMOTED","APPROVED"],"published_state":"APPROVED"
+}

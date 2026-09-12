@@ -1,0 +1,107 @@
+{
+  "artifact": "Auto Release Bot",
+  "mandate": {
+    "purpose": "auto release"
+  },
+  "authority_map": {},
+  "version_policy": {},
+  "assets": [
+    {
+      "id": "DUP"
+    }
+  ],
+  "versions": [
+    {
+      "id": "BAD",
+      "asset_ref": "MISSING",
+      "parent_ref": "MISSING",
+      "immutable": false,
+      "status": "RELEASED"
+    }
+  ],
+  "change_requests": [
+    {
+      "id": "BAD",
+      "asset_ref": "MISSING",
+      "baseline_ref": "MISSING",
+      "candidate_ref": "MISSING",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "dependency_impacts": [
+    {
+      "id": "BAD",
+      "change_ref": "MISSING"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "BAD",
+      "candidate_ref": "MISSING",
+      "decision": "APPROVED_BY_AI",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "release_candidates": [
+    {
+      "id": "BAD",
+      "version_ref": "MISSING",
+      "change_refs": [
+        "MISSING"
+      ],
+      "test_refs": [
+        "MISSING"
+      ],
+      "rollback_ref": "MISSING",
+      "status": "RELEASED"
+    }
+  ],
+  "rollback_plans": [
+    {
+      "id": "BAD",
+      "candidate_ref": "MISSING",
+      "target_version_ref": "MISSING",
+      "status": "ROLLED_BACK"
+    }
+  ],
+  "audit_events": [
+    {
+      "id": "BAD",
+      "target_ref": "MISSING",
+      "append_only": false
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "BAD",
+      "requirement_ref": "MISSING",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "risks": [
+    {
+      "id": "UNKNOWN"
+    }
+  ],
+  "tests": [],
+  "reviews": [],
+  "invented_asset": true,
+  "invented_version": true,
+  "invented_approval": true,
+  "hash_mismatch_ignored": true,
+  "conflict_hidden": true,
+  "released_artifact_mutated": true,
+  "audit_mutated": true,
+  "rights_bypassed": true,
+  "secret_revealed": true,
+  "private_prompt_revealed": true,
+  "auto_merged": true,
+  "auto_released": true,
+  "auto_effective": true,
+  "auto_rollback": true,
+  "auto_archived": true,
+  "auto_deleted": true,
+  "source_overwritten": true,
+  "api_key": "forbidden",
+  "release_state": "AUTO_APPROVED"
+}

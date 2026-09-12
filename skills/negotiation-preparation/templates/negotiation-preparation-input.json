@@ -1,0 +1,196 @@
+{
+  "contract": {
+    "case_id": "",
+    "version": "",
+    "negotiation_type": "",
+    "primary_session_objective": "",
+    "relationship_objective": "",
+    "scope": "",
+    "stakes": "",
+    "planned_session": "",
+    "mandate_owner": "",
+    "negotiator": "",
+    "final_approver": "",
+    "mandate_evidence_ref": "",
+    "authority_expiry": "",
+    "classification": "",
+    "retention": "",
+    "allowed_channels": [],
+    "non_negotiables": [],
+    "prohibited_actions": [],
+    "stop_or_escalation": [],
+    "required_reviews": [],
+    "data_authorized": false
+  },
+  "sources": [
+    {
+      "source_id": "",
+      "title": "",
+      "version": "",
+      "locator": "",
+      "owner": "",
+      "classification": "",
+      "effective_date": "",
+      "active": true,
+      "hash": ""
+    }
+  ],
+  "counterparties": [
+    {
+      "counterparty_id": "",
+      "role": "",
+      "organization": "",
+      "evidence_refs": [],
+      "known_authority": "UNKNOWN",
+      "known_interests": [],
+      "known_constraints": [],
+      "process_or_timeline": "UNKNOWN",
+      "hypotheses": [
+        {
+          "statement": "",
+          "evidence_refs": [],
+          "alternative": "",
+          "confidence": "LOW",
+          "expiry": "",
+          "falsifier": "",
+          "test_question": ""
+        }
+      ],
+      "owner": "",
+      "last_verified": ""
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "",
+      "statement": "",
+      "priority": "MUST",
+      "target": "",
+      "reservation_boundary": "",
+      "walk_away_condition": "",
+      "objective_criteria": [],
+      "evidence_refs": [],
+      "owner": "",
+      "tradable": true,
+      "authority_state": "UNKNOWN",
+      "authority_owner": "",
+      "reservation_approved": false,
+      "approval_evidence_ref": "",
+      "expiry": ""
+    }
+  ],
+  "alternatives": [
+    {
+      "alternative_id": "",
+      "type": "CANDIDATE",
+      "description": "",
+      "feasibility": "",
+      "status": "CANDIDATE",
+      "evidence_refs": [],
+      "owner": "",
+      "trigger": "",
+      "cost_or_value": "",
+      "active": false
+    }
+  ],
+  "zopa": {
+    "status": "UNKNOWN",
+    "our_reservation_issue_ids": [],
+    "counterparty_boundary_basis": "UNKNOWN",
+    "assumptions": [],
+    "range_or_overlap": "UNKNOWN",
+    "evidence_refs": [],
+    "owner": "",
+    "review_trigger": ""
+  },
+  "trades": [
+    {
+      "trade_id": "",
+      "issue_id": "",
+      "give": "",
+      "give_cost_or_impact": "",
+      "get": "",
+      "get_value_or_impact": "",
+      "evidence_refs": [],
+      "preconditions": [],
+      "authority_state": "UNKNOWN",
+      "authority_owner": "",
+      "approval_evidence_ref": "",
+      "sequence": 1,
+      "expiry": "",
+      "stop_condition": "",
+      "status": "DRAFT"
+    }
+  ],
+  "packages": [
+    {
+      "package_id": "",
+      "name": "",
+      "trade_ids": [],
+      "issue_ids": [],
+      "rationale": "",
+      "total_economics": "",
+      "valuation_status": "NOT_REVIEWED",
+      "evidence_refs": [],
+      "dependencies": [],
+      "owner": "",
+      "finance_review_required": true,
+      "legal_review_required": true,
+      "status": "DRAFT"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "",
+      "counterparty_id": "",
+      "issue_id": "",
+      "purpose": "",
+      "question": "",
+      "evidence_sought": "",
+      "follow_up": "",
+      "owner": ""
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "",
+      "trigger": "",
+      "counterparty_move": "",
+      "evidence_basis": "",
+      "planned_response": "",
+      "authority_gate": "",
+      "stop_or_escalate": "",
+      "owner": ""
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "",
+      "type": "",
+      "trigger": "",
+      "harm": "",
+      "prevention": "",
+      "stop_or_rollback": "",
+      "escalation_owner": "",
+      "evidence_refs": []
+    }
+  ],
+  "tests": [
+    {
+      "test_type": "mandate_authority_integrity",
+      "passed": false,
+      "evidence": "",
+      "reviewer": "",
+      "date": ""
+    }
+  ],
+  "reviews": [
+    {
+      "review_type": "MANDATE_OWNER",
+      "required": true,
+      "reviewer": "",
+      "status": "PENDING",
+      "evidence_ref": ""
+    }
+  ]
+}

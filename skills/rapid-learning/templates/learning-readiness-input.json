@@ -1,0 +1,36 @@
+{
+  "learning_id": "LRN-DEMO",
+  "mission": {
+    "learner": "commercial-lead",
+    "target_task": "run a low-risk discovery meeting",
+    "success_criteria": ["use core vocabulary correctly", "identify escalation points"],
+    "scope": "cold-chain logistics discovery",
+    "owner": "business-owner",
+    "risk_level": "medium"
+  },
+  "baseline": {
+    "completed": true,
+    "source_id": "PRETEST-01",
+    "misconceptions": ["confused carrier with freight forwarder"]
+  },
+  "coverage": {
+    "required_topics": ["T1", "T2", "T3"],
+    "completed_topics": ["T1", "T2", "T3"],
+    "source_traceability": 0.95
+  },
+  "assessment": {
+    "knowledge_score": 88,
+    "application_score": 84,
+    "knowledge_min": 80,
+    "application_min": 80,
+    "traceability_min": 0.9,
+    "critical_checks": [
+      {"id": "C1", "passed": true},
+      {"id": "C2", "passed": true}
+    ],
+    "result_source_id": "SIM-UNSEEN-01"
+  },
+  "critical_unknowns": [],
+  "guardrails": [],
+  "expert_review": {"required": false, "status": "not_required"}
+}

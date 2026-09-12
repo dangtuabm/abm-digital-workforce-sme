@@ -1,0 +1,76 @@
+{
+  "contract": {
+    "record_id": "MI-DEMO-001",
+    "meeting_id": "MEET-001",
+    "version": "1.0",
+    "start": "2026-08-24T09:00:00+07:00",
+    "end": "2026-08-24T10:00:00+07:00",
+    "timezone": "Asia/Bangkok",
+    "purpose": "Choose a client-delivery recovery path and owners",
+    "participant_ids": ["SP-01", "SP-02", "SP-03", "SP-04"],
+    "classification": "YELLOW",
+    "retention": "24 months",
+    "distribution": ["Meeting participants", "Authorized operating sponsor"],
+    "correction_owner": "SP-04",
+    "required_reviews": ["MEETING_OWNER", "DECISION_AUTHORITY", "ACTION_OWNERS", "PRIVACY_SECURITY", "FINAL_RECORD"],
+    "prohibited_actions": ["fabricate_source", "infer_decision", "force_commitment", "auto_send", "fake_done"]
+  },
+  "sources": [
+    {"source_id": "SRC-REC", "source_type": "RECORDING", "version": "1.0", "hash": "sha256:recording-001", "locator": "vault://meet-001/recording", "owner": "SP-04", "capture_method": "Authorized meeting recorder", "time_span": "09:00-10:00", "classification": "YELLOW", "access_status": "AUTHORIZED", "consent_status": "APPROVED", "active": true},
+    {"source_id": "SRC-TR", "source_type": "TRANSCRIPT", "version": "1.1", "hash": "sha256:transcript-001", "locator": "vault://meet-001/transcript", "owner": "SP-04", "capture_method": "Transcript from authorized recording", "time_span": "09:00-10:00", "classification": "YELLOW", "access_status": "AUTHORIZED", "consent_status": "APPROVED", "active": true},
+    {"source_id": "SRC-NOTE", "source_type": "FACILITATOR_NOTES", "version": "1.0", "hash": "sha256:notes-001", "locator": "vault://meet-001/notes", "owner": "SP-04", "capture_method": "Manual notes", "time_span": "09:00-10:00", "classification": "YELLOW", "access_status": "AUTHORIZED", "consent_status": "APPROVED", "active": true},
+    {"source_id": "SRC-REVIEW", "source_type": "REVIEW_EVIDENCE", "version": "1.0", "hash": "sha256:review-001", "locator": "vault://meet-001/review", "owner": "QA-01", "capture_method": "Human review records", "time_span": "Post-meeting review", "classification": "YELLOW", "access_status": "AUTHORIZED", "consent_status": "APPROVED", "active": true}
+  ],
+  "speakers": [
+    {"speaker_id": "SP-01", "canonical_name": "Executive Sponsor", "role": "DECIDER", "identity_confidence": "VERIFIED", "verification_evidence": "Roster and voice-confirmed transcript labels", "authority_scope": "Choose recovery path and accountable owners"},
+    {"speaker_id": "SP-02", "canonical_name": "Delivery Owner", "role": "ACTION_OWNER", "identity_confidence": "HIGH", "verification_evidence": "Roster and self-identification", "authority_scope": "Accept delivery actions"},
+    {"speaker_id": "SP-03", "canonical_name": "Project Manager", "role": "ACTION_OWNER", "identity_confidence": "HIGH", "verification_evidence": "Roster and facilitator verification", "authority_scope": "Accept project-control actions"},
+    {"speaker_id": "SP-04", "canonical_name": "Facilitator", "role": "MEETING_OWNER", "identity_confidence": "VERIFIED", "verification_evidence": "Calendar owner and transcript label", "authority_scope": "Record/correction coordination"}
+  ],
+  "dissents": [
+    {"dissent_id": "DS-01", "speaker_id": "SP-03", "statement": "Adding temporary capacity may preserve more client value than reducing scope.", "source_refs": ["SRC-TR", "SRC-NOTE"], "locator": "transcript 00:31:10-00:32:20", "status": "RECORDED_AND_CONSIDERED", "owner": "SP-04"}
+  ],
+  "decisions": [
+    {"decision_id": "DE-01", "decision": "Reduce non-critical scope and preserve the contractual deadline.", "decider_id": "SP-01", "authority_evidence": "Sponsor mandate recorded in meeting contract and confirmed in transcript", "source_refs": ["SRC-TR", "SRC-NOTE"], "locator": "transcript 00:39:12-00:40:05", "rationale": "Protect contractual obligation with bounded cost and acceptable client value", "scope": "Current client deliverable only", "confirmation_status": "CONFIRMED", "dissent_ids": ["DS-01"]},
+    {"decision_id": "DE-02", "decision": "Delivery Owner leads scope revision; Project Manager controls the recovery plan.", "decider_id": "SP-01", "authority_evidence": "Sponsor authority and explicit assignment accepted by owners", "source_refs": ["SRC-TR"], "locator": "transcript 00:44:02-00:45:40", "rationale": "Separate client deliverable ownership from plan control", "scope": "Recovery cycle through client confirmation", "confirmation_status": "CONFIRMED", "dissent_ids": []}
+  ],
+  "actions": [
+    {"action_id": "AC-01", "deliverable": "Revised scope proposal", "owner_id": "SP-02", "acceptance_status": "EXPLICIT", "source_refs": ["SRC-TR"], "locator": "transcript 00:46:02-00:46:35", "due_or_trigger": "2026-08-24T16:00:00+07:00", "acceptance_criteria": "Non-critical scope removed; contractual outcomes preserved", "report_to": "SP-01", "status": "RECORDED", "dependencies": ["DE-01"]},
+    {"action_id": "AC-02", "deliverable": "Recovery plan with owners, milestones and risk triggers", "owner_id": "SP-03", "acceptance_status": "EXPLICIT", "source_refs": ["SRC-TR", "SRC-NOTE"], "locator": "transcript 00:46:36-00:47:20", "due_or_trigger": "2026-08-24T17:00:00+07:00", "acceptance_criteria": "All critical milestones, owners and escalation triggers listed", "report_to": "SP-01", "status": "RECORDED", "dependencies": ["AC-01"]},
+    {"action_id": "AC-03", "deliverable": "Draft record circulated for confirmation", "owner_id": "SP-04", "acceptance_status": "EXPLICIT", "source_refs": ["SRC-TR"], "locator": "transcript 00:55:10-00:55:35", "due_or_trigger": "Within 24 hours after meeting", "acceptance_criteria": "Decision/action/dissent records include locators", "report_to": "SP-01", "status": "RECORDED", "dependencies": []}
+  ],
+  "unknowns": [
+    {"unknown_id": "UN-01", "question": "Will the client accept the reduced scope without price adjustment?", "owner": "SP-02", "due_or_trigger": "Client confirmation call", "impact": "May reopen decision economics", "source_refs": ["SRC-TR"], "status": "OPEN"},
+    {"unknown_id": "UN-02", "question": "Is temporary capacity still needed after scope reduction?", "owner": "SP-03", "due_or_trigger": "After recovery plan estimate", "impact": "Affects cost and resource allocation", "source_refs": ["SRC-TR", "SRC-NOTE"], "status": "OPEN"}
+  ],
+  "corrections": [
+    {"correction_id": "CR-01", "before": "Draft labeled SP-02 as accepting AC-02", "after": "SP-03 explicitly accepted AC-02", "reason": "Speaker-label reconciliation", "requester": "SP-04", "approver": "SP-03", "evidence_ref": "SRC-REVIEW", "date": "2026-08-24"}
+  ],
+  "record": {
+    "summary": "The sponsor chose scope reduction to protect the deadline, assigned delivery and plan-control owners, and retained one recorded dissent plus two unknowns.",
+    "decision_ids": ["DE-01", "DE-02"],
+    "action_ids": ["AC-01", "AC-02", "AC-03"],
+    "dissent_ids": ["DS-01"],
+    "unknown_ids": ["UN-01", "UN-02"],
+    "source_refs": ["SRC-REC", "SRC-TR", "SRC-NOTE", "SRC-REVIEW"],
+    "owner": "SP-04",
+    "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "source_provenance", "passed": true, "evidence": "Four active sources with hash/access/consent", "reviewer": "QA-01", "date": "2026-08-24"},
+    {"test_type": "speaker_identity", "passed": true, "evidence": "All decision/action speakers HIGH or VERIFIED", "reviewer": "SP-04", "date": "2026-08-24"},
+    {"test_type": "decision_authority", "passed": true, "evidence": "Two decisions confirmed by authorized sponsor", "reviewer": "SP-01", "date": "2026-08-24"},
+    {"test_type": "action_acceptance", "passed": true, "evidence": "Three actions explicitly accepted with locators", "reviewer": "SP-02", "date": "2026-08-24"},
+    {"test_type": "dissent_unknown_coverage", "passed": true, "evidence": "Known dissent and unknowns included", "reviewer": "SP-03", "date": "2026-08-24"},
+    {"test_type": "privacy_correction", "passed": true, "evidence": "Classification/retention and correction trail reviewed", "reviewer": "PRIVACY-01", "date": "2026-08-24"},
+    {"test_type": "distribution_execution_boundary", "passed": true, "evidence": "No sent/signed/done state asserted", "reviewer": "QA-01", "date": "2026-08-24"}
+  ],
+  "reviews": [
+    {"review_type": "MEETING_OWNER", "required": true, "reviewer": "SP-04", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "DECISION_AUTHORITY", "required": true, "reviewer": "SP-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "ACTION_OWNERS", "required": true, "reviewer": "SP-02/SP-03", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "PRIVACY_SECURITY", "required": true, "reviewer": "PRIVACY-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FINAL_RECORD", "required": true, "reviewer": "SP-04", "status": "PENDING"}
+  ]
+}
+

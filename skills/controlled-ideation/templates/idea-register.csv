@@ -1,0 +1,3 @@
+idea_id,round,axis,cluster_id,parent_idea_id,mechanism,beneficiary,value_hypothesis,critical_assumptions,dependencies,evidence_status,risks,red_line_status,portfolio_horizon,state,merge_or_screen_reason,learning_question,owner,reviewer_note
+IDEA-001,BASELINE,"[axis]",CL-001,"","[mechanism]","[beneficiary]","[value]","[assumptions]","[dependencies]",UNTESTED,"[risks]",PENDING,"[CORE/ADJACENT/WILD_CARD]",RAW,"[reason]","[question]","[owner]","[note]"
+

@@ -1,0 +1,1977 @@
+{
+  "artifact": "Evidence-Based A.I Use-Case Priority Portfolio Pack",
+  "priority_contract": {
+    "portfolio_id": "PORT-001",
+    "version": "v1",
+    "outcome": "Select evidence-based A.I use cases for human decision",
+    "window": "Named planning window",
+    "scope": "Named enterprise portfolio",
+    "exclusions": [
+      "No vendor selection",
+      "No resource commitment"
+    ],
+    "sponsor": "Executive Sponsor",
+    "owner": "Portfolio Owner",
+    "approver": "Portfolio Authority",
+    "candidate_register_version": "use-case-discovery-v2.3",
+    "candidate_register_hash": "fixture-register-hash",
+    "dod": "Gates, scores, sensitivity and dispositions reviewed",
+    "confidentiality": "YELLOW_INTERNAL",
+    "action_boundary": "Priority proposal only"
+  },
+  "scoring_contract": {
+    "version": "SC-v1",
+    "formula": "sum(score times weight divided by 5)",
+    "score_scale": "0-5 anchored",
+    "weight_total": 100,
+    "missing_rule": "UNKNOWN_NOT_ZERO_AND_DEFER_IF_CRITICAL",
+    "tie_rule": "Keep tie unless approved evidence-based rule applies",
+    "sensitivity_threshold": "Two rank positions or shortlist change",
+    "approved_by": "Portfolio Authority",
+    "input_hash": "fixture-input-hash",
+    "engine_version": "priority-engine-v2.3",
+    "engine_hash": "fixture-engine-hash"
+  },
+  "authority_map": {
+    "business_process_owner": "Business Process Owner",
+    "data_system_owner": "Data System Owner",
+    "risk_control_owner": "Risk Control Owner",
+    "value_finance_owner": "Value Finance Owner",
+    "delivery_people_owner": "Delivery People Owner",
+    "portfolio_authority": "Portfolio Authority",
+    "exception_authority": "Named Executive Authority",
+    "selected_set_boundary": "No selection or commitment before human decision"
+  },
+  "evidence_sources": [
+    {
+      "id": "EVD-1",
+      "source": "authorized-priority-evidence-1",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 1",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-2",
+      "source": "authorized-priority-evidence-2",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 2",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-3",
+      "source": "authorized-priority-evidence-3",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 3",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-4",
+      "source": "authorized-priority-evidence-4",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 4",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-5",
+      "source": "authorized-priority-evidence-5",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "CALCULATED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 5",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-6",
+      "source": "authorized-priority-evidence-6",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "ESTIMATED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 6",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-7",
+      "source": "authorized-priority-evidence-7",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "UNVERIFIED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 7",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-8",
+      "source": "authorized-priority-evidence-8",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "OBSERVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 8",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-9",
+      "source": "authorized-priority-evidence-9",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "DOCUMENTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 9",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-10",
+      "source": "authorized-priority-evidence-10",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "SYSTEM_DERIVED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 10",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-11",
+      "source": "authorized-priority-evidence-11",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "SELF_REPORTED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 11",
+      "quality": "Quality and limitation recorded",
+      "conflict": "Conflict disclosed",
+      "status": "REGISTERED"
+    },
+    {
+      "id": "EVD-12",
+      "source": "authorized-priority-evidence-12",
+      "owner": "Evidence Owner",
+      "rights": "READ_FOR_PRIORITIZATION",
+      "evidence_type": "CALCULATED",
+      "date": "2026-08-22",
+      "version": "v1",
+      "coverage": "Candidate sample 12",
+      "quality": "Quality and limitation recorded",
+      "conflict": "None observed",
+      "status": "REGISTERED"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "STRATEGIC_FIT",
+      "definition": "Approved definition for STRATEGIC_FIT",
+      "direction": "HIGHER_BETTER",
+      "weight": 15,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "PROBLEM_EVIDENCE",
+      "definition": "Approved definition for PROBLEM_EVIDENCE",
+      "direction": "HIGHER_BETTER",
+      "weight": 15,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "WORKLOAD",
+      "definition": "Approved definition for WORKLOAD",
+      "direction": "HIGHER_BETTER",
+      "weight": 10,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "VALUE_HYPOTHESIS",
+      "definition": "Approved definition for VALUE_HYPOTHESIS",
+      "direction": "HIGHER_BETTER",
+      "weight": 15,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "DATA_WORKFLOW_READINESS",
+      "definition": "Approved definition for DATA_WORKFLOW_READINESS",
+      "direction": "HIGHER_BETTER",
+      "weight": 15,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "MEASURABILITY",
+      "definition": "Approved definition for MEASURABILITY",
+      "direction": "HIGHER_BETTER",
+      "weight": 10,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "TIME_TO_LEARNING_REVERSIBILITY",
+      "definition": "Approved definition for TIME_TO_LEARNING_REVERSIBILITY",
+      "direction": "HIGHER_BETTER",
+      "weight": 10,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    },
+    {
+      "id": "SCALABILITY_REUSE",
+      "definition": "Approved definition for SCALABILITY_REUSE",
+      "direction": "HIGHER_BETTER",
+      "weight": 10,
+      "anchors": {
+        "0": "No evidence",
+        "1": "Weak",
+        "2": "Limited",
+        "3": "Adequate",
+        "4": "Strong",
+        "5": "Verified strong"
+      },
+      "evidence_rule": "Score only when source meets anchor",
+      "missing_rule": "UNKNOWN_NOT_ZERO",
+      "double_count_rule": "One primary value driver unless independent evidence",
+      "owner": "Criterion Owner",
+      "approved_by": "Portfolio Authority",
+      "status": "APPROVED_HUMAN"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "CAN-1",
+      "opportunity_ref": "OPP-1",
+      "work_ref": "WM-1",
+      "evidence_refs": [
+        "EVD-1",
+        "EVD-2"
+      ],
+      "outcome": "Controlled outcome 1",
+      "value_hypothesis": "Evidence-bound value hypothesis 1",
+      "baseline_candidate": "Baseline candidate 1 pending human lock",
+      "effort_range": "2-4 person-days",
+      "cost_range": "Controlled estimate range 1",
+      "risk": "Risk and control note 1",
+      "dependencies": [
+        "Dependency 1"
+      ],
+      "capacity_need": "Named skill and capacity envelope 1",
+      "alternative": "Simpler non-A.I alternative 1",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 5,
+        "PROBLEM_EVIDENCE": 5,
+        "WORKLOAD": 5,
+        "VALUE_HYPOTHESIS": 5,
+        "DATA_WORKFLOW_READINESS": 5,
+        "MEASURABILITY": 5,
+        "TIME_TO_LEARNING_REVERSIBILITY": 5,
+        "SCALABILITY_REUSE": 5
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-1"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-2"
+        ],
+        "WORKLOAD": [
+          "EVD-3"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-4"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-5"
+        ],
+        "MEASURABILITY": [
+          "EVD-6"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-7"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-8"
+        ]
+      },
+      "confidence": "HIGH",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-2",
+      "opportunity_ref": "OPP-2",
+      "work_ref": "WM-2",
+      "evidence_refs": [
+        "EVD-2",
+        "EVD-3"
+      ],
+      "outcome": "Controlled outcome 2",
+      "value_hypothesis": "Evidence-bound value hypothesis 2",
+      "baseline_candidate": "Baseline candidate 2 pending human lock",
+      "effort_range": "3-5 person-days",
+      "cost_range": "Controlled estimate range 2",
+      "risk": "Risk and control note 2",
+      "dependencies": [
+        "Dependency 2"
+      ],
+      "capacity_need": "Named skill and capacity envelope 2",
+      "alternative": "Simpler non-A.I alternative 2",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 4.8,
+        "PROBLEM_EVIDENCE": 4.8,
+        "WORKLOAD": 4.8,
+        "VALUE_HYPOTHESIS": 4.8,
+        "DATA_WORKFLOW_READINESS": 4.8,
+        "MEASURABILITY": 4.8,
+        "TIME_TO_LEARNING_REVERSIBILITY": 4.8,
+        "SCALABILITY_REUSE": 4.8
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-2"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-3"
+        ],
+        "WORKLOAD": [
+          "EVD-4"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-5"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-6"
+        ],
+        "MEASURABILITY": [
+          "EVD-7"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-8"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-9"
+        ]
+      },
+      "confidence": "HIGH",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-3",
+      "opportunity_ref": "OPP-3",
+      "work_ref": "WM-3",
+      "evidence_refs": [
+        "EVD-3",
+        "EVD-4"
+      ],
+      "outcome": "Controlled outcome 3",
+      "value_hypothesis": "Evidence-bound value hypothesis 3",
+      "baseline_candidate": "Baseline candidate 3 pending human lock",
+      "effort_range": "4-6 person-days",
+      "cost_range": "Controlled estimate range 3",
+      "risk": "Risk and control note 3",
+      "dependencies": [
+        "Dependency 3"
+      ],
+      "capacity_need": "Named skill and capacity envelope 3",
+      "alternative": "Simpler non-A.I alternative 3",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 4.6,
+        "PROBLEM_EVIDENCE": 4.6,
+        "WORKLOAD": 4.6,
+        "VALUE_HYPOTHESIS": 4.6,
+        "DATA_WORKFLOW_READINESS": 4.6,
+        "MEASURABILITY": 4.6,
+        "TIME_TO_LEARNING_REVERSIBILITY": 4.6,
+        "SCALABILITY_REUSE": 4.6
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-3"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-4"
+        ],
+        "WORKLOAD": [
+          "EVD-5"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-6"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-7"
+        ],
+        "MEASURABILITY": [
+          "EVD-8"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-9"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-10"
+        ]
+      },
+      "confidence": "HIGH",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-4",
+      "opportunity_ref": "OPP-4",
+      "work_ref": "WM-4",
+      "evidence_refs": [
+        "EVD-4",
+        "EVD-5"
+      ],
+      "outcome": "Controlled outcome 4",
+      "value_hypothesis": "Evidence-bound value hypothesis 4",
+      "baseline_candidate": "Baseline candidate 4 pending human lock",
+      "effort_range": "5-7 person-days",
+      "cost_range": "Controlled estimate range 4",
+      "risk": "Risk and control note 4",
+      "dependencies": [
+        "Dependency 4"
+      ],
+      "capacity_need": "Named skill and capacity envelope 4",
+      "alternative": "Simpler non-A.I alternative 4",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 4.4,
+        "PROBLEM_EVIDENCE": 4.4,
+        "WORKLOAD": 4.4,
+        "VALUE_HYPOTHESIS": 4.4,
+        "DATA_WORKFLOW_READINESS": 4.4,
+        "MEASURABILITY": 4.4,
+        "TIME_TO_LEARNING_REVERSIBILITY": 4.4,
+        "SCALABILITY_REUSE": 4.4
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-4"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-5"
+        ],
+        "WORKLOAD": [
+          "EVD-6"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-7"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-8"
+        ],
+        "MEASURABILITY": [
+          "EVD-9"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-10"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-11"
+        ]
+      },
+      "confidence": "HIGH",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-5",
+      "opportunity_ref": "OPP-5",
+      "work_ref": "WM-5",
+      "evidence_refs": [
+        "EVD-5",
+        "EVD-6"
+      ],
+      "outcome": "Controlled outcome 5",
+      "value_hypothesis": "Evidence-bound value hypothesis 5",
+      "baseline_candidate": "Baseline candidate 5 pending human lock",
+      "effort_range": "6-8 person-days",
+      "cost_range": "Controlled estimate range 5",
+      "risk": "Risk and control note 5",
+      "dependencies": [
+        "Dependency 5"
+      ],
+      "capacity_need": "Named skill and capacity envelope 5",
+      "alternative": "Simpler non-A.I alternative 5",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 4.2,
+        "PROBLEM_EVIDENCE": 4.2,
+        "WORKLOAD": 4.2,
+        "VALUE_HYPOTHESIS": 4.2,
+        "DATA_WORKFLOW_READINESS": 4.2,
+        "MEASURABILITY": 4.2,
+        "TIME_TO_LEARNING_REVERSIBILITY": 4.2,
+        "SCALABILITY_REUSE": 4.2
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-5"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-6"
+        ],
+        "WORKLOAD": [
+          "EVD-7"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-8"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-9"
+        ],
+        "MEASURABILITY": [
+          "EVD-10"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-11"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-12"
+        ]
+      },
+      "confidence": "HIGH",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-6",
+      "opportunity_ref": "OPP-6",
+      "work_ref": "WM-6",
+      "evidence_refs": [
+        "EVD-6",
+        "EVD-7"
+      ],
+      "outcome": "Controlled outcome 6",
+      "value_hypothesis": "Evidence-bound value hypothesis 6",
+      "baseline_candidate": "Baseline candidate 6 pending human lock",
+      "effort_range": "7-9 person-days",
+      "cost_range": "Controlled estimate range 6",
+      "risk": "Risk and control note 6",
+      "dependencies": [
+        "Dependency 6"
+      ],
+      "capacity_need": "Named skill and capacity envelope 6",
+      "alternative": "Simpler non-A.I alternative 6",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 4,
+        "PROBLEM_EVIDENCE": 4,
+        "WORKLOAD": 4,
+        "VALUE_HYPOTHESIS": 4,
+        "DATA_WORKFLOW_READINESS": 4,
+        "MEASURABILITY": 4,
+        "TIME_TO_LEARNING_REVERSIBILITY": 4,
+        "SCALABILITY_REUSE": 4
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-6"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-7"
+        ],
+        "WORKLOAD": [
+          "EVD-8"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-9"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-10"
+        ],
+        "MEASURABILITY": [
+          "EVD-11"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-12"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-1"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-7",
+      "opportunity_ref": "OPP-7",
+      "work_ref": "WM-7",
+      "evidence_refs": [
+        "EVD-7",
+        "EVD-8"
+      ],
+      "outcome": "Controlled outcome 7",
+      "value_hypothesis": "Evidence-bound value hypothesis 7",
+      "baseline_candidate": "Baseline candidate 7 pending human lock",
+      "effort_range": "8-10 person-days",
+      "cost_range": "Controlled estimate range 7",
+      "risk": "Risk and control note 7",
+      "dependencies": [
+        "Dependency 7"
+      ],
+      "capacity_need": "Named skill and capacity envelope 7",
+      "alternative": "Simpler non-A.I alternative 7",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 3.8,
+        "PROBLEM_EVIDENCE": 3.8,
+        "WORKLOAD": 3.8,
+        "VALUE_HYPOTHESIS": 3.8,
+        "DATA_WORKFLOW_READINESS": 3.8,
+        "MEASURABILITY": 3.8,
+        "TIME_TO_LEARNING_REVERSIBILITY": 3.8,
+        "SCALABILITY_REUSE": 3.8
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-7"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-8"
+        ],
+        "WORKLOAD": [
+          "EVD-9"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-10"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-11"
+        ],
+        "MEASURABILITY": [
+          "EVD-12"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-1"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-2"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-8",
+      "opportunity_ref": "OPP-8",
+      "work_ref": "WM-8",
+      "evidence_refs": [
+        "EVD-8",
+        "EVD-9"
+      ],
+      "outcome": "Controlled outcome 8",
+      "value_hypothesis": "Evidence-bound value hypothesis 8",
+      "baseline_candidate": "Baseline candidate 8 pending human lock",
+      "effort_range": "9-11 person-days",
+      "cost_range": "Controlled estimate range 8",
+      "risk": "Risk and control note 8",
+      "dependencies": [
+        "Dependency 8"
+      ],
+      "capacity_need": "Named skill and capacity envelope 8",
+      "alternative": "Simpler non-A.I alternative 8",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 3.6,
+        "PROBLEM_EVIDENCE": 3.6,
+        "WORKLOAD": 3.6,
+        "VALUE_HYPOTHESIS": 3.6,
+        "DATA_WORKFLOW_READINESS": 3.6,
+        "MEASURABILITY": 3.6,
+        "TIME_TO_LEARNING_REVERSIBILITY": 3.6,
+        "SCALABILITY_REUSE": 3.6
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-8"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-9"
+        ],
+        "WORKLOAD": [
+          "EVD-10"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-11"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-12"
+        ],
+        "MEASURABILITY": [
+          "EVD-1"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-2"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-3"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-9",
+      "opportunity_ref": "OPP-9",
+      "work_ref": "WM-9",
+      "evidence_refs": [
+        "EVD-9",
+        "EVD-10"
+      ],
+      "outcome": "Controlled outcome 9",
+      "value_hypothesis": "Evidence-bound value hypothesis 9",
+      "baseline_candidate": "Baseline candidate 9 pending human lock",
+      "effort_range": "10-12 person-days",
+      "cost_range": "Controlled estimate range 9",
+      "risk": "Risk and control note 9",
+      "dependencies": [
+        "Dependency 9"
+      ],
+      "capacity_need": "Named skill and capacity envelope 9",
+      "alternative": "Simpler non-A.I alternative 9",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 3.4,
+        "PROBLEM_EVIDENCE": 3.4,
+        "WORKLOAD": 3.4,
+        "VALUE_HYPOTHESIS": 3.4,
+        "DATA_WORKFLOW_READINESS": 3.4,
+        "MEASURABILITY": 3.4,
+        "TIME_TO_LEARNING_REVERSIBILITY": 3.4,
+        "SCALABILITY_REUSE": 3.4
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-9"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-10"
+        ],
+        "WORKLOAD": [
+          "EVD-11"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-12"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-1"
+        ],
+        "MEASURABILITY": [
+          "EVD-2"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-3"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-4"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "CAN-10",
+      "opportunity_ref": "OPP-10",
+      "work_ref": "WM-10",
+      "evidence_refs": [
+        "EVD-10",
+        "EVD-11"
+      ],
+      "outcome": "Controlled outcome 10",
+      "value_hypothesis": "Evidence-bound value hypothesis 10",
+      "baseline_candidate": "Baseline candidate 10 pending human lock",
+      "effort_range": "11-13 person-days",
+      "cost_range": "Controlled estimate range 10",
+      "risk": "Risk and control note 10",
+      "dependencies": [
+        "Dependency 10"
+      ],
+      "capacity_need": "Named skill and capacity envelope 10",
+      "alternative": "Simpler non-A.I alternative 10",
+      "criterion_scores": {
+        "STRATEGIC_FIT": 3.2,
+        "PROBLEM_EVIDENCE": 3.2,
+        "WORKLOAD": 3.2,
+        "VALUE_HYPOTHESIS": 3.2,
+        "DATA_WORKFLOW_READINESS": 3.2,
+        "MEASURABILITY": 3.2,
+        "TIME_TO_LEARNING_REVERSIBILITY": 3.2,
+        "SCALABILITY_REUSE": 3.2
+      },
+      "score_evidence": {
+        "STRATEGIC_FIT": [
+          "EVD-10"
+        ],
+        "PROBLEM_EVIDENCE": [
+          "EVD-11"
+        ],
+        "WORKLOAD": [
+          "EVD-12"
+        ],
+        "VALUE_HYPOTHESIS": [
+          "EVD-1"
+        ],
+        "DATA_WORKFLOW_READINESS": [
+          "EVD-2"
+        ],
+        "MEASURABILITY": [
+          "EVD-3"
+        ],
+        "TIME_TO_LEARNING_REVERSIBILITY": [
+          "EVD-4"
+        ],
+        "SCALABILITY_REUSE": [
+          "EVD-5"
+        ]
+      },
+      "confidence": "MEDIUM",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "gates": [
+    {
+      "id": "GATE-1",
+      "candidate_ref": "CAN-1",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-1"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-2"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-3"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-4"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-5"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-1"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-2",
+      "candidate_ref": "CAN-2",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-2"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-3"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-4"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-5"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-2"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-3",
+      "candidate_ref": "CAN-3",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-3"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-4"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-5"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-3"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-4",
+      "candidate_ref": "CAN-4",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-4"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-5"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-5",
+      "candidate_ref": "CAN-5",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-5"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-6",
+      "candidate_ref": "CAN-6",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-6"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-11"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-7",
+      "candidate_ref": "CAN-7",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-7"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-11"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-12"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-7"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-8",
+      "candidate_ref": "CAN-8",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-8"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-11"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-12"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-1"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-8"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-9",
+      "candidate_ref": "CAN-9",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-9"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-11"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-12"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-1"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-2"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-9"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    },
+    {
+      "id": "GATE-10",
+      "candidate_ref": "CAN-10",
+      "checks": [
+        {
+          "type": "SCOPE_OWNER",
+          "status": "PASS",
+          "evidence": "EVD-10"
+        },
+        {
+          "type": "EVIDENCE_SUFFICIENCY",
+          "status": "PASS",
+          "evidence": "EVD-11"
+        },
+        {
+          "type": "DATA_RIGHTS",
+          "status": "PASS",
+          "evidence": "EVD-12"
+        },
+        {
+          "type": "OUTPUT_TESTABILITY",
+          "status": "PASS",
+          "evidence": "EVD-1"
+        },
+        {
+          "type": "HUMAN_CONTROL",
+          "status": "PASS",
+          "evidence": "EVD-2"
+        },
+        {
+          "type": "HARM_SECURITY_PRIVACY",
+          "status": "PASS",
+          "evidence": "EVD-3"
+        }
+      ],
+      "evidence_refs": [
+        "EVD-10"
+      ],
+      "owner": "Gate Owner",
+      "critical": true,
+      "status": "PASS",
+      "reason": "All critical checks evidenced"
+    }
+  ],
+  "priority_results": [
+    {
+      "id": "PR-1",
+      "candidate_ref": "CAN-1",
+      "gate_state": "PASS",
+      "weighted_score": 100,
+      "rank": 1,
+      "tier": "P1",
+      "stability": "STABLE",
+      "why_now": "Evidence and outcome fit 1",
+      "why_not": "Constraints and uncertainty 1",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 1",
+      "disposition": "SHORTLIST",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-2",
+      "candidate_ref": "CAN-2",
+      "gate_state": "PASS",
+      "weighted_score": 96,
+      "rank": 2,
+      "tier": "P1",
+      "stability": "STABLE",
+      "why_now": "Evidence and outcome fit 2",
+      "why_not": "Constraints and uncertainty 2",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 2",
+      "disposition": "SHORTLIST",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-3",
+      "candidate_ref": "CAN-3",
+      "gate_state": "PASS",
+      "weighted_score": 92,
+      "rank": 3,
+      "tier": "P1",
+      "stability": "STABLE",
+      "why_now": "Evidence and outcome fit 3",
+      "why_not": "Constraints and uncertainty 3",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 3",
+      "disposition": "SHORTLIST",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-4",
+      "candidate_ref": "CAN-4",
+      "gate_state": "PASS",
+      "weighted_score": 88,
+      "rank": 4,
+      "tier": "P2",
+      "stability": "STABLE",
+      "why_now": "Evidence and outcome fit 4",
+      "why_not": "Constraints and uncertainty 4",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 4",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-5",
+      "candidate_ref": "CAN-5",
+      "gate_state": "PASS",
+      "weighted_score": 84,
+      "rank": 5,
+      "tier": "P2",
+      "stability": "STABLE",
+      "why_now": "Evidence and outcome fit 5",
+      "why_not": "Constraints and uncertainty 5",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 5",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-6",
+      "candidate_ref": "CAN-6",
+      "gate_state": "PASS",
+      "weighted_score": 80,
+      "rank": 6,
+      "tier": "P2",
+      "stability": "CONDITIONAL",
+      "why_now": "Evidence and outcome fit 6",
+      "why_not": "Constraints and uncertainty 6",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 6",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-7",
+      "candidate_ref": "CAN-7",
+      "gate_state": "PASS",
+      "weighted_score": 76,
+      "rank": 7,
+      "tier": "P2",
+      "stability": "CONDITIONAL",
+      "why_now": "Evidence and outcome fit 7",
+      "why_not": "Constraints and uncertainty 7",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 7",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-8",
+      "candidate_ref": "CAN-8",
+      "gate_state": "PASS",
+      "weighted_score": 72,
+      "rank": 8,
+      "tier": "P3",
+      "stability": "CONDITIONAL",
+      "why_now": "Evidence and outcome fit 8",
+      "why_not": "Constraints and uncertainty 8",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 8",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-9",
+      "candidate_ref": "CAN-9",
+      "gate_state": "PASS",
+      "weighted_score": 68,
+      "rank": 9,
+      "tier": "P3",
+      "stability": "CONDITIONAL",
+      "why_now": "Evidence and outcome fit 9",
+      "why_not": "Constraints and uncertainty 9",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 9",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "PR-10",
+      "candidate_ref": "CAN-10",
+      "gate_state": "PASS",
+      "weighted_score": 64,
+      "rank": 10,
+      "tier": "P3",
+      "stability": "CONDITIONAL",
+      "why_now": "Evidence and outcome fit 10",
+      "why_not": "Constraints and uncertainty 10",
+      "opportunity_cost": "Displaces lower-ranked candidate or capacity 10",
+      "disposition": "BACKLOG",
+      "owner": "Portfolio Owner",
+      "status": "PROPOSED"
+    }
+  ],
+  "sensitivity_scenarios": [
+    {
+      "id": "SEN-1",
+      "scenario": "Weights plus or minus 5 points",
+      "changed_inputs": [
+        "weights"
+      ],
+      "rank_movements": "Maximum movement one rank",
+      "shortlist_change": "No change",
+      "threshold": "Two ranks or shortlist change",
+      "stability": "STABLE",
+      "trigger": "Re-run if weights change",
+      "owner": "Portfolio Analyst",
+      "status": "TESTED"
+    },
+    {
+      "id": "SEN-2",
+      "scenario": "Effort and value range stress",
+      "changed_inputs": [
+        "effort",
+        "value_range"
+      ],
+      "rank_movements": "Maximum movement two ranks",
+      "shortlist_change": "No change",
+      "threshold": "Two ranks or shortlist change",
+      "stability": "CONDITIONAL",
+      "trigger": "Re-run after estimate validation",
+      "owner": "Portfolio Analyst",
+      "status": "TESTED"
+    },
+    {
+      "id": "SEN-3",
+      "scenario": "Gate and capacity shock",
+      "changed_inputs": [
+        "gate",
+        "capacity"
+      ],
+      "rank_movements": "Affected candidate deferred",
+      "shortlist_change": "Human review required",
+      "threshold": "Any critical gate change",
+      "stability": "CONDITIONAL",
+      "trigger": "Re-run on gate or capacity change",
+      "owner": "Portfolio Analyst",
+      "status": "TESTED"
+    }
+  ],
+  "portfolio_views": [
+    {
+      "id": "VIEW-1",
+      "view": "STRATEGIC_VALUE",
+      "criteria": [
+        "STRATEGIC_FIT",
+        "PROBLEM_EVIDENCE"
+      ],
+      "evidence": "Evidence-linked view 1",
+      "insight": "Portfolio insight 1",
+      "constraint": "Constraint 1",
+      "owner": "Portfolio Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "VIEW-2",
+      "view": "EVIDENCE_READINESS",
+      "criteria": [
+        "PROBLEM_EVIDENCE",
+        "WORKLOAD"
+      ],
+      "evidence": "Evidence-linked view 2",
+      "insight": "Portfolio insight 2",
+      "constraint": "Constraint 2",
+      "owner": "Portfolio Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "VIEW-3",
+      "view": "EFFORT_RISK",
+      "criteria": [
+        "WORKLOAD",
+        "VALUE_HYPOTHESIS"
+      ],
+      "evidence": "Evidence-linked view 3",
+      "insight": "Portfolio insight 3",
+      "constraint": "Constraint 3",
+      "owner": "Portfolio Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "VIEW-4",
+      "view": "LEARNING_REVERSIBILITY",
+      "criteria": [
+        "VALUE_HYPOTHESIS",
+        "DATA_WORKFLOW_READINESS"
+      ],
+      "evidence": "Evidence-linked view 4",
+      "insight": "Portfolio insight 4",
+      "constraint": "Constraint 4",
+      "owner": "Portfolio Owner",
+      "status": "DRAFT"
+    },
+    {
+      "id": "VIEW-5",
+      "view": "PORTFOLIO_BALANCE",
+      "criteria": [
+        "DATA_WORKFLOW_READINESS",
+        "MEASURABILITY"
+      ],
+      "evidence": "Evidence-linked view 5",
+      "insight": "Portfolio insight 5",
+      "constraint": "Constraint 5",
+      "owner": "Portfolio Owner",
+      "status": "DRAFT"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Priority control decision 1",
+      "evidence_refs": [
+        "PR-1"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Portfolio commitment remains pending"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Priority control decision 2",
+      "evidence_refs": [
+        "PR-2"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Portfolio commitment remains pending"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Priority control decision 3",
+      "evidence_refs": [
+        "PR-3"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "PENDING",
+      "consequence": "Portfolio commitment remains pending"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Priority control decision 4",
+      "evidence_refs": [
+        "EVD-4"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "PENDING",
+      "consequence": "Portfolio commitment remains pending"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Priority control decision 5",
+      "evidence_refs": [
+        "EVD-5"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "PENDING",
+      "consequence": "Portfolio commitment remains pending"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Priority control decision 6",
+      "evidence_refs": [
+        "EVD-6"
+      ],
+      "owner": "Human Decision Owner",
+      "authority": "Named priority contract",
+      "status": "PENDING",
+      "consequence": "Portfolio commitment remains pending"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "contract",
+      "requirement_ref": "EVD-1",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "trace",
+      "requirement_ref": "EVD-2",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "gate",
+      "requirement_ref": "EVD-3",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "rubric",
+      "requirement_ref": "EVD-4",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "value",
+      "requirement_ref": "EVD-5",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "score",
+      "requirement_ref": "CAN-1",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "rank",
+      "requirement_ref": "CAN-2",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "sensitivity",
+      "requirement_ref": "CAN-3",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "security",
+      "requirement_ref": "CAN-4",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "injection",
+      "requirement_ref": "CAN-5",
+      "setup": "Controlled static fixture",
+      "expected": "Auditable priority control",
+      "actual": "Control found",
+      "evidence": "test-evidence-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "SCOPE_SPONSOR_BIAS",
+      "risk": "Priority risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "EVIDENCE_SCORE_PRECISION",
+      "risk": "Priority risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "VALUE_ROI_DOUBLE_COUNT",
+      "risk": "Priority risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "DATA_HUMAN_HARM_GATE",
+      "risk": "Priority risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "EFFORT_CAPACITY_DEPENDENCY",
+      "risk": "Priority risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "SENSITIVITY_COMMITMENT_HANDOFF",
+      "risk": "Priority risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could misdirect portfolio investment",
+      "control": "Named preventive and review control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "priority_contract",
+      "status": "PASS",
+      "evidence": "priority_contract verified"
+    },
+    {
+      "id": "candidate_trace",
+      "status": "PASS",
+      "evidence": "candidate_trace verified"
+    },
+    {
+      "id": "gate_before_score",
+      "status": "PASS",
+      "evidence": "gate_before_score verified"
+    },
+    {
+      "id": "rubric_weight_formula",
+      "status": "PASS",
+      "evidence": "rubric_weight_formula verified"
+    },
+    {
+      "id": "value_double_count",
+      "status": "PASS",
+      "evidence": "value_double_count verified"
+    },
+    {
+      "id": "ranking_recompute",
+      "status": "PASS",
+      "evidence": "ranking_recompute verified"
+    },
+    {
+      "id": "sensitivity_injection",
+      "status": "PASS",
+      "evidence": "sensitivity_injection verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "BUSINESS_PROCESS_OWNER",
+      "status": "PASS",
+      "evidence": "BUSINESS_PROCESS_OWNER reviewed"
+    },
+    {
+      "id": "DATA_SYSTEM_OWNER",
+      "status": "PASS",
+      "evidence": "DATA_SYSTEM_OWNER reviewed"
+    },
+    {
+      "id": "RISK_CONTROL_OWNER",
+      "status": "PASS",
+      "evidence": "RISK_CONTROL_OWNER reviewed"
+    },
+    {
+      "id": "VALUE_FINANCE_OWNER",
+      "status": "PASS",
+      "evidence": "VALUE_FINANCE_OWNER reviewed"
+    },
+    {
+      "id": "DELIVERY_PEOPLE_OWNER",
+      "status": "PASS",
+      "evidence": "DELIVERY_PEOPLE_OWNER reviewed"
+    },
+    {
+      "id": "PORTFOLIO_AUTHORITY",
+      "status": "PASS",
+      "evidence": "PORTFOLIO_AUTHORITY reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "invented_pain": false,
+    "invented_baseline": false,
+    "invented_metric": false,
+    "invented_roi": false,
+    "realized_roi_claimed": false,
+    "unknown_as_zero": false,
+    "gate_averaged_away": false,
+    "weight_changed_without_approval": false,
+    "score_changed_for_sponsor": false,
+    "double_count_hidden": false,
+    "protected_attribute_used": false,
+    "vendor_selected": false,
+    "architecture_committed": false,
+    "budget_approved": false,
+    "people_assigned": false,
+    "work_stopped": false,
+    "ranking_published": false,
+    "ranking_sent": false,
+    "evidence_mutated": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

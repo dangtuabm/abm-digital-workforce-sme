@@ -1,0 +1,65 @@
+{
+  "contract": {
+    "plan_id": "FM-DEMO-001",
+    "version": "1.0",
+    "horizon": "2026-08-24/2026-08-28",
+    "timezone": "Asia/Bangkok",
+    "outcomes": ["Complete client decision brief", "Stabilize operating review"],
+    "owner": "EXEC-01",
+    "final_approver": "EXEC-01",
+    "wip_limit": 2,
+    "prohibited_actions": ["auto_reschedule", "auto_decline", "auto_delegate", "delete_commitment", "cut_recovery"],
+    "required_reviews": ["FOCUS_OWNER", "COMMITMENT_OWNER", "DEPENDENCY_OWNER", "FINAL_SCHEDULING"]
+  },
+  "availability": {
+    "working_minutes": 480,
+    "fixed_minutes": 120,
+    "recovery_minutes": 60,
+    "buffer_minutes": 60,
+    "source_ref": "CAL-AUTH-001",
+    "owner": "EXEC-01"
+  },
+  "commitments": [
+    {"commitment_id": "CM-01", "title": "Complete client decision brief", "outcome": "Complete client decision brief", "source": "MANDATE-01", "owner": "EXEC-01", "deadline": "2026-08-25T17:00:00+07:00", "effort_minutes": 120, "dependencies": [], "tier": "MUST", "status": "ACTIVE", "authority": "SELF"},
+    {"commitment_id": "CM-02", "title": "Prepare operating review", "outcome": "Stabilize operating review", "source": "MANDATE-02", "owner": "EXEC-01", "deadline": "2026-08-26T16:00:00+07:00", "effort_minutes": 90, "dependencies": ["DATA-OWNER-INPUT"], "tier": "WIN", "status": "ACTIVE", "authority": "SELF"},
+    {"commitment_id": "CM-03", "title": "Read optional industry report", "outcome": "Complete client decision brief", "source": "BACKLOG-03", "owner": "EXEC-01", "deadline": "2026-08-30T17:00:00+07:00", "effort_minutes": 60, "dependencies": [], "tier": "SUPPORT", "status": "READY", "authority": "SELF"},
+    {"commitment_id": "CM-04", "title": "Resolve missing operating input", "outcome": "Stabilize operating review", "source": "MANDATE-04", "owner": "OPS-01", "deadline": "2026-08-25T12:00:00+07:00", "effort_minutes": 30, "dependencies": ["DATA-OWNER-INPUT"], "tier": "MUST", "status": "BLOCKED", "authority": "SHARED"}
+  ],
+  "dispositions": [
+    {"disposition_id": "DP-01", "commitment_id": "CM-01", "decision": "DO", "rationale": "Directly serves the primary client outcome", "harm_if_wrong": "Client decision delayed", "owner": "EXEC-01", "authority_status": "SELF"},
+    {"disposition_id": "DP-02", "commitment_id": "CM-02", "decision": "DO", "rationale": "Required for operating cadence", "harm_if_wrong": "Review lacks preparation", "owner": "EXEC-01", "authority_status": "SELF"},
+    {"disposition_id": "DP-03", "commitment_id": "CM-03", "decision": "DEFER", "rationale": "Support work does not fit current capacity", "harm_if_wrong": "Lower context depth", "owner": "EXEC-01", "authority_status": "APPROVED"},
+    {"disposition_id": "DP-04", "commitment_id": "CM-04", "decision": "ESCALATE", "rationale": "Dependency owner input is required", "harm_if_wrong": "Operating review remains blocked", "owner": "OPS-01", "authority_status": "APPROVED"}
+  ],
+  "focus_blocks": [
+    {"block_id": "FB-01", "commitment_id": "CM-01", "outcome": "Complete client decision brief", "duration_minutes": 120, "energy_fit": "HIGH", "start_condition": "Source pack validated", "stop_rule": "Draft and evidence gaps logged", "buffer_minutes": 15, "owner": "EXEC-01"},
+    {"block_id": "FB-02", "commitment_id": "CM-02", "outcome": "Stabilize operating review", "duration_minutes": 90, "energy_fit": "MEDIUM", "start_condition": "Data owner input received", "stop_rule": "Agenda and decision questions ready", "buffer_minutes": 15, "owner": "EXEC-01"}
+  ],
+  "conflicts": [
+    {"conflict_id": "CF-01", "type": "DEADLINE_COLLISION", "severity": "MAJOR", "evidence": "CM-01 and CM-02 compete for the same high-energy window", "resolution": "Sequence CM-01 before CM-02", "owner": "EXEC-01", "status": "RESOLVED"},
+    {"conflict_id": "CF-02", "type": "DEPENDENCY_BLOCK", "severity": "CRITICAL", "evidence": "CM-04 waits for DATA-OWNER-INPUT", "resolution": "Escalation accepted by OPS-01", "owner": "OPS-01", "status": "RESOLVED"}
+  ],
+  "interruption_protocol": {
+    "classes": {"CRITICAL": "Safety, legal or material client incident", "IMPORTANT": "Owner-defined same-day decision", "ROUTINE": "Capture for batch review"},
+    "capture_queue": "Authorized task inbox",
+    "escalation_route": "EXEC-01 then designated backup",
+    "return_to_focus": "Record interruption, restate next action, resume or replan",
+    "owner": "EXEC-01"
+  },
+  "tests": [
+    {"test_type": "capacity_reconciliation", "passed": true, "evidence": "210 scheduled <= 240 focus capacity", "reviewer": "EXEC-01", "date": "2026-08-21"},
+    {"test_type": "wip_limit", "passed": true, "evidence": "2 active = WIP limit 2", "reviewer": "EXEC-01", "date": "2026-08-21"},
+    {"test_type": "commitment_dependency", "passed": true, "evidence": "Dependency and escalation recorded", "reviewer": "OPS-01", "date": "2026-08-21"},
+    {"test_type": "authority_boundary", "passed": true, "evidence": "Non-DO dispositions approved", "reviewer": "EXEC-01", "date": "2026-08-21"},
+    {"test_type": "wellbeing_recovery", "passed": true, "evidence": "60 recovery and 60 buffer protected", "reviewer": "EXEC-01", "date": "2026-08-21"},
+    {"test_type": "interruption_protocol", "passed": true, "evidence": "Three classes and return protocol defined", "reviewer": "OPS-01", "date": "2026-08-21"},
+    {"test_type": "scheduling_execution_boundary", "passed": true, "evidence": "No external calendar/task mutation", "reviewer": "QA-01", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "FOCUS_OWNER", "required": true, "reviewer": "EXEC-01", "status": "PASS", "evidence_ref": "REVIEW-001"},
+    {"review_type": "COMMITMENT_OWNER", "required": true, "reviewer": "EXEC-01", "status": "PASS", "evidence_ref": "REVIEW-002"},
+    {"review_type": "DEPENDENCY_OWNER", "required": true, "reviewer": "OPS-01", "status": "PASS", "evidence_ref": "REVIEW-003"},
+    {"review_type": "FINAL_SCHEDULING", "required": true, "reviewer": "EXEC-01", "status": "PENDING"}
+  ]
+}
+

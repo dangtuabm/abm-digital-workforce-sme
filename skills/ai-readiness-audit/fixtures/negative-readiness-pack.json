@@ -1,0 +1,110 @@
+{
+  "artifact": "Readiness Auto Certifier",
+  "audit_contract": {
+    "decision": "approve budget"
+  },
+  "assessment_model": {},
+  "organization": {},
+  "evidence_sources": [
+    {
+      "id": "BAD",
+      "evidence_type": "MADE_UP",
+      "status": "CERTIFIED"
+    }
+  ],
+  "factor_assessments": [
+    {
+      "id": "BAD",
+      "factor": "PROBLEM",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "score": "FORCED",
+      "status": "READY_TO_SCALE"
+    }
+  ],
+  "control_assessments": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ]
+    }
+  ],
+  "baseline_metrics": [
+    {
+      "id": "BAD",
+      "source_ref": "MISSING",
+      "evidence_type": "MADE_UP",
+      "confirmation": "AUTO",
+      "status": "BASELINE_LOCKED"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ]
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "critical": true,
+      "status": "FAIL"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "BAD",
+      "gap_refs": [
+        "MISSING"
+      ],
+      "status": "PLATFORM_SELECTED"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "BAD",
+      "requirement_ref": "MISSING",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "risks": [
+    {
+      "id": "UNKNOWN"
+    }
+  ],
+  "tests": [],
+  "reviews": [],
+  "invented_evidence": true,
+  "invented_benchmark": true,
+  "forced_score": true,
+  "unknown_as_zero": true,
+  "conflict_hidden": true,
+  "critical_gate_averaged_away": true,
+  "baseline_locked": true,
+  "certification_claimed": true,
+  "roi_promised": true,
+  "budget_approved": true,
+  "platform_selected": true,
+  "report_published": true,
+  "report_sent": true,
+  "sensitive_data_exposed": true,
+  "evidence_mutated": true,
+  "api_key": "forbidden",
+  "release_state": "CERTIFIED"
+}

@@ -1,0 +1,86 @@
+{
+  "contract": {
+    "portfolio_id": "PM-DEMO-001",
+    "version": "1.0",
+    "source_hash": "sha256:portfolio-contract-001",
+    "sponsor": "SP-01",
+    "as_of": "2026-08-28T09:00:00+07:00",
+    "cadence": "Weekly and exception-triggered",
+    "classification": "YELLOW",
+    "inclusion": "Three active client-outcome initiatives",
+    "exclusion": "BAU tasks and unapproved proposals",
+    "strategic_objectives": ["Protect contractual value", "Recover delivery reliability"],
+    "decision_rights": "SP-01 decides priority; FIN-01 budget; RM-01 resource allocation",
+    "correction_owner": "PMO-01",
+    "retention": "24 months",
+    "status": "ACTIVE",
+    "prohibited_actions": ["Hide initiative", "Alert", "Reprioritize", "Reallocate", "Change budget/status", "Pause or stop"]
+  },
+  "sources": [
+    {"source_id": "SRC-01", "version": "2.0", "hash": "sha256:i1-snapshot", "locator": "vault://portfolio/i1-v2", "owner": "I1-OWN", "captured_at": "2026-08-28T08:00:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-02", "version": "3.0", "hash": "sha256:i2-snapshot", "locator": "vault://portfolio/i2-v3", "owner": "I2-OWN", "captured_at": "2026-08-28T08:05:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-03", "version": "1.0", "hash": "sha256:i3-snapshot", "locator": "vault://portfolio/i3-v1", "owner": "I3-OWN", "captured_at": "2026-08-28T08:10:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-04", "version": "1.0", "hash": "sha256:resource-ledger", "locator": "vault://portfolio/resources", "owner": "RM-01", "captured_at": "2026-08-28T08:15:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true},
+    {"source_id": "SRC-05", "version": "1.0", "hash": "sha256:risk-decision-ledger", "locator": "vault://portfolio/risk-decision", "owner": "PMO-01", "captured_at": "2026-08-28T08:20:00+07:00", "access_status": "AUTHORIZED", "freshness_status": "CURRENT", "active": true}
+  ],
+  "canonical_metrics": [
+    {"metric_id": "MET-VALUE", "definition": "Mandatory outcome acceptance ratio", "formula": "accepted mandatory criteria / total mandatory criteria", "unit": "ratio", "currency": "N/A", "grain": "initiative", "time_horizon": "Current milestone", "owner": "DATA-01", "system_of_record": "Acceptance ledger", "freshness_sla": "24 hours", "thresholds": {"red": "<0.70", "amber": "0.70-0.89", "green": ">=0.90"}, "aggregation_rule": "Weighted by mandatory criterion count; no simple average"},
+    {"metric_id": "MET-SCHEDULE", "definition": "Forecast variance from committed due date", "formula": "forecast finish minus committed finish", "unit": "hours", "currency": "N/A", "grain": "initiative", "time_horizon": "Current forecast", "owner": "DATA-02", "system_of_record": "Versioned schedules", "freshness_sla": "24 hours", "thresholds": {"red": ">24", "amber": "1-24", "green": "<=0"}, "aggregation_rule": "Report distribution and critical-path exposure; no average"}
+  ],
+  "initiatives": [
+    {"initiative_id": "I-01", "outcome": "Accepted recovery package", "owner": "I1-OWN", "sponsor": "SP-01", "strategic_theme": "Client value", "authorized_priority": "P1", "lifecycle": "EXECUTION", "baseline": "60% acceptance; 120h delay", "target": "100% acceptance; 0h delay", "due": "2026-08-30T17:00:00+07:00", "source_refs": ["SRC-01"]},
+    {"initiative_id": "I-02", "outcome": "Production stabilization", "owner": "I2-OWN", "sponsor": "SP-01", "strategic_theme": "Reliability", "authorized_priority": "P1", "lifecycle": "EXECUTION", "baseline": "70% acceptance; 48h delay", "target": "95% acceptance; 0h delay", "due": "2026-09-02T17:00:00+07:00", "source_refs": ["SRC-02"]},
+    {"initiative_id": "I-03", "outcome": "Knowledge handover accepted", "owner": "I3-OWN", "sponsor": "SP-02", "strategic_theme": "Capability", "authorized_priority": "P2", "lifecycle": "EXECUTION", "baseline": "50% acceptance; 8h delay", "target": "90% acceptance; 0h delay", "due": "2026-09-05T17:00:00+07:00", "source_refs": ["SRC-03"]}
+  ],
+  "snapshots": [
+    {"snapshot_id": "SN-01", "initiative_id": "I-01", "canonical_metric_id": "MET-VALUE", "local_metric_id": "I1-ACCEPT", "comparability_status": "COMPARABLE", "conversion": "Direct ratio", "actual": 0.75, "actual_at": "2026-08-28T08:00:00+07:00", "forecast_low": 0.90, "forecast_high": 1.00, "confidence": 0.75, "source_refs": ["SRC-01"], "verification_status": "VERIFIED"},
+    {"snapshot_id": "SN-02", "initiative_id": "I-01", "canonical_metric_id": "MET-SCHEDULE", "local_metric_id": "I1-VAR", "comparability_status": "COMPARABLE", "conversion": "Days converted to hours", "actual": 24, "actual_at": "2026-08-28T08:00:00+07:00", "forecast_low": 0, "forecast_high": 8, "confidence": 0.80, "source_refs": ["SRC-01"], "verification_status": "VERIFIED"},
+    {"snapshot_id": "SN-03", "initiative_id": "I-02", "canonical_metric_id": "MET-VALUE", "local_metric_id": "I2-ACCEPT", "comparability_status": "COMPARABLE", "conversion": "Direct ratio", "actual": 0.82, "actual_at": "2026-08-28T08:05:00+07:00", "forecast_low": 0.90, "forecast_high": 0.97, "confidence": 0.70, "source_refs": ["SRC-02"], "verification_status": "VERIFIED"},
+    {"snapshot_id": "SN-04", "initiative_id": "I-02", "canonical_metric_id": "MET-SCHEDULE", "local_metric_id": "I2-VAR", "comparability_status": "COMPARABLE", "conversion": "Direct hours", "actual": 30, "actual_at": "2026-08-28T08:05:00+07:00", "forecast_low": 12, "forecast_high": 30, "confidence": 0.65, "source_refs": ["SRC-02"], "verification_status": "VERIFIED"},
+    {"snapshot_id": "SN-05", "initiative_id": "I-03", "canonical_metric_id": "MET-VALUE", "local_metric_id": "I3-ACCEPT", "comparability_status": "COMPARABLE", "conversion": "Weighted checklist converted to ratio", "actual": 0.65, "actual_at": "2026-08-28T08:10:00+07:00", "forecast_low": 0.80, "forecast_high": 0.92, "confidence": 0.60, "source_refs": ["SRC-03"], "verification_status": "VERIFIED"},
+    {"snapshot_id": "SN-06", "initiative_id": "I-03", "canonical_metric_id": "MET-SCHEDULE", "local_metric_id": "I3-VAR", "comparability_status": "COMPARABLE", "conversion": "Direct hours", "actual": 8, "actual_at": "2026-08-28T08:10:00+07:00", "forecast_low": 0, "forecast_high": 8, "confidence": 0.75, "source_refs": ["SRC-03"], "verification_status": "VERIFIED"}
+  ],
+  "dependencies": [
+    {"dependency_id": "DEP-01", "predecessor_id": "I-01", "successor_id": "I-03", "interface_owner": "PMO-01", "state": "CONTROLLED", "criticality": "HIGH", "impact": "Handover cannot close before recovery package acceptance", "fallback": "Use approved interim package", "evidence_refs": ["SRC-01", "SRC-03"]},
+    {"dependency_id": "DEP-02", "predecessor_id": "I-02", "successor_id": "I-01", "interface_owner": "PMO-02", "state": "READY", "criticality": "MEDIUM", "impact": "Shared environment may delay final verification", "fallback": "Reserve independent test window", "evidence_refs": ["SRC-01", "SRC-02"]}
+  ],
+  "resource_pools": [
+    {"resource_id": "RES-ENG", "period": "2026-W35", "capacity": 10, "committed_demand": 12, "forecast_demand": 13, "owner": "RM-01", "allocation_evidence": "Approved staffing ledger", "source_refs": ["SRC-04"]},
+    {"resource_id": "RES-REV", "period": "2026-W35", "capacity": 6, "committed_demand": 5, "forecast_demand": 6, "owner": "RM-02", "allocation_evidence": "Reviewer capacity ledger", "source_refs": ["SRC-04"]}
+  ],
+  "resource_collisions": [
+    {"collision_id": "COL-01", "resource_id": "RES-ENG", "initiative_ids": ["I-01", "I-02"], "demand": 13, "capacity": 10, "impact": "Critical verification windows overlap", "owner": "RM-01", "fallback": "Resequence optional I-02 work after human approval", "evidence_refs": ["SRC-04"], "status": "CONTROLLED"}
+  ],
+  "risks": [
+    {"risk_id": "RSK-01", "initiative_ids": ["I-01", "I-03"], "likelihood": 0.60, "impact": "High client-value exposure", "correlation_group": "RECOVERY_CHAIN", "concentration": "Two initiatives share one acceptance dependency", "owner": "PMO-01", "control": "Interim acceptance package and joint review", "trigger": "I-01 forecast exceeds 8 hours", "evidence_refs": ["SRC-01", "SRC-03", "SRC-05"]},
+    {"risk_id": "RSK-02", "initiative_ids": ["I-01", "I-02"], "likelihood": 0.70, "impact": "Resource collision may delay verification", "correlation_group": "SHARED_ENGINEERING", "concentration": "13 demand vs 10 capacity", "owner": "RM-01", "control": "Portfolio-level resequencing option", "trigger": "Committed demand above capacity", "evidence_refs": ["SRC-04", "SRC-05"]}
+  ],
+  "exceptions": [
+    {"exception_id": "EX-01", "type": "VALUE_BELOW_THRESHOLD", "initiative_ids": ["I-03"], "threshold_id": "MET-VALUE:red", "observed_value": 0.65, "breach_direction": "BELOW", "severity": "RED", "impact": "Capability outcome at risk", "urgency": "Decision within 24 hours", "owner": "I3-OWN", "evidence_refs": ["SRC-03"], "decision_trigger": "Choose additional review or scope protection", "status": "OPEN_CONTROLLED"},
+    {"exception_id": "EX-02", "type": "SCHEDULE_ABOVE_THRESHOLD", "initiative_ids": ["I-02"], "threshold_id": "MET-SCHEDULE:red", "observed_value": 30, "breach_direction": "ABOVE", "severity": "RED", "impact": "May cascade to I-01 verification", "urgency": "Decision within 12 hours", "owner": "I2-OWN", "evidence_refs": ["SRC-02"], "decision_trigger": "Select corrective sequence", "status": "OPEN_CONTROLLED"},
+    {"exception_id": "EX-03", "type": "RESOURCE_COLLISION", "initiative_ids": ["I-01", "I-02"], "threshold_id": "RES-ENG:capacity", "observed_value": "13/10", "breach_direction": "ABOVE", "severity": "AMBER", "impact": "Shared engineering bottleneck", "urgency": "Before next verification window", "owner": "RM-01", "evidence_refs": ["SRC-04"], "decision_trigger": "Approve or reject resequencing", "status": "OPEN_CONTROLLED"}
+  ],
+  "decision_requests": [
+    {"decision_id": "DEC-01", "question": "Which sequence protects I-01 and I-02 outcomes under the engineering collision?", "initiative_ids": ["I-01", "I-02"], "deadline": "2026-08-28T16:00:00+07:00", "options": ["Protect I-01 critical verification first", "Add approved temporary capacity", "Accept I-02 schedule variance"], "recommendation": "Protect I-01 first and defer optional I-02 work", "rationale": "Highest client-value and cascade exposure", "value_time_cost_resource": "No extra budget; I-02 optional work shifts up to 12 hours", "risk": "I-02 variance may remain red", "prerequisites": ["RM-01 confirms handoff window"], "reversibility": "High", "decision_owner": "SP-01", "evidence_refs": ["SRC-01", "SRC-02", "SRC-04", "SRC-05"], "status": "PENDING"},
+    {"decision_id": "DEC-02", "question": "How should I-03 recover value acceptance below the red threshold?", "initiative_ids": ["I-03"], "deadline": "2026-08-29T09:00:00+07:00", "options": ["Add independent review within existing capacity", "Protect mandatory outcomes and defer optional documentation"], "recommendation": "Add independent review while keeping mandatory scope", "rationale": "Raises acceptance confidence without target change", "value_time_cost_resource": "Uses one reviewer slot; no budget change", "risk": "Review queue may tighten", "prerequisites": ["RES-REV remains within capacity"], "reversibility": "High", "decision_owner": "SP-02", "evidence_refs": ["SRC-03", "SRC-04", "SRC-05"], "status": "PENDING"}
+  ],
+  "portfolio_snapshot": {"status": "COMPLETE", "initiative_ids": ["I-01", "I-02", "I-03"], "decision_ids": ["DEC-01", "DEC-02"], "prepared_by": "PMO-01", "prepared_at": "2026-08-28T09:00:00+07:00"},
+  "record": {
+    "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04", "SRC-05"], "metric_ids": ["MET-VALUE", "MET-SCHEDULE"], "initiative_ids": ["I-01", "I-02", "I-03"], "snapshot_ids": ["SN-01", "SN-02", "SN-03", "SN-04", "SN-05", "SN-06"], "dependency_ids": ["DEP-01", "DEP-02"], "resource_ids": ["RES-ENG", "RES-REV"], "collision_ids": ["COL-01"], "risk_ids": ["RSK-01", "RSK-02"], "exception_ids": ["EX-01", "EX-02", "EX-03"], "decision_ids": ["DEC-01", "DEC-02"], "owner": "PMO-01", "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "portfolio_census", "passed": true, "evidence": "Three in-scope initiatives covered", "reviewer": "QA-01", "date": "2026-08-28"},
+    {"test_type": "metric_comparability", "passed": true, "evidence": "Six snapshots map to two canonical metrics", "reviewer": "QA-01", "date": "2026-08-28"},
+    {"test_type": "source_freshness", "passed": true, "evidence": "Five sources current and authorized", "reviewer": "QA-02", "date": "2026-08-28"},
+    {"test_type": "dependency_resource", "passed": true, "evidence": "Two dependencies and controlled collision verified", "reviewer": "QA-02", "date": "2026-08-28"},
+    {"test_type": "exposure_exception", "passed": true, "evidence": "Correlated risks and three threshold exceptions verified", "reviewer": "QA-03", "date": "2026-08-28"},
+    {"test_type": "decision_brief", "passed": true, "evidence": "Two decision requests include options and recommendations", "reviewer": "QA-03", "date": "2026-08-28"},
+    {"test_type": "execution_boundary", "passed": true, "evidence": "No alert, reprioritization, reallocation, pause or stop", "reviewer": "QA-04", "date": "2026-08-28"}
+  ],
+  "reviews": [
+    {"review_type": "PORTFOLIO_SPONSOR", "reviewer": "SP-01", "status": "PASS", "evidence": "Scope, census, exceptions and decision requests verified"},
+    {"review_type": "METRIC_DATA", "reviewer": "DATA-01", "status": "PASS", "evidence": "Definitions, mappings, sources and forecasts verified"},
+    {"review_type": "FINANCE_RESOURCE_DOMAIN", "reviewer": "RM-01", "status": "PASS", "evidence": "Dependencies, resource collision and exposure verified"},
+    {"review_type": "FINAL_PORTFOLIO_DECISION", "reviewer": "SP-01", "status": "PENDING", "evidence": "Human portfolio decisions remain"}
+  ]
+}

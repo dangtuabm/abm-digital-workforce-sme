@@ -1,0 +1,20 @@
+{
+  "mandate":{"customer_entity":"","purpose":"","audience":[],"opportunity_stage":"","proposal_scope":"","as_of":"","valid_until":"","owner":"","release_authority":"","confidentiality":"","constraints":[],"required_reviews":[]},
+  "sources":[{"id":"SRC-X","source_type":"","locator":"","version":"","date":"","rights_consent":"STOLEN","claim_class":"","confidence":"","subject":""}],
+  "problems":[{"id":"P-X","statement":"","impact":"","current_alternative":"","source_ids":["SRC-MISSING"],"confidence":"","status":""}],
+  "requirements":[{"id":"R-X","statement":"","priority":"","source_ids":["SRC-MISSING"],"acceptance_need":"","owner":""}],
+  "options":[{"id":"O-X","name":"","rationale":"","outcome_value_hypothesis":"","capability_evidence_ids":["SRC-MISSING"],"limitations":[],"prerequisites":[],"trade_offs":"","feasibility":"","recommendation_status":""}],
+  "deliverables":[{"id":"D-X","name":"","scope":"","acceptance_criteria":"","acceptance_evidence":"","acceptance_approver":"","service_level":"","dependencies":[],"exclusions":[]}],
+  "traceability":[{"id":"T-X","problem_id":"P-MISSING","requirement_id":"R-MISSING","option_id":"O-MISSING","deliverable_id":"D-MISSING","acceptance_link":""}],
+  "scope_control":{"in_scope":[],"out_of_scope":[],"optional_future":[],"assumptions":[],"dependencies":[],"customer_roles":[],"provider_roles":[],"change_request_rule":""},
+  "milestones":[{"id":"M-X","phase":"","entry":"","activities":[],"exit":"","evidence":"","approver":"","resources_capacity":"","data_security":"","support_handoff":""}],
+  "economics":{"approved_price_reference":"","version":"","currency":"","tax_treatment":"","term":"","valid_until":"","payment_candidates":[],"milestone_links":[],"optional_items":[],"exclusions":[],"value_driver_range":"","measurement_method":"","conditions":[]},
+  "risks":[{"risk_type":"SCOPE_CHANGE","statement":"","likelihood":"","impact":"","trigger":"","mitigation":"","contingency":"","owner":""}],
+  "claims":[{"id":"C-X","statement":"","claim_type":"","source_ids":["SRC-MISSING"],"version":"","rights_consent":"","conditions_limitations":"","status":"PUBLISHED"}],
+  "decision_path":{"options":[],"open_questions":[],"decision_roles":[],"review_roles":[],"next_steps":[],"valid_until":"","change_route":"","contract_boundary":""},
+  "output_sections":[],
+  "tests":{"mandate_sources":"FAIL","customer_requirements":"FAIL","option_traceability":"FAIL","scope_acceptance":"FAIL","delivery_economics":"FAIL","claims_risks":"FAIL","decision_boundary":"FAIL"},
+  "reviews":{"CUSTOMER_FACT":"FAIL","SOLUTION_DOMAIN":"FAIL","DELIVERY_OPERATIONS":"FAIL","FINANCE_COMMERCIAL":"FAIL","LEGAL_PRIVACY_IP":"FAIL","BRAND_ACCESSIBILITY":"FAIL","FINAL_HUMAN_PROPOSAL_RELEASE":"PASS"},
+  "forbidden_flags":["customer_pain_fabricated","customer_impact_fabricated","requirement_fabricated","capability_fabricated","case_fabricated","result_fabricated","credential_fabricated","benchmark_fabricated","price_fabricated","discount_fabricated","tax_fabricated","timeline_fabricated","capacity_fabricated","acceptance_fabricated","legal_claim_fabricated","social_proof_fabricated","customer_logo_misused","confidential_evidence_misused","generic_copy_claimed_personalized","estimate_called_commitment","scope_hidden","exclusion_hidden","fee_hidden","term_hidden","risk_hidden","false_urgency","pressure_tactic","discriminatory_personalization","vulnerability_exploited","review_bypassed","auto_sent","auto_quoted","auto_negotiated","auto_discounted","auto_committed","auto_contracted","auto_signed","auto_published","auto_accepted"],
+  "forbidden_states":["SENT","QUOTED","NEGOTIATED","DISCOUNTED","COMMITTED","CONTRACTED","SIGNED","PUBLISHED","ACCEPTED"],"published_state":"ACCEPTED"
+}

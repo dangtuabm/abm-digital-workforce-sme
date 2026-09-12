@@ -1,0 +1,40 @@
+{
+  "contract": {
+    "conversion_id": "CONV-001",
+    "task_id": "",
+    "deliverable_ref": "",
+    "task_status": "completed",
+    "objective": "",
+    "contributor": "",
+    "rights_status": "granted",
+    "attribution": "",
+    "classification": "Xanh",
+    "intended_users": [],
+    "reuse_context": "",
+    "target_asset_type": "",
+    "owner": "",
+    "reviewer": "",
+    "risk_level": "low",
+    "standards": {"allowed_asset_types": ["prompt", "template", "checklist", "sop", "playbook", "case", "faq", "skill", "workflow", "agent_component"]}
+  },
+  "source_evidence": [],
+  "assetworthiness": {
+    "reuse_problem": "",
+    "recurrence_evidence": "",
+    "expected_value_basis": "",
+    "reusable_beyond_original": false,
+    "actual_result_verified": false,
+    "reusable_kernel": "",
+    "case_specific_exclusions": [],
+    "redundancy_check": "",
+    "maintenance_cost": "",
+    "decision": "hold",
+    "rationale": ""
+  },
+  "candidate": {},
+  "conflict_review": {"status": "none", "competing_asset_refs": [], "notes": "", "owner": ""},
+  "reuse_test": {"cases": [], "rubric_ref": "", "participants": [], "baseline_ref": "", "success_threshold": "", "result_source": "", "owner": "", "status": "not_run"},
+  "governance": {"access_policy": "", "storage_destination": "", "version": "", "review_cycle": "", "retirement_rule": "", "revocation_process": "", "approval_status": "draft", "owner": ""},
+  "guardrails": [],
+  "expert_review_required": false
+}

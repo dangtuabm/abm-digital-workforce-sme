@@ -1,0 +1,11 @@
+{
+  "execution_id": "EXEC-DEMO",
+  "strategy_version": "STR-v3",
+  "allocation_version": "ALLOC-v2",
+  "objectives": [{"id": "OUT-1", "outcome": "Improve retained customers", "owner": "Role-Customer"}],
+  "krs": [{"id": "KR-1", "objective_id": "OUT-1", "baseline": 70, "target": 80, "current": 74, "direction": "increase", "source_id": "EVD-KR1", "owner": "Role-Analytics", "as_of": "2026-08-20"}],
+  "initiatives": [
+    {"id": "INIT-A", "objective_ids": ["OUT-1"], "kr_ids": ["KR-1"], "owner": "Role-CX", "dependencies": [], "resource_envelope": {"hours": 200}, "acceptance": "Journey changes verified", "stop_rule": "Stop if complaint rate exceeds threshold", "status": "ON_TRACK", "evidence_id": "EVD-A", "as_of": "2026-08-20"},
+    {"id": "INIT-B", "objective_ids": ["OUT-1"], "kr_ids": ["KR-1"], "owner": "Role-Product", "dependencies": ["INIT-A"], "resource_envelope": {"hours": 150}, "acceptance": "Pilot passes agreed criteria", "stop_rule": "Pause if privacy gate fails", "status": "NOT_STARTED"}
+  ]
+}

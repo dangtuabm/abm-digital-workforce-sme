@@ -1,0 +1,14 @@
+{
+  "improvement_id": "IMP-DEMO",
+  "process_version": "PROC-v4",
+  "owner": "Role-Operations",
+  "baseline": {"metric": "defect_rate", "value": 10, "source_id": "EVD-B1", "window": "8 weeks", "measurement_check": "passed", "stable": true},
+  "hypothesis": {"id": "HYP-1", "mechanism": "Earlier validation prevents defects", "prediction": "Defect rate falls", "falsification": "No reduction after full window", "alternatives": ["Case mix"]},
+  "experiment": {
+    "change_version": "CHG-v1", "owner": "Role-Process", "scope": "one line", "comparison": "matched prior line", "sample": 500, "window": "4 weeks",
+    "primary": {"metric": "defect_rate", "operator": "<=", "threshold": 8},
+    "countermetrics": [{"id": "CYCLE", "metric": "cycle_time", "operator": "<=", "threshold": 12}],
+    "stop_rule": "Stop on safety or defect spike", "rollback": "Restore PROC-v4"
+  },
+  "result": {"window_complete": true, "primary_value": 7.5, "source_id": "EVD-R1", "counter_values": {"CYCLE": 11}}
+}

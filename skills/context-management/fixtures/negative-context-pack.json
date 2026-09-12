@@ -1,0 +1,105 @@
+{
+  "artifact": "Auto Memory Optimizer",
+  "mandate": {
+    "objective": "secret auto action"
+  },
+  "authority_map": {},
+  "context_budget": {},
+  "sources": [
+    {
+      "id": "DUP"
+    }
+  ],
+  "context_items": [
+    {
+      "id": "DUP",
+      "source_ref": "MISSING",
+      "disposition": "AUTO"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "conflict": true,
+      "status": "HIDDEN"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "tbd_items": [
+    {
+      "id": "BAD"
+    }
+  ],
+  "compaction_records": [
+    {
+      "id": "BAD",
+      "preserved": [],
+      "loss_status": "HIDDEN"
+    }
+  ],
+  "branch_handoffs": [
+    {
+      "id": "BAD",
+      "source_refs": [
+        "MISSING"
+      ],
+      "status": "TRANSFERRED"
+    }
+  ],
+  "memory_candidates": [
+    {
+      "id": "BAD",
+      "source_refs": [
+        "MISSING"
+      ],
+      "status": "PROMOTED"
+    }
+  ],
+  "lifecycle_actions": [
+    {
+      "id": "BAD",
+      "target_ref": "MISSING",
+      "status": "DELETED"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "BAD",
+      "requirement_ref": "MISSING",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "risks": [
+    {
+      "id": "UNKNOWN"
+    }
+  ],
+  "tests": [],
+  "reviews": [],
+  "invented_source": true,
+  "invented_decision": true,
+  "conflict_hidden": true,
+  "source_overwritten": true,
+  "rights_bypassed": true,
+  "hidden_prompt_revealed": true,
+  "hidden_reasoning_revealed": true,
+  "sensitive_data_expanded": true,
+  "cross_boundary_transferred": true,
+  "memory_promoted": true,
+  "record_archived": true,
+  "record_deleted": true,
+  "evidence_mutated": true,
+  "api_key": "do-not-store",
+  "release_state": "AUTO_APPROVED"
+}

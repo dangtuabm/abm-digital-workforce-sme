@@ -1,0 +1,31 @@
+{
+  "contract": {
+    "conversion_id": "CONV-SELFTEST-001",
+    "task_id": "TASK-FIXTURE-001",
+    "deliverable_ref": "fixture://deliverable-v1",
+    "task_status": "completed",
+    "objective": "Kiểm cấu trúc gate, không chứng minh hiệu quả thật",
+    "contributor": "fixture-contributor",
+    "rights_status": "granted",
+    "attribution": "fixture-contributor",
+    "classification": "Xanh",
+    "intended_users": ["test-user"],
+    "reuse_context": "tình huống kiểm thử mới",
+    "target_asset_type": "checklist",
+    "owner": "fixture-owner",
+    "reviewer": "fixture-reviewer",
+    "risk_level": "low",
+    "standards": {"allowed_asset_types": ["prompt", "template", "checklist", "sop", "playbook", "case", "faq", "skill", "workflow", "agent_component"]}
+  },
+  "source_evidence": [
+    {"id":"SRC-1","source_type":"deliverable","source_ref":"fixture://deliverable-v1","date_or_version":"v1","observed_result":"fixture accepted","baseline_ref":"fixture://baseline","acceptance_ref":"fixture://acceptance","rights_status":"granted","classification":"Xanh","limitations":"synthetic self-test"},
+    {"id":"SRC-2","source_type":"outcome_record","source_ref":"fixture://outcome-v1","date_or_version":"v1","observed_result":"fixture outcome","baseline_ref":"fixture://baseline","acceptance_ref":"fixture://acceptance","rights_status":"granted","classification":"Xanh","limitations":"synthetic self-test"}
+  ],
+  "assetworthiness": {"reuse_problem":"lỗi lặp mẫu","recurrence_evidence":"hai fixture occurrences","expected_value_basis":"giảm lỗi trong fixture","reusable_beyond_original":true,"actual_result_verified":true,"reusable_kernel":"năm bước kiểm","case_specific_exclusions":["dữ liệu case gốc"],"redundancy_check":"unique","maintenance_cost":"owner rà theo cycle","decision":"candidate","rationale":"đủ cấu trúc self-test"},
+  "candidate": {"candidate_id":"AC-001","title":"Checklist fixture","asset_type":"checklist","objective":"chặn lỗi mẫu","trigger":"khi chạy fixture","anti_triggers":["ngoài fixture"],"inputs":["fixture input"],"workflow":["kiểm 1","kiểm 2"],"output":"fixture checked","dod":"đủ hai kiểm","conditions":"fixture","non_applicable_when":"outside fixture","exceptions":["fixture exception"],"escalation":"fixture reviewer","evidence_refs":["SRC-1","SRC-2"],"dependencies":["fixture dependency"],"attribution":"fixture-contributor","version":"v1"},
+  "conflict_review": {"status":"none","competing_asset_refs":[],"notes":"no fixture conflict","owner":"fixture-reviewer"},
+  "reuse_test": {"cases":["new fixture case"],"rubric_ref":"fixture://rubric","participants":["fixture-user"],"baseline_ref":"fixture://baseline","success_threshold":"pass fixture rubric","result_source":"","owner":"fixture-owner","status":"planned"},
+  "governance": {"access_policy":"Xanh fixture","storage_destination":"fixture://candidate-store","version":"v1","review_cycle":"after reuse test","retirement_rule":"retire if test fails","revocation_process":"owner revokes fixture","approval_status":"draft","owner":"fixture-owner"},
+  "guardrails": [],
+  "expert_review_required": false
+}

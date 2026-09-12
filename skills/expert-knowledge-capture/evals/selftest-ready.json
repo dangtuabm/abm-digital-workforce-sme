@@ -1,0 +1,36 @@
+{
+  "contract": {
+    "capture_id": "CAP-SELFTEST-001",
+    "capability_scope": "Chẩn đoán sự cố vận hành mẫu",
+    "intended_users": ["nhân sự kế nhiệm"],
+    "use_case": "kiểm tra cấu trúc gate, không phải bằng chứng pilot thật",
+    "expert_contributors": ["expert-fixture"],
+    "rights_status": "granted",
+    "attribution": "expert-fixture",
+    "confidentiality_class": "Xanh",
+    "target_artifacts": ["decision guide"],
+    "owner": "test-owner",
+    "reviewer": "test-reviewer",
+    "risk_level": "low",
+    "standards": {"min_cases": 3, "required_knowledge_types": ["signal", "mental_model", "decision_rule", "exception", "failure_mode", "escalation"]}
+  },
+  "sources": [
+    {"id":"SRC-1","case_id":"CASE-1","source_type":"critical_incident","raw_source_ref":"fixture://case-1","date_or_version":"v1","rights_status":"granted","classification":"Xanh","evidence_scope":"self-test","limitations":"synthetic fixture"},
+    {"id":"SRC-2","case_id":"CASE-2","source_type":"artifact_walkthrough","raw_source_ref":"fixture://case-2","date_or_version":"v1","rights_status":"granted","classification":"Xanh","evidence_scope":"self-test","limitations":"synthetic fixture"},
+    {"id":"SRC-3","case_id":"CASE-3","source_type":"decision_replay","raw_source_ref":"fixture://case-3","date_or_version":"v1","rights_status":"granted","classification":"Xanh","evidence_scope":"self-test","limitations":"synthetic fixture"}
+  ],
+  "knowledge_units": [
+    {"id":"KU-1","type":"signal","statement":"tín hiệu mẫu","evidence_refs":["SRC-1"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"},
+    {"id":"KU-2","type":"mental_model","statement":"mô hình mẫu","evidence_refs":["SRC-1"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"},
+    {"id":"KU-3","type":"decision_rule","statement":"quy tắc mẫu","evidence_refs":["SRC-2"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"},
+    {"id":"KU-4","type":"exception","statement":"ngoại lệ mẫu","evidence_refs":["SRC-2"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"},
+    {"id":"KU-5","type":"failure_mode","statement":"lỗi mẫu","evidence_refs":["SRC-3"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"},
+    {"id":"KU-6","type":"escalation","statement":"leo thang mẫu","evidence_refs":["SRC-3"],"conditions":"fixture","non_applicable_when":"outside fixture","confidence":"test-only","expert_status":"validated","attribution":"expert-fixture"}
+  ],
+  "conflict_review": {"status":"none","notes":"self-test only","owner":"test-reviewer"},
+  "expert_validation": {"scope_confirmed":true,"accuracy_confirmed":true,"exceptions_confirmed":true,"rights_confirmed":true,"allowed_audiences":["test"],"corrections":[],"expert_or_delegate":"expert-fixture","date_or_version":"v1"},
+  "transfer_test": {"scenarios":["novel fixture"],"rubric_ref":"fixture://rubric","participants":["test-participant"],"success_threshold":"fixture threshold","result_source":"","owner":"test-owner","status":"planned"},
+  "packaging": {"assets":["decision guide"],"access_policy":"Xanh fixture","version":"v1","review_cycle":"after self-test","revocation_process":"fixture owner removes fixture","owner":"test-owner"},
+  "guardrails": [],
+  "expert_review_required": false
+}

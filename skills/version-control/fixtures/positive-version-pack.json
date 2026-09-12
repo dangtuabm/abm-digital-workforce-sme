@@ -1,0 +1,1260 @@
+{
+  "artifact": "Controlled Version, Release & Rollback Pack",
+  "mandate": {
+    "purpose": "Govern enterprise versions and releases",
+    "deliverable": "Controlled pack",
+    "dod": "Seven gates pass; external actions remain pending",
+    "owner": "Asset Owner",
+    "audience": "ABM operators",
+    "cutoff": "2026-08-22",
+    "scope": "Static Skill 87 fixture",
+    "non_goals": [
+      "No production release",
+      "No disposal"
+    ],
+    "rights": "Read, analyze and draft only",
+    "action_boundary": "No merge, release, effective, rollback, archive, delete or overwrite",
+    "open_decisions": [
+      "D10 pilot",
+      "Production retention"
+    ]
+  },
+  "authority_map": {
+    "asset_types": [
+      "document",
+      "knowledge",
+      "prompt",
+      "skill",
+      "dataset",
+      "configuration",
+      "code",
+      "policy"
+    ],
+    "propose_rights": "Named contributors",
+    "review_rights": "Named domain reviewers",
+    "approve_rights": "Human Change Authority",
+    "release_rights": "Human Release Authority",
+    "effective_rights": "Human Asset Owner",
+    "rollback_rights": "Human Recovery Authority",
+    "archive_dispose_rights": "Human Records Owner",
+    "sod_rule": "Proposer cannot self-approve where required",
+    "conflict_rule": "Expose conflict and stop",
+    "escalation": "Escalate authority, hash, rights or compatibility gaps"
+  },
+  "version_policy": {
+    "scheme_by_type": "Declared per asset type",
+    "version_meaning": "Major/minor/patch or document rule is explicit",
+    "states": [
+      "REGISTERED",
+      "DRAFT",
+      "IN_REVIEW",
+      "APPROVED_HUMAN",
+      "RELEASE_CANDIDATE"
+    ],
+    "branch_merge": "Human-approved and evidence-bound",
+    "immutable_release": "Released bytes never edited",
+    "naming_tagging": "Canonical ID plus declared version",
+    "compatibility_rule": "Test consumers and contracts",
+    "deprecation_rule": "Human-approved migration and notice",
+    "retention_rule": "Records-owner policy"
+  },
+  "assets": [
+    {
+      "id": "AST-1",
+      "type": "document",
+      "title": "Canonical asset 1",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/1",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-1"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-2",
+      "type": "knowledge",
+      "title": "Canonical asset 2",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/2",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-2"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-3",
+      "type": "prompt",
+      "title": "Canonical asset 3",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/3",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-3"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-4",
+      "type": "skill",
+      "title": "Canonical asset 4",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/4",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-4"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-5",
+      "type": "dataset",
+      "title": "Canonical asset 5",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/5",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-5"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-6",
+      "type": "configuration",
+      "title": "Canonical asset 6",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/6",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-6"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-7",
+      "type": "code",
+      "title": "Canonical asset 7",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/7",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-7"
+      ],
+      "status": "REGISTERED"
+    },
+    {
+      "id": "AST-8",
+      "type": "policy",
+      "title": "Canonical asset 8",
+      "system_of_record": "ABM Governed Repository",
+      "locator": "repo://asset/8",
+      "owner": "Asset Owner",
+      "authority": "Named Change Authority",
+      "classification": "YELLOW_INTERNAL",
+      "rights": "READ_PROPOSE_ONLY",
+      "consumers": [
+        "Named consumer"
+      ],
+      "retention": "REVIEW_90_DAYS",
+      "aliases": [
+        "alias-8"
+      ],
+      "status": "REGISTERED"
+    }
+  ],
+  "versions": [
+    {
+      "id": "VER-1",
+      "asset_ref": "AST-1",
+      "version": "1.0.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/1",
+      "hash": "sha256-version-1",
+      "snapshot": "snapshot-1",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-1",
+      "immutable": true
+    },
+    {
+      "id": "VER-2",
+      "asset_ref": "AST-2",
+      "version": "1.1.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/2",
+      "hash": "sha256-version-2",
+      "snapshot": "snapshot-2",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-2",
+      "immutable": true
+    },
+    {
+      "id": "VER-3",
+      "asset_ref": "AST-3",
+      "version": "1.2.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/3",
+      "hash": "sha256-version-3",
+      "snapshot": "snapshot-3",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-3",
+      "immutable": true
+    },
+    {
+      "id": "VER-4",
+      "asset_ref": "AST-4",
+      "version": "1.3.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/4",
+      "hash": "sha256-version-4",
+      "snapshot": "snapshot-4",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-4",
+      "immutable": true
+    },
+    {
+      "id": "VER-5",
+      "asset_ref": "AST-5",
+      "version": "1.4.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/5",
+      "hash": "sha256-version-5",
+      "snapshot": "snapshot-5",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-5",
+      "immutable": true
+    },
+    {
+      "id": "VER-6",
+      "asset_ref": "AST-6",
+      "version": "1.5.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/6",
+      "hash": "sha256-version-6",
+      "snapshot": "snapshot-6",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "APPROVED_HUMAN",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-6",
+      "immutable": true
+    },
+    {
+      "id": "VER-7",
+      "asset_ref": "AST-7",
+      "version": "1.6.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/7",
+      "hash": "sha256-version-7",
+      "snapshot": "snapshot-7",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "IN_REVIEW",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-1",
+      "immutable": true
+    },
+    {
+      "id": "VER-8",
+      "asset_ref": "AST-8",
+      "version": "1.7.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "ROOT",
+      "locator": "repo://version/8",
+      "hash": "sha256-version-8",
+      "snapshot": "snapshot-8",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "IN_REVIEW",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-2",
+      "immutable": true
+    },
+    {
+      "id": "VER-9",
+      "asset_ref": "AST-1",
+      "version": "2.0.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "VER-1",
+      "locator": "repo://version/9",
+      "hash": "sha256-version-9",
+      "snapshot": "snapshot-9",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "IN_REVIEW",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-3",
+      "immutable": true
+    },
+    {
+      "id": "VER-10",
+      "asset_ref": "AST-2",
+      "version": "2.1.0",
+      "scheme": "DECLARED_BY_ASSET_TYPE",
+      "parent_ref": "VER-2",
+      "locator": "repo://version/10",
+      "hash": "sha256-version-10",
+      "snapshot": "snapshot-10",
+      "created_at": "2026-08-22",
+      "effective_at": "PENDING_HUMAN",
+      "status": "IN_REVIEW",
+      "supersedes": "NONE",
+      "provenance": "Authorized source and change trace",
+      "approval_ref": "APR-4",
+      "immutable": true
+    }
+  ],
+  "change_requests": [
+    {
+      "id": "CHG-1",
+      "asset_ref": "AST-1",
+      "baseline_ref": "VER-1",
+      "candidate_ref": "VER-5",
+      "source": "SRC-CHANGE-1",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-1",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "CHG-2",
+      "asset_ref": "AST-2",
+      "baseline_ref": "VER-2",
+      "candidate_ref": "VER-6",
+      "source": "SRC-CHANGE-2",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-2",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "CHG-3",
+      "asset_ref": "AST-3",
+      "baseline_ref": "VER-3",
+      "candidate_ref": "VER-7",
+      "source": "SRC-CHANGE-3",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-3",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "CHG-4",
+      "asset_ref": "AST-4",
+      "baseline_ref": "VER-4",
+      "candidate_ref": "VER-8",
+      "source": "SRC-CHANGE-4",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-4",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "CHG-5",
+      "asset_ref": "AST-5",
+      "baseline_ref": "VER-5",
+      "candidate_ref": "VER-9",
+      "source": "SRC-CHANGE-5",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-5",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "CHG-6",
+      "asset_ref": "AST-6",
+      "baseline_ref": "VER-6",
+      "candidate_ref": "VER-10",
+      "source": "SRC-CHANGE-6",
+      "rationale": "Evidence-backed correction or compatible enhancement",
+      "owner": "Change Owner",
+      "structured_diff": "diff-6",
+      "affected_scope": "Named claims, interfaces and consumers",
+      "alternatives": [
+        "No change",
+        "Phased change"
+      ],
+      "compatibility": "REQUIRES_TEST_EVIDENCE",
+      "migration": "Named migration and recovery path",
+      "status": "IN_REVIEW"
+    }
+  ],
+  "dependency_impacts": [
+    {
+      "id": "IMP-1",
+      "change_ref": "CHG-1",
+      "consumer": "Consumer 1",
+      "dependency": "Dependency 1",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-1",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-2",
+      "change_ref": "CHG-2",
+      "consumer": "Consumer 2",
+      "dependency": "Dependency 2",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-2",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-3",
+      "change_ref": "CHG-3",
+      "consumer": "Consumer 3",
+      "dependency": "Dependency 3",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-3",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-4",
+      "change_ref": "CHG-4",
+      "consumer": "Consumer 4",
+      "dependency": "Dependency 4",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-4",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-5",
+      "change_ref": "CHG-5",
+      "consumer": "Consumer 5",
+      "dependency": "Dependency 5",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-5",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-6",
+      "change_ref": "CHG-6",
+      "consumer": "Consumer 6",
+      "dependency": "Dependency 6",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-6",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-7",
+      "change_ref": "CHG-1",
+      "consumer": "Consumer 7",
+      "dependency": "Dependency 7",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-7",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "IMP-8",
+      "change_ref": "CHG-2",
+      "consumer": "Consumer 8",
+      "dependency": "Dependency 8",
+      "constraint": "Declared version constraint",
+      "impact": "Named operational and data impact",
+      "compatibility": "TESTED_FIXTURE",
+      "migration": "Migration step with owner",
+      "owner": "Dependency Consumer",
+      "evidence": "impact-evidence-8",
+      "status": "REVIEWED"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "APR-1",
+      "candidate_ref": "RC-1",
+      "reviewer": "Reviewer 1",
+      "role": "Asset Owner",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "APPROVED_HUMAN",
+      "decided_at": "2026-08-22",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-7",
+      "evidence": "approval-evidence-1",
+      "status": "EVIDENCED"
+    },
+    {
+      "id": "APR-2",
+      "candidate_ref": "RC-2",
+      "reviewer": "Reviewer 2",
+      "role": "Domain Owner",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "APPROVED_HUMAN",
+      "decided_at": "2026-08-22",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-8",
+      "evidence": "approval-evidence-2",
+      "status": "EVIDENCED"
+    },
+    {
+      "id": "APR-3",
+      "candidate_ref": "RC-3",
+      "reviewer": "Reviewer 3",
+      "role": "Change Authority",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "APPROVED_HUMAN",
+      "decided_at": "2026-08-22",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-9",
+      "evidence": "approval-evidence-3",
+      "status": "EVIDENCED"
+    },
+    {
+      "id": "APR-4",
+      "candidate_ref": "RC-4",
+      "reviewer": "Reviewer 4",
+      "role": "Data Security Records",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "PENDING",
+      "decided_at": "PENDING_HUMAN",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-10",
+      "evidence": "approval-evidence-4",
+      "status": "EVIDENCED"
+    },
+    {
+      "id": "APR-5",
+      "candidate_ref": "RC-1",
+      "reviewer": "Reviewer 5",
+      "role": "Dependency Consumer",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "PENDING",
+      "decided_at": "PENDING_HUMAN",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-7",
+      "evidence": "approval-evidence-5",
+      "status": "EVIDENCED"
+    },
+    {
+      "id": "APR-6",
+      "candidate_ref": "RC-2",
+      "reviewer": "Reviewer 6",
+      "role": "Risk Audit",
+      "authority": "Verified in fixture",
+      "sod_check": "Proposer and approver separated",
+      "decision": "PENDING",
+      "decided_at": "PENDING_HUMAN",
+      "scope": "Exact candidate hash and static fixture",
+      "hash": "sha256-version-8",
+      "evidence": "approval-evidence-6",
+      "status": "EVIDENCED"
+    }
+  ],
+  "release_candidates": [
+    {
+      "id": "RC-1",
+      "version_ref": "VER-7",
+      "change_refs": [
+        "CHG-1"
+      ],
+      "hash": "sha256-version-7",
+      "build_evidence": "reproducible-export-1",
+      "test_refs": [
+        "TST-1",
+        "TST-5"
+      ],
+      "release_notes": "release-notes-1",
+      "window": "PENDING_HUMAN",
+      "channels": [
+        "Governed repository"
+      ],
+      "audience": [
+        "Named consumers"
+      ],
+      "monitoring": "Integrity and consumer checks",
+      "stop_trigger": "Hash, access or compatibility failure",
+      "rollback_ref": "RBK-1",
+      "status": "PENDING"
+    },
+    {
+      "id": "RC-2",
+      "version_ref": "VER-8",
+      "change_refs": [
+        "CHG-2"
+      ],
+      "hash": "sha256-version-8",
+      "build_evidence": "reproducible-export-2",
+      "test_refs": [
+        "TST-2",
+        "TST-6"
+      ],
+      "release_notes": "release-notes-2",
+      "window": "PENDING_HUMAN",
+      "channels": [
+        "Governed repository"
+      ],
+      "audience": [
+        "Named consumers"
+      ],
+      "monitoring": "Integrity and consumer checks",
+      "stop_trigger": "Hash, access or compatibility failure",
+      "rollback_ref": "RBK-2",
+      "status": "PENDING"
+    },
+    {
+      "id": "RC-3",
+      "version_ref": "VER-9",
+      "change_refs": [
+        "CHG-3"
+      ],
+      "hash": "sha256-version-9",
+      "build_evidence": "reproducible-export-3",
+      "test_refs": [
+        "TST-3",
+        "TST-7"
+      ],
+      "release_notes": "release-notes-3",
+      "window": "PENDING_HUMAN",
+      "channels": [
+        "Governed repository"
+      ],
+      "audience": [
+        "Named consumers"
+      ],
+      "monitoring": "Integrity and consumer checks",
+      "stop_trigger": "Hash, access or compatibility failure",
+      "rollback_ref": "RBK-3",
+      "status": "PENDING"
+    },
+    {
+      "id": "RC-4",
+      "version_ref": "VER-10",
+      "change_refs": [
+        "CHG-4"
+      ],
+      "hash": "sha256-version-10",
+      "build_evidence": "reproducible-export-4",
+      "test_refs": [
+        "TST-4",
+        "TST-8"
+      ],
+      "release_notes": "release-notes-4",
+      "window": "PENDING_HUMAN",
+      "channels": [
+        "Governed repository"
+      ],
+      "audience": [
+        "Named consumers"
+      ],
+      "monitoring": "Integrity and consumer checks",
+      "stop_trigger": "Hash, access or compatibility failure",
+      "rollback_ref": "RBK-4",
+      "status": "PENDING"
+    }
+  ],
+  "rollback_plans": [
+    {
+      "id": "RBK-1",
+      "candidate_ref": "RC-1",
+      "trigger": "Named stop threshold",
+      "authority": "Human Rollback Authority",
+      "target_version_ref": "VER-1",
+      "backup": "immutable-backup-1",
+      "recovery_steps": [
+        "Stop distribution",
+        "Restore verified target",
+        "Revalidate consumers"
+      ],
+      "consumer_restore": "Named owners restore dependencies",
+      "reconciliation": "Before/after state reconciled",
+      "verification": "Hash, links and consumer checks",
+      "owner": "Recovery Owner",
+      "status": "PENDING"
+    },
+    {
+      "id": "RBK-2",
+      "candidate_ref": "RC-2",
+      "trigger": "Named stop threshold",
+      "authority": "Human Rollback Authority",
+      "target_version_ref": "VER-2",
+      "backup": "immutable-backup-2",
+      "recovery_steps": [
+        "Stop distribution",
+        "Restore verified target",
+        "Revalidate consumers"
+      ],
+      "consumer_restore": "Named owners restore dependencies",
+      "reconciliation": "Before/after state reconciled",
+      "verification": "Hash, links and consumer checks",
+      "owner": "Recovery Owner",
+      "status": "PENDING"
+    },
+    {
+      "id": "RBK-3",
+      "candidate_ref": "RC-3",
+      "trigger": "Named stop threshold",
+      "authority": "Human Rollback Authority",
+      "target_version_ref": "VER-3",
+      "backup": "immutable-backup-3",
+      "recovery_steps": [
+        "Stop distribution",
+        "Restore verified target",
+        "Revalidate consumers"
+      ],
+      "consumer_restore": "Named owners restore dependencies",
+      "reconciliation": "Before/after state reconciled",
+      "verification": "Hash, links and consumer checks",
+      "owner": "Recovery Owner",
+      "status": "PENDING"
+    },
+    {
+      "id": "RBK-4",
+      "candidate_ref": "RC-4",
+      "trigger": "Named stop threshold",
+      "authority": "Human Rollback Authority",
+      "target_version_ref": "VER-4",
+      "backup": "immutable-backup-4",
+      "recovery_steps": [
+        "Stop distribution",
+        "Restore verified target",
+        "Revalidate consumers"
+      ],
+      "consumer_restore": "Named owners restore dependencies",
+      "reconciliation": "Before/after state reconciled",
+      "verification": "Hash, links and consumer checks",
+      "owner": "Recovery Owner",
+      "status": "PENDING"
+    }
+  ],
+  "audit_events": [
+    {
+      "id": "AUD-1",
+      "timestamp": "2026-08-22T00:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "REGISTER",
+      "target_ref": "AST-1",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-1",
+      "evidence": "audit-evidence-1",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-1",
+      "append_only": true
+    },
+    {
+      "id": "AUD-2",
+      "timestamp": "2026-08-22T01:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "SNAPSHOT",
+      "target_ref": "AST-2",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-2",
+      "evidence": "audit-evidence-2",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-2",
+      "append_only": true
+    },
+    {
+      "id": "AUD-3",
+      "timestamp": "2026-08-22T02:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "DIFF",
+      "target_ref": "AST-3",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-3",
+      "evidence": "audit-evidence-3",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-3",
+      "append_only": true
+    },
+    {
+      "id": "AUD-4",
+      "timestamp": "2026-08-22T03:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "IMPACT",
+      "target_ref": "AST-4",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-4",
+      "evidence": "audit-evidence-4",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-4",
+      "append_only": true
+    },
+    {
+      "id": "AUD-5",
+      "timestamp": "2026-08-22T04:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "TEST",
+      "target_ref": "AST-5",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-5",
+      "evidence": "audit-evidence-5",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-5",
+      "append_only": true
+    },
+    {
+      "id": "AUD-6",
+      "timestamp": "2026-08-22T05:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "REVIEW",
+      "target_ref": "AST-6",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-6",
+      "evidence": "audit-evidence-6",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-6",
+      "append_only": true
+    },
+    {
+      "id": "AUD-7",
+      "timestamp": "2026-08-22T06:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "APPROVE_RECORD",
+      "target_ref": "AST-7",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-7",
+      "evidence": "audit-evidence-7",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-7",
+      "append_only": true
+    },
+    {
+      "id": "AUD-8",
+      "timestamp": "2026-08-22T07:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "CANDIDATE",
+      "target_ref": "AST-8",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-8",
+      "evidence": "audit-evidence-8",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-8",
+      "append_only": true
+    },
+    {
+      "id": "AUD-9",
+      "timestamp": "2026-08-22T08:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "ROLLBACK_PLAN",
+      "target_ref": "VER-1",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-9",
+      "evidence": "audit-evidence-9",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-9",
+      "append_only": true
+    },
+    {
+      "id": "AUD-10",
+      "timestamp": "2026-08-22T09:00:00+07:00",
+      "actor": "Named Actor",
+      "action": "FINAL_REVIEW",
+      "target_ref": "VER-2",
+      "before_ref": "NONE",
+      "after_ref": "evidence-after-10",
+      "evidence": "audit-evidence-10",
+      "result": "RECORDED_NO_EXTERNAL_ACTION",
+      "correlation": "CORR-10",
+      "append_only": true
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "identity",
+      "requirement_ref": "AST-1",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-1",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "hash",
+      "requirement_ref": "AST-2",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-2",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "diff",
+      "requirement_ref": "AST-3",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-3",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "reference",
+      "requirement_ref": "AST-4",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-4",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "compatibility",
+      "requirement_ref": "AST-5",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-5",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "access",
+      "requirement_ref": "AST-6",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-6",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "migration",
+      "requirement_ref": "AST-7",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-7",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "rollback",
+      "requirement_ref": "AST-8",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-8",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "reconciliation",
+      "requirement_ref": "VER-9",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-9",
+      "status": "PASS",
+      "owner": "QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "injection",
+      "requirement_ref": "VER-10",
+      "setup": "Controlled static fixture",
+      "expected": "Explicit auditable control",
+      "actual": "Control found",
+      "evidence": "test-evidence-10",
+      "status": "PASS",
+      "owner": "QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "CANONICAL_ID_DUPLICATE",
+      "risk": "Version-control risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "AUTHORITY_EFFECTIVITY_CONFLICT",
+      "risk": "Version-control risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "IMMUTABILITY_PROVENANCE",
+      "risk": "Version-control risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "DEPENDENCY_COMPATIBILITY",
+      "risk": "Version-control risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "RELEASE_ROLLBACK_RECOVERY",
+      "risk": "Version-control risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "ACCESS_RETENTION_AUDIT",
+      "risk": "Version-control risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could invalidate release decision",
+      "control": "Preventive and detective control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "scope_registry",
+      "status": "PASS",
+      "evidence": "scope_registry verified"
+    },
+    {
+      "id": "version_policy",
+      "status": "PASS",
+      "evidence": "version_policy verified"
+    },
+    {
+      "id": "change_traceability",
+      "status": "PASS",
+      "evidence": "change_traceability verified"
+    },
+    {
+      "id": "dependency_impact",
+      "status": "PASS",
+      "evidence": "dependency_impact verified"
+    },
+    {
+      "id": "release_approval",
+      "status": "PASS",
+      "evidence": "release_approval verified"
+    },
+    {
+      "id": "rollback_recovery",
+      "status": "PASS",
+      "evidence": "rollback_recovery verified"
+    },
+    {
+      "id": "security_audit",
+      "status": "PASS",
+      "evidence": "security_audit verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "ASSET_OWNER",
+      "status": "PASS",
+      "evidence": "ASSET_OWNER reviewed"
+    },
+    {
+      "id": "DOMAIN_OWNER",
+      "status": "PASS",
+      "evidence": "DOMAIN_OWNER reviewed"
+    },
+    {
+      "id": "CHANGE_AUTHORITY",
+      "status": "PASS",
+      "evidence": "CHANGE_AUTHORITY reviewed"
+    },
+    {
+      "id": "DATA_SECURITY_RECORDS",
+      "status": "PASS",
+      "evidence": "DATA_SECURITY_RECORDS reviewed"
+    },
+    {
+      "id": "DEPENDENCY_CONSUMER",
+      "status": "PASS",
+      "evidence": "DEPENDENCY_CONSUMER reviewed"
+    },
+    {
+      "id": "RISK_AUDIT",
+      "status": "PASS",
+      "evidence": "RISK_AUDIT reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "invented_asset": false,
+    "invented_version": false,
+    "invented_approval": false,
+    "hash_mismatch_ignored": false,
+    "conflict_hidden": false,
+    "released_artifact_mutated": false,
+    "audit_mutated": false,
+    "rights_bypassed": false,
+    "secret_revealed": false,
+    "private_prompt_revealed": false,
+    "auto_merged": false,
+    "auto_released": false,
+    "auto_effective": false,
+    "auto_rollback": false,
+    "auto_archived": false,
+    "auto_deleted": false,
+    "source_overwritten": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

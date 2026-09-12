@@ -1,0 +1,16 @@
+{
+  "review_id": "REV-DEMO",
+  "frozen_decision": {"decision_id": "DEC-42", "version": "v3", "decided_at": "2026-05-01", "owner": "Role-CEO", "record_hash": "HASH-DEMO"},
+  "expected": [
+    {"id": "OUT-1", "metric": "retention", "target": 80, "low": 75, "high": 85, "source_id": "EVD-EXP-1", "as_of": "2026-05-01"}
+  ],
+  "actual": [
+    {"outcome_id": "OUT-1", "metric": "retention", "value": 78, "source_id": "EVD-ACT-1", "as_of": "2026-08-01"}
+  ],
+  "attributions": [
+    {"id": "VAR-1", "outcome_id": "OUT-1", "label": "EXECUTION", "mechanism": "Adoption lag", "evidence_id": "EVD-VAR-1", "confidence": "MEDIUM"}
+  ],
+  "lessons": [
+    {"id": "LES-1", "state": "CASE_LESSON", "text": "Adoption timing mattered in this context", "applicability": "Same channel and rollout pattern", "owner": "Role-Strategy", "review_trigger": "After three comparable cases"}
+  ]
+}

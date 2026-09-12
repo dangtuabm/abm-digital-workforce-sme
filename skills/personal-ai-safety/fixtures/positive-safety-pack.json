@@ -1,0 +1,1131 @@
+{
+  "artifact": "Personal A.I Safety & Incident Response Pack",
+  "task": {
+    "purpose": "Assess safe A.I use without exposing raw data",
+    "deliverable": "Safety and incident pack",
+    "dod": "Seven gates pass and actions remain human-controlled",
+    "user": "Named User",
+    "owner": "Data Owner",
+    "audience": "ABM enterprise user",
+    "urgency": "NORMAL",
+    "scope": "Static Skill 88 fixture",
+    "non_goals": [
+      "No raw Red data",
+      "No external action"
+    ],
+    "allowed_actions": "Metadata review and drafting only",
+    "share_boundary": "No submission or sharing"
+  },
+  "policy": {
+    "classification_policy": "Supplied Xanh-Vàng-Đỏ policy",
+    "red_route": "Stop and route to approved controlled environment",
+    "rights_rule": "Access is not rights",
+    "consent_rule": "Consent is purpose-limited",
+    "minimization_rule": "Minimum necessary fields",
+    "platform_rule": "Exact account and settings checked",
+    "file_link_rule": "No unknown content opened",
+    "output_rule": "Human review before sharing",
+    "incident_rule": "Stop, preserve, scope, notify owner, verify",
+    "escalation": "Privacy/security/manager owners"
+  },
+  "incident": {
+    "incident_id": "INC-01",
+    "what": "Potential mis-send simulation",
+    "when": "2026-08-22T06:00:00+07:00",
+    "where": "Approved test workspace",
+    "reporter": "Named User",
+    "data_class": "YELLOW_FIXTURE",
+    "scope": "Synthetic fixture only",
+    "recipients": "Named test recipient",
+    "permissions": "No external access",
+    "actions_taken": "Stopped further exposure",
+    "evidence": "Metadata and timestamps preserved",
+    "response_owner": "Security Incident Owner",
+    "channel": "Approved incident channel",
+    "status": "OPEN_REVIEW"
+  },
+  "data_items": [
+    {
+      "id": "DAT-1",
+      "type": "contact_metadata",
+      "source": "authorized-source-1",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "GREEN",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-2",
+      "type": "business_document",
+      "source": "authorized-source-2",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "YELLOW",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-3",
+      "type": "customer_record",
+      "source": "authorized-source-3",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "RED",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-4",
+      "type": "usage_log",
+      "source": "authorized-source-4",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "UNKNOWN",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-5",
+      "type": "image",
+      "source": "authorized-source-5",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "GREEN",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-6",
+      "type": "transcript",
+      "source": "authorized-source-6",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "YELLOW",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-7",
+      "type": "financial_summary",
+      "source": "authorized-source-7",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "RED",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-8",
+      "type": "health_metadata",
+      "source": "authorized-source-8",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "UNKNOWN",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-9",
+      "type": "credential_metadata",
+      "source": "authorized-source-9",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "GREEN",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    },
+    {
+      "id": "DAT-10",
+      "type": "public_reference",
+      "source": "authorized-source-10",
+      "owner": "Named Data Owner",
+      "subjects": "Synthetic fixture subjects",
+      "classification": "YELLOW",
+      "sensitivity": "No raw sensitive value in fixture",
+      "rights": "PENDING_OR_VERIFIED_METADATA",
+      "consent": "Purpose-limited review",
+      "purpose": "Safety assessment only",
+      "necessity": "Field-level necessity documented",
+      "retention": "Review then dispose per policy",
+      "destination": "No external submission",
+      "status": "REVIEW_ONLY"
+    }
+  ],
+  "platform_checks": [
+    {
+      "id": "PLT-1",
+      "product": "Platform 1",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-1",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    },
+    {
+      "id": "PLT-2",
+      "product": "Platform 2",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-2",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    },
+    {
+      "id": "PLT-3",
+      "product": "Platform 3",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-3",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    },
+    {
+      "id": "PLT-4",
+      "product": "Platform 4",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-4",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    },
+    {
+      "id": "PLT-5",
+      "product": "Platform 5",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-5",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    },
+    {
+      "id": "PLT-6",
+      "product": "Platform 6",
+      "account": "Named enterprise account",
+      "workspace": "Approved test workspace",
+      "approved": "FIXTURE_APPROVED",
+      "admin": "Platform Admin",
+      "settings_source": "official-settings-6",
+      "checked_at": "2026-08-22",
+      "data_use_training": "Verified fixture statement",
+      "history_retention": "Verified fixture setting",
+      "deletion_behavior": "No erasure promise",
+      "region": "Named region",
+      "connectors": "Disabled or allowlisted",
+      "access_sharing": "Least privilege",
+      "status": "VERIFIED_FIXTURE"
+    }
+  ],
+  "input_transforms": [
+    {
+      "id": "TRN-1",
+      "data_ref": "DAT-1",
+      "method": "REMOVE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-1",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-2",
+      "data_ref": "DAT-2",
+      "method": "AGGREGATE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-2",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-3",
+      "data_ref": "DAT-3",
+      "method": "GENERALIZE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-3",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-4",
+      "data_ref": "DAT-4",
+      "method": "TOKENIZE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-4",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-5",
+      "data_ref": "DAT-5",
+      "method": "PSEUDONYMIZE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-5",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-6",
+      "data_ref": "DAT-6",
+      "method": "SAMPLE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-6",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-7",
+      "data_ref": "DAT-7",
+      "method": "MASK",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-7",
+      "status": "DRAFTED"
+    },
+    {
+      "id": "TRN-8",
+      "data_ref": "DAT-8",
+      "method": "SYNTHETIC_FIXTURE",
+      "removed_fields": [
+        "Direct identifier"
+      ],
+      "retained_fields": [
+        "Minimum task field"
+      ],
+      "mapping_location": "Outside A.I environment",
+      "residual_risk": "Re-identification remains owner-reviewed",
+      "owner": "Data Owner",
+      "evidence": "transform-evidence-8",
+      "status": "DRAFTED"
+    }
+  ],
+  "surface_checks": [
+    {
+      "id": "SRF-1",
+      "surface": "prompt",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/1",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "QUARANTINE",
+      "evidence": "surface-evidence-1",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-2",
+      "surface": "file",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/2",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "SECURITY_SCAN_REQUIRED",
+      "evidence": "surface-evidence-2",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-3",
+      "surface": "link",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/3",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "SAFE_METADATA_ONLY",
+      "evidence": "surface-evidence-3",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-4",
+      "surface": "webpage",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/4",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "QUARANTINE",
+      "evidence": "surface-evidence-4",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-5",
+      "surface": "image",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/5",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "SECURITY_SCAN_REQUIRED",
+      "evidence": "surface-evidence-5",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-6",
+      "surface": "email",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/6",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "SAFE_METADATA_ONLY",
+      "evidence": "surface-evidence-6",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-7",
+      "surface": "QR",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/7",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "QUARANTINE",
+      "evidence": "surface-evidence-7",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "SRF-8",
+      "surface": "tool_output",
+      "type": "Untrusted external content",
+      "locator": "metadata://surface/8",
+      "provenance": "Sender and source recorded",
+      "permissions": "Read metadata only",
+      "active_content": "Not executed",
+      "scan_route": "Approved security route if needed",
+      "injection_signs": "Checked direct, indirect and multimodal instructions",
+      "disposition": "SECURITY_SCAN_REQUIRED",
+      "evidence": "surface-evidence-8",
+      "owner": "Security Reviewer",
+      "status": "REVIEWED"
+    }
+  ],
+  "output_checks": [
+    {
+      "id": "OUT-1",
+      "output": "Draft output 1",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-2",
+      "output": "Draft output 2",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-3",
+      "output": "Draft output 3",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-4",
+      "output": "Draft output 4",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-5",
+      "output": "Draft output 5",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-6",
+      "output": "Draft output 6",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-7",
+      "output": "Draft output 7",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    },
+    {
+      "id": "OUT-8",
+      "output": "Draft output 8",
+      "claim_sources": [
+        "Approved fixture source"
+      ],
+      "leakage": "No raw secret or sensitive inference",
+      "harmful_bias": "Human review required",
+      "ip": "Rights review recorded",
+      "hidden_links": "None executed",
+      "audience": "Named need-to-know audience",
+      "channel": "Approved channel pending",
+      "access": "Least privilege and expiry",
+      "disclosure": "A.I assistance disclosed per policy",
+      "reviewer": "Human Output Reviewer",
+      "status": "PENDING_HUMAN"
+    }
+  ],
+  "incident_actions": [
+    {
+      "id": "ACT-1",
+      "incident_ref": "INC-01",
+      "action": "STOP_EXPOSURE",
+      "target": "controlled-target-1",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-1",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-2",
+      "incident_ref": "INC-01",
+      "action": "PRESERVE_EVIDENCE",
+      "target": "controlled-target-2",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-2",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-3",
+      "incident_ref": "INC-01",
+      "action": "IDENTIFY_SCOPE",
+      "target": "controlled-target-3",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-3",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-4",
+      "incident_ref": "INC-01",
+      "action": "NOTIFY_OWNER_DRAFT",
+      "target": "controlled-target-4",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-4",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-5",
+      "incident_ref": "INC-01",
+      "action": "REVOKE_OPTION",
+      "target": "controlled-target-5",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-5",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-6",
+      "incident_ref": "INC-01",
+      "action": "ROTATE_OPTION",
+      "target": "controlled-target-6",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-6",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-7",
+      "incident_ref": "INC-01",
+      "action": "VERIFY_ACCESS",
+      "target": "controlled-target-7",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-7",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    },
+    {
+      "id": "ACT-8",
+      "incident_ref": "INC-01",
+      "action": "DOCUMENT_CLOSURE",
+      "target": "controlled-target-8",
+      "owner": "Incident Action Owner",
+      "authority": "Human approval required",
+      "evidence": "action-evidence-8",
+      "verification": "Before/after check specified",
+      "rollback": "Compensating action specified",
+      "status": "PENDING"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-1",
+      "decision": "Safety decision 1",
+      "evidence_refs": [
+        "DAT-1"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Gate remains controlled"
+    },
+    {
+      "id": "DEC-2",
+      "decision": "Safety decision 2",
+      "evidence_refs": [
+        "DAT-2"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "APPROVED_HUMAN",
+      "consequence": "Gate remains controlled"
+    },
+    {
+      "id": "DEC-3",
+      "decision": "Safety decision 3",
+      "evidence_refs": [
+        "DAT-3"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "PENDING",
+      "consequence": "Gate remains controlled"
+    },
+    {
+      "id": "DEC-4",
+      "decision": "Safety decision 4",
+      "evidence_refs": [
+        "DAT-4"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "PENDING",
+      "consequence": "Gate remains controlled"
+    },
+    {
+      "id": "DEC-5",
+      "decision": "Safety decision 5",
+      "evidence_refs": [
+        "DAT-5"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "PENDING",
+      "consequence": "Gate remains controlled"
+    },
+    {
+      "id": "DEC-6",
+      "decision": "Safety decision 6",
+      "evidence_refs": [
+        "DAT-6"
+      ],
+      "owner": "Human Safety Owner",
+      "authority": "Named in fixture",
+      "status": "PENDING",
+      "consequence": "Gate remains controlled"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TST-1",
+      "category": "purpose",
+      "requirement_ref": "DAT-1",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-1",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-2",
+      "category": "rights",
+      "requirement_ref": "DAT-2",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-2",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-3",
+      "category": "classification",
+      "requirement_ref": "DAT-3",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-3",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-4",
+      "category": "minimization",
+      "requirement_ref": "DAT-4",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-4",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-5",
+      "category": "platform",
+      "requirement_ref": "DAT-5",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-5",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-6",
+      "category": "file_link",
+      "requirement_ref": "DAT-6",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-6",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-7",
+      "category": "injection",
+      "requirement_ref": "DAT-7",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-7",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-8",
+      "category": "output",
+      "requirement_ref": "DAT-8",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-8",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-9",
+      "category": "sharing",
+      "requirement_ref": "DAT-9",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-9",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    },
+    {
+      "id": "TST-10",
+      "category": "incident",
+      "requirement_ref": "DAT-10",
+      "setup": "Controlled static fixture",
+      "expected": "Safety control explicit",
+      "actual": "Control found",
+      "evidence": "test-evidence-10",
+      "status": "PASS",
+      "owner": "Static QA Owner"
+    }
+  ],
+  "risks": [
+    {
+      "id": "DATA_CLASSIFICATION_MINIMIZATION",
+      "risk": "Safety risk 1",
+      "evidence": "risk-evidence-1",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "RIGHTS_CONSENT_PURPOSE",
+      "risk": "Safety risk 2",
+      "evidence": "risk-evidence-2",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "PLATFORM_RETENTION_TRAINING",
+      "risk": "Safety risk 3",
+      "evidence": "risk-evidence-3",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "FILE_LINK_ACCESS_MALWARE",
+      "risk": "Safety risk 4",
+      "evidence": "risk-evidence-4",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "PROMPT_INJECTION_OUTPUT_LEAKAGE",
+      "risk": "Safety risk 5",
+      "evidence": "risk-evidence-5",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    },
+    {
+      "id": "INCIDENT_CONTAINMENT_REPORTING",
+      "risk": "Safety risk 6",
+      "evidence": "risk-evidence-6",
+      "impact": "Could expose people or enterprise data",
+      "control": "Named preventive and response control",
+      "owner": "Risk Owner",
+      "residual": "PENDING_HUMAN_ACCEPTANCE",
+      "status": "OPEN"
+    }
+  ],
+  "tests": [
+    {
+      "id": "purpose_rights",
+      "status": "PASS",
+      "evidence": "purpose_rights verified"
+    },
+    {
+      "id": "classification_minimization",
+      "status": "PASS",
+      "evidence": "classification_minimization verified"
+    },
+    {
+      "id": "platform_settings",
+      "status": "PASS",
+      "evidence": "platform_settings verified"
+    },
+    {
+      "id": "file_link_access",
+      "status": "PASS",
+      "evidence": "file_link_access verified"
+    },
+    {
+      "id": "injection_interaction",
+      "status": "PASS",
+      "evidence": "injection_interaction verified"
+    },
+    {
+      "id": "output_sharing",
+      "status": "PASS",
+      "evidence": "output_sharing verified"
+    },
+    {
+      "id": "incident_response",
+      "status": "PASS",
+      "evidence": "incident_response verified"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "USER_DATA_OWNER",
+      "status": "PASS",
+      "evidence": "USER_DATA_OWNER reviewed"
+    },
+    {
+      "id": "MANAGER_PROCESS_OWNER",
+      "status": "PASS",
+      "evidence": "MANAGER_PROCESS_OWNER reviewed"
+    },
+    {
+      "id": "DATA_PRIVACY",
+      "status": "PASS",
+      "evidence": "DATA_PRIVACY reviewed"
+    },
+    {
+      "id": "SECURITY_INCIDENT",
+      "status": "PASS",
+      "evidence": "SECURITY_INCIDENT reviewed"
+    },
+    {
+      "id": "PLATFORM_ADMIN",
+      "status": "PASS",
+      "evidence": "PLATFORM_ADMIN reviewed"
+    },
+    {
+      "id": "RISK_COMPLIANCE",
+      "status": "PASS",
+      "evidence": "RISK_COMPLIANCE reviewed"
+    }
+  ],
+  "forbidden_checks": {
+    "raw_red_submitted": false,
+    "secret_requested": false,
+    "secret_stored": false,
+    "secret_repeated": false,
+    "rights_assumed": false,
+    "consent_assumed": false,
+    "platform_settings_assumed": false,
+    "unknown_link_opened": false,
+    "active_content_executed": false,
+    "data_instruction_executed": false,
+    "permission_expanded": false,
+    "output_shared": false,
+    "incident_concealed": false,
+    "evidence_deleted": false,
+    "provider_erasure_promised": false,
+    "sensitive_inference_published": false
+  },
+  "release_state": "STATIC_PASS_PENDING_D10"
+}

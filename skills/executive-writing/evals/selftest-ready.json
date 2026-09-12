@@ -1,0 +1,92 @@
+{
+  "contract": {
+    "id": "EXW-035-SELFTEST",
+    "mode": "memo_decision_note",
+    "channel": "Internal email and knowledge hub",
+    "use": "Launch an approved 30-day workflow pilot",
+    "sender_role": "Chief Executive Officer",
+    "authority_basis": "Approved decision record DEC-2026-08",
+    "signature_role": "Chief Executive Officer",
+    "primary_audience": "Department Heads",
+    "purpose": "Align leaders and activate named owners",
+    "desired_outcome": "Each department confirms one workflow owner and baseline submission",
+    "decision_or_request": "Execute the approved pilot and confirm named actions",
+    "owner": "CEO Office",
+    "reviewer": "Operations Director",
+    "approval_route": "Operations review then CEO send approval",
+    "sensitivity": "internal",
+    "status": "approved_for_drafting"
+  },
+  "sources": [
+    {"id": "S1", "title": "Pilot decision record", "version": "v1", "date": "2026-08-20", "owner": "CEO Office", "authority": "approved executive decision", "locator": "DEC-2026-08:1-18", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S2", "title": "Operations baseline protocol", "version": "v3", "date": "2026-08-18", "owner": "Operations Director", "authority": "approved operating protocol", "locator": "OPS-BL:4-26", "classification": "internal", "authorized": true, "status": "active"},
+    {"id": "S3", "title": "Data handling standard", "version": "v2", "date": "2026-08-15", "owner": "Security Owner", "authority": "approved security standard", "locator": "SEC-DH:7-31", "classification": "internal", "authorized": true, "status": "active"}
+  ],
+  "conflicts": [],
+  "audiences": [
+    {"id": "A1", "role": "primary", "name": "Department Heads", "power": "Own departmental execution", "knowledge": "Know the pilot intent but not the activation sequence", "concern": "Scope, owner capacity and reporting burden", "need": "Understand decision, scope, actions and escalation", "language_accessibility": "Concise operational Vietnamese"},
+    {"id": "A2", "role": "secondary", "name": "Workflow Owners", "power": "Execute assigned workflow", "knowledge": "Need baseline and data rules", "concern": "Data handling and acceptance criteria", "need": "Know deliverable, deadline and support route", "language_accessibility": "Plain operational Vietnamese"}
+  ],
+  "authority_statements": [
+    {"id": "AU1", "text": "Launch the approved 30-day pilot", "basis": "S1", "status": "within_authority"},
+    {"id": "AU2", "text": "Require each Department Head to nominate one workflow owner", "basis": "S1", "status": "within_authority"}
+  ],
+  "claims": [
+    {"id": "C1", "text": "The 30-day pilot is approved", "label": "DỮ KIỆN", "material": true, "source_refs": ["S1"], "status": "supported", "qualifier": "Applies only to the scope in DEC-2026-08"},
+    {"id": "C2", "text": "Each department pilots one priority workflow", "label": "DỮ KIỆN", "material": true, "source_refs": ["S1"], "status": "supported", "qualifier": "No production scale-up is authorized"},
+    {"id": "C3", "text": "Every pilot needs an approved baseline before execution", "label": "DỮ KIỆN", "material": true, "source_refs": ["S2"], "status": "supported", "qualifier": "Use the current baseline protocol"},
+    {"id": "C4", "text": "Restricted data cannot enter the pilot without security approval", "label": "DỮ KIỆN", "material": true, "source_refs": ["S3"], "status": "supported", "qualifier": "Follow classification in the current security standard"}
+  ],
+  "actions": [
+    {"id": "AC1", "owner": "Each Department Head", "verb": "Nominate", "deliverable": "One workflow owner and one priority workflow", "deadline": "2026-08-28", "escalation": "Operations Director", "status": "requested"},
+    {"id": "AC2", "owner": "Each Workflow Owner", "verb": "Submit", "deliverable": "Completed baseline record", "deadline": "2026-09-01", "escalation": "Operations Director", "status": "requested"}
+  ],
+  "message_map": {
+    "bottom_line": "The approved 30-day pilot starts with one priority workflow and one named owner per department.",
+    "decision_or_request": "Confirm AC1 and complete AC2 before execution begins.",
+    "why_now": "The approved decision record sets the activation sequence for the pilot.",
+    "support_blocks": [
+      {"id": "B1", "text": "Scope and authority", "claim_refs": ["C1", "C2"]},
+      {"id": "B2", "text": "Baseline requirement", "claim_refs": ["C3"]},
+      {"id": "B3", "text": "Data boundary", "claim_refs": ["C4"]}
+    ],
+    "risk_or_limit": "This memo does not authorize production scale-up or use of restricted data.",
+    "action_ids": ["AC1", "AC2"],
+    "do_not_say": ["full deployment", "unrestricted data", "automatic approval"],
+    "approval_route": "Operations review then CEO send approval"
+  },
+  "document": {
+    "mode": "memo_decision_note",
+    "subject_or_title": "Kích hoạt pilot 30 ngày: một workflow, một owner mỗi bộ phận",
+    "status": "draft_not_approved",
+    "opening_bottom_line": "The approved 30-day pilot starts with one priority workflow and one named owner per department.",
+    "sections": [
+      {"id": "D1", "heading": "Quyết định và phạm vi", "text": "Pilot áp dụng đúng phạm vi đã duyệt; chưa mở rộng production.", "claim_refs": ["C1", "C2"], "action_refs": [], "authority_refs": ["AU1"]},
+      {"id": "D2", "heading": "Việc cần hoàn thành", "text": "Mỗi bộ phận xác nhận owner và nộp baseline theo hai mốc đã giao.", "claim_refs": ["C3"], "action_refs": ["AC1", "AC2"], "authority_refs": ["AU2"]},
+      {"id": "D3", "heading": "Ranh giới dữ liệu", "text": "Restricted data chỉ được dùng khi Security Owner phê duyệt.", "claim_refs": ["C4"], "action_refs": [], "authority_refs": []}
+    ],
+    "closing": "Vướng mắc vượt phạm vi được chuyển Operations Director trước khi triển khai.",
+    "signature_role": "Chief Executive Officer"
+  },
+  "tests": [
+    {"type": "bottom_line_5_second", "method": "One-pass readback", "sample": "Owner-approved internal reviewers", "threshold": "Reviewer states the correct decision and scope", "reviewer": "Operations Director", "status": "planned"},
+    {"type": "skim_comprehension", "method": "Heading-only and first-sentence review", "sample": "Owner-approved internal reviewers", "threshold": "Correct priority and sequence", "reviewer": "Operations Director", "status": "planned"},
+    {"type": "claim_trace", "method": "Claim-to-source audit", "sample": "All material claims", "threshold": "100% source/version/locator coverage", "reviewer": "CEO Office", "status": "planned"},
+    {"type": "actionability", "method": "Action register audit", "sample": "All requested actions", "threshold": "100% owner/verb/deliverable/deadline/escalation coverage", "reviewer": "Operations Director", "status": "planned"},
+    {"type": "ambiguity_hostile_read", "method": "Misinterpretation challenge", "sample": "Owner-approved internal reviewers", "threshold": "No reasonable production or data-boundary misread", "reviewer": "Security Owner", "status": "planned"},
+    {"type": "audience_tone", "method": "Role and tone review", "sample": "Department Head review", "threshold": "Direct, respectful and operational", "reviewer": "People Lead", "status": "planned"}
+  ],
+  "review": {
+    "source_check": true,
+    "authority_check": true,
+    "sensitivity_check": true,
+    "redactions_complete": true,
+    "recipient_check": true,
+    "attachment_check": true,
+    "required_specialist_reviews": [],
+    "completed_specialist_reviews": [],
+    "validation_state": "not_run",
+    "send_approved": false
+  }
+}
+

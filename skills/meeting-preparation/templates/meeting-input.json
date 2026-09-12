@@ -1,0 +1,78 @@
+{
+  "contract": {
+    "meeting_id": "MP-DEMO-001",
+    "version": "1.0",
+    "meeting_type": "DECIDE",
+    "purpose": "Choose the recovery path for a client delivery risk",
+    "required_output": "One approved option with owner, deadline and success metric",
+    "start": "2026-08-24T09:00:00+07:00",
+    "end": "2026-08-24T10:00:00+07:00",
+    "timezone": "Asia/Bangkok",
+    "duration_minutes": 60,
+    "owner": "MEETING-OWNER-01",
+    "facilitator": "ATT-02",
+    "decider": "ATT-01",
+    "classification": "YELLOW",
+    "required_reviews": ["MEETING_OWNER", "DECISION_OWNER", "SECURITY_ACCESS", "FINAL_INVITE"],
+    "prohibited_actions": ["auto_invite", "auto_send", "auto_reschedule", "fake_attendance", "false_decision"]
+  },
+  "sources": [
+    {"source_id": "SRC-CONTEXT", "title": "Client Delivery Context", "version": "1.2", "locator": "kb://client/context", "owner": "DELIVERY-01", "age_hours": 4, "freshness_sla_hours": 24, "classification": "YELLOW", "access_status": "AUTHORIZED", "active": true},
+    {"source_id": "SRC-METRIC", "title": "Validated Delivery Metrics", "version": "2.0", "locator": "data://delivery/metrics", "owner": "DATA-01", "age_hours": 3, "freshness_sla_hours": 24, "classification": "YELLOW", "access_status": "AUTHORIZED", "active": true},
+    {"source_id": "SRC-COMMIT", "title": "Prior Commitment Register", "version": "1.3", "locator": "ops://commitments/current", "owner": "PM-01", "age_hours": 2, "freshness_sla_hours": 24, "classification": "YELLOW", "access_status": "AUTHORIZED", "active": true},
+    {"source_id": "SRC-SEC", "title": "Meeting Access Policy", "version": "1.0", "locator": "policy://meeting/access", "owner": "SECURITY-01", "age_hours": 12, "freshness_sla_hours": 168, "classification": "GREEN", "access_status": "AUTHORIZED", "active": true},
+    {"source_id": "SRC-REVIEW", "title": "Readiness Review Evidence", "version": "1.0", "locator": "review://mp-demo-001", "owner": "QA-01", "age_hours": 1, "freshness_sla_hours": 24, "classification": "YELLOW", "access_status": "AUTHORIZED", "active": true}
+  ],
+  "pre_reads": [
+    {"pre_read_id": "PR-01", "title": "Decision Brief", "source_refs": ["SRC-CONTEXT", "SRC-METRIC"], "estimated_read_minutes": 8, "audience_roles": ["DECIDER", "OWNER", "ADVISOR"], "access_status": "AUTHORIZED", "status": "REVIEWED", "owner": "MEETING-OWNER-01"},
+    {"pre_read_id": "PR-02", "title": "Prior Commitments and Open Risks", "source_refs": ["SRC-COMMIT"], "estimated_read_minutes": 5, "audience_roles": ["DECIDER", "OWNER"], "access_status": "AUTHORIZED", "status": "REVIEWED", "owner": "PM-01"}
+  ],
+  "attendees": [
+    {"attendee_id": "ATT-01", "role": "DECIDER", "required": true, "availability_status": "AVAILABLE", "access_status": "AUTHORIZED", "owner": "CEO-01"},
+    {"attendee_id": "ATT-02", "role": "FACILITATOR", "required": true, "availability_status": "AVAILABLE", "access_status": "AUTHORIZED", "owner": "CHIEF-OF-STAFF-01"},
+    {"attendee_id": "ATT-03", "role": "DELIVERY_OWNER", "required": true, "availability_status": "AVAILABLE", "access_status": "AUTHORIZED", "owner": "DELIVERY-01"},
+    {"attendee_id": "ATT-04", "role": "ADVISOR", "required": false, "availability_status": "UNAVAILABLE", "access_status": "AUTHORIZED", "owner": "FINANCE-01"}
+  ],
+  "prior_commitments": [
+    {"commitment_id": "CM-01", "commitment": "Deliver approved scope by 28/08", "owner": "DELIVERY-01", "due": "2026-08-28", "status": "AT_RISK", "evidence": "SRC-COMMIT", "meeting_relevance": "Primary decision constraint"},
+    {"commitment_id": "CM-02", "commitment": "Confirm client acceptance of recovery plan", "owner": "ACCOUNT-01", "due": "2026-08-24", "status": "OPEN", "evidence": "SRC-COMMIT", "meeting_relevance": "Required after decision"},
+    {"commitment_id": "CM-03", "commitment": "Provide verified effort estimate", "owner": "PM-01", "due": "2026-08-23", "status": "DONE", "evidence": "SRC-METRIC", "meeting_relevance": "Supports option comparison"}
+  ],
+  "decision_items": [
+    {"decision_id": "DR-01", "question": "Which recovery path should be authorized?", "options": ["Reduce non-critical scope", "Add authorized capacity", "Renegotiate deadline"], "recommendation": "Reduce non-critical scope and preserve the contractual deadline.", "source_refs": ["SRC-CONTEXT", "SRC-METRIC", "SRC-COMMIT"], "decision_rule": "Protect contractual obligation with acceptable client value and bounded cost", "owner": "ATT-01", "deadline": "2026-08-24T09:45:00+07:00", "consequence_of_no_decision": "Recovery work starts late and risk compounds"},
+    {"decision_id": "DR-02", "question": "Who owns client confirmation and by when?", "options": ["Account owner", "Delivery owner with account support"], "recommendation": "Account owner leads confirmation with delivery support.", "source_refs": ["SRC-CONTEXT", "SRC-COMMIT"], "decision_rule": "Single accountable owner closest to client relationship", "owner": "ATT-01", "deadline": "2026-08-24T09:55:00+07:00", "consequence_of_no_decision": "Client acceptance remains ambiguous"}
+  ],
+  "agenda": [
+    {"segment_id": "AG-01", "objective": "Open with purpose and decision rules", "mode": "INFORM", "owner": "ATT-02", "duration_minutes": 5, "required_inputs": ["Meeting contract"], "output": "Shared purpose and norms", "stop_rule": "Purpose restated by decider", "parking_route": "Non-scope items to parking log", "decision_ids": []},
+    {"segment_id": "AG-02", "objective": "Confirm facts, constraints and open commitments", "mode": "DISCUSS", "owner": "ATT-03", "duration_minutes": 10, "required_inputs": ["PR-01", "PR-02"], "output": "Agreed fact base and unknowns", "stop_rule": "Material conflicts logged", "parking_route": "Research gaps assigned", "decision_ids": []},
+    {"segment_id": "AG-03", "objective": "Compare recovery options", "mode": "DISCUSS", "owner": "ATT-02", "duration_minutes": 20, "required_inputs": ["DR-01 evidence"], "output": "Trade-offs understood", "stop_rule": "Each option tested against rule", "parking_route": "Non-decision detail deferred", "decision_ids": ["DR-01"]},
+    {"segment_id": "AG-04", "objective": "Decide recovery path and client-confirmation owner", "mode": "DECIDE", "owner": "ATT-01", "duration_minutes": 15, "required_inputs": ["DR-01", "DR-02"], "output": "Two decisions with rationale", "stop_rule": "Decider states choices", "parking_route": "Dissent recorded with evidence", "decision_ids": ["DR-01", "DR-02"]},
+    {"segment_id": "AG-05", "objective": "Confirm owners, deadlines, metrics and recap", "mode": "COMMIT", "owner": "ATT-02", "duration_minutes": 10, "required_inputs": ["Decision outputs"], "output": "Accepted commitments and recap", "stop_rule": "Owners restate acceptance", "parking_route": "Unaccepted work escalated", "decision_ids": []}
+  ],
+  "facilitation_plan": {
+    "opening": "State purpose, outputs, decision rights and timebox",
+    "norms": ["Evidence before assertion", "Dissent is explicit", "One conversation"],
+    "dissent_route": "Record evidence and ask decider to rule or assign follow-up",
+    "parking_rule": "Park only out-of-scope items with owner and disposition",
+    "accessibility": "Pre-read in accessible format; captions and verbal summaries available",
+    "contingency": "If decider or critical evidence is absent, stop decision segment",
+    "recap_owner": "ATT-02",
+    "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "meeting_contract", "passed": true, "evidence": "Type, purpose, output and rights locked", "reviewer": "ATT-02", "date": "2026-08-21"},
+    {"test_type": "source_freshness", "passed": true, "evidence": "All sources within SLA", "reviewer": "QA-01", "date": "2026-08-21"},
+    {"test_type": "attendee_quorum", "passed": true, "evidence": "All required attendees available and authorized", "reviewer": "ATT-02", "date": "2026-08-21"},
+    {"test_type": "decision_readiness", "passed": true, "evidence": "Two decision items have options, recommendation and evidence", "reviewer": "ATT-01", "date": "2026-08-21"},
+    {"test_type": "agenda_timebox", "passed": true, "evidence": "Agenda totals 60 minutes", "reviewer": "ATT-02", "date": "2026-08-21"},
+    {"test_type": "pre_read_accessibility", "passed": true, "evidence": "Pre-reads authorized and accessible", "reviewer": "SECURITY-01", "date": "2026-08-21"},
+    {"test_type": "invitation_execution_boundary", "passed": true, "evidence": "No invite/send/reschedule state asserted", "reviewer": "QA-01", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "MEETING_OWNER", "required": true, "reviewer": "MEETING-OWNER-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "DECISION_OWNER", "required": true, "reviewer": "ATT-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "SECURITY_ACCESS", "required": true, "reviewer": "SECURITY-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FINAL_INVITE", "required": true, "reviewer": "MEETING-OWNER-01", "status": "PENDING"}
+  ]
+}
+

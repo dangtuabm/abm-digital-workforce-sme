@@ -1,0 +1,92 @@
+{
+  "contract": {
+    "id": "PZN-034-SELFTEST",
+    "unit": "Enterprise transformation offer",
+    "brand_level": "product",
+    "business_objective": "Increase qualified consideration among SME CEOs",
+    "decision_owner": "Brand Owner",
+    "reviewers": ["Customer Research Lead", "Commercial Reviewer"],
+    "scope": "Vietnam SME decision makers; design phase",
+    "status": "approved_for_design"
+  },
+  "evidence": [
+    {"id": "E1", "type": "customer", "title": "CEO interview synthesis", "version": "2026-08-v1", "owner": "Research Lead", "authority": "primary research", "locator": "INT-SYN:12-38", "authorized": true, "status": "active", "strength": "high"},
+    {"id": "E2", "type": "market", "title": "Buying occasion study", "version": "2026-08-v1", "owner": "Market Lead", "authority": "approved study", "locator": "MOS:5-21", "authorized": true, "status": "active", "strength": "medium"},
+    {"id": "E3", "type": "competitor", "title": "Alternative message audit", "version": "2026-08-v2", "owner": "Strategy Lead", "authority": "dated source capture", "locator": "ALT:3-44", "authorized": true, "status": "active", "strength": "medium"},
+    {"id": "E4", "type": "internal", "title": "Delivery outcome evidence", "version": "2026-08-v3", "owner": "Delivery Owner", "authority": "approved internal record", "locator": "DOR:8-19", "authorized": true, "status": "active", "strength": "high"}
+  ],
+  "conflicts": [],
+  "target": {
+    "primary_segment": "SME CEOs who tried isolated tools but lack operational adoption",
+    "decision_unit": ["CEO", "Operations Lead"],
+    "problem": "Experiments do not become repeatable workflows with accountable owners",
+    "occasion": "After initial tool trials stall and leadership must choose an implementation partner",
+    "desired_progress": "Move from experiments to governed workflows the internal team can operate",
+    "choice_criteria": ["operational fit", "measurable transfer", "governance", "speed to first workflow"],
+    "exclusion": "Buyers seeking only tool tutorials or unmanaged full outsourcing"
+  },
+  "frame": {
+    "category": "Capability-transfer implementation partner",
+    "alternatives": ["tool training", "traditional consulting", "full outsourcing", "status quo"],
+    "points_of_parity": ["diagnosis", "implementation support", "training"],
+    "point_of_difference": "Transfers governed workflows and operating capability instead of leaving isolated demos",
+    "barrier": "Category may be mistaken for another training program"
+  },
+  "territories": [
+    {"id": "T1", "target_occasion": "CEO selecting an A.I training provider", "category": "executive training", "problem": "leaders lack a common A.I language", "promise": "build leadership fluency", "difference": "learning tied to one live workflow", "sacrifice": "not a broad implementation engagement", "proof_refs": ["E1", "E4"], "strategic_fit": "strong training heritage", "failure_mode": "may reinforce training-only perception"},
+    {"id": "T2", "target_occasion": "CEO after tool experiments stall", "category": "capability-transfer implementation partner", "problem": "demos do not become governed operations", "promise": "turn a priority process into an owned, repeatable workflow", "difference": "implementation plus capability transfer and control evidence", "sacrifice": "not tool-only training or black-box outsourcing", "proof_refs": ["E1", "E2", "E3", "E4"], "strategic_fit": "aligns delivery, training and governance", "failure_mode": "requires credible delivery proof"},
+    {"id": "T3", "target_occasion": "CEO seeking aggressive automation", "category": "automation agency", "problem": "manual work constrains scale", "promise": "automate priority work quickly", "difference": "leadership-centered design", "sacrifice": "de-emphasizes learning portfolio", "proof_refs": ["E2", "E3"], "strategic_fit": "easy category recognition", "failure_mode": "crowded category and weak defensibility"}
+  ],
+  "scorecard": {
+    "criteria": [
+      {"name": "relevance", "weight": 20},
+      {"name": "distinctiveness", "weight": 15},
+      {"name": "credibility", "weight": 15},
+      {"name": "defendability", "weight": 10},
+      {"name": "clarity_memorability", "weight": 10},
+      {"name": "commercial_fit", "weight": 10},
+      {"name": "strategic_stretch", "weight": 10},
+      {"name": "activation_cost", "weight": 10}
+    ],
+    "scores": [
+      {"territory_id": "T1", "ratings": {"relevance": 3, "distinctiveness": 2, "credibility": 5, "defendability": 3, "clarity_memorability": 4, "commercial_fit": 3, "strategic_stretch": 2, "activation_cost": 5}},
+      {"territory_id": "T2", "ratings": {"relevance": 5, "distinctiveness": 5, "credibility": 4, "defendability": 4, "clarity_memorability": 4, "commercial_fit": 5, "strategic_stretch": 5, "activation_cost": 3}},
+      {"territory_id": "T3", "ratings": {"relevance": 4, "distinctiveness": 2, "credibility": 3, "defendability": 2, "clarity_memorability": 5, "commercial_fit": 4, "strategic_stretch": 3, "activation_cost": 4}}
+    ],
+    "recommended_id": "T2"
+  },
+  "position": {
+    "territory_id": "T2",
+    "target": "SME CEOs whose isolated A.I experiments have stalled",
+    "frame": "Capability-transfer implementation partner",
+    "problem": "Demos fail to become governed workflows with internal ownership",
+    "promise": "Convert one priority process into an owned, repeatable workflow",
+    "difference": "Combines implementation, operating controls and capability transfer",
+    "reasons_to_believe": ["C1", "C2", "C3"],
+    "sacrifice": "Not tool-only training and not black-box outsourcing",
+    "statement": "For SME CEOs whose experiments have stalled, the offer is a capability-transfer implementation partnership that converts a priority process into an owned, governed workflow, supported by delivery evidence and operator transfer.",
+    "memory_hook": "From stalled experiments to owned workflows",
+    "status": "hypothesis"
+  },
+  "claims": [
+    {"id": "C1", "material": true, "text": "The target reports stalled adoption after initial experiments", "source_refs": ["E1"], "status": "supported", "limitations": "Applies to the interviewed SME segment"},
+    {"id": "C2", "material": true, "text": "The delivery model includes workflow implementation and operator transfer", "source_refs": ["E4"], "status": "supported", "limitations": "Applies to the documented delivery scope"},
+    {"id": "C3", "material": true, "text": "Capability transfer is less visible in audited alternative messaging", "source_refs": ["E3"], "status": "supported", "limitations": "Dated message audit; not a claim about full competitor capability"}
+  ],
+  "tests": [
+    {"type": "category_clarity", "method": "Five-second comprehension interview", "sample": "Owner-approved target sample", "threshold": "Owner-approved correct-category threshold", "owner": "Research Lead", "status": "planned"},
+    {"type": "relevance", "method": "Buying-occasion problem ranking", "sample": "Owner-approved target sample", "threshold": "Owner-approved relevance threshold", "owner": "Research Lead", "status": "planned"},
+    {"type": "distinctiveness_substitution", "method": "Blind logo substitution test", "sample": "Owner-approved target sample", "threshold": "Owner-approved non-substitution threshold", "owner": "Brand Owner", "status": "planned"},
+    {"type": "credibility_proof", "method": "Claim and proof challenge interview", "sample": "Owner-approved target sample", "threshold": "Owner-approved credibility threshold", "owner": "Commercial Reviewer", "status": "planned"},
+    {"type": "unaided_recall", "method": "Delayed unaided recall", "sample": "Owner-approved target sample", "threshold": "Owner-approved recall threshold", "owner": "Research Lead", "status": "planned"}
+  ],
+  "governance": {
+    "brand_owner": "Brand Owner",
+    "customer_reviewer": "Research Lead",
+    "legal_commercial_reviewer": "Commercial Reviewer",
+    "validation_state": "not_run",
+    "publish_approved": false,
+    "decision_log": true
+  }
+}
+

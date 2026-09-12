@@ -1,0 +1,37 @@
+{
+  "session_contract":{"pair_id":"PAIR-07","session_id":"S-20260821","purpose":"Review service outcomes, blockers, support and development","date":"2026-08-21","cadence":"biweekly","manager_id":"ROLE-MANAGER","participant_id":"ROLE-PARTICIPANT","human_facilitator":"ROLE-MANAGER","consent":"CONFIRMED","notes_rule":"shared summary only; private scratch deleted after review","recording_rule":"NO_RECORDING","access_roles":["ROLE-MANAGER","ROLE-PARTICIPANT"],"retention":"90 days then review","prohibited_uses":["no rating","no discipline","no HR update"],"data_classification":"YELLOW"},
+  "work_evidence":[
+    {"id":"EV-01","type":"outcome metric","source":"service-dashboard","source_version":"2026-08-20","as_of":"2026-08-20","access":"AUTHORIZED","fact":"4 of 5 commitments met agreed SLA","confidence":"HIGH","interpretation":"delivery stable with one blocker","contains_protected_trait":false},
+    {"id":"EV-02","type":"observable event","source":"project-log","source_version":"log-118","as_of":"2026-08-19","access":"AUTHORIZED","fact":"handoff checklist omitted on incident 118","confidence":"HIGH","interpretation":"process reinforcement needed","contains_protected_trait":false}
+  ],
+  "prior_commitments":[
+    {"id":"PC-01","owner":"ROLE-PARTICIPANT","outcome":"use handoff checklist","dod":"checklist linked in next three handoffs","due":"2026-08-30","state":"IN_PROGRESS","evidence_or_blocker":"one completed; two pending","support":"manager protects review time"},
+    {"id":"PC-02","owner":"ROLE-MANAGER","outcome":"remove access blocker","dod":"approved tool access confirmed","due":"2026-08-22","state":"BLOCKED","evidence_or_blocker":"security approval pending","support":"manager escalates approval"}
+  ],
+  "agenda":[
+    {"submitted_by":"ROLE-MANAGER","topic":"service outcome and handoff evidence","desired_outcome":"agree next control experiment","priority":"HIGH","minutes":15,"sensitive":false},
+    {"submitted_by":"ROLE-PARTICIPANT","topic":"access blocker and workload trade-off","desired_outcome":"manager support and clear priority","priority":"HIGH","minutes":20,"sensitive":false},
+    {"submitted_by":"ROLE-PARTICIPANT","topic":"development in incident facilitation","desired_outcome":"choose practice opportunity","priority":"MEDIUM","minutes":10,"sensitive":false}
+  ],
+  "feedback_cards":[{"id":"FB-01","situation":"incident 118 handoff","behavior":"required checklist link was absent from the record","impact":"receiver spent 18 minutes reconstructing context","source":"project-log log-118","confidence":"HIGH","context_invitation":"What context or constraint am I missing?","request":"Use and link the checklist for the next three handoffs","trait_or_intent_label":""}],
+  "questions":[
+    {"text":"What outcome are you most proud of since our last session?","open":true,"neutral":true,"purpose":"participant voice"},
+    {"text":"Which blocker most affects your ability to deliver, and what support would help?","open":true,"neutral":true,"purpose":"support"},
+    {"text":"What context should I understand about incident 118?","open":true,"neutral":true,"purpose":"right to correct"}
+  ],
+  "support_experiments":[{"goal":"facilitate one low-risk incident review","owner":"ROLE-PARTICIPANT","manager_support":"assign observer and 20-minute debrief","success_evidence":"observer rubric and participant reflection","review_date":"2026-09-15"}],
+  "commitments":[
+    {"id":"C-01","owner":"ROLE-PARTICIPANT","outcome":"complete three controlled handoffs","dod":"three records link checklist with zero required-field omission","due":"2026-08-30","dependency":"tool access","support":"manager secures access","evidence":"handoff record links","follow_up":"next 1:1"},
+    {"id":"C-02","owner":"ROLE-MANAGER","outcome":"resolve access blocker","dod":"participant confirms authorized access works","due":"2026-08-22","dependency":"security approval","support":"escalate through approved channel","evidence":"access confirmation","follow_up":"async confirmation then next 1:1"}
+  ],
+  "sensitive_routes":[{"topic_type":"people-policy concern","route":"protected people channel","owner":"ROLE-PEOPLE","privacy_limit":"minimum necessary","status":"NOT_TRIGGERED"}],
+  "requested_gate":"SESSION","summary":{"status":"NOT_APPLICABLE"},
+  "tests":[
+    {"type":"contract_privacy","status":"PASS","evidence":"consent, no recording, access and retention set"},{"type":"evidence_fairness","status":"PASS","evidence":"2 authorized work records; facts separated"},{"type":"agenda_balance","status":"PASS","evidence":"manager and participant topics; 30 minutes participant-led"},{"type":"feedback_quality","status":"PASS","evidence":"1 SBI card with context invitation"},{"type":"commitment_control","status":"PASS","evidence":"2 reciprocal commitments with DoD/support"},{"type":"sensitive_boundary","status":"PASS","evidence":"protected route defined; not triggered"},{"type":"implementation_boundary","status":"PASS","evidence":"no send, record, rating, discipline or HR mutation"}
+  ],
+  "reviews":[
+    {"type":"MANAGER_PREP","reviewer":"ROLE-MANAGER","status":"PASS","evidence":"manager reviewed pack"},{"type":"PEOPLE_POLICY_PRIVACY","reviewer":"ROLE-PEOPLE","status":"PASS","evidence":"privacy and policy review"},{"type":"FINAL_HUMAN_1ON1","reviewer":"ROLE-MANAGER","status":"PENDING","evidence":"human session scheduled; no outcome asserted"}
+  ],
+  "forbidden_flags":[],"published_states":["DRAFT"],
+  "output_sections":["session_contract","evidence_commitment_brief","two_way_agenda","sbi_questions","support_development","commitment_ledger","confirmation_review_audit"]
+}

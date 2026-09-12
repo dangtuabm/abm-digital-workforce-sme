@@ -1,0 +1,15 @@
+{
+  "allocation_id": "ALLOC-DEMO",
+  "capacities": {
+    "budget": {"total": 100, "committed": 10, "operations": 10, "buffer": 10},
+    "hours": {"total": 1000, "committed": 100, "operations": 200, "buffer": 100}
+  },
+  "max_selected": 3,
+  "items": [
+    {"id": "A", "mandatory": true, "approved_value": 20, "value_source": "EVD-A", "resources": {"budget": 20, "hours": 200}, "dependencies": [], "excludes": [], "category": "RUN"},
+    {"id": "B", "mandatory": false, "approved_value": 50, "value_source": "EVD-B", "resources": {"budget": 30, "hours": 250}, "dependencies": ["A"], "excludes": ["C"], "category": "GROW"},
+    {"id": "C", "mandatory": false, "approved_value": 45, "value_source": "EVD-C", "resources": {"budget": 25, "hours": 220}, "dependencies": [], "excludes": ["B"], "category": "GROW"},
+    {"id": "D", "mandatory": false, "approved_value": 30, "value_source": "EVD-D", "resources": {"budget": 15, "hours": 150}, "dependencies": [], "excludes": [], "category": "TRANSFORM"}
+  ],
+  "category_limits": {"GROW": {"max": 1}, "RUN": {"min": 1}}
+}

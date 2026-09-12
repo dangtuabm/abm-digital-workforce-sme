@@ -1,0 +1,2 @@
+claim_id,claim_text,claim_type,source_id,source_type,published_at,accessed_at,scope,source_quality_score,supporting_evidence,counterevidence,confidence,limitations,verification_status
+C-01,,Dữ kiện,S-01,,,,,,,,,,Chưa kiểm chứng

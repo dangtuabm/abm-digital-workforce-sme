@@ -1,0 +1,309 @@
+{
+  "contract": {
+    "case_id": "ECS-DEMO-001",
+    "version": "1.0-draft",
+    "purpose": "Đóng gói case tổng hợp về cải tiến quy trình xử lý yêu cầu bằng A.I có human review",
+    "subject": "Doanh nghiệp Demo A",
+    "subject_display_mode": "ANONYMIZED",
+    "audiences": ["CEO SME", "Quản lý vận hành"],
+    "channels": ["SOCIAL", "WEBSITE", "PROPOSAL"],
+    "owner": "Case Owner Demo",
+    "final_approver": "Human Controller Demo",
+    "classification": "VÀNG - synthetic evaluation data",
+    "retention": "Theo chính sách thử nghiệm",
+    "consent_id": "CONSENT-01",
+    "consent_evidence_ref": "SRC-04",
+    "prohibited_actions": ["invent-data", "causal-overclaim", "reveal-identity", "auto-publish"],
+    "stop_or_escalation": "Dừng khi source/metric/consent conflict, PII hoặc attribution vượt evidence",
+    "required_reviews": ["DATA_OWNER", "SUBJECT_CONSENT", "DOMAIN_MEASUREMENT", "BRAND_LEGAL_PRIVACY", "FINAL_PUBLICATION"],
+    "data_authorized": true
+  },
+  "sources": [
+    {"source_id": "SRC-01", "title": "Synthetic baseline operations export", "version": "1.0", "locator": "data/baseline-may", "owner": "Data Owner Demo", "classification": "VÀNG", "effective_date": "2026-05-31", "active": true},
+    {"source_id": "SRC-02", "title": "Synthetic outcome operations export", "version": "1.0", "locator": "data/outcome-july", "owner": "Data Owner Demo", "classification": "VÀNG", "effective_date": "2026-07-31", "active": true},
+    {"source_id": "SRC-03", "title": "Synthetic intervention and adoption log", "version": "2.0", "locator": "project/intervention-log", "owner": "Project Owner Demo", "classification": "VÀNG", "effective_date": "2026-07-31", "active": true},
+    {"source_id": "SRC-04", "title": "Synthetic consent and publication scope", "version": "1.0", "locator": "consent/record-01", "owner": "Subject Representative Demo", "classification": "ĐỎ - metadata only", "effective_date": "2026-08-01", "active": true},
+    {"source_id": "SRC-05", "title": "Synthetic interview transcript and approved assets", "version": "1.1-verified", "locator": "interview/verified", "owner": "Interview Owner Demo", "classification": "VÀNG", "effective_date": "2026-08-01", "active": true}
+  ],
+  "consent": {
+    "consent_id": "CONSENT-01",
+    "status": "APPROVED",
+    "evidence_ref": "SRC-04",
+    "subject_display_mode": "ANONYMIZED",
+    "allowed_quote_ids": ["Q-01", "Q-02"],
+    "allowed_asset_ids": ["A-01", "A-02"],
+    "allowed_channels": ["SOCIAL", "WEBSITE", "PROPOSAL"],
+    "allowed_formats": ["SOCIAL_SHORT", "WEBSITE_LONG", "ONE_PAGER"],
+    "expiry": "2027-08-01",
+    "revocation_route": "Subject Representative Demo → Case Owner Demo",
+    "owner": "Subject Representative Demo"
+  },
+  "measurement_contract": {
+    "measurement_id": "MC-01",
+    "attribution_level": "CONTRIBUTION",
+    "comparison_basis": "Cùng loại yêu cầu, cùng định nghĩa metric, hai cửa sổ tháng hoàn chỉnh",
+    "baseline_window": "2026-05-01/2026-05-31",
+    "outcome_window": "2026-07-01/2026-07-31",
+    "sampling_rule": "Toàn bộ yêu cầu đủ điều kiện trong mỗi cửa sổ",
+    "exclusions": "Yêu cầu hủy, test và thiếu timestamp đầu-cuối",
+    "missing_data_rule": "Loại theo exclusion và báo số lượng",
+    "currency_rule": "Không quy đổi tiền tệ trong fixture",
+    "rounding_rule": "Giữ số gốc; trình bày tối đa 1 chữ số thập phân",
+    "domain_owner": "Measurement Reviewer Demo",
+    "source_refs": ["SRC-01", "SRC-02", "SRC-03"]
+  },
+  "metrics": [
+    {
+      "metric_id": "M-01",
+      "name": "Median handling time",
+      "definition": "Trung vị phút từ lúc nhận đến lúc hoàn tất yêu cầu đủ điều kiện",
+      "unit": "minute/request",
+      "direction": "LOWER_IS_BETTER",
+      "formula": "median(completed_at - received_at)",
+      "delta_type": "ABSOLUTE",
+      "baseline_value": 120,
+      "outcome_value": 75,
+      "reported_delta": -45,
+      "baseline_window": "2026-05-01/2026-05-31",
+      "outcome_window": "2026-07-01/2026-07-31",
+      "sample_size": "baseline n=80; outcome n=84",
+      "exclusions": "baseline 3; outcome 2 theo measurement contract",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "owner": "Data Owner Demo",
+      "validation_status": "VALIDATED"
+    },
+    {
+      "metric_id": "M-02",
+      "name": "First-pass acceptance rate",
+      "definition": "Tỷ lệ yêu cầu được reviewer chấp nhận ngay lần đầu",
+      "unit": "ratio",
+      "direction": "HIGHER_IS_BETTER",
+      "formula": "first_pass_accepted / eligible_requests",
+      "delta_type": "ABSOLUTE",
+      "baseline_value": 0.72,
+      "outcome_value": 0.86,
+      "reported_delta": 0.14,
+      "baseline_window": "2026-05-01/2026-05-31",
+      "outcome_window": "2026-07-01/2026-07-31",
+      "sample_size": "baseline n=80; outcome n=84",
+      "exclusions": "Theo measurement contract",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "owner": "Quality Owner Demo",
+      "validation_status": "VALIDATED"
+    },
+    {
+      "metric_id": "M-03",
+      "name": "Manual hours per week",
+      "definition": "Giờ thao tác thủ công ghi nhận cho quy trình mỗi tuần",
+      "unit": "hour/week",
+      "direction": "LOWER_IS_BETTER",
+      "formula": "sum(manual_activity_duration)",
+      "delta_type": "RELATIVE",
+      "baseline_value": 30,
+      "outcome_value": 20,
+      "reported_delta": -0.3333333333333333,
+      "baseline_window": "2026-05-01/2026-05-31",
+      "outcome_window": "2026-07-01/2026-07-31",
+      "sample_size": "4 tuần mỗi cửa sổ",
+      "exclusions": "Đào tạo và họp dự án",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "owner": "Operations Owner Demo",
+      "validation_status": "VALIDATED"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "I-01",
+      "what": "A.I tạo bản nháp từ intake chuẩn hóa; reviewer con người duyệt trước hoàn tất",
+      "owner": "Project Owner Demo",
+      "start": "2026-06-01",
+      "end": "2026-06-30",
+      "scope": "Một loại yêu cầu vận hành tại đội pilot",
+      "adoption_evidence": "84 yêu cầu outcome dùng workflow theo log",
+      "source_refs": ["SRC-03"]
+    },
+    {
+      "intervention_id": "I-02",
+      "what": "Chuẩn hóa intake fields và checklist reviewer",
+      "owner": "Operations Owner Demo",
+      "start": "2026-06-01",
+      "end": "2026-06-15",
+      "scope": "Đội pilot và loại yêu cầu trong measurement contract",
+      "adoption_evidence": "Checklist version 2.0 gắn trong intervention log",
+      "source_refs": ["SRC-03"]
+    }
+  ],
+  "confounders": [
+    {
+      "confounder_id": "C-01",
+      "factor": "Đội pilot có thêm một nhân sự mới trong outcome window",
+      "materiality": "MEDIUM",
+      "evidence": "Headcount log trong project record",
+      "treatment": "Không quy toàn bộ delta cho A.I; giữ attribution CONTRIBUTION",
+      "residual_uncertainty": "Chưa tách riêng phần ảnh hưởng của headcount",
+      "owner": "Measurement Reviewer Demo",
+      "source_refs": ["SRC-03"]
+    },
+    {
+      "confounder_id": "C-02",
+      "factor": "Intake checklist được chuẩn hóa cùng thời điểm với workflow A.I",
+      "materiality": "HIGH",
+      "evidence": "Intervention I-02",
+      "treatment": "Ghi rõ bundle intervention; không claim A.I đơn lẻ gây ra kết quả",
+      "residual_uncertainty": "Không có nhóm đối chứng tách hai thành phần",
+      "owner": "Domain Reviewer Demo",
+      "source_refs": ["SRC-03"]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "CL-01",
+      "statement": "Trong hai cửa sổ đo đã định nghĩa, median handling time giảm 45 phút mỗi yêu cầu.",
+      "claim_type": "MEASURED_DELTA",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "metric_ids": ["M-01"],
+      "intervention_ids": ["I-01", "I-02"],
+      "confounder_ids": ["C-01", "C-02"],
+      "attribution_level": "DESCRIPTIVE",
+      "attribution_language": "Sau bundle intervention, metric ghi nhận thay đổi; không kết luận nhân quả đơn lẻ.",
+      "confidence": "HIGH for delta; LIMITED for causation",
+      "owner": "Data Owner Demo"
+    },
+    {
+      "claim_id": "CL-02",
+      "statement": "First-pass acceptance rate tăng 0,14 điểm tỷ lệ trong outcome window.",
+      "claim_type": "MEASURED_DELTA",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "metric_ids": ["M-02"],
+      "intervention_ids": ["I-01", "I-02"],
+      "confounder_ids": ["C-01", "C-02"],
+      "attribution_level": "DESCRIPTIVE",
+      "attribution_language": "Kết quả được mô tả theo cửa sổ đo; không gọi là do riêng A.I.",
+      "confidence": "HIGH for observed ratio",
+      "owner": "Quality Owner Demo"
+    },
+    {
+      "claim_id": "CL-03",
+      "statement": "Bundle chuẩn hóa intake, A.I draft và human review có đóng góp vào cải tiến được quan sát.",
+      "claim_type": "CONTRIBUTION",
+      "source_refs": ["SRC-01", "SRC-02", "SRC-03"],
+      "metric_ids": ["M-01", "M-02", "M-03"],
+      "intervention_ids": ["I-01", "I-02"],
+      "confounder_ids": ["C-01", "C-02"],
+      "attribution_level": "CONTRIBUTION",
+      "attribution_language": "Có đóng góp; vẫn còn headcount và intake standardization là alternative explanations.",
+      "confidence": "MEDIUM",
+      "owner": "Domain Reviewer Demo"
+    },
+    {
+      "claim_id": "CL-04",
+      "statement": "Case này chỉ áp dụng cho một đội pilot, một loại yêu cầu và hai cửa sổ đo nêu trên.",
+      "claim_type": "LIMITATION",
+      "source_refs": ["SRC-01", "SRC-02", "SRC-03"],
+      "metric_ids": ["M-01", "M-02", "M-03"],
+      "intervention_ids": ["I-01", "I-02"],
+      "confounder_ids": ["C-01", "C-02"],
+      "attribution_level": "DESCRIPTIVE",
+      "attribution_language": "Không suy rộng sang mọi đội, ngành hoặc khách hàng.",
+      "confidence": "HIGH",
+      "owner": "Case Owner Demo"
+    }
+  ],
+  "quotes": [
+    {
+      "quote_id": "Q-01",
+      "text": "Điểm có ích nhất là đội ngũ nhìn thấy bản nháp nhanh hơn nhưng vẫn giữ reviewer con người ở bước cuối.",
+      "locator": "interview/line-42",
+      "speaker_role": "Quản lý đội pilot",
+      "source_ref": "SRC-05",
+      "consent_id": "CONSENT-01",
+      "owner": "Interview Owner Demo",
+      "verbatim": true,
+      "paraphrased": false
+    },
+    {
+      "quote_id": "Q-02",
+      "text": "Chúng Tôi không xem đây là kết quả của riêng công cụ; intake và cách duyệt cũng thay đổi.",
+      "locator": "interview/line-58",
+      "speaker_role": "Đại diện doanh nghiệp Demo A",
+      "source_ref": "SRC-05",
+      "consent_id": "CONSENT-01",
+      "owner": "Interview Owner Demo",
+      "verbatim": true,
+      "paraphrased": false
+    }
+  ],
+  "assets": [
+    {"asset_id": "A-01", "asset_type": "ANONYMIZED_PROCESS_DIAGRAM", "locator": "assets/process-diagram-v1", "source_ref": "SRC-05", "rights_status": "APPROVED", "consent_id": "CONSENT-01", "owner": "Asset Owner Demo"},
+    {"asset_id": "A-02", "asset_type": "ANONYMIZED_METRIC_CHART", "locator": "assets/metric-chart-v1", "source_ref": "SRC-05", "rights_status": "APPROVED", "consent_id": "CONSENT-01", "owner": "Asset Owner Demo"}
+  ],
+  "case_versions": [
+    {
+      "version_id": "V-SOCIAL-01",
+      "version_type": "SOCIAL_SHORT",
+      "audience": "CEO SME",
+      "purpose": "Nêu một delta có disclosure và mời thảo luận",
+      "channel": "SOCIAL",
+      "format": "SOCIAL_SHORT",
+      "claim_ids": ["CL-01", "CL-03", "CL-04"],
+      "metric_ids": ["M-01"],
+      "quote_ids": ["Q-01"],
+      "asset_ids": ["A-02"],
+      "disclosure": "Synthetic case; anonymized; one pilot team; contribution not causation; windows and confounders disclosed.",
+      "owner": "Social Owner Demo",
+      "approval_status": "REVIEW_PENDING"
+    },
+    {
+      "version_id": "V-WEB-01",
+      "version_type": "WEBSITE_LONG",
+      "audience": "CEO SME và quản lý vận hành",
+      "purpose": "Trình bày đầy đủ context, intervention, evidence, limitation và lesson",
+      "channel": "WEBSITE",
+      "format": "WEBSITE_LONG",
+      "claim_ids": ["CL-01", "CL-02", "CL-03", "CL-04"],
+      "metric_ids": ["M-01", "M-02", "M-03"],
+      "quote_ids": ["Q-01", "Q-02"],
+      "asset_ids": ["A-01", "A-02"],
+      "disclosure": "Synthetic/anonymized; same measurement contract; headcount and intake changes remain confounders; no causal claim.",
+      "owner": "Website Owner Demo",
+      "approval_status": "REVIEW_PENDING"
+    },
+    {
+      "version_id": "V-ONE-01",
+      "version_type": "ONE_PAGER",
+      "audience": "Người đọc proposal",
+      "purpose": "Tóm tắt case có bằng chứng và điều kiện áp dụng",
+      "channel": "PROPOSAL",
+      "format": "ONE_PAGER",
+      "claim_ids": ["CL-01", "CL-02", "CL-03", "CL-04"],
+      "metric_ids": ["M-01", "M-02", "M-03"],
+      "quote_ids": ["Q-02"],
+      "asset_ids": ["A-01", "A-02"],
+      "disclosure": "Synthetic/anonymized; pilot scope only; contribution language; metrics not guaranteed for another customer.",
+      "owner": "Proposal Owner Demo",
+      "approval_status": "REVIEW_PENDING"
+    }
+  ],
+  "risks": [
+    {"risk_id": "RK-01", "type": "CAUSAL_OVERCLAIM", "trigger": "Claim nói A.I gây toàn bộ delta", "harm": "Sai attribution và gây hiểu nhầm bán hàng", "prevention": "Contribution level, confounders và domain review", "stop_or_rollback": "Hold versions; rewrite claim/disclosure", "owner": "Domain Reviewer Demo", "source_refs": ["SRC-01", "SRC-02", "SRC-03"]},
+    {"risk_id": "RK-02", "type": "CONSENT_SCOPE", "trigger": "Danh tính/quote/asset dùng ngoài consent", "harm": "Vi phạm riêng tư và niềm tin", "prevention": "Consent IDs và publication review", "stop_or_rollback": "Withdraw asset/version; notify owner", "owner": "Subject Representative Demo", "source_refs": ["SRC-04", "SRC-05"]},
+    {"risk_id": "RK-03", "type": "CALCULATION_OR_WINDOW", "trigger": "Delta, denominator hoặc window bị đổi", "harm": "Kết quả không tái tính được", "prevention": "Measurement contract và engine calculation", "stop_or_rollback": "Recompute từ source; invalidate claim", "owner": "Data Owner Demo", "source_refs": ["SRC-01", "SRC-02"]},
+    {"risk_id": "RK-04", "type": "GENERALIZATION", "trigger": "Case pilot bị dùng như bảo đảm cho mọi khách", "harm": "Overpromise và quyết định sai", "prevention": "Limitation claim bắt buộc trong ba versions", "stop_or_rollback": "Correct publication và sales material", "owner": "Brand Reviewer Demo", "source_refs": ["SRC-03", "SRC-04"]}
+  ],
+  "tests": [
+    {"test_type": "contract_consent_integrity", "passed": true, "evidence": "Contract/consent/source static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "metric_baseline_delta", "passed": true, "evidence": "Metric formula/window/delta static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "intervention_trace", "passed": true, "evidence": "Intervention/adoption/source static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "attribution_confounder", "passed": true, "evidence": "Attribution rank/confounder static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "quote_asset_rights", "passed": true, "evidence": "Quote/asset/consent static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "version_claim_consistency", "passed": true, "evidence": "Three-version reference static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "approval_publication_boundary", "passed": true, "evidence": "No approved/published/signed state static test", "reviewer": "Static Evaluator", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "DATA_OWNER", "required": true, "reviewer": "Data Owner Demo", "status": "PASS", "evidence_ref": "SRC-01"},
+    {"review_type": "SUBJECT_CONSENT", "required": true, "reviewer": "Subject Representative Demo", "status": "PASS", "evidence_ref": "SRC-04"},
+    {"review_type": "DOMAIN_MEASUREMENT", "required": true, "reviewer": "Measurement Reviewer Demo", "status": "PASS", "evidence_ref": "SRC-03"},
+    {"review_type": "BRAND_LEGAL_PRIVACY", "required": true, "reviewer": "Brand Reviewer Demo", "status": "PASS", "evidence_ref": "SRC-04"},
+    {"review_type": "FINAL_PUBLICATION", "required": true, "reviewer": "Human Controller Demo", "status": "PENDING", "evidence_ref": ""}
+  ]
+}

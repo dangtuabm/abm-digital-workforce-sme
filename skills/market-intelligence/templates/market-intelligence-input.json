@@ -1,0 +1,58 @@
+{
+  "mandate":{"scope":"Vietnam enterprise workflow software market","as_of":"2026-08-21","decision_questions":["Should we validate entry into regulated mid-market workflows?"],"decision_owner":"ROLE-STRATEGY","users":["strategy","product"],"confidentiality":"YELLOW","prohibited_actions":["no competitor contact","no price decision","no investment execution"],"required_reviews":["MARKET_DOMAIN","RESEARCH_DATA","FINANCE_SIZING","LEGAL_COMPETITION","FINAL_HUMAN_MARKET_DECISION"]},
+  "market_definition":{"customer_job":"regulated mid-market firms managing approval workflows","category":"workflow orchestration software","substitutes":["manual process","generic collaboration suite","custom build"],"geography":"Vietnam","channels":["direct","authorized partner"],"period":"2026","currency":"VND","base_year":2026,"inclusions":["software subscription and implementation for defined job"],"exclusions":["consumer apps","pure RPA","unregulated micro firms"]},
+  "taxonomy":[
+    {"type":"segment","canonical_id":"SEG-RMM","name":"regulated mid-market","aliases":["regulated SME+"],"definition":"firms in defined size and regulated workflow scope"},
+    {"type":"metric","canonical_id":"MET-ARR","name":"annual recurring software value","aliases":["ARR"],"definition":"annualized subscription excluding implementation"},
+    {"type":"event","canonical_id":"EV-LAUNCH","name":"verified product launch","aliases":["launch"],"definition":"publicly available offer with date and source"}
+  ],
+  "sources":[
+    {"id":"SRC-STAT","locator":"official enterprise census table","publisher":"official statistics body","type":"OFFICIAL","tier":"T1","published_date":"2026-06-30","observed_date":"2026-08-20","access":"AUTHORIZED","rights":"PERMITTED","freshness":"CURRENT","independence":"independent","version_hash":"stat-2026-v1"},
+    {"id":"SRC-FILING","locator":"public vendor filings","publisher":"public registry","type":"PRIMARY","tier":"T1","published_date":"2026-07-31","observed_date":"2026-08-20","access":"AUTHORIZED","rights":"PERMITTED","freshness":"CURRENT","independence":"company-origin","version_hash":"filing-bundle-v2"},
+    {"id":"SRC-CATALOG","locator":"public product and price catalog snapshots","publisher":"vendor websites","type":"PRIMARY","tier":"T1","published_date":"2026-08-01","observed_date":"2026-08-20","access":"AUTHORIZED","rights":"PERMITTED","freshness":"CURRENT","independence":"company-origin","version_hash":"catalog-20260820"},
+    {"id":"SRC-SURVEY","locator":"licensed buyer survey aggregate","publisher":"independent research firm","type":"SECONDARY","tier":"T2","published_date":"2026-07-15","observed_date":"2026-08-20","access":"AUTHORIZED","rights":"PERMITTED","freshness":"CURRENT","independence":"independent","version_hash":"survey-v3"}
+  ],
+  "claims":[
+    {"id":"CL-01","text":"14,000 firms meet defined size/regulation filter","claim_type":"ESTIMATE","entity_id":"MARKET","period":"2026","geography":"Vietnam","source_ids":["SRC-STAT"],"confidence":"MEDIUM","contradiction_status":"none found"},
+    {"id":"CL-02","text":"Vendor A launched regulated workflow package","claim_type":"FACT","entity_id":"COMP-A","period":"2026-Q2","geography":"Vietnam","source_ids":["SRC-CATALOG","SRC-FILING"],"confidence":"HIGH","contradiction_status":"none"},
+    {"id":"CL-03","text":"Vendor B states 30% faster approval","claim_type":"COMPANY_CLAIM","entity_id":"COMP-B","period":"2026","geography":"Vietnam","source_ids":["SRC-CATALOG"],"confidence":"LOW","contradiction_status":"not independently verified"},
+    {"id":"CL-04","text":"Buyer adoption intent ranges 18-27%","claim_type":"ESTIMATE","entity_id":"MARKET","period":"2026-2027","geography":"Vietnam","source_ids":["SRC-SURVEY"],"confidence":"MEDIUM","contradiction_status":"sample limits disclosed"},
+    {"id":"CL-05","text":"Regulatory audit pressure may raise workflow demand","claim_type":"HYPOTHESIS","entity_id":"MARKET","period":"2026-2027","geography":"Vietnam","source_ids":["SRC-STAT","SRC-SURVEY"],"confidence":"LOW","contradiction_status":"causal link unproven"}
+  ],
+  "estimates":[
+    {"id":"EST-TD","method":"TOP_DOWN","formula":"eligible firms × adoption range × annual value range","inputs":{"firms":14000,"adoption_low":0.18,"adoption_high":0.27,"annual_value_low":60000000,"annual_value_high":180000000},"source_ids":["SRC-STAT","SRC-SURVEY","SRC-CATALOG"],"low":151200000000,"base":340200000000,"high":680400000000,"currency":"VND","base_year":2026,"denominator":"eligible firms in boundary","sensitivity":"adoption and annual value","reconciliation":"compared with bottom-up reachable accounts"},
+    {"id":"EST-BU","method":"BOTTOM_UP","formula":"reachable accounts × qualified rate × win capacity × annual value","inputs":{"reachable":2200,"qualified_low":0.20,"qualified_high":0.35,"annual_value_low":80000000,"annual_value_high":200000000},"source_ids":["SRC-CATALOG","SRC-SURVEY"],"low":35200000000,"base":84700000000,"high":154000000000,"currency":"VND","base_year":2026,"denominator":"reachable accounts in defined channels","sensitivity":"qualified rate and delivery capacity","reconciliation":"serviceable obtainable range, not total market"}
+  ],
+  "competitors":[
+    {"id":"COMP-A","canonical_name":"Vendor A","aliases":["A Workflow"],"parent":"Group A","offers":["regulated workflow package"],"price_basis":"public list; per organization/year; tax excluded","channels":["direct"],"capabilities":["approval","audit trail"],"source_ids":["SRC-CATALOG","SRC-FILING"],"claimed_vs_verified":"offer verified; performance claims unverified"},
+    {"id":"COMP-B","canonical_name":"Vendor B","aliases":["B Flow"],"parent":"Independent","offers":["general workflow suite"],"price_basis":"public starting price; user/month; tax status stated","channels":["partner","direct"],"capabilities":["forms","integration"],"source_ids":["SRC-CATALOG"],"claimed_vs_verified":"catalog verified; speed claim company-only"},
+    {"id":"COMP-C","canonical_name":"Vendor C","aliases":["C Process"],"parent":"Group C","offers":["custom implementation"],"price_basis":"no comparable public realized price","channels":["direct"],"capabilities":["custom build"],"source_ids":["SRC-FILING"],"claimed_vs_verified":"entity and projects verified; price unknown"}
+  ],
+  "events":[
+    {"id":"E-01","entity_id":"COMP-A","event_type":"PRODUCT_LAUNCH","event_date":"2026-05-15","published_date":"2026-05-16","source_ids":["SRC-CATALOG","SRC-FILING"],"syndication_group":"A-launch-1","claimed_vs_verified":"verified launch","implication":"category validation"},
+    {"id":"E-02","entity_id":"COMP-B","event_type":"PARTNER_EXPANSION","event_date":"2026-06-10","published_date":"2026-06-12","source_ids":["SRC-FILING"],"syndication_group":"B-partner-1","claimed_vs_verified":"verified partnership; impact unknown","implication":"channel reach may rise"},
+    {"id":"E-03","entity_id":"COMP-C","event_type":"HIRING_SIGNAL","event_date":"2026-07-01","published_date":"2026-07-01","source_ids":["SRC-FILING"],"syndication_group":"C-hiring-1","claimed_vs_verified":"job signal only","implication":"possible capability investment"}
+  ],
+  "signals":[
+    {"id":"SG-01","observation":"two vendors expanded regulated-workflow offers","direction":"UP","strength":"MEDIUM","persistence":"two quarters","breadth":"2 of 3 mapped vendors","indicator_type":"LEADING","alternatives":["marketing repositioning without demand"],"source_ids":["SRC-CATALOG","SRC-FILING"],"confidence":"MEDIUM"},
+    {"id":"SG-02","observation":"buyer intent range is above prior baseline","direction":"UP","strength":"LOW","persistence":"one survey wave","breadth":"licensed sample only","indicator_type":"LEADING","alternatives":["sample or stated-intent bias"],"source_ids":["SRC-SURVEY"],"confidence":"LOW"},
+    {"id":"SG-03","observation":"public prices span incompatible bases","direction":"MIXED","strength":"HIGH","persistence":"current snapshot","breadth":"3 vendors","indicator_type":"LAGGING","alternatives":["discounts and realized price unavailable"],"source_ids":["SRC-CATALOG"],"confidence":"HIGH"}
+  ],
+  "scenarios":[
+    {"id":"SC-BASE","name":"Base","drivers":["adoption","delivery capacity"],"assumptions":["mid-range intent converts partially"],"low":60000000000,"base":85000000000,"high":110000000000,"trigger":"two validated design partners","indicator":"qualified pipeline and delivery readiness","cadence":"monthly","owner":"ROLE-STRATEGY"},
+    {"id":"SC-UP","name":"Upside","drivers":["regulatory pressure","partner channel"],"assumptions":["faster qualified adoption"],"low":100000000000,"base":150000000000,"high":220000000000,"trigger":"verified regulation + channel contracts","indicator":"eligible demand and partner conversion","cadence":"monthly","owner":"ROLE-STRATEGY"},
+    {"id":"SC-DOWN","name":"Downside","drivers":["custom-build substitution","long procurement"],"assumptions":["lower conversion and delayed revenue"],"low":20000000000,"base":40000000000,"high":70000000000,"trigger":"design partners reject standardized offer","indicator":"cycle time and loss reasons","cadence":"monthly","owner":"ROLE-STRATEGY"}
+  ],
+  "decision_implications":[
+    {"decision_question":"Validate entry?","implication":"evidence supports limited validation, not full launch","validation_action":"interview authorized buyers and run design-partner test","no_regret_move":"normalize segment and price evidence","owner":"ROLE-STRATEGY","status":"PENDING_HUMAN_DECISION"},
+    {"decision_question":"Which offer boundary?","implication":"audit trail and approval workflow merit test","validation_action":"test willingness-to-pay without competitor coordination","no_regret_move":"define compliance evidence requirements","owner":"ROLE-PRODUCT","status":"DRAFT"}
+  ],
+  "tests":[
+    {"type":"mandate_boundary","status":"PASS","evidence":"decision question and market boundary locked"},{"type":"source_claim_trace","status":"PASS","evidence":"4 sources and 5 typed claims"},{"type":"sizing_reconciliation","status":"PASS","evidence":"top-down and bottom-up ranges reconciled"},{"type":"entity_event_price","status":"PASS","evidence":"3 canonical competitors and 3 events"},{"type":"signal_scenario","status":"PASS","evidence":"3 signals and 3 trigger scenarios"},{"type":"legal_rights","status":"PASS","evidence":"permitted sources; no contact/collusion"},{"type":"decision_boundary","status":"PASS","evidence":"2 pending/draft implications; no execution"}
+  ],
+  "reviews":[
+    {"type":"MARKET_DOMAIN","reviewer":"ROLE-MARKET","status":"PASS","evidence":"boundary/entity review"},{"type":"RESEARCH_DATA","reviewer":"ROLE-RESEARCH","status":"PASS","evidence":"source/claim review"},{"type":"FINANCE_SIZING","reviewer":"ROLE-FINANCE","status":"PASS","evidence":"formula/range review"},{"type":"LEGAL_COMPETITION","reviewer":"ROLE-LEGAL","status":"PASS","evidence":"rights/competition review"},{"type":"FINAL_HUMAN_MARKET_DECISION","reviewer":"ROLE-STRATEGY","status":"PENDING","evidence":"brief queued; no market action authorized"}
+  ],
+  "forbidden_flags":[],"published_states":["DRAFT"],
+  "output_sections":["executive_decision_brief","market_boundary_taxonomy","source_claim_ledger","market_size_reconciliation","segment_competitor_event","signal_scenario_watch","limitations_reviews_audit"]
+}

@@ -1,0 +1,24 @@
+{
+  "contract": {
+    "experience_id": "LX-DEMO-001",
+    "curriculum_ref": "CUR-DEMO-001-v1.0",
+    "cohort": "12 managers with approved baseline",
+    "learning_outcomes": ["LO-1", "LO-2"],
+    "delivery_mode": "blended",
+    "total_during_minutes": 120,
+    "owner": "learning-owner",
+    "risk_level": "medium",
+    "standards": {
+      "required_phases": ["before", "during", "after"],
+      "min_format_variety": 3,
+      "max_same_format_minutes": 35,
+      "required_moments": ["peak", "valley", "commitment", "shareable"]
+    }
+  },
+  "touchpoints": [],
+  "moments": [],
+  "service_blueprint": {},
+  "measurement": {},
+  "guardrails": [],
+  "expert_review": "approved"
+}

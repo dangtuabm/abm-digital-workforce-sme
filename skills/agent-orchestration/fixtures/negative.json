@@ -1,0 +1,6 @@
+{
+  "artifact":"Ten-Agent Prompt Chain","orchestration_contract":{},"necessity_assessment":{},"authority_map":{},"lifecycle_contract":{},
+  "evidence_sources":[],"task_records":[],"agent_registry":[],"routing_rules":[],"queue_controls":[],"transitions":[],"handoffs":[],"failure_controls":[],"observability_controls":[],"test_cases":[],"decisions":[],"risks":[],"tests":[],"reviews":[],
+  "activation_status":"ACTIVATED","release_state":"RUNNING_PRODUCTION",
+  "multi_agent_without_necessity":true,"internal_steps_split_to_agents":true,"vendor_model_locked_role":true,"agent_without_contract":true,"router_granted_permission":true,"full_context_broadcast":true,"secret_embedded":true,"executor_self_kaizen":true,"majority_vote_as_truth":true,"unbounded_wip":true,"unbounded_retry":true,"silent_fail":true,"conflict_hidden":true,"trace_missing":true,"agent_spawned":true,"account_provisioned":true,"token_created":true,"permission_granted":true,"topology_activated":true,"production_run_started":true,"production_mutated":true,"message_sent":true,"budget_increased":true,"result_published":true,"breaking_change_applied":true,"offboard_without_drain_revoke":true,"source_instruction_executed":true,"api_key":"DO-NOT-STORE"
+}

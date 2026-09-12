@@ -1,0 +1,85 @@
+{
+  "contract": {
+    "story_id": "DST-DEMO-001",
+    "version": "1.0",
+    "data_snapshot_hash": "sha256:story-snapshot-001",
+    "decision": "Choose the next process-improvement action",
+    "question": "What changed, how reliable is it, and what should the owner test next?",
+    "audiences": ["SME_CEO", "OPERATIONS_MANAGER"],
+    "medium": "EXECUTIVE_REPORT",
+    "owner": "ANALYST-01",
+    "final_approver": "CEO-01",
+    "classification": "YELLOW",
+    "required_reviews": ["DATA_OWNER", "DOMAIN_OWNER", "EDITORIAL", "ACCESSIBILITY", "FINAL_STORY"],
+    "prohibited_actions": ["fabricate_data", "auto_render", "auto_publish"],
+    "data_authorized": true
+  },
+  "sources": [
+    {"source_id": "SRC-DATA", "title": "Validated Operations Extract", "version": "1.2", "locator": "warehouse://ops/snapshot-001", "owner": "DATA-01", "effective_date": "2026-08-20", "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-METRIC", "title": "Metric Dictionary", "version": "2.0", "locator": "kb://metrics/operations", "owner": "DATA-01", "effective_date": "2026-08-01", "classification": "GREEN", "active": true},
+    {"source_id": "SRC-CONTEXT", "title": "Intervention and Context Log", "version": "1.0", "locator": "kb://ops/context", "owner": "OPS-01", "effective_date": "2026-08-20", "classification": "YELLOW", "active": true},
+    {"source_id": "SRC-BRAND", "title": "Editorial and Accessibility Canon", "version": "1.1", "locator": "kb://brand/data-story", "owner": "EDITOR-01", "effective_date": "2026-08-01", "classification": "GREEN", "active": true},
+    {"source_id": "SRC-REVIEW", "title": "Review Evidence", "version": "1.0", "locator": "kb://review/dst-demo-001", "owner": "QA-01", "effective_date": "2026-08-21", "classification": "YELLOW", "active": true}
+  ],
+  "data_contract": {
+    "grain": "One completed case",
+    "dimensions": ["week", "team", "case_type"],
+    "timezone": "Asia/Bangkok",
+    "currency": "VND",
+    "units": ["minute", "ratio", "case"],
+    "baseline_window": "2026-07-01/2026-07-31",
+    "outcome_window": "2026-08-01/2026-08-20",
+    "sample_rule": "All eligible completed cases",
+    "exclusions": ["Training and duplicate cases"],
+    "missing_data_rule": "Report missingness; do not impute",
+    "attribution_level": "INTERPRETATION",
+    "source_refs": ["SRC-DATA", "SRC-METRIC", "SRC-CONTEXT"],
+    "owner": "DATA-01"
+  },
+  "metrics": [
+    {"metric_id": "M1", "name": "Median handling time", "formula": "median(completed_at-started_at)", "unit": "minute", "delta_type": "ABSOLUTE", "baseline_value": 120, "outcome_value": 75, "reported_delta": -45, "denominator": "Eligible completed cases", "baseline_window": "2026-07-01/2026-07-31", "outcome_window": "2026-08-01/2026-08-20", "sample_size": 150, "exclusions": ["Training and duplicate cases"], "source_refs": ["SRC-DATA", "SRC-METRIC"], "validation_status": "VALIDATED"},
+    {"metric_id": "M2", "name": "First-pass completion ratio", "formula": "first_pass_completed/eligible_completed", "unit": "ratio", "delta_type": "ABSOLUTE", "baseline_value": 0.72, "outcome_value": 0.86, "reported_delta": 0.14, "denominator": "Eligible completed cases", "baseline_window": "2026-07-01/2026-07-31", "outcome_window": "2026-08-01/2026-08-20", "sample_size": 150, "exclusions": ["Training and duplicate cases"], "source_refs": ["SRC-DATA", "SRC-METRIC"], "validation_status": "VALIDATED"},
+    {"metric_id": "M3", "name": "Weekly eligible volume", "formula": "count(eligible cases)", "unit": "case", "delta_type": "RELATIVE", "baseline_value": 30, "outcome_value": 33, "reported_delta": 0.1, "denominator": "Baseline weekly eligible volume", "baseline_window": "2026-07-01/2026-07-31", "outcome_window": "2026-08-01/2026-08-20", "sample_size": 150, "exclusions": ["Training and duplicate cases"], "source_refs": ["SRC-DATA", "SRC-METRIC"], "validation_status": "VALIDATED"}
+  ],
+  "insights": [
+    {"insight_id": "I1", "statement": "Median handling time fell by 45 minutes in the outcome window.", "layer": "OBSERVATION", "metric_ids": ["M1"], "source_refs": ["SRC-DATA"], "confidence": "HIGH", "limitations": ["Non-random comparison"], "counter_reading": "Case-mix change may explain part of the shift", "owner": "ANALYST-01"},
+    {"insight_id": "I2", "statement": "Higher first-pass completion is consistent with improved workflow adoption.", "layer": "INTERPRETATION", "metric_ids": ["M2"], "source_refs": ["SRC-DATA", "SRC-CONTEXT"], "confidence": "MEDIUM", "limitations": ["Contribution, not causal proof"], "counter_reading": "Coaching and case mix also changed", "owner": "OPS-01"},
+    {"insight_id": "I3", "statement": "The owner should protect the quality gain while monitoring case mix.", "layer": "IMPLICATION", "metric_ids": ["M1", "M2", "M3"], "source_refs": ["SRC-DATA", "SRC-CONTEXT"], "confidence": "MEDIUM", "limitations": ["Short outcome window"], "counter_reading": "Volume growth may add pressure", "owner": "OPS-01", "evidence_design_approved": true},
+    {"insight_id": "I4", "statement": "Run a controlled four-week adoption check with the same metric contract.", "layer": "RECOMMENDATION", "metric_ids": ["M1", "M2", "M3"], "source_refs": ["SRC-METRIC", "SRC-CONTEXT"], "confidence": "MEDIUM", "limitations": ["Requires owner capacity"], "counter_reading": "Pause if data quality degrades", "owner": "OPS-01", "evidence_design_approved": true}
+  ],
+  "charts": [
+    {"chart_id": "C1", "question": "How did median time change?", "chart_type": "BAR", "fields": ["window", "median_minutes"], "encoding": "x=window,y=median_minutes", "scale": "linear", "sort": "baseline,outcome", "metric_ids": ["M1"], "source_refs": ["SRC-DATA"], "source_note": "Validated snapshot; eligible cases only", "alt_text": "Median handling time declined from 120 to 75 minutes.", "owner": "ANALYST-01", "review_status": "REVIEWED", "zero_baseline": true},
+    {"chart_id": "C2", "question": "Did first-pass ratio change over time?", "chart_type": "LINE", "fields": ["week", "first_pass_ratio"], "encoding": "x=week,y=ratio", "scale": "linear 0 to 1", "sort": "week ascending", "metric_ids": ["M2"], "source_refs": ["SRC-DATA"], "source_note": "Missing weeks would be shown as gaps", "alt_text": "Weekly first-pass ratio trends upward, ending near 0.86.", "owner": "ANALYST-01", "review_status": "REVIEWED"},
+    {"chart_id": "C3", "question": "How do volume and handling time relate?", "chart_type": "SCATTER", "fields": ["weekly_volume", "median_minutes"], "encoding": "x=volume,y=minutes", "scale": "linear", "sort": "none", "metric_ids": ["M1", "M3"], "source_refs": ["SRC-DATA", "SRC-CONTEXT"], "source_note": "Association only; no causal claim", "alt_text": "Points show weekly volume against median time without a causal conclusion.", "owner": "ANALYST-01", "review_status": "REVIEWED"}
+  ],
+  "narrative": {
+    "headline": "Handling time improved while first-pass completion rose; causality remains unproven.",
+    "context": "A workflow change was introduced for eligible cases.",
+    "change": "M1 fell by 45 minutes and M2 rose by 0.14.",
+    "evidence": "Validated snapshot and metric dictionary support the calculations.",
+    "limitations": "Non-random comparison, short window and changing case mix.",
+    "implication": "Protect quality while testing whether the pattern persists.",
+    "actions": [{"action": "Run four-week controlled adoption check", "owner": "OPS-01", "trigger": "Data quality remains valid", "metric": "M1/M2/M3"}],
+    "insight_ids": ["I1", "I2", "I3", "I4"],
+    "metric_ids": ["M1", "M2", "M3"],
+    "owner": "EDITOR-01",
+    "status": "REVIEWED"
+  },
+  "tests": [
+    {"test_type": "source_data_contract", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "DATA-01", "date": "2026-08-21"},
+    {"test_type": "metric_reconciliation", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "DATA-01", "date": "2026-08-21"},
+    {"test_type": "insight_claim_lineage", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "OPS-01", "date": "2026-08-21"},
+    {"test_type": "chart_encoding_integrity", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "ANALYST-02", "date": "2026-08-21"},
+    {"test_type": "narrative_consistency", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "EDITOR-01", "date": "2026-08-21"},
+    {"test_type": "accessibility_medium", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "A11Y-01", "date": "2026-08-21"},
+    {"test_type": "approval_render_boundary", "passed": true, "evidence": "SRC-REVIEW", "reviewer": "QA-01", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "DATA_OWNER", "required": true, "reviewer": "DATA-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "DOMAIN_OWNER", "required": true, "reviewer": "OPS-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "EDITORIAL", "required": true, "reviewer": "EDITOR-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "ACCESSIBILITY", "required": true, "reviewer": "A11Y-01", "status": "PASS", "evidence_ref": "SRC-REVIEW"},
+    {"review_type": "FINAL_STORY", "required": true, "reviewer": "CEO-01", "status": "PENDING"}
+  ]
+}
+

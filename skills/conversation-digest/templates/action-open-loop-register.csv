@@ -1,0 +1,3 @@
+row_id,row_type,thread_id,msg_id,timestamp,actor_raw,actor_canonical,state,outcome_or_question,owner_raw,owner_canonical,due_raw,due_normalized,dependency,waiting_on,next_checkpoint,supersedes_msg_id,sensitivity,review_status,reviewer_note
+ROW-001,"[DECISION/COMMITMENT/ACTION/OPEN_LOOP/BLOCKER]",THR-001,MSG-001,"[timestamp]","[actor]","[canonical]","[state]","[outcome/question]","[owner]","[canonical]","[raw due]","[normalized/UNRESOLVED]","[dependency]","[waiting-on]","[checkpoint]","[prior msg]","[GREEN/YELLOW/RED]",PENDING,"[note]"
+

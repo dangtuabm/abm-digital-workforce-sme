@@ -1,0 +1,25 @@
+{
+  "contract": {
+    "practice_id": "PRAC-DEMO-001",
+    "source_ref": "CUR-DEMO-001-v1.0",
+    "capability": "observable business skill",
+    "outcome": "produce accepted work artifact",
+    "learner_context": "approved baseline and work context",
+    "rubric_version": "RUB-001-v1.0",
+    "mastery_threshold": 80,
+    "max_attempts": 4,
+    "owner": "learning-owner",
+    "risk_level": "medium",
+    "standards": {
+      "required_stages": ["diagnostic", "scaffolded", "independent", "transfer"],
+      "mastery_required_stages": ["independent", "transfer"]
+    }
+  },
+  "rubric": [],
+  "tasks": [],
+  "calibration": {},
+  "attempts": [],
+  "measurement": {},
+  "guardrails": [],
+  "expert_review": "approved"
+}

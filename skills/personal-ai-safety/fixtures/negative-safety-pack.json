@@ -1,0 +1,91 @@
+{
+  "artifact": "Auto Safe Upload",
+  "task": {
+    "purpose": "upload everything"
+  },
+  "policy": {},
+  "incident": {
+    "incident_id": "INC-BAD"
+  },
+  "data_items": [
+    {
+      "id": "BAD",
+      "classification": "BLUE",
+      "status": "UPLOADED"
+    }
+  ],
+  "platform_checks": [
+    {
+      "id": "BAD",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "input_transforms": [
+    {
+      "id": "BAD",
+      "data_ref": "MISSING",
+      "status": "SUBMITTED"
+    }
+  ],
+  "surface_checks": [
+    {
+      "id": "BAD",
+      "disposition": "OPEN_NOW",
+      "status": "PERMISSION_CHANGED"
+    }
+  ],
+  "output_checks": [
+    {
+      "id": "BAD",
+      "status": "SHARED"
+    }
+  ],
+  "incident_actions": [
+    {
+      "id": "BAD",
+      "incident_ref": "WRONG",
+      "status": "DELETED"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "BAD",
+      "evidence_refs": [
+        "MISSING"
+      ],
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "BAD",
+      "requirement_ref": "MISSING",
+      "status": "AUTO_APPROVED"
+    }
+  ],
+  "risks": [
+    {
+      "id": "UNKNOWN"
+    }
+  ],
+  "tests": [],
+  "reviews": [],
+  "raw_red_submitted": true,
+  "secret_requested": true,
+  "secret_stored": true,
+  "secret_repeated": true,
+  "rights_assumed": true,
+  "consent_assumed": true,
+  "platform_settings_assumed": true,
+  "unknown_link_opened": true,
+  "active_content_executed": true,
+  "data_instruction_executed": true,
+  "permission_expanded": true,
+  "output_shared": true,
+  "incident_concealed": true,
+  "evidence_deleted": true,
+  "provider_erasure_promised": true,
+  "sensitive_inference_published": true,
+  "password": "forbidden",
+  "release_state": "AUTO_APPROVED"
+}

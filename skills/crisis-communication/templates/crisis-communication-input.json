@@ -1,0 +1,421 @@
+{
+  "contract": {
+    "case_id": "CRISIS-DEMO-001",
+    "version": "1.0-draft",
+    "outcome": "Cung cấp thông tin đúng, hành động an toàn và nhịp cập nhật có kiểm soát trong sự cố gián đoạn dịch vụ",
+    "scope": "Chuẩn bị truyền thông nội bộ, khách hàng, hỗ trợ và đối tác vận hành",
+    "incident_command": "Incident Owner Demo",
+    "communication_lead": "Communication Lead Demo",
+    "spokesperson": "Authorized Spokesperson Demo",
+    "final_approver": "Human Controller Demo",
+    "command_evidence_ref": "SRC-01",
+    "classification": "VÀNG - synthetic evaluation data",
+    "retention": "Theo chính sách lưu giữ thử nghiệm",
+    "allowed_channels": ["internal-brief", "status-page-draft", "support-script-draft"],
+    "emergency_stop_owner": "Human Controller Demo",
+    "prohibited_actions": ["auto-send", "auto-publish", "speculate-cause", "disclose-restricted-data"],
+    "stop_or_escalation": "Dừng khi source conflict, privacy flag, material harm mới hoặc authority thay đổi",
+    "required_reviews": ["INCIDENT_COMMAND", "FACT_TECH", "LEGAL_PRIVACY", "ACCESSIBILITY", "FINAL_RELEASE"],
+    "data_authorized": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-01",
+      "title": "Synthetic incident command record",
+      "version": "1.0",
+      "locator": "incident/command",
+      "owner": "Incident Owner Demo",
+      "classification": "VÀNG",
+      "effective_date": "2026-08-21T09:00:00+07:00",
+      "active": true
+    },
+    {
+      "source_id": "SRC-02",
+      "title": "Synthetic technical status record",
+      "version": "3.0",
+      "locator": "incident/technical-status",
+      "owner": "Technical Lead Demo",
+      "classification": "VÀNG",
+      "effective_date": "2026-08-21T09:20:00+07:00",
+      "active": true
+    },
+    {
+      "source_id": "SRC-03",
+      "title": "Synthetic legal and privacy assessment",
+      "version": "1.1",
+      "locator": "incident/legal-privacy",
+      "owner": "Privacy Reviewer Demo",
+      "classification": "ĐỎ - metadata only",
+      "effective_date": "2026-08-21T09:25:00+07:00",
+      "active": true
+    },
+    {
+      "source_id": "SRC-04",
+      "title": "Synthetic communication and accessibility policy",
+      "version": "2.0",
+      "locator": "policy/communication-accessibility",
+      "owner": "Communication Lead Demo",
+      "classification": "XANH",
+      "effective_date": "2026-08-01",
+      "active": true
+    }
+  ],
+  "incident": {
+    "incident_id": "INC-DEMO-001",
+    "title": "Synthetic customer portal disruption",
+    "status": "ACTIVE",
+    "severity": "SEV-2 owner-declared",
+    "severity_owner": "Incident Owner Demo",
+    "affected_scope": "Một phần người dùng không đăng nhập được cổng khách hàng",
+    "started_at": "2026-08-21T08:50:00+07:00",
+    "last_verified": "2026-08-21T09:20:00+07:00",
+    "source_refs": ["SRC-01", "SRC-02"],
+    "data_impact_status": "UNCONFIRMED - under privacy review",
+    "incident_owner": "Incident Owner Demo",
+    "closed_by_ai": false
+  },
+  "facts": [
+    {
+      "fact_id": "F-01",
+      "statement": "Cổng khách hàng đang gián đoạn với một phần người dùng.",
+      "status": "CONFIRMED",
+      "source_refs": ["SRC-02"],
+      "locator": "technical-status/affected-service",
+      "owner": "Technical Lead Demo",
+      "last_verified": "2026-08-21T09:20:00+07:00"
+    },
+    {
+      "fact_id": "F-02",
+      "statement": "Đội kỹ thuật đã kích hoạt quy trình phục hồi dịch vụ.",
+      "status": "CONFIRMED",
+      "source_refs": ["SRC-01", "SRC-02"],
+      "locator": "command/action-01",
+      "owner": "Incident Owner Demo",
+      "last_verified": "2026-08-21T09:20:00+07:00"
+    },
+    {
+      "fact_id": "F-03",
+      "statement": "Kênh hỗ trợ dự phòng đang tiếp nhận yêu cầu của khách hàng.",
+      "status": "CONFIRMED",
+      "source_refs": ["SRC-01"],
+      "locator": "command/customer-action",
+      "owner": "Support Lead Demo",
+      "last_verified": "2026-08-21T09:15:00+07:00"
+    },
+    {
+      "fact_id": "F-04",
+      "statement": "Chưa có phê duyệt phát hành ra bên ngoài.",
+      "status": "CONFIRMED",
+      "source_refs": ["SRC-01", "SRC-03"],
+      "locator": "command/release-gate",
+      "owner": "Human Controller Demo",
+      "last_verified": "2026-08-21T09:25:00+07:00"
+    }
+  ],
+  "unknowns": [
+    {
+      "unknown_id": "U-01",
+      "statement": "Thời điểm phục hồi đầy đủ chưa được xác nhận.",
+      "owner": "Technical Lead Demo",
+      "next_evidence": "Kết quả kiểm tra phục hồi và monitoring ổn định",
+      "due_condition": "Khi recovery test hoàn tất",
+      "communication_treatment": "Nói rõ chưa xác nhận; không hứa giờ phục hồi"
+    },
+    {
+      "unknown_id": "U-02",
+      "statement": "Phạm vi ảnh hưởng dữ liệu chưa được xác nhận.",
+      "owner": "Privacy Reviewer Demo",
+      "next_evidence": "Kết quả điều tra log và privacy assessment",
+      "due_condition": "Khi privacy review có kết luận được phê duyệt",
+      "communication_treatment": "Không suy đoán; chuyển câu hỏi tới privacy reviewer"
+    },
+    {
+      "unknown_id": "U-03",
+      "statement": "Nguyên nhân gốc chưa được xác nhận.",
+      "owner": "Incident Owner Demo",
+      "next_evidence": "Báo cáo điều tra nguyên nhân được owner duyệt",
+      "due_condition": "Sau điều tra kỹ thuật",
+      "communication_treatment": "Không quy lỗi hoặc nêu giả thuyết ra ngoài"
+    }
+  ],
+  "stakeholders": [
+    {
+      "stakeholder_id": "ST-01",
+      "group": "Nhân sự và quản lý trực tiếp",
+      "need": "Biết cách trả lời nhất quán và nơi escalation",
+      "impact": "Có thể nhận câu hỏi từ khách hàng",
+      "disclosure_basis": "Need-to-know vận hành nội bộ",
+      "allowed_fields": ["F-01", "F-02", "F-03", "U-01", "U-02", "U-03"],
+      "withheld_fields": ["restricted-log", "personal-data"],
+      "required_action": "Dùng support route; không tự bình luận nguyên nhân",
+      "channel": "internal-brief",
+      "accessibility": "Plain language và bản text",
+      "owner": "Communication Lead Demo",
+      "sequence": 1,
+      "feedback_route": "incident-feedback-internal",
+      "evidence_refs": ["SRC-01", "SRC-04"]
+    },
+    {
+      "stakeholder_id": "ST-02",
+      "group": "Khách hàng bị ảnh hưởng",
+      "need": "Biết tình trạng, hành động thay thế và lần cập nhật tiếp theo",
+      "impact": "Không đăng nhập được cổng khách hàng",
+      "disclosure_basis": "Tác động dịch vụ trực tiếp",
+      "allowed_fields": ["F-01", "F-02", "F-03", "U-01"],
+      "withheld_fields": ["U-02", "U-03", "restricted-log"],
+      "required_action": "Dùng kênh hỗ trợ dự phòng khi cần",
+      "channel": "status-page-draft",
+      "accessibility": "Plain language, mobile-readable, bản text",
+      "owner": "Customer Lead Demo",
+      "sequence": 2,
+      "feedback_route": "customer-support-route",
+      "evidence_refs": ["SRC-01", "SRC-02", "SRC-04"]
+    },
+    {
+      "stakeholder_id": "ST-03",
+      "group": "Đội hỗ trợ khách hàng",
+      "need": "Có script và ranh giới trả lời",
+      "impact": "Tăng inquiry và escalation",
+      "disclosure_basis": "Vai trò phản hồi tuyến đầu",
+      "allowed_fields": ["F-01", "F-02", "F-03", "U-01", "U-02", "U-03"],
+      "withheld_fields": ["restricted-log", "personal-data"],
+      "required_action": "Ghi inquiry; chuyển privacy/cause question đúng owner",
+      "channel": "support-script-draft",
+      "accessibility": "Bản text có headings và answer boundary",
+      "owner": "Support Lead Demo",
+      "sequence": 1,
+      "feedback_route": "support-inquiry-log",
+      "evidence_refs": ["SRC-01", "SRC-03", "SRC-04"]
+    },
+    {
+      "stakeholder_id": "ST-04",
+      "group": "Đối tác vận hành có phụ thuộc",
+      "need": "Biết ảnh hưởng và route phối hợp",
+      "impact": "Có thể chậm xử lý tích hợp",
+      "disclosure_basis": "Nghĩa vụ phối hợp theo nguồn được phê duyệt",
+      "allowed_fields": ["F-01", "F-02", "U-01"],
+      "withheld_fields": ["U-02", "U-03", "restricted-log"],
+      "required_action": "Theo dõi route phối hợp và chờ update",
+      "channel": "partner-brief-draft",
+      "accessibility": "Plain language và contact route rõ",
+      "owner": "Partner Lead Demo",
+      "sequence": 2,
+      "feedback_route": "partner-incident-route",
+      "evidence_refs": ["SRC-01", "SRC-04"]
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "M-01",
+      "message_type": "INTERNAL_MANAGER_BRIEF",
+      "stakeholder_ids": ["ST-01"],
+      "purpose": "Đồng bộ facts, unknowns và escalation route",
+      "channel": "internal-brief",
+      "core_message": "Cổng khách hàng đang gián đoạn với một phần người dùng; quy trình phục hồi và hỗ trợ dự phòng đã được kích hoạt. Thời điểm phục hồi, phạm vi dữ liệu và nguyên nhân chưa được xác nhận.",
+      "fact_ids": ["F-01", "F-02", "F-03"],
+      "unknown_ids": ["U-01", "U-02", "U-03"],
+      "claim_refs": ["F-01", "F-02", "F-03", "U-01", "U-02", "U-03"],
+      "source_refs": ["SRC-01", "SRC-02", "SRC-03"],
+      "required_action": "Dùng route hỗ trợ; không tự suy nguyên nhân",
+      "next_update": "Khi recovery test hoặc privacy review có evidence mới",
+      "version": "1.0-draft",
+      "owner": "Communication Lead Demo",
+      "spokesperson": "Authorized Spokesperson Demo",
+      "disclosure_class": "INTERNAL-NEED-TO-KNOW",
+      "approval_status": "REVIEW_PENDING"
+    },
+    {
+      "message_id": "M-02",
+      "message_type": "CUSTOMER_HOLDING_STATEMENT",
+      "stakeholder_ids": ["ST-02"],
+      "purpose": "Xác nhận gián đoạn, hành động và kênh hỗ trợ",
+      "channel": "status-page-draft",
+      "core_message": "Một phần người dùng đang gặp gián đoạn khi đăng nhập cổng khách hàng. Đội ngũ đã kích hoạt phục hồi; khách hàng cần hỗ trợ có thể dùng kênh dự phòng. Thời điểm phục hồi đầy đủ chưa được xác nhận.",
+      "fact_ids": ["F-01", "F-02", "F-03"],
+      "unknown_ids": ["U-01"],
+      "claim_refs": ["F-01", "F-02", "F-03", "U-01"],
+      "source_refs": ["SRC-01", "SRC-02"],
+      "required_action": "Dùng kênh hỗ trợ dự phòng nếu cần xử lý gấp",
+      "next_update": "Khi recovery test hoàn tất hoặc có thay đổi trọng yếu",
+      "version": "1.0-draft",
+      "owner": "Customer Lead Demo",
+      "spokesperson": "Authorized Spokesperson Demo",
+      "disclosure_class": "CUSTOMER-AFFECTED",
+      "approval_status": "REVIEW_PENDING"
+    },
+    {
+      "message_id": "M-03",
+      "message_type": "SUPPORT_SCRIPT",
+      "stakeholder_ids": ["ST-03"],
+      "purpose": "Đảm bảo tuyến đầu trả lời nhất quán",
+      "channel": "support-script-draft",
+      "core_message": "Xác nhận gián đoạn đã biết, cung cấp kênh thay thế và nói rõ các điểm chưa xác nhận; mọi câu hỏi nguyên nhân hoặc dữ liệu phải escalation.",
+      "fact_ids": ["F-01", "F-02", "F-03"],
+      "unknown_ids": ["U-01", "U-02", "U-03"],
+      "claim_refs": ["F-01", "F-02", "F-03", "U-01", "U-02", "U-03"],
+      "source_refs": ["SRC-01", "SRC-02", "SRC-03"],
+      "required_action": "Ghi inquiry và escalation theo loại câu hỏi",
+      "next_update": "Khi message version thay đổi",
+      "version": "1.0-draft",
+      "owner": "Support Lead Demo",
+      "spokesperson": "Authorized Spokesperson Demo",
+      "disclosure_class": "INTERNAL-SUPPORT",
+      "approval_status": "REVIEW_PENDING"
+    },
+    {
+      "message_id": "M-04",
+      "message_type": "PARTNER_BRIEF",
+      "stakeholder_ids": ["ST-04"],
+      "purpose": "Thông báo phụ thuộc vận hành và route phối hợp",
+      "channel": "partner-brief-draft",
+      "core_message": "Cổng khách hàng đang gián đoạn với một phần người dùng và đội ngũ đã kích hoạt phục hồi. Thời điểm phục hồi đầy đủ chưa được xác nhận; đối tác dùng route phối hợp đã chỉ định.",
+      "fact_ids": ["F-01", "F-02"],
+      "unknown_ids": ["U-01"],
+      "claim_refs": ["F-01", "F-02", "U-01"],
+      "source_refs": ["SRC-01", "SRC-02"],
+      "required_action": "Theo dõi route phối hợp và báo dependency mới",
+      "next_update": "Khi recovery test hoàn tất hoặc dependency thay đổi",
+      "version": "1.0-draft",
+      "owner": "Partner Lead Demo",
+      "spokesperson": "Authorized Spokesperson Demo",
+      "disclosure_class": "PARTNER-NEED-TO-KNOW",
+      "approval_status": "REVIEW_PENDING"
+    }
+  ],
+  "sequence": [
+    {
+      "sequence_id": "SEQ-01",
+      "order": 1,
+      "message_id": "M-01",
+      "stakeholder_id": "ST-01",
+      "dependency": "Incident snapshot verified",
+      "fallback": "Human Controller holds distribution",
+      "owner": "Communication Lead Demo"
+    },
+    {
+      "sequence_id": "SEQ-02",
+      "order": 1,
+      "message_id": "M-03",
+      "stakeholder_id": "ST-03",
+      "dependency": "M-01 reviewed",
+      "fallback": "Use escalation-only script",
+      "owner": "Support Lead Demo"
+    },
+    {
+      "sequence_id": "SEQ-03",
+      "order": 2,
+      "message_id": "M-02",
+      "stakeholder_id": "ST-02",
+      "dependency": "Legal/privacy review and final release pending",
+      "fallback": "Do not publish; route inquiries to support",
+      "owner": "Customer Lead Demo"
+    },
+    {
+      "sequence_id": "SEQ-04",
+      "order": 2,
+      "message_id": "M-04",
+      "stakeholder_id": "ST-04",
+      "dependency": "Partner disclosure basis confirmed",
+      "fallback": "Hold draft and escalate",
+      "owner": "Partner Lead Demo"
+    }
+  ],
+  "rumors": [
+    {
+      "rumor_id": "R-01",
+      "claim": "Sự cố đã ảnh hưởng toàn bộ khách hàng.",
+      "status": "UNVERIFIED",
+      "evidence_refs": ["SRC-02"],
+      "response": "Không khuếch đại; dùng fact F-01 và tiếp tục kiểm tra phạm vi",
+      "owner": "Communication Lead Demo",
+      "last_checked": "2026-08-21T09:20:00+07:00"
+    },
+    {
+      "rumor_id": "R-02",
+      "claim": "Nguyên nhân đã được xác định.",
+      "status": "CORRECTED",
+      "evidence_refs": ["SRC-01", "SRC-02"],
+      "response": "Correction: nguyên nhân gốc chưa được xác nhận theo U-03",
+      "owner": "Incident Owner Demo",
+      "last_checked": "2026-08-21T09:22:00+07:00"
+    }
+  ],
+  "update_schedule": [
+    {
+      "update_id": "UP-01",
+      "message_ids": ["M-01", "M-02", "M-03", "M-04"],
+      "timestamp_or_trigger": "Khi recovery test hoàn tất hoặc impact thay đổi trọng yếu",
+      "source_snapshot": ["SRC-01", "SRC-02"],
+      "owner": "Communication Lead Demo",
+      "approver": "Human Controller Demo",
+      "change_log_route": "incident/change-log"
+    },
+    {
+      "update_id": "UP-02",
+      "message_ids": ["M-01", "M-03"],
+      "timestamp_or_trigger": "Khi privacy review có kết luận được phê duyệt",
+      "source_snapshot": ["SRC-03"],
+      "owner": "Privacy Reviewer Demo",
+      "approver": "Human Controller Demo",
+      "change_log_route": "incident/privacy-change-log"
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "RK-01",
+      "type": "FALSE_REASSURANCE",
+      "trigger": "Message nói không có data impact khi U-02 còn mở",
+      "harm": "Khách hàng hiểu sai và tăng rủi ro pháp lý",
+      "prevention": "Giữ U-02 là unknown và bắt legal/privacy review",
+      "stop_or_rollback": "Dừng release; sửa message và lưu correction",
+      "escalation_owner": "Privacy Reviewer Demo",
+      "evidence_refs": ["SRC-03"]
+    },
+    {
+      "risk_id": "RK-02",
+      "type": "SPECULATIVE_CAUSE",
+      "trigger": "Nguyên nhân chưa xác nhận bị đưa thành fact",
+      "harm": "Quy lỗi sai và làm lệch điều tra",
+      "prevention": "Claim trace và owner approval",
+      "stop_or_rollback": "Dừng release; chuyển claim về unknown",
+      "escalation_owner": "Incident Owner Demo",
+      "evidence_refs": ["SRC-01", "SRC-02"]
+    },
+    {
+      "risk_id": "RK-03",
+      "type": "PRIVACY_DISCLOSURE",
+      "trigger": "Restricted log hoặc personal data đi vào message",
+      "harm": "Vi phạm riêng tư và tăng tác động sự cố",
+      "prevention": "Allowed/withheld fields và privacy review",
+      "stop_or_rollback": "Emergency Stop và thu hồi theo authority",
+      "escalation_owner": "Privacy Reviewer Demo",
+      "evidence_refs": ["SRC-03", "SRC-04"]
+    },
+    {
+      "risk_id": "RK-04",
+      "type": "INCONSISTENT_UPDATE",
+      "trigger": "Các kênh dùng source snapshot hoặc version khác nhau",
+      "harm": "Mất niềm tin và tạo rumor mới",
+      "prevention": "Sequence, source snapshot và change log chung",
+      "stop_or_rollback": "Hold channel drafts; đồng bộ version",
+      "escalation_owner": "Communication Lead Demo",
+      "evidence_refs": ["SRC-01", "SRC-04"]
+    }
+  ],
+  "tests": [
+    {"test_type": "command_authority_integrity", "passed": true, "evidence": "Contract/source/role trace static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "fact_unknown_trace", "passed": true, "evidence": "Fact/unknown/source reference static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "message_safety_action", "passed": true, "evidence": "Message flag/claim/action static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "stakeholder_disclosure", "passed": true, "evidence": "Stakeholder coverage/disclosure static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "cadence_version_control", "passed": true, "evidence": "Sequence/update/source snapshot static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "rumor_correction", "passed": true, "evidence": "Rumor status/evidence/response static test", "reviewer": "Static Evaluator", "date": "2026-08-21"},
+    {"test_type": "approval_release_boundary", "passed": true, "evidence": "No approved/released/sent state static test", "reviewer": "Static Evaluator", "date": "2026-08-21"}
+  ],
+  "reviews": [
+    {"review_type": "INCIDENT_COMMAND", "required": true, "reviewer": "Incident Owner Demo", "status": "PASS", "evidence_ref": "SRC-01"},
+    {"review_type": "FACT_TECH", "required": true, "reviewer": "Technical Lead Demo", "status": "PASS", "evidence_ref": "SRC-02"},
+    {"review_type": "LEGAL_PRIVACY", "required": true, "reviewer": "Privacy Reviewer Demo", "status": "PASS", "evidence_ref": "SRC-03"},
+    {"review_type": "ACCESSIBILITY", "required": true, "reviewer": "Accessibility Reviewer Demo", "status": "PASS", "evidence_ref": "SRC-04"},
+    {"review_type": "FINAL_RELEASE", "required": true, "reviewer": "Human Controller Demo", "status": "PENDING", "evidence_ref": ""}
+  ]
+}

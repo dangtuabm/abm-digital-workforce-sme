@@ -1,0 +1,66 @@
+{
+  "curriculum_id": "CUR-DEMO",
+  "contract": {
+    "program_name": "A.I pipeline management for sales leaders",
+    "cohort": "sales managers",
+    "business_problem": "inconsistent evidence-based pipeline reviews",
+    "target_capabilities": ["C1", "C2"],
+    "baseline_ref": "BASELINE-01",
+    "delivery_format": "inhouse blended",
+    "total_minutes": 480,
+    "minimum_practice_ratio": 0.7,
+    "owner": "sales-director",
+    "risk_level": "medium",
+    "experience_blueprint_ref": "EXP-BLUEPRINT-01",
+    "reference_library_available": true
+  },
+  "reference_programs": [
+    {"id": "REF-01", "use": "retain outcome structure, adapt cases"},
+    {"id": "REF-02", "use": "retain practice pattern, reject outdated tools"}
+  ],
+  "modules": [
+    {
+      "id": "M1",
+      "prerequisites": [],
+      "capabilities": ["C1"],
+      "outcomes": ["interpret pipeline evidence"],
+      "sections": ["hook", "core", "case", "action"],
+      "anti_pattern_before_best_practice": true,
+      "quick_win": "annotated pipeline artifact",
+      "theory_minutes": 60,
+      "practice_minutes": 180,
+      "artifact": "annotated pipeline review",
+      "assessment": "critical-item rubric"
+    },
+    {
+      "id": "M2",
+      "prerequisites": ["M1"],
+      "capabilities": ["C2"],
+      "outcomes": ["recommend and defend actions"],
+      "sections": ["hook", "core", "case", "action"],
+      "anti_pattern_before_best_practice": true,
+      "quick_win": "decision brief",
+      "theory_minutes": 60,
+      "practice_minutes": 180,
+      "artifact": "evidence-based decision brief",
+      "assessment": "manager simulation rubric"
+    }
+  ],
+  "materials": {
+    "facilitator_guide": "FG-01",
+    "learner_workbook": "LW-01",
+    "slide_outline": "SO-01",
+    "prework": "PW-01",
+    "source_ledger": "SL-01"
+  },
+  "evaluation": {
+    "baseline": "BASELINE-01",
+    "formative": "module artifact feedback",
+    "summative": "unseen pipeline simulation",
+    "transfer": "first live pipeline review",
+    "outcome_measure": "critical rubric items sustained",
+    "result_owner": "sales-director"
+  },
+  "guardrails": [],
+  "expert_review": {"required": false, "status": "not_required"}
+}

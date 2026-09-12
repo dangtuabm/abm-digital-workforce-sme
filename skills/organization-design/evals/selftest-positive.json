@@ -1,0 +1,108 @@
+{
+  "design_contract": {
+    "organization_scope": "Enterprise service recovery operating model",
+    "as_of": "2026-08-21",
+    "strategy_source": "strategy-board-approved-2026",
+    "data_classification": "YELLOW",
+    "sponsor": "ROLE-CEO",
+    "final_decision_owner": "ROLE-CEO",
+    "required_reviews": ["ORG_SPONSOR", "PEOPLE_LEGAL_COMPLIANCE", "DATA_SECURITY", "FINAL_ORG_DECISION"],
+    "prohibited_actions": ["no personnel action", "no reporting-line change", "no permission change", "no automatic reorganization"]
+  },
+  "strategy_objectives": [
+    {"id": "OBJ-01", "outcome": "Restore priority services predictably", "measure": "recovery SLA", "source": "strategy-board-approved-2026"},
+    {"id": "OBJ-02", "outcome": "Reduce repeat operational failures", "measure": "repeat incident rate", "source": "strategy-board-approved-2026"},
+    {"id": "OBJ-03", "outcome": "Maintain controlled change", "measure": "change control compliance", "source": "risk-policy-2026"}
+  ],
+  "value_streams": [
+    {"id": "VS-01", "name": "Detect to restore", "customer_outcome": "Service restored within agreed level", "objective_ids": ["OBJ-01"], "source": "service-map-2026"},
+    {"id": "VS-02", "name": "Learn to prevent", "customer_outcome": "Known failure does not recur without control", "objective_ids": ["OBJ-02", "OBJ-03"], "source": "service-map-2026"}
+  ],
+  "capabilities": [
+    {"id": "CAP-01", "name": "Event triage", "value_stream_ids": ["VS-01"], "maturity": "DEFINED", "criticality": "CRITICAL", "source": "capability-baseline-2026"},
+    {"id": "CAP-02", "name": "Recovery coordination", "value_stream_ids": ["VS-01"], "maturity": "DEVELOPING", "criticality": "CRITICAL", "source": "capability-baseline-2026"},
+    {"id": "CAP-03", "name": "Root-cause analysis", "value_stream_ids": ["VS-02"], "maturity": "DEVELOPING", "criticality": "CRITICAL", "source": "capability-baseline-2026"},
+    {"id": "CAP-04", "name": "Control assurance", "value_stream_ids": ["VS-02"], "maturity": "DEFINED", "criticality": "CRITICAL", "source": "capability-baseline-2026"},
+    {"id": "CAP-05", "name": "Service communication", "value_stream_ids": ["VS-01", "VS-02"], "maturity": "DEFINED", "criticality": "CRITICAL", "source": "capability-baseline-2026"}
+  ],
+  "current_units": [
+    {"id": "CU-OPS", "purpose": "Operate services", "capability_ids": ["CAP-01", "CAP-02"], "source": "org-register-2026"},
+    {"id": "CU-QUALITY", "purpose": "Assure service quality", "capability_ids": ["CAP-03", "CAP-04"], "source": "org-register-2026"},
+    {"id": "CU-CX", "purpose": "Coordinate customer communication", "capability_ids": ["CAP-05"], "source": "org-register-2026"}
+  ],
+  "target_units": [
+    {"id": "TU-RECOVERY", "purpose": "Own detect-to-restore flow", "outcomes": ["priority service restored"], "capability_ids": ["CAP-01", "CAP-02"], "accountabilities": ["recovery outcome"], "system_of_record": "service-operations-platform", "source": "design-workshop-approved-minutes"},
+    {"id": "TU-ASSURANCE", "purpose": "Own learn-to-prevent flow", "outcomes": ["controlled prevention actions"], "capability_ids": ["CAP-03", "CAP-04"], "accountabilities": ["assurance outcome"], "system_of_record": "control-register", "source": "design-workshop-approved-minutes"},
+    {"id": "TU-COMMS", "purpose": "Own stakeholder service communication", "outcomes": ["timely verified communication"], "capability_ids": ["CAP-05"], "accountabilities": ["communication outcome"], "system_of_record": "stakeholder-log", "source": "design-workshop-approved-minutes"}
+  ],
+  "roles": [
+    {"id": "ROLE-CEO", "unit_id": "TU-ASSURANCE", "purpose": "Hold final organization decision authority", "outcomes": ["authorized operating model"], "accountabilities": ["final organization decision"], "skills": ["enterprise governance"], "capacity": {"workload_evidence": "board-agenda-capacity-2026", "complexity": "HIGH", "manager_capacity": "reserved decision window", "standardization": "decision charter"}, "source": "authority-matrix-2026"},
+    {"id": "ROLE-RECOVERY-LEAD", "unit_id": "TU-RECOVERY", "purpose": "Own service recovery outcome", "outcomes": ["recovery SLA met"], "accountabilities": ["service recovery"], "skills": ["incident leadership"], "capacity": {"workload_evidence": "incident-volume-12m", "complexity": "HIGH", "manager_capacity": "validated on-call rotation", "standardization": "recovery playbook"}, "source": "workload-study-2026"},
+    {"id": "ROLE-TRIAGE", "unit_id": "TU-RECOVERY", "purpose": "Qualify events", "outcomes": ["verified priority"], "accountabilities": ["triage quality"], "skills": ["technical triage"], "capacity": {"workload_evidence": "event-volume-12m", "complexity": "MEDIUM", "manager_capacity": "team roster evidence", "standardization": "triage rubric"}, "source": "workload-study-2026"},
+    {"id": "ROLE-ASSURANCE", "unit_id": "TU-ASSURANCE", "purpose": "Assure root cause and controls", "outcomes": ["verified prevention"], "accountabilities": ["control assurance"], "skills": ["risk analysis"], "capacity": {"workload_evidence": "problem-backlog-12m", "complexity": "HIGH", "manager_capacity": "review capacity model", "standardization": "control test protocol"}, "source": "workload-study-2026"},
+    {"id": "ROLE-COMMS", "unit_id": "TU-COMMS", "purpose": "Publish verified service communication", "outcomes": ["accurate stakeholder updates"], "accountabilities": ["service communication"], "skills": ["stakeholder communication"], "capacity": {"workload_evidence": "message-volume-12m", "complexity": "MEDIUM", "manager_capacity": "coverage roster", "standardization": "communication templates"}, "source": "workload-study-2026"}
+  ],
+  "decisions": [
+    {"id": "DEC-01", "decision": "Set recovery priority", "decision_owner": "ROLE-RECOVERY-LEAD", "recommenders": ["ROLE-TRIAGE"], "contributors": ["ROLE-ASSURANCE"], "approvers_by_threshold": {"critical": "ROLE-CEO"}, "executors": ["ROLE-TRIAGE"], "source": "authority-matrix-2026"},
+    {"id": "DEC-02", "decision": "Accept root cause", "decision_owner": "ROLE-ASSURANCE", "recommenders": ["ROLE-RECOVERY-LEAD"], "contributors": ["ROLE-TRIAGE"], "approvers_by_threshold": {}, "executors": ["ROLE-ASSURANCE"], "source": "authority-matrix-2026"},
+    {"id": "DEC-03", "decision": "Release external service update", "decision_owner": "ROLE-COMMS", "recommenders": ["ROLE-RECOVERY-LEAD"], "contributors": ["ROLE-ASSURANCE"], "approvers_by_threshold": {"regulated": "ROLE-CEO"}, "executors": ["ROLE-COMMS"], "source": "authority-matrix-2026"},
+    {"id": "DEC-04", "decision": "Approve organization design", "decision_owner": "ROLE-CEO", "recommenders": ["ROLE-ASSURANCE"], "contributors": ["ROLE-RECOVERY-LEAD", "ROLE-COMMS"], "approvers_by_threshold": {}, "executors": ["ROLE-CEO"], "source": "board-delegation-2026"}
+  ],
+  "interfaces": [
+    {"id": "INT-01", "provider": "TU-RECOVERY", "consumer": "TU-ASSURANCE", "input": "recovery record", "output": "analysis-ready case", "service_level": "within 1 business day", "quality_rule": "mandatory evidence fields complete", "escalation": "ROLE-RECOVERY-LEAD to ROLE-CEO", "source": "service-contract-2026"},
+    {"id": "INT-02", "provider": "TU-ASSURANCE", "consumer": "TU-RECOVERY", "input": "verified root cause", "output": "prevention control", "service_level": "within agreed risk window", "quality_rule": "control owner and test present", "escalation": "ROLE-ASSURANCE to ROLE-CEO", "source": "service-contract-2026"},
+    {"id": "INT-03", "provider": "TU-RECOVERY", "consumer": "TU-COMMS", "input": "verified status", "output": "communication brief", "service_level": "within 15 minutes for critical event", "quality_rule": "status and confidence cited", "escalation": "ROLE-COMMS to ROLE-RECOVERY-LEAD", "source": "service-contract-2026"},
+    {"id": "INT-04", "provider": "TU-ASSURANCE", "consumer": "TU-COMMS", "input": "approved prevention status", "output": "closure brief", "service_level": "before case closure", "quality_rule": "approval evidence linked", "escalation": "ROLE-COMMS to ROLE-ASSURANCE", "source": "service-contract-2026"}
+  ],
+  "sod_rules": [
+    {"id": "SOD-01", "incompatible_duties": ["propose root cause", "independently assure root cause"], "control_owner": "ROLE-ASSURANCE", "source": "risk-policy-2026", "status": "PASS"},
+    {"id": "SOD-02", "incompatible_duties": ["draft regulated message", "approve regulated message"], "control_owner": "ROLE-CEO", "source": "communication-policy-2026", "status": "PASS"}
+  ],
+  "human_ai_allocations": [
+    {"work_id": "WORK-TRIAGE-SUMMARY", "human_supervisor": "ROLE-TRIAGE", "accountable_party": "ROLE-TRIAGE", "ai_mode": "DRAFT", "allowed_actions": ["summarize approved event data"], "prohibited_actions": ["set priority", "change record"], "audit": "prompt-output-log", "rollback": "discard draft and restore source view"},
+    {"work_id": "WORK-CONTROL-CHECK", "human_supervisor": "ROLE-ASSURANCE", "accountable_party": "ROLE-ASSURANCE", "ai_mode": "CHECK", "allowed_actions": ["flag missing control evidence"], "prohibited_actions": ["approve control", "close case"], "audit": "rule-version-and-result-log", "rollback": "re-run prior rule version"}
+  ],
+  "design_options": [
+    {"id": "OPT-01", "pattern": "Functional with explicit value-stream interfaces", "rationale": "preserves specialist depth while fixing handoffs", "assumptions": ["interface owners have capacity"], "impacts": ["new charters and decision matrix"]},
+    {"id": "OPT-02", "pattern": "Dedicated cross-functional recovery unit", "rationale": "reduces detect-to-restore handoffs", "assumptions": ["specialists can be allocated without control loss"], "impacts": ["higher transition complexity and SOD review"]}
+  ],
+  "transition": {
+    "dependencies": ["approved charters", "consultation plan", "system access review"],
+    "milestones": ["validate roles", "dry-run interfaces", "human approval checkpoint"],
+    "people_impacts": ["role clarity consultation; no individual action authorized"],
+    "change_risks": ["temporary decision ambiguity", "control dilution"],
+    "readiness_evidence": ["workshop minutes", "SOD review", "dry-run results"],
+    "rollback_points": ["return to approved current authority matrix"],
+    "change_requests": [{"id": "CR-01", "status": "PENDING_HUMAN_APPROVAL", "owner": "ROLE-CEO"}]
+  },
+  "tests": [
+    {"test_type": "strategy_capability_trace", "status": "PASS", "evidence": "trace matrix 3 objectives/2 streams/5 capabilities"},
+    {"test_type": "role_accountability", "status": "PASS", "evidence": "5 role charters; unique accountability owners"},
+    {"test_type": "decision_rights", "status": "PASS", "evidence": "4 decisions; one owner each"},
+    {"test_type": "interface_sod", "status": "PASS", "evidence": "4 interface contracts and 2 SOD controls"},
+    {"test_type": "span_layer_capacity", "status": "PASS", "evidence": "capacity evidence present for every role; no universal ratio"},
+    {"test_type": "human_ai_boundary", "status": "PASS", "evidence": "2 allocations with supervisor, audit and rollback"},
+    {"test_type": "implementation_boundary", "status": "PASS", "evidence": "only pending change request; no state mutation"}
+  ],
+  "reviews": [
+    {"review_type": "ORG_SPONSOR", "reviewer": "ROLE-CEO", "status": "PASS", "evidence": "sponsor scope review record"},
+    {"review_type": "PEOPLE_LEGAL_COMPLIANCE", "reviewer": "ROLE-ASSURANCE", "status": "PASS", "evidence": "people/legal/SOD review record"},
+    {"review_type": "DATA_SECURITY", "reviewer": "ROLE-ASSURANCE", "status": "PASS", "evidence": "data and A.I boundary review record"},
+    {"review_type": "FINAL_ORG_DECISION", "reviewer": "ROLE-CEO", "status": "PENDING", "evidence": "decision meeting scheduled; no approval issued"}
+  ],
+  "final_human_decision": {"owner": "ROLE-CEO", "status": "PENDING", "evidence": "pack ready for authorized human decision"},
+  "forbidden_flags": [],
+  "published_states": ["DRAFT_PACK"],
+  "output_sections": [
+    "executive_decision_brief",
+    "strategy_capability_trace",
+    "current_state_diagnosis",
+    "target_unit_and_role_charters",
+    "decision_rights",
+    "interface_and_sod",
+    "human_ai_allocation",
+    "option_comparison",
+    "transition_control",
+    "tests_reviews_audit"
+  ]
+}

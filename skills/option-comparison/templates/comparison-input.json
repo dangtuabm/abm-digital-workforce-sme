@@ -1,0 +1,12 @@
+{
+  "decision_id": "DEC-DEMO",
+  "criteria": [
+    {"id": "G-PRIVACY", "kind": "gate"},
+    {"id": "C-VALUE", "kind": "score", "weight": 0.6},
+    {"id": "C-RISK", "kind": "score", "weight": 0.4}
+  ],
+  "options": [
+    {"id": "OPT-A", "gates": {"G-PRIVACY": true}, "scores": {"C-VALUE": {"low": 70, "base": 80, "high": 88, "evidence_id": "EVD-1"}, "C-RISK": {"low": 55, "base": 65, "high": 75, "evidence_id": "EVD-2"}}},
+    {"id": "OPT-B", "gates": {"G-PRIVACY": true}, "scores": {"C-VALUE": {"low": 66, "base": 76, "high": 86, "evidence_id": "EVD-3"}, "C-RISK": {"low": 62, "base": 72, "high": 82, "evidence_id": "EVD-4"}}}
+  ]
+}
