@@ -56,7 +56,7 @@ Không nâng `PILOT/OFFICIAL`: self-test dùng dữ liệu giả lập; chưa c�
 ## 5. Nguồn và quyết định thiết kế
 
 - `ABM-SQS-00 v2.2`, Template v2.1, Rubric v2.1 và Lớp DNA v2.0 quyết định cổng, cấu trúc, giới hạn và 12 tiêu chí.
-- `HUB CHUNG - ABM WORKSPACE - A.I AGENT/1. ABOUT ME - BỘ NÃO/05-nhan-dien-thuong-hieu-quy-chuan-ngon-tu-va-van-hoa-thi-cong-abm.md` cung cấp giọng/ngôn từ; `HUB CHUNG - ABM WORKSPACE - A.I AGENT/1. ABOUT ME - BỘ NÃO/30-bo-nguyen-tac-va-quy-tac-giao-tiep-van-hanh-cung-sep-dang-tu.md` cung cấp scope–audience–success, nói thẳng và tự rà trước giao.
+- `HUB CHUNG - ABM WORKSPACE - A.I AGENT/1. ABOUT ME - BỘ NÃO/AB03-THUONG-HIEU-NGON-TU-VA-VAN-HOA-THI-CONG.md` cung cấp giọng/ngôn từ; `HUB CHUNG - ABM WORKSPACE - A.I AGENT/1. ABOUT ME - BỘ NÃO/AB13-CONG-TAC-VOI-SEP-DANG-TU.md` cung cấp scope–audience–success, nói thẳng và tự rà trước giao.
 - Hướng dẫn internal communications cung cấp audience–purpose–tone–format và important-first; bản doanh nghiệp mở rộng bằng quyền quyết định, evidence, issue, sequence, disclosure, feedback và closure.
 - Hai năng lực liền kề được đọc để khóa ranh giới: Skill này không chỉ tạo biến thể thông điệp và không suy profile hành vi.
 - FINAL-GATEKEEPER được dùng làm phản biện cuối: mọi claim/nguồn/quyền/phát hành phải có bằng chứng; state không được giả approved/released.

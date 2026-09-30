@@ -56,8 +56,8 @@ Không nâng `PILOT/OFFICIAL`: self-test dùng nguồn tổng hợp; chưa có b
 ## 5. Nguồn và quyết định thiết kế
 
 - `ABM-SQS-00 v2.2`, Template v2.1, Rubric v2.1 và Lớp DNA v2.0 quyết định cấu trúc, gate và 12 tiêu chí.
-- Nguồn ABM `05-nhan-dien-thuong-hieu-quy-chuan-ngon-tu-va-van-hoa-thi-cong-abm.md` quyết định voice canon, brand identity, “Làm 1 dùng N” và yêu cầu không overclaim.
-- Nguồn ABM `07-he-sinh-thai-san-pham-abm-6-tang-value-ladder.md` quyết định T0 là sản phẩm chiến lược, hệ đa kênh, một chủ đề thành nhiều format, cá nhân hóa theo ngách và build trust trước hard-sell.
+- Nguồn ABM `AB03-THUONG-HIEU-NGON-TU-VA-VAN-HOA-THI-CONG.md` quyết định voice canon, brand identity, “Làm 1 dùng N” và yêu cầu không overclaim.
+- Nguồn ABM `AB05-HE-SINH-THAI-SAN-PHAM-VA-CHIEN-LUOC.md` quyết định T0 là sản phẩm chiến lược, hệ đa kênh, một chủ đề thành nhiều format, cá nhân hóa theo ngách và build trust trước hard-sell.
 - DT-CONTENT-MATRIX đóng góp: định vị theo ma trận, hook, nhịp kéo–dẫn–đóng, CTA mềm và channel-specific writing; không sao chép độ dài cứng thành luật phổ quát.
 - FINAL-GATEKEEPER được dùng để phản biện source, cập nhật, DNA, tính thực thi, rights/privacy, accessibility và release state.
 
