@@ -72,7 +72,7 @@ Skill này chuẩn bị mandate trước phiên; xử lý trực tiếp hoặc s
 
 **Bước 5 — Chốt Issue Strategy.** Ghi priority, target, criteria, ask, sequence, dependency, risk, gap. Mỗi session chỉ có một mục tiêu chính.
 
-**Bước 6 — Thiết kế Trades & Packages.** Dùng [gate rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/negotiation-preparation/SKILL.md). Mỗi `give` có `get`, precondition, cost/value, authority, sequence, expiry, approval. Tạo 2–3 package khác trade-off; không gọi tương đương khi chưa review.
+**Bước 6 — Thiết kế Trades & Packages.** Dùng [gate rules](<SKILL.md>). Mỗi `give` có `get`, precondition, cost/value, authority, sequence, expiry, approval. Tạo 2–3 package khác trade-off; không gọi tương đương khi chưa review.
 
 **Bước 7 — Soạn Question & Process Plan.** Chuẩn bị agenda, opening, questions, evidence request, listening, recap, proposal language và next step. Neo outcome/value trước price; không pressure/bluff.
 
@@ -80,7 +80,7 @@ Skill này chuẩn bị mandate trước phiên; xử lý trực tiếp hoặc s
 
 **Bước 9 — Red-team & Agreement Capture.** Bắt unauthorized concession, arithmetic/unit, term interaction, ambiguity, illegal/collusive request, confidentiality, conflict/coercion. Chốt who–what–when–condition–approval–document–open item.
 
-**Bước 10 — Gate và bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/negotiation-preparation/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/negotiation-preparation/SKILL.md), lưu I/O/hash/log; giao Mandate/Ledger/Matrix/Options/Tests/Reviews. Engine không authorize/negotiate/accept.
+**Bước 10 — Gate và bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao Mandate/Ledger/Matrix/Options/Tests/Reviews. Engine không authorize/negotiate/accept.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

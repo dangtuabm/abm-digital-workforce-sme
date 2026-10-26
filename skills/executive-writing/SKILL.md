@@ -67,7 +67,7 @@ Skill này viết communication hoàn chỉnh để người đọc hiểu/quy�
 
 **Executive Message Map:** audience/authority → one-sentence bottom line → decision/request → why now → tối đa ba support blocks → risk/limit → action IDs → do-not-say → approval route.
 
-**Bước 4 — Chọn mode schema.** Đọc [rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/executive-writing/SKILL.md); chọn một schema. Formal template/current law/brand rule ưu tiên theo mode; không marketing hóa administrative writing.
+**Bước 4 — Chọn mode schema.** Đọc [rules](<SKILL.md>); chọn một schema. Formal template/current law/brand rule ưu tiên theo mode; không marketing hóa administrative writing.
 
 **Bước 5 — Dựng kiến trúc.** Mở bằng BLUF: decision/request/key message. Nhóm tối đa ba support blocks; chốt owner–verb–deliverable–deadline/escalation, không giấu ask ở cuối.
 
@@ -79,7 +79,7 @@ Skill này viết communication hoàn chỉnh để người đọc hiểu/quy�
 
 **Bước 9 — Test/cô đọng.** Chạy bottom-line 5 giây, skim, claim trace, actionability, ambiguity/hostile read và audience tone. Cắt lặp; giữ qualifier, exception, risk và action.
 
-**Bước 10 — Chạy gate/bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/executive-writing/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/executive-writing/SKILL.md), lưu I/O/hash/version. Giao draft, ledger, actions, redaction/review note, tests. Engine không approve/send.
+**Bước 10 — Chạy gate/bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/version. Giao draft, ledger, actions, redaction/review note, tests. Engine không approve/send.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

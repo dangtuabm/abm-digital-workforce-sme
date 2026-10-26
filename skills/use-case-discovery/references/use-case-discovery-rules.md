@@ -13,7 +13,8 @@
 
 ## Tham chiếu nội bộ
 
-- 8 Yếu Tố ABM: Bài toán · Dữ liệu · Công cụ/Model · Skill · Workflow · Output · Tương tác · Con người/Văn hóa.
+- 08 YẾU TỐ ABM: BÀI TOÁN – MỤC TIÊU · CÔNG CỤ – MODEL · DATA – DỮ LIỆU · SKILL – KỸ NĂNG · WORKFLOW – QUY TRÌNH · OUTPUT – ĐẦU RA · SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ · CON NGƯỜI – VĂN HÓA (đúng tên, đúng thứ tự; làm xuyên suốt 03 GIAI ĐOẠN TRƯỞNG THÀNH A.I DOANH NGHIỆP, không phải 8 bước).
 - CUSTOMER-XRAY cung cấp logic điều tra bối cảnh/pain/source; không kéo sales profiling hoặc DISC vào discovery.
 - QUICK-BIG-WINS chỉ dùng downstream cho bài tập đào tạo, không phải chuyên gia của Skill này.
 
+*v2.4 — 25/10/2026: đồng bộ 03 GIAI ĐOẠN TRƯỞNG THÀNH A.I DOANH NGHIỆP và 08 YẾU TỐ theo AB05 v2.3, Sếp duyệt. Bản trước lưu tại 7. ARCHIVE › 20261025 - DAI RA SOAT DONG BO KHUNG MOI.* *[A.I Generated — Claude Code — 25/10/2026]*

@@ -70,7 +70,7 @@ Skill điều hành bằng chứng/thông điệp; khắc phục, điều tra, p
 
 **Crisis Control Matrix:** stakeholder → fact/unknown → disclosure/action → message/channel → owner/approval → update/escalation.
 
-**Bước 5 — Tạo Message Map.** Dùng [gate rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/crisis-communication/SKILL.md). Soạn holding statement, nội bộ, khách hàng, support script, Q&A và bản có điều kiện. Mỗi message truy fact/unknown/source; có action, update, version, owner, spokesperson.
+**Bước 5 — Tạo Message Map.** Dùng [gate rules](<SKILL.md>). Soạn holding statement, nội bộ, khách hàng, support script, Q&A và bản có điều kiện. Mỗi message truy fact/unknown/source; có action, update, version, owner, spokesperson.
 
 **Bước 6 — Thiết kế Sequence & No-surprise Route.** Xếp thứ tự theo nghĩa vụ/tác động, không theo độ ồn. Ghi dependency, fallback, accessibility, delivery owner; tránh bên trọng yếu biết từ nguồn thứ ba.
 
@@ -80,7 +80,7 @@ Skill điều hành bằng chứng/thông điệp; khắc phục, điều tra, p
 
 **Bước 9 — Review, Feedback & Closure.** Command duyệt facts; chuyên trách duyệt legal/privacy/accessibility; người có quyền duyệt release. Ghi inquiry, correction, decision, closure; chỉ owner đóng sự cố.
 
-**Bước 10 — Gate và bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/crisis-communication/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/crisis-communication/SKILL.md), lưu I/O/hash/log; giao Pack và state. Engine không approve/send/publish.
+**Bước 10 — Gate và bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao Pack và state. Engine không approve/send/publish.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

@@ -71,7 +71,7 @@ Không hỏi lại dữ kiện đã có. Chỉ hỏi tối đa 3 cụm: portfoli
 12. **Xếp exception:** strategic impact × urgency × reversibility × cascade; không theo người báo to.
 13. **Tạo decision request:** question/scope/deadline/options/recommendation, trade-offs, prerequisites, reversibility, owner.
 14. **Review:** sponsor, metric/data, resource/domain, final; kiểm coverage/comparability/independence/injection/state.
-15. **Đóng gói:** dùng [Portfolio Brief](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/portfolio-monitoring/SKILL.md), [Rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/portfolio-monitoring/SKILL.md), JSON/engine; nêu 3 signals, critical issue, recommendation, decisions.
+15. **Đóng gói:** dùng [Portfolio Brief](<SKILL.md>), [Rules](<SKILL.md>), JSON/engine; nêu 3 signals, critical issue, recommendation, decisions.
 
 ### State machine
 

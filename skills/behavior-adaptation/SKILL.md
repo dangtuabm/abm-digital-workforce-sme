@@ -66,7 +66,7 @@ Skill này tạo playbook thử nghiệm cho một interaction từ behavior evi
 
 **Interaction Adaptation Map:** outcome/invariants → pattern → hypothesis/alternatives/confidence → lever → do/avoid → comprehension → metric → stop/rollback → reviewer.
 
-**Bước 4 — Chọn mode/fallback.** Chọn presentation, delegation, feedback, coaching, negotiation hoặc objection; fallback luôn rõ outcome/evidence/options, quyền hỏi/từ chối, action/owner/deadline và check understanding. Đọc [rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/behavior-adaptation/SKILL.md).
+**Bước 4 — Chọn mode/fallback.** Chọn presentation, delegation, feedback, coaching, negotiation hoặc objection; fallback luôn rõ outcome/evidence/options, quyền hỏi/từ chối, action/owner/deadline và check understanding. Đọc [rules](<SKILL.md>).
 
 **Bước 5 — Tạo Playbook.** Chỉ đổi order, detail, pace, written/live, question, evidence, options, participation, feedback timing và CTA form. Không đổi fact, standard, deadline, authority, consequence hay fairness.
 
@@ -78,7 +78,7 @@ Skill này tạo playbook thử nghiệm cho một interaction từ behavior evi
 
 **Bước 9 — Update.** Retain, revise hoặc reject hypothesis; hạ confidence khi evidence mâu thuẫn. Không transfer sang context/người khác khi chưa test/review.
 
-**Bước 10 — Gate/bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/behavior-adaptation/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P03%20-%20B%C3%A1n%20h%C3%A0ng%20v%C3%A0%20Ch%C4%83m%20s%C3%B3c%20kh%C3%A1ch%20h%C3%A0ng/behavior-adaptation/SKILL.md), lưu I/O/hash/log; giao Ledger/Register/Map/Playbooks/Trials/response/tests/issues/approval. Engine không profile/approve/execute.
+**Bước 10 — Gate/bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao Ledger/Register/Map/Playbooks/Trials/response/tests/issues/approval. Engine không profile/approve/execute.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

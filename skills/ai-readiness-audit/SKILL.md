@@ -1,10 +1,10 @@
 ---
 name: ai-readiness-audit
 description: >
-  Tạo Evidence-Based A.I Readiness Baseline & Gate Pack để đánh giá tổ chức theo 8 Yếu Tố ABM: Bài toán, Dữ liệu, Công cụ/Model, Skill, Workflow, Output, Tương tác, Con người/Văn hóa; kèm governance/security/integration/measurement controls, evidence hierarchy, scoring rubric/confidence, gaps, prerequisites, Red Lines và readiness gates. Dùng trước đầu tư, mở rộng, chọn nền tảng/Wave hoặc khi cần biết tổ chức sẵn sàng tới đâu. Không bịa/ép điểm, coi thiếu dữ liệu là 0 hay tự phê duyệt đầu tư; dừng tại READY_FOR_HUMAN_READINESS_DECISION.
+  Tạo Evidence-Based A.I Readiness Baseline & Gate Pack để đánh giá tổ chức theo 08 YẾU TỐ ABM: BÀI TOÁN – MỤC TIÊU, CÔNG CỤ – MODEL, DATA – DỮ LIỆU, SKILL – KỸ NĂNG, WORKFLOW – QUY TRÌNH, OUTPUT – ĐẦU RA, SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ, CON NGƯỜI – VĂN HÓA; kèm governance/security/integration/measurement controls, evidence hierarchy, scoring rubric/confidence, gaps, prerequisites, Red Lines và readiness gates. Dùng trước đầu tư, mở rộng, chọn nền tảng/Wave hoặc khi cần biết tổ chức sẵn sàng tới đâu. Không bịa/ép điểm, coi thiếu dữ liệu là 0 hay tự phê duyệt đầu tư; dừng tại READY_FOR_HUMAN_READINESS_DECISION.
 metadata:
-  version: "2.3"
-  updated: "2026-08-22"
+  version: "2.4"
+  updated: "2026-10-25"
   owner: "Đặng Tú ABM"
   skill_id: "89"
 ---
@@ -18,7 +18,7 @@ metadata:
 ## 1. NHIỆM VỤ VÀ ĐIỂM BÀN GIAO
 
 **NHIỆM VỤ**
-Tạo pack nối mandate/boundary → evidence plan → 8 Yếu Tố → governance/security/integration/measurement controls → scoring/confidence → gaps/dependencies → prerequisites/gates → human readiness decision.
+Tạo pack nối mandate/boundary → evidence plan → 08 YẾU TỐ → governance/security/integration/measurement controls → scoring/confidence → gaps/dependencies → prerequisites/gates → human readiness decision.
 
 **ĐIỂM DỪNG**
 NOT_READY, READY_FOR_EVIDENCE_COLLECTION, READY_FOR_READINESS_REVIEW hoặc READY_FOR_HUMAN_READINESS_DECISION. Không invent evidence/benchmark/baseline; force score for unknown; average away critical failure; claim certification; select/buy platform; approve budget; promise ROI; lock baseline without authorized owner; publish/send report.
@@ -47,7 +47,7 @@ Thiếu decision/scope/sponsor, evidence owners/rights, rubric, critical gates, 
 1. **Khóa audit contract:** decision, scope, units, horizon/cutoff, sponsor, audience, DoD, exclusions, confidentiality and action boundary.
 2. **Map stakeholders and evidence:** owner/interviewee/system/source per factor; separate observed, documented, system-derived, self-reported, estimated and unverified evidence.
 3. **Inventory current state:** active/retired/pilot A.I tools, costs, users, processes, integrations, data, outcomes, incidents, policies and shadow A.I; do not infer from licenses.
-4. **Assess 8 Yếu Tố ABM:** Bài toán (outcome/owner/value); Dữ liệu (SoR/quality/rights/lineage); Công cụ/Model (fit/limits/lifecycle); Skill (task competence/validation); Workflow (flow/SoD/fallback); Output (contract/traceability/acceptance); Tương tác (review/escalation/feedback); Con người/Văn hóa (sponsor/roles/trust/learning/change).
+4. **Assess 08 YẾU TỐ ABM (đúng thứ tự):** BÀI TOÁN – MỤC TIÊU (outcome/owner/value); CÔNG CỤ – MODEL (fit/limits/lifecycle); DATA – DỮ LIỆU (SoR/quality/rights/lineage); SKILL – KỸ NĂNG (task competence/validation); WORKFLOW – QUY TRÌNH (flow/SoD/fallback); OUTPUT – ĐẦU RA (contract/traceability/acceptance); SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ (usage/review/escalation/permission/feedback); CON NGƯỜI – VĂN HÓA (sponsor/roles/trust/learning/change). 08 YẾU TỐ áp dụng ở mọi giai đoạn trưởng thành, chỉ khác quy mô; không phải 8 bước. Factor ID trong pack/script giữ nguyên (`PROBLEM`, `TOOL_MODEL`, `DATA`, `SKILL`, `WORKFLOW`, `OUTPUT`, `INTERACTION`, `PEOPLE_CULTURE`).
 5. **Assess cross-cutting controls:** governance/decision rights, privacy/security/safety, integration/operations, measurement/ROI, procurement/legal/records and incident/continuity.
 6. **Apply rubric:** score only with evidence meeting the level anchor. Record score, evidence, confidence, contradiction and assessor. Unknown remains UNKNOWN, not 0; no unsupported interpolation.
 7. **Prevent false aggregation:** publish factor distribution and critical gates before any composite. Do not let strengths offset Red-Line failure. If weights exist, show formula, missing rule and sensitivity.
@@ -99,3 +99,4 @@ Dùng references/ai-readiness-audit-rules.md, templates/ai-readiness-audit-pack.
 
 **v2.3 — 2026-08-22.** Enterprise-grade evidence, scoring, baseline and readiness gates. D10 chờ pilot thật.
 
+*v2.4 — 25/10/2026: đồng bộ 03 GIAI ĐOẠN TRƯỞNG THÀNH A.I DOANH NGHIỆP và 08 YẾU TỐ theo AB05 v2.3, Sếp duyệt. Bản trước lưu tại 7. ARCHIVE › 20261025 - DAI RA SOAT DONG BO KHUNG MOI.* *[A.I Generated — Claude Code — 25/10/2026]*

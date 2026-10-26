@@ -74,11 +74,11 @@ Skill này tạo/kiểm định deck có presenter; document tối ưu cho đọ
 
 **Bước 7 — Build có version.** Dùng công cụ được phép; ghi tool/template/font, input/output hash và slide-to-file manifest. Không sửa source/production ngoài phạm vi.
 
-**Bước 8 — Chạy render QA.** Đọc [rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/presentation-builder/SKILL.md); kiểm count/order/name/aspect/dimension, font, overflow/crop, missing/extra, chart, notes và accessibility. Tạo contact sheet; soi boundary và risk slides.
+**Bước 8 — Chạy render QA.** Đọc [rules](<SKILL.md>); kiểm count/order/name/aspect/dimension, font, overflow/crop, missing/extra, chart, notes và accessibility. Tạo contact sheet; soi boundary và risk slides.
 
 **Bước 9 — Rehearsal.** Chạy narrative, claim, integrity, visual, accessibility, timing và action test trên render; ghi sample/reviewer/threshold/evidence. Fail kéo state xuống.
 
-**Bước 10 — Gate & bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/presentation-builder/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/presentation-builder/SKILL.md), lưu I/O/hash/log; giao deck/render/Blueprint/ledgers/inventory/notes/QA/open issues/approval. Engine không approve/deliver.
+**Bước 10 — Gate & bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao deck/render/Blueprint/ledgers/inventory/notes/QA/open issues/approval. Engine không approve/deliver.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

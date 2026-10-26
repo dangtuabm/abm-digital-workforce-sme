@@ -3,8 +3,8 @@ name: use-case-discovery
 description: >
   Tạo Evidence-Based A.I Use-Case Opportunity Register từ chiến lược, value stream, phòng ban, vai trò, job/task/decision, pain/evidence, workload, data/system, desired output/action, human authority, risk và value hypothesis. Dùng khi khám phá cơ hội A.I theo doanh nghiệp/phòng ban/vai trò hoặc lập backlog trước prioritization. Không bịa pain/ROI, thay thế job bằng nhãn chung, chấm điểm/xếp hạng, chọn vendor hay tự động hóa vùng cấm; dừng tại READY_FOR_HUMAN_DISCOVERY_REVIEW.
 metadata:
-  version: "2.3"
-  updated: "2026-08-22"
+  version: "2.4"
+  updated: "2026-10-25"
   owner: "Đặng Tú ABM"
   skill_id: "90"
 ---
@@ -51,7 +51,7 @@ Thiếu scope/outcome/owner, evidence rights, System of Record, human authority 
 3. **Vẽ Business & Work Map:** outcome → value stream → process stage → unit → role → consumer. Giữ riêng quy trình mô tả và quy trình quan sát khi conflict.
 4. **Phân rã Work Moment:** role/user, job, task/decision, trigger, input, steps, handoff, exception, output/action, consumer, workload, pain, evidence refs. Cấm nhãn mơ hồ như “tự động hóa phòng Sales”.
 5. **Chứng minh Pain & Workload:** chỉ ghi metric có nguồn; tách `OBSERVED/DOCUMENTED/SYSTEM_DERIVED/SELF_REPORTED/CALCULATED/ESTIMATED/UNVERIFIED`; calculation có formula/denominator/window/assumption.
-6. **Soi 8 yếu tố ABM:** Bài toán, Dữ liệu, Công cụ/Model, Skill, Workflow, Output, Tương tác, Con người/Văn hóa để tìm điều kiện và gap; không tạo readiness score.
+6. **Soi 08 YẾU TỐ ABM:** BÀI TOÁN – MỤC TIÊU, CÔNG CỤ – MODEL, DATA – DỮ LIỆU, SKILL – KỸ NĂNG, WORKFLOW – QUY TRÌNH, OUTPUT – ĐẦU RA, SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ, CON NGƯỜI – VĂN HÓA để tìm điều kiện và gap; 08 YẾU TỐ là góc soi xuyên suốt, không phải 8 bước; không tạo readiness score.
 7. **Mô tả Capability Pattern:** search/retrieve, extract/classify, summarize/generate, compare/recommend, forecast/detect hoặc orchestrate cùng human checkpoint; luôn giữ phương án rule/process/training/no-A.I.
 8. **Tạo Opportunity Contract:** user/work ref, problem/evidence, outcome, input/data/system, output/action, acceptance, value hypothesis/metric, capability, alternative, human authority, autonomy boundary, risk, assumption, validation question.
 9. **Basic Screen:** kiểm evidence, data rights, testability, owner/workflow fit, human control, harm/security/privacy, dependency; gán `VALIDATE/DEFER/EXCLUDE` kèm lý do; cấm score/weight/rank.
@@ -109,3 +109,5 @@ Chỉ đánh dấu rubric/checklist/template tái dùng là **Asset Candidate** 
 Dùng `references/use-case-discovery-rules.md`, `templates/use-case-discovery-pack.md`, `scripts/evaluate_use_case_discovery.py`, `evals.json` và fixtures positive/negative.
 
 **v2.3 — 22/08/2026.** Enterprise-grade discovery bằng chứng; build chain `SKILL-CREATOR → CUSTOMER-XRAY → FINAL-GATEKEEPER`. Chỉ `STATIC PASS`; D10 chờ pilot doanh nghiệp thật.
+
+*v2.4 — 25/10/2026: đồng bộ 03 GIAI ĐOẠN TRƯỞNG THÀNH A.I DOANH NGHIỆP và 08 YẾU TỐ theo AB05 v2.3, Sếp duyệt. Bản trước lưu tại 7. ARCHIVE › 20261025 - DAI RA SOAT DONG BO KHUNG MOI.* *[A.I Generated — Claude Code — 25/10/2026]*

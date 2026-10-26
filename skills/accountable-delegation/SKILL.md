@@ -72,7 +72,7 @@ Không hỏi lại dữ kiện đã có. Chỉ hỏi tối đa 3 câu quyết đ
 9. **Thiết kế escalation:** trigger, destination, response SLA, safe fallback và stop condition cho scope/cost/time/data/quality.
 10. **Lấy acceptance handshake:** delegate chỉ `EXPLICIT_ACCEPTED`, `DECLINED`, `RENEGOTIATE` hoặc `PENDING`; lưu statement, timestamp, source locator. Im lặng/emoji/suy diễn là `PENDING`.
 11. **Chạy gate:** kiểm tra coverage, trạng thái giả, injection, test và review; xuất lỗi theo field/ID.
-12. **Đóng gói:** dùng [Delegation Contract](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/accountable-delegation/SKILL.md), [Rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/accountable-delegation/SKILL.md), input JSON và engine; giao con người duyệt activation.
+12. **Đóng gói:** dùng [Delegation Contract](<SKILL.md>), [Rules](<SKILL.md>), input JSON và engine; giao con người duyệt activation.
 
 ### State machine
 

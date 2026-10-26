@@ -71,7 +71,7 @@ Không hỏi lại dữ kiện đã có. Chỉ hỏi tối đa 3 cụm: outcome/
 11. **Kiểm change:** reason/evidence, before/change/after, impact, approver, verification, rollback. Drift chưa duyệt → `NOT_READY`.
 12. **Đối chiếu stop/kill criteria:** trigger, evidence, owner, response SLA và safe state; chỉ đề nghị, không tự pause/stop.
 13. **Review:** outcome, metric/data, domain/resource và final reviewers; kiểm coverage, independence, injection, unauthorized state.
-14. **Đóng gói:** dùng [Control Pack](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/outcome-first-execution/SKILL.md), [Rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/outcome-first-execution/SKILL.md), JSON/engine; nêu state và next decision.
+14. **Đóng gói:** dùng [Control Pack](<SKILL.md>), [Rules](<SKILL.md>), JSON/engine; nêu state và next decision.
 
 ### State machine
 

@@ -72,7 +72,7 @@ Skill tái cấu trúc source canon thành asset family; sáng tạo chiến d�
 
 **Bước 5 — Thiết kế Asset Family & Lineage.** Chọn hero–hub–micro hoặc long–short–nurture. Variant có parent atoms, claims, sources, transformation, angle, hook, value, CTA, attribution, version, owner.
 
-**Bước 6 — Soạn Channel-native Variants.** Dùng [gate rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/content-repurposing/SKILL.md). Đổi nhịp/độ sâu/visual/CTA theo brief; giữ claim/context. ABM T0 ưu tiên build trust, thought leadership, CTA mềm; không hard-sell vô căn cứ.
+**Bước 6 — Soạn Channel-native Variants.** Dùng [gate rules](<SKILL.md>). Đổi nhịp/độ sâu/visual/CTA theo brief; giữ claim/context. ABM T0 ưu tiên build trust, thought leadership, CTA mềm; không hard-sell vô căn cứ.
 
 **Bước 7 — Fidelity & Distinctiveness Red-team.** Bắt changed meaning, quote cropping, fabricated data, context loss, duplicate, generic content, CTA lệch, voice drift, misleading visual, mất attribution.
 
@@ -80,7 +80,7 @@ Skill tái cấu trúc source canon thành asset family; sáng tạo chiến d�
 
 **Bước 9 — Review, Release & Measurement.** Source owner chốt fidelity; rights/privacy, brand/editorial review; người có quyền duyệt release. Xếp dependency/embargo/fallback; ghi publish evidence và metrics theo owner, không tự nhận attribution.
 
-**Bước 10 — Gate và bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/content-repurposing/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P02%20-%20Marketing%2C%20Th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20v%C3%A0%20T%C4%83ng%20tr%C6%B0%E1%BB%9Fng/content-repurposing/SKILL.md), lưu I/O/hash/log; giao Pack/variants/state. Engine không render, clone, schedule, post/publish.
+**Bước 10 — Gate và bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao Pack/variants/state. Engine không render, clone, schedule, post/publish.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

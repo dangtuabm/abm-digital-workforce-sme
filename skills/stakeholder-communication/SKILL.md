@@ -68,7 +68,7 @@ Skill này điều phối nhiều bên quanh một issue/outcome; việc chỉ �
 
 **Stakeholder Control Matrix:** stakeholder → evidence/confidence → impact/power/interest/salience → right → issue/need → disclosure → owner → engagement → review.
 
-**Bước 4 — Ưu tiên engagement.** Dùng [gate rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/stakeholder-communication/SKILL.md) chốt mức tham gia; override khi legitimacy, urgency, harm hoặc quyền chính thức cao. “Ủng hộ” không đồng nghĩa “đúng”.
+**Bước 4 — Ưu tiên engagement.** Dùng [gate rules](<SKILL.md>) chốt mức tham gia; override khi legitimacy, urgency, harm hoặc quyền chính thức cao. “Ủng hộ” không đồng nghĩa “đúng”.
 
 **Bước 5 — Tạo Message Architecture.** Mỗi message có issue/audience/purpose, state, must know, evidence/locator, qualifier, impact, ask, sender/owner, channel/timing, disclosure/fallback. Không tạo claim/commitment mới.
 
@@ -80,7 +80,7 @@ Skill này điều phối nhiều bên quanh một issue/outcome; việc chỉ �
 
 **Bước 9 — Thiết kế feedback/commitment loop.** Ghi question, objection, decision, commitment, owner, due/status, source, response; cập nhật map bằng evidence mới, không sửa lịch sử.
 
-**Bước 10 — Gate và bàn giao.** Điền [JSON](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/stakeholder-communication/SKILL.md), chạy [engine](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P01%20-%20V%C4%83n%20ph%C3%B2ng%20CEO%2C%20Chi%E1%BA%BFn%20l%C6%B0%E1%BB%A3c%20v%C3%A0%20%C4%90i%E1%BB%81u%20h%C3%A0nh/stakeholder-communication/SKILL.md), lưu I/O/hash/log; giao Map/Messages/Sequence/Units/Logs/Tests/Approval. Engine không approve/send/publish.
+**Bước 10 — Gate và bàn giao.** Điền [JSON](<SKILL.md>), chạy [engine](<SKILL.md>), lưu I/O/hash/log; giao Map/Messages/Sequence/Units/Logs/Tests/Approval. Engine không approve/send/publish.
 
 ## 5. NGƯỜI QUYẾT ĐỊNH — A.I THỰC THI
 

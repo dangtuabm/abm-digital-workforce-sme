@@ -97,7 +97,7 @@ Tách **Dữ kiện · Suy luận · Giả định**; tìm counterevidence — b
 
 **Bước 7 — Đóng gói Hồ sơ Nghiên cứu**
 
-Dùng [template Hồ sơ Nghiên cứu](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P04%20-%20S%E1%BA%A3n%20ph%E1%BA%A9m%2C%20D%E1%BB%8Bch%20v%E1%BB%A5%20v%C3%A0%20%C4%90%E1%BB%95i%20m%E1%BB%9Bi/deep-research/SKILL.md): câu trả lời điều hành trước, bằng chứng và giới hạn sau; khuyến nghị gắn điều kiện và rủi ro.
+Dùng [template Hồ sơ Nghiên cứu](<SKILL.md>): câu trả lời điều hành trước, bằng chứng và giới hạn sau; khuyến nghị gắn điều kiện và rủi ro.
 
 **Bước 8 — Kiểm định trước bàn giao**
 

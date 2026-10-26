@@ -71,7 +71,7 @@ Không hỏi lại dữ kiện đã có. Chỉ hỏi tối đa 3 cụm: action c
 9. **Review:** owner attests evidence; independent reviewer kiểm DoD; security/domain review theo risk; final closure reviewer quyết định ngoài engine.
 10. **Hansei có kiểm soát:** chỉ sau outcome review; lưu problem, hypothesis, result, lesson, reusable candidate và owner. Không sửa quy trình khi chưa có vấn đề/evidence.
 11. **Chạy gate:** kiểm coverage mọi known action/evidence/dependency/blocker/exception; bắt fake progress/done/reminder/escalation/closure và unauthorized mutation.
-12. **Đóng gói:** dùng [Closure Pack](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/action-closure/SKILL.md), [Rules](HUB%20RI%C3%8ANG%20-%20ABM%20WORKSPACE%20-%20A.I%20AGENT/4.%20WORK%20-%20C%C3%94NG%20VI%E1%BB%86C/ABM%20WORK%20-%20R%26D%20K%E1%BB%B8%20THU%E1%BA%ACT%20N%E1%BB%80N%20T%E1%BA%A2NG/08%20PH%C3%92NG%20BAN%20-%20100%20SKILL%20D%C3%80NH%20CHO%20DOANH%20NGHI%E1%BB%86P/P05%20-%20V%E1%BA%ADn%20h%C3%A0nh%2C%20Cung%20%E1%BB%A9ng%20v%C3%A0%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng/action-closure/SKILL.md), JSON và engine; nêu state/errors/warnings/next human decision.
+12. **Đóng gói:** dùng [Closure Pack](<SKILL.md>), [Rules](<SKILL.md>), JSON và engine; nêu state/errors/warnings/next human decision.
 
 ### State machine
 
