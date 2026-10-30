@@ -1,0 +1,3 @@
+ma_viec,ten_viec,dau_ra,tieu_chi_dat,nguoi_chiu_trach_nhiem,nguoi_lam_chinh,nguoi_soat_doc_lap,phu_thuoc_viec,tren_duong_gang,quyen_can,nhan_du_lieu,noi_luu_ket_qua,diem_nguoi_duyet,trang_thai,ghi_chu
+V-01,"[Kiem don dai ly]","[Phieu kiem don]","[du ma hang, du so luong, khop bang gia hien hanh]","[truong phong kinh doanh]","[A15 - ma Nhan su so]","[A30 - ma Nhan su so]","",Co,"[doc don, doc bang gia]",Vang,"[thu muc don hang]",Khong,THIET KE,""
+V-02,"[Lap phieu xuat kho]","[Phieu xuat nhap]","[khop phieu kiem don]","[truong kho]","[...]","[...]","V-01",Co,"[tao phieu xuat o trang thai nhap]",Vang,"[phan mem kho - ban nhap]","Co - truong kho duyet truoc khi xuat",THIET KE,""

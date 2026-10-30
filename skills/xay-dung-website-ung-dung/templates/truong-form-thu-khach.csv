@@ -1,0 +1,5 @@
+ma_truong,nhan_hien_thi,kieu,bat_buoc,kiem_tra_dinh_dang,ly_do_can_thu,cot_o_noi_nhan,nhan_du_lieu,nguoi_duoc_xem,trang_thai
+ho_ten,"Họ và tên",text,co,"2–100 ký tự","Gọi đúng tên khi liên hệ","A",Vàng,"[người phụ trách bán hàng]",CHỜ DUYỆT
+so_dien_thoai,"Số điện thoại",tel,co,"Số điện thoại Việt Nam 10 số","Gọi lại tư vấn","B",Vàng,"[người phụ trách bán hàng]",CHỜ DUYỆT
+nhu_cau,"Anh/Chị quan tâm",select,khong,"Chọn trong danh sách","Chuyển đúng người tư vấn","C",Xanh,"[người phụ trách bán hàng]",CHỜ DUYỆT
+dong_y,"Tôi đồng ý cho công ty liên hệ và xử lý thông tin theo chính sách",checkbox,co,"Phải đánh dấu","Căn cứ được liên hệ (nội dung do pháp chế duyệt)","D",Xanh,"[người phụ trách bán hàng]",CHỜ DUYỆT

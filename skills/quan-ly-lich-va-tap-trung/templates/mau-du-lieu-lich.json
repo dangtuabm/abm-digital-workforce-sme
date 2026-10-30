@@ -1,0 +1,39 @@
+{
+  "khung": {
+    "ma_ke_hoach": "KHTT-001",
+    "khoang_thoi_gian": "02/11/2026 - 06/11/2026",
+    "mui_gio": "GMT+7",
+    "muc_tieu": ["Chốt bảng giá đại lý quý 1", "Ổn định giao hàng khu vực phía Bắc"],
+    "nguoi_duyet": "Giám đốc điều hành",
+    "gioi_han_viec_lam_do": 2
+  },
+  "suc_chua": {
+    "gio_lam_phut": 480,
+    "viec_co_dinh_phut": 150,
+    "nghi_phut": 60,
+    "du_phong_phut": 60
+  },
+  "cam_ket": [
+    {"ma": "CK-01", "viec": "Hoàn thiện bảng giá đại lý quý 1", "muc_tieu": "Chốt bảng giá đại lý quý 1", "nguoi_chiu_trach_nhiem": "Giám đốc điều hành", "han": "04/11/2026", "uoc_luong_phut": 120, "uu_tien": "PHAI XONG", "tinh_trang": "DANG LAM"},
+    {"ma": "CK-02", "viec": "Rà lịch giao hàng phía Bắc", "muc_tieu": "Ổn định giao hàng khu vực phía Bắc", "nguoi_chiu_trach_nhiem": "Giám đốc điều hành", "han": "05/11/2026", "uoc_luong_phut": 60, "uu_tien": "NEN XONG", "tinh_trang": "DANG LAM"},
+    {"ma": "CK-03", "viec": "Đọc báo cáo thị trường thép", "muc_tieu": "Chốt bảng giá đại lý quý 1", "nguoi_chiu_trach_nhiem": "Giám đốc điều hành", "han": "10/11/2026", "uoc_luong_phut": 60, "uu_tien": "HO TRO", "tinh_trang": "SAN SANG"}
+  ],
+  "de_xuat": [
+    {"ma_cam_ket": "CK-01", "cach_xu_ly": "LAM", "ly_do": "Nối thẳng mục tiêu chính", "da_duyet": true},
+    {"ma_cam_ket": "CK-02", "cach_xu_ly": "LAM", "ly_do": "Cần cho giao hàng tuần sau", "da_duyet": true},
+    {"ma_cam_ket": "CK-03", "cach_xu_ly": "HOAN", "ly_do": "Không vừa sức chứa tuần này", "da_duyet": true}
+  ],
+  "khoi_tap_trung": [
+    {"ma": "KH-01", "ma_cam_ket": "CK-01", "thoi_luong_phut": 120, "bat_dau_khi": "Có số liệu giá vốn mới", "dung_khi": "Có bản nháp bảng giá"},
+    {"ma": "KH-02", "ma_cam_ket": "CK-02", "thoi_luong_phut": 60, "bat_dau_khi": "Có lịch xe tuần", "dung_khi": "Có danh sách tuyến cần sửa"}
+  ],
+  "xung_dot": [
+    {"ma": "XD-01", "mo_ta": "CK-01 và CK-02 cùng cần giờ sáng", "muc_do": "LON", "da_xu_ly": true}
+  ],
+  "quy_tac_gian_doan": {
+    "khan": "Sự cố giao hàng, khách lớn hủy đơn",
+    "noi_ghi_tam": "Sổ việc chờ trên điện thoại",
+    "nguoi_quyet": "Giám đốc điều hành",
+    "cach_quay_lai": "Ghi dòng đang dừng ở đâu trước khi xử lý"
+  }
+}

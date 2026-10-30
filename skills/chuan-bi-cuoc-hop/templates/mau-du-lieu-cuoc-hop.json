@@ -1,0 +1,37 @@
+{
+  "thong_tin_hop": {
+    "ma_hop": "HOP-2026-11-03",
+    "ten": "Họp ban giám đốc: mở cửa hàng thứ 7",
+    "loai_hop": "QUYET DINH",
+    "muc_dich": "Chốt có mở cửa hàng thứ 7 trong quý 1 hay không",
+    "bat_dau": "2026-11-03T09:00",
+    "ket_thuc": "2026-11-03T10:00",
+    "thoi_luong_phut": 60,
+    "nguoi_chu_tri": "Giám đốc",
+    "nguoi_quyet": "Giám đốc"
+  },
+  "nguon": [
+    {"ten": "Báo cáo doanh thu 6 cửa hàng tháng 10", "phien_ban": "v2", "ngay_cap_nhat": "2026-11-01", "nguoi_giu": "Kế toán trưởng", "tinh_trang": "MOI"},
+    {"ten": "Khảo sát 2 mặt bằng", "phien_ban": "v1", "ngay_cap_nhat": "2026-10-28", "nguoi_giu": "Trưởng phát triển", "tinh_trang": "MOI"}
+  ],
+  "cam_ket_cu": [
+    {"viec": "Gửi báo giá thi công mặt bằng A", "nguoi_nhan": "Trưởng phát triển", "han": "2026-10-30", "tinh_trang": "TRE", "vuong_mac": "Nhà thầu chưa gửi"}
+  ],
+  "cau_hoi_can_quyet": [
+    {"cau_hoi": "Mở cửa hàng thứ 7 tại mặt bằng nào?", "phuong_an": ["Mặt bằng A", "Mặt bằng B", "Chưa mở"], "khuyen_nghi": "Mặt bằng A", "can_cu": "Khảo sát 2 mặt bằng v1", "cach_quyet": "Giám đốc chốt sau khi nghe ý kiến", "han": "2026-11-03"}
+  ],
+  "nguoi_du": [
+    {"ten": "Giám đốc", "vai_tro": "QUYET", "can_du": true, "co_mat": true},
+    {"ten": "Kế toán trưởng", "vai_tro": "GOP Y", "can_du": true, "co_mat": true},
+    {"ten": "Trưởng phát triển", "vai_tro": "THUC HIEN", "can_du": true, "co_mat": true},
+    {"ten": "Trưởng cửa hàng 1", "vai_tro": "DUOC BAO", "can_du": false, "co_mat": false}
+  ],
+  "chuong_trinh": [
+    {"muc": "Mở đầu", "cach": "BAO", "nguoi_dan": "Giám đốc", "phut": 5, "dau_ra": "Cùng câu hỏi"},
+    {"muc": "Số liệu 6 cửa hàng", "cach": "BAO", "nguoi_dan": "Kế toán trưởng", "phut": 5, "dau_ra": "Hỏi đáp số liệu"},
+    {"muc": "So sánh 2 mặt bằng", "cach": "BAN", "nguoi_dan": "Trưởng phát triển", "phut": 20, "dau_ra": "Rõ đánh đổi"},
+    {"muc": "Chọn phương án", "cach": "QUYET", "nguoi_dan": "Giám đốc", "phut": 15, "dau_ra": "Quyết định và lý do"},
+    {"muc": "Phân việc", "cach": "NHAN VIEC", "nguoi_dan": "Giám đốc", "phut": 10, "dau_ra": "Việc có người nhận"},
+    {"muc": "Chốt cuối", "cach": "BAO", "nguoi_dan": "Thư ký", "phut": 5, "dau_ra": "Đọc lại quyết định"}
+  ]
+}

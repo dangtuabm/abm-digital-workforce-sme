@@ -1,0 +1,11 @@
+ky_so_sanh,ky_nay,don_vi_tien,tang_lai,muc,cot,so_tien,cach_tinh,nguon_file_dong,nhan_nhan_dinh,ghi_chu
+"[kỳ 0 hoặc Kế hoạch]","[kỳ 1]","[đơn vị]","[Lãi gộp/Lãi đóng góp/Lợi nhuận sau chi phí chung]",1,Lợi nhuận kỳ so sánh,"[số]","[nguồn]","[file, dòng]",DỮ KIỆN,
+,,,,2,Lượng,"[số]","(Q tổng 1 − Q tổng 0) × lãi bình quân kỳ 0",,"[DỮ KIỆN/SUY LUẬN]",
+,,,,3,Cơ cấu,"[số]","Tổng Q tổng 1 × (s1 − s0) × m0",,,
+,,,,4,Giá bán,"[số]","Tổng (P1 − P0) × Q1",,,
+,,,,5,Giá vốn đơn vị,"[số]","− Tổng (C1 − C0) × Q1",,,
+,,,,6,Chi phí trực tiếp ngoài đơn vị,"[số]","− (kỳ 1 − kỳ 0)",,,
+,,,,7,Chi phí chung,"[số]","− (kỳ 1 − kỳ 0); chỉ khi cầu nối tới lợi nhuận sau chi phí chung",,,
+,,,,8,Sản phẩm mới / ngừng,"[số]","+ lãi hàng chỉ có ở kỳ 1 − lãi hàng chỉ có ở kỳ 0",,,
+,,,,9,Lợi nhuận kỳ này,"[số]","[nguồn]","[file, dòng]",DỮ KIỆN,
+,,,,10,Kiểm cân,"[CÂN/CHƯA CÂN]","Dòng 1 + dòng 2 đến 8 − dòng 9 = 0",,,

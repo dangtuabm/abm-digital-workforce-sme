@@ -1,0 +1,34 @@
+{
+  "ma_quyet_dinh": "QD-2026-014 — chọn đơn vị vận chuyển cho kênh online",
+  "tieu_chi": [
+    {"ma": "C-HOA-DON", "ten": "Xuất được hóa đơn điện tử hợp lệ", "loai": "cong"},
+    {"ma": "D-CHI-PHI", "ten": "Chi phí trên mỗi đơn (đã quy về điểm theo mốc neo)", "loai": "diem", "trong_so": 0.5},
+    {"ma": "D-DUNG-HEN", "ten": "Tỷ lệ giao đúng hẹn 3 tháng gần nhất", "loai": "diem", "trong_so": 0.3},
+    {"ma": "D-HOAN-HANG", "ten": "Quy trình hoàn hàng", "loai": "diem", "trong_so": 0.2}
+  ],
+  "phuong_an": [
+    {
+      "ma": "PA-0 Giữ đơn vị hiện tại",
+      "cong": {"C-HOA-DON": true},
+      "diem": {
+        "D-CHI-PHI": {"thap": 55, "co_so": 60, "cao": 65, "ma_can_cu": "CC-01"},
+        "D-DUNG-HEN": {"thap": 70, "co_so": 75, "cao": 80, "ma_can_cu": "CC-02"},
+        "D-HOAN-HANG": {"thap": 60, "co_so": 65, "cao": 70, "ma_can_cu": "CC-03"}
+      }
+    },
+    {
+      "ma": "PA-1 Đơn vị A",
+      "cong": {"C-HOA-DON": true},
+      "diem": {
+        "D-CHI-PHI": {"thap": 70, "co_so": 78, "cao": 85, "ma_can_cu": "CC-04"},
+        "D-DUNG-HEN": {"thap": 60, "co_so": 70, "cao": 78, "ma_can_cu": "CC-05"},
+        "D-HOAN-HANG": {"thap": 55, "co_so": 65, "cao": 72, "ma_can_cu": "CC-06"}
+      }
+    },
+    {
+      "ma": "PA-2 Đơn vị B",
+      "cong": {"C-HOA-DON": null},
+      "diem": {}
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ma_cai_tien": "CT-MAU-01",
+  "phien_ban_quy_trinh": "SOP-DONG-GOI-v4",
+  "nguoi_phu_trach": "Trưởng ca đóng gói",
+  "so_lieu_nen": {
+    "chi_so": "ty_le_giao_sai_phan_tram",
+    "gia_tri": 3.2,
+    "ma_nguon": "NG-NEN-01",
+    "ky_do": "8 tuần",
+    "kiem_do_luong": "dat",
+    "on_dinh": true
+  },
+  "gia_thuyet": {
+    "ma": "GT-01",
+    "co_che": "Quét mã từng sản phẩm trước khi dán thùng giúp phát hiện sai hàng sớm",
+    "du_doan": "Tỷ lệ giao sai giảm",
+    "dieu_kien_bac_bo": "Sau đủ 4 tuần tỷ lệ giao sai không giảm",
+    "giai_thich_khac": ["Đơn hàng tháng này ít mã hơn", "Có nhân viên mới"]
+  },
+  "thu_nghiem": {
+    "phien_ban_thay_doi": "TD-v1",
+    "nguoi_phu_trach": "Trưởng kho",
+    "pham_vi": "Một bàn đóng gói, ca sáng",
+    "doi_chung": "Bàn đóng gói ca chiều giữ cách cũ",
+    "co_mau": 600,
+    "thoi_gian": "4 tuần",
+    "chi_so_chinh": {"chi_so": "ty_le_giao_sai_phan_tram", "phep_so": "<=", "nguong": 2.0},
+    "chi_so_canh_bao": [
+      {"ma": "THOI-GIAN-DONG-GOI", "chi_so": "phut_moi_don", "phep_so": "<=", "nguong": 6},
+      {"ma": "KHIEU-NAI", "chi_so": "so_khieu_nai_tuan", "phep_so": "<=", "nguong": 3}
+    ],
+    "dieu_kien_dung": "Dừng nếu thời gian đóng gói vượt ngưỡng 2 ngày liền hoặc có khiếu nại nghiêm trọng",
+    "cach_quay_lai": "Trở lại SOP-DONG-GOI-v4"
+  },
+  "ket_qua": {
+    "du_thoi_gian": true,
+    "gia_tri_chinh": 1.6,
+    "ma_nguon": "NG-KQ-01",
+    "gia_tri_canh_bao": {"THOI-GIAN-DONG-GOI": 5.5, "KHIEU-NAI": 1}
+  }
+}

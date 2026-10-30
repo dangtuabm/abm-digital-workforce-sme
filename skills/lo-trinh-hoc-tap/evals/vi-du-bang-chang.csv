@@ -1,0 +1,4 @@
+ma_chang,dieu_kien_truoc,ket_qua,tai_lieu,thuc_hanh,san_pham,phan_hoi,cong_dat,gio_cong,du_phong,trang_thai
+C1,,Giảng lại 5 bước nhập hàng,SOP nhập kho,Đi theo tổ trưởng 2 ca,Bản ghi chép quy trình,Tổ trưởng cuối ca,Giảng lại đúng 5 bước,8,Xem video quy trình,CHUA_BAT_DAU
+C2,C1,Tự lập phiếu nhập có kèm,SOP nhập kho,Nhập 20 phiếu thật,20 phiếu nhập,Tổ trưởng kiểm từng phiếu,18/20 đúng không lỗi nghiêm trọng,12,Phiếu mô phỏng,CHUA_BAT_DAU
+C3,C2,Tự phụ trách nhập hàng một ca,SOP kiểm kê,Phụ trách nhập một ca,Báo cáo kiểm kê,Quản lý kho hằng tuần,Lệch kiểm kê trong mức cho phép,16,Ghép ca với tổ trưởng,CHUA_BAT_DAU

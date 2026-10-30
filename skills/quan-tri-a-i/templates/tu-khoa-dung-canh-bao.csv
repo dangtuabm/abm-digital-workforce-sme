@@ -1,0 +1,7 @@
+tu_khoa,loai,pham_vi_ap_dung,hanh_vi_cua_a_i,nguoi_nhan_bao,ly_do,nguoi_duyet,ngay_hieu_luc,ghi_chu
+"luong",DUNG,"Moi Nhan su so","Dung, khong xu ly, hoi nguoi phu trach","[truong phong nhan su]","Du lieu Do","[...]","","Chi la loi dan; chan that phai ha quyen"
+"khoa so",DUNG,"Ke toan","Dung, khong sua so lieu","[ke toan truong]","Nguong 3","","",""
+"chuyen khoan",DUNG,"Moi Nhan su so","Dung, khong tao lenh","[ke toan truong]","Nguong 3","","",""
+"mat khau",DUNG,"Moi Nhan su so","Dung, khong nhan, khong lap lai","[nguoi phu trach tai khoan]","Bao mat","","",""
+"khan cap",CANH BAO,"Cham soc khach hang","Gan co, bao ngay","[truong nhom]","Uu tien","","",""
+"khieu nai",CANH BAO,"Cham soc khach hang","Gan co, chuyen nguoi","[truong nhom]","Rui ro uy tin","","",""

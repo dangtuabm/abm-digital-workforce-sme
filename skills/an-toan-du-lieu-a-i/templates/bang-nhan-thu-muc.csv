@@ -1,0 +1,4 @@
+ma,thu_muc,thu_muc_con_khac_nhan,nhan,ly_do,nguoi_phu_trach,nguoi_duoc_hoi_khi_can_dung,ngay_gan_nhan,ngay_ra_lai,ghi_chu
+TM-001,"[Marketing]","[không]",Xanh,"[tài liệu đã công khai]","[họ tên, chức danh]","[họ tên]",[dd/mm/yyyy],[dd/mm/yyyy],"[ghi chú]"
+TM-002,"[Kinh doanh]","[Kinh doanh/Báo giá riêng: Vàng]",Vàng,"[có tên, số điện thoại khách]","[họ tên]","[họ tên]",[dd/mm/yyyy],[dd/mm/yyyy],"[che trước khi đưa lên A.I hoặc dùng tài khoản công ty]"
+TM-003,"[Kế toán]","[không]",Đỏ,"[số tài khoản, sao kê, giá vốn]","[họ tên]","[họ tên]",[dd/mm/yyyy],[dd/mm/yyyy],"[không đưa lên A.I]"

@@ -1,0 +1,29 @@
+{
+  "ma_ke_hoach": "KH-2027-MAU",
+  "ghi_chu": "Ví dụ chuỗi cửa hàng F&B 6 điểm bán; số liệu minh họa, đơn vị ngân sách triệu đồng.",
+  "phien_ban_muc_tieu": "MT-2027-v2 (đã duyệt tại họp ban giám đốc ngày 05/01)",
+  "phien_ban_phan_bo": "PB-2027-v1",
+  "muc_tieu": [
+    {"ma": "MT-1", "ket_qua": "Tăng số khách quay lại trong 30 ngày", "nguoi_phu_trach": "Trưởng phòng Marketing"},
+    {"ma": "MT-2", "ket_qua": "Giảm hao hụt nguyên liệu", "nguoi_phu_trach": "Trưởng bộ phận Bếp trung tâm"}
+  ],
+  "chi_so": [
+    {"ma": "CS-1", "ma_muc_tieu": "MT-1", "dau_ky": 28, "muc_tieu": 35, "hien_tai": 30, "chieu": "tăng", "nguon": "Báo cáo phần mềm bán hàng, mục khách thành viên", "nguoi_phu_trach": "Nhân viên phân tích dữ liệu", "tinh_den": "2027-03-31"},
+    {"ma": "CS-2", "ma_muc_tieu": "MT-2", "dau_ky": 6.5, "muc_tieu": 4.5, "hien_tai": 6.1, "chieu": "giảm", "nguon": "Biên bản kiểm kho cuối tháng", "nguoi_phu_trach": "Thủ kho", "tinh_den": "2027-03-31"}
+  ],
+  "sang_kien": [
+    {"ma": "SK-01", "ten": "Chương trình thành viên tích điểm", "ma_muc_tieu": ["MT-1"], "ma_chi_so": ["CS-1"], "nguoi_phu_trach": "Trưởng phòng Marketing", "phu_thuoc": [], "ngan_sach_duoc_phan_bo": 180, "tieu_chi_nghiem_thu": "Có 3.000 thành viên hoạt động, tỷ lệ quay lại đo được hằng tháng", "quy_tac_dung": "Dừng nếu chi phí trên mỗi khách quay lại vượt mức đã duyệt 2 tháng liên tiếp", "trang_thai": "ĐÚNG HƯỚNG", "can_cu": "Báo cáo tháng 3", "tinh_den": "2027-03-31"},
+    {"ma": "SK-02", "ten": "Định mức nguyên liệu theo món", "ma_muc_tieu": ["MT-2"], "ma_chi_so": ["CS-2"], "nguoi_phu_trach": "Bếp trưởng", "phu_thuoc": [], "ngan_sach_duoc_phan_bo": 60, "tieu_chi_nghiem_thu": "100% món chủ lực có định mức được bếp trưởng ký", "quy_tac_dung": "Tạm dừng nếu chất lượng món bị khách phàn nàn tăng", "trang_thai": "CÓ RỦI RO", "can_cu": "Biên bản kiểm kho tháng 3", "tinh_den": "2027-03-31"}
+  ],
+  "ngan_sach": {
+    "tong_da_duyet": 300,
+    "nguong_canh_bao_phan_tram": 10,
+    "dong": [
+      {"ma": "NS-01", "ma_sang_kien": "SK-01", "khoan_muc": "Phần mềm thành viên (thuê bao)", "ky": "2027-Q1", "ke_hoach": 24, "thuc_te": 24, "nguon_thuc_te": "Sổ chi phí đã chốt tháng 3"},
+      {"ma": "NS-02", "ma_sang_kien": "SK-01", "khoan_muc": "Quà tặng đổi điểm", "ky": "2027-Q1", "ke_hoach": 40, "thuc_te": 52, "nguon_thuc_te": "Sổ chi phí đã chốt tháng 3", "giai_thich": "Khách đổi điểm nhiều hơn dự kiến ở 2 điểm bán mới"},
+      {"ma": "NS-03", "ma_sang_kien": "SK-01", "khoan_muc": "Quảng cáo ra mắt", "ky": "2027-Q2", "ke_hoach": 60},
+      {"ma": "NS-04", "ma_sang_kien": "SK-02", "khoan_muc": "Cân điện tử cho bếp", "ky": "2027-Q1", "ke_hoach": 30, "thuc_te": 27, "nguon_thuc_te": "Hóa đơn mua hàng tháng 2"},
+      {"ma": "NS-05", "ma_sang_kien": "SK-02", "khoan_muc": "Đào tạo nhân viên bếp", "ky": "2027-Q2", "ke_hoach": 20}
+    ]
+  }
+}

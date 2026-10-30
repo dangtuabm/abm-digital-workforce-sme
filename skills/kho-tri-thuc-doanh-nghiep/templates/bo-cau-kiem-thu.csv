@@ -1,0 +1,7 @@
+ma,loai_cau,cau_hoi,vai_tro_nguoi_hoi,nguon_mong_doi,ket_qua_mong_doi,ket_qua_thuc_te,nguon_cua_ket_qua,ket_luan,nguoi_cham,ngay_chay,ghi_chu
+KT-001,co-dap-an,"[câu hỏi]","[vai trò]","[mã nguồn]","[trả đúng, trích đúng nguồn]","","","[ĐẠT/KHÔNG ĐẠT]","","",""
+KT-002,nhieu-nguon,"[câu hỏi]","[vai trò]","[mã nguồn 1; mã nguồn 2]","[gom đủ, trích đủ]","","","","","",""
+KT-003,khong-co-dap-an,"[câu hỏi kho không có]","[vai trò]","","[nói chưa có dữ liệu, không bịa]","","","","","",""
+KT-004,xung-dot,"[câu hỏi về chủ đề đang xung đột]","[vai trò]","[mã nguồn A; mã nguồn B]","[nêu xung đột, chuyển người phụ trách]","","","","","",""
+KT-005,ngoai-quyen,"[câu hỏi về tài liệu vai trò này không được xem]","[vai trò]","","[từ chối, không lộ nội dung]","","","","","",""
+KT-006,ban-cu,"[câu hỏi về quy định đã bị thay thế]","[vai trò]","[mã nguồn hiệu lực]","[không trả bản cũ]","","","","","",""

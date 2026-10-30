@@ -1,0 +1,4 @@
+ma,loai,noi_dung,nguon_hoac_bang_chung_can_tim,nguoi_xac_nhan_hoac_nguoi_kiem,thoi_diem_ghi,trang_thai,moc_cap_nhat,cach_noi_trong_thong_diep,da_dung_trong_thong_diep,ghi_chu
+ST-01,Sự thật,"[nội dung đã xác nhận]","[biên bản/nhật ký/phiếu/camera]","[họ tên, chức danh]","[hh:mm dd/mm]",ĐÃ XÁC NHẬN,,"[câu dùng trong thông điệp]","[mã thông điệp]",
+CB-01,Chưa biết,"[điều chưa biết]","[cần bằng chứng gì]","[ai đang kiểm]","[hh:mm dd/mm]",ĐANG KIỂM,"[mốc giờ/điều kiện]","[đang kiểm tra, cập nhật lúc ...]","[mã thông điệp]",
+TD-01,Tin đồn,"[nội dung đang lan]","[nơi xuất hiện, đường dẫn]","[ai kiểm]","[hh:mm dd/mm]",CHƯA KIỂM CHỨNG,,"[không nhắc lại tin đồn ở tiêu đề]",,

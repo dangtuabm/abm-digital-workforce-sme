@@ -1,0 +1,3 @@
+ma_doan,vi_tri_goc,phien_ban_goc,ngu_canh,ban_goc,ban_dich,trang_thai_thuat_ngu,tu_khong_dich,bien,the,gioi_han_ky_tu,muc_tu_do,trang_thai_kiem,ma_loi,trang_thai_duyet,ghi_chu_nguoi_kiem
+SEG-001,"[file/khóa/trang]",v1,"[nút bấm trên màn hình thanh toán]","Xin chào {name}, mở <b>${file}</b>","Hello {name}, open <b>${file}</b>",ĐÃ DUYỆT,,"{name};${file}",<b>,40,Tự nhiên,CHỜ KIỂM,,CHỜ DUYỆT,
+SEG-002,"[file/khóa/trang]",v1,"[tên sản phẩm, giữ nguyên]","[Tên sản phẩm]","[Tên sản phẩm]",ĐÃ DUYỆT,"[Tên sản phẩm]",,,,Sát nghĩa,KHÓA,,CHỜ DUYỆT,Không dịch tên sản phẩm

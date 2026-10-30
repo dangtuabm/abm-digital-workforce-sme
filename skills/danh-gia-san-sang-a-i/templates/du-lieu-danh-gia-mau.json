@@ -1,0 +1,40 @@
+{
+  "ma_danh_gia": "SS-MAU-01",
+  "ghi_chu": "Ví dụ công ty sản xuất bao bì 120 người; dữ liệu minh họa, không phải số thật.",
+  "pham_vi": {
+    "cau_hoi": "Cần chuẩn bị gì trước khi đầu tư A.I cho phòng kinh doanh và kế toán",
+    "don_vi": "Phòng Kinh doanh, Phòng Kế toán",
+    "nguoi_bao_tro": "Giám đốc điều hành",
+    "moc_du_lieu": "2026-10-15",
+    "khong_lam": "Không chọn sản phẩm, không hứa lợi tức"
+  },
+  "thang_danh_gia": {"ten": "Thang gợi ý 0–4 + CHƯA BIẾT", "phien_ban": "v1", "nguoi_duyet": "Giám đốc điều hành", "trong_so": null, "quy_tac_khi_thieu": "CHƯA BIẾT loại khỏi điểm tổng, ghi độ phủ"},
+  "can_cu": [
+    {"ma": "CC-01", "loai": "TÀI LIỆU", "nguon": "Kế hoạch kinh doanh 2027", "nguoi_so_huu": "Giám đốc", "ngay": "2026-10-01"},
+    {"ma": "CC-02", "loai": "TỪ HỆ THỐNG", "nguon": "Danh sách tài khoản phần mềm", "nguoi_so_huu": "IT", "ngay": "2026-10-10"},
+    {"ma": "CC-03", "loai": "TỪ HỆ THỐNG", "nguon": "Trích mẫu dữ liệu khách hàng đã che", "nguoi_so_huu": "Trưởng phòng Kinh doanh", "ngay": "2026-10-12"},
+    {"ma": "CC-04", "loai": "TỰ KHAI", "nguon": "Phỏng vấn nhóm kinh doanh", "nguoi_so_huu": "Trưởng phòng Kinh doanh", "ngay": "2026-10-12"},
+    {"ma": "CC-05", "loai": "TÀI LIỆU", "nguon": "SOP lập báo giá", "nguoi_so_huu": "Trưởng phòng Kinh doanh", "ngay": "2026-09-01"},
+    {"ma": "CC-06", "loai": "QUAN SÁT", "nguon": "Quan sát lập 3 báo giá", "nguoi_so_huu": "Chuyên viên chuyển đổi", "ngay": "2026-10-13"},
+    {"ma": "CC-07", "loai": "TỰ KHAI", "nguon": "Phiếu soi nhanh của lãnh đạo", "nguoi_so_huu": "Giám đốc", "ngay": "2026-10-05"}
+  ],
+  "yeu_to": [
+    {"ten": "BÀI TOÁN – MỤC TIÊU", "diem": 2, "can_cu": ["CC-01"], "do_tin_cay": "TRUNG BÌNH", "khoang_trong": "Chưa có chỉ số nền thời gian lập báo giá", "nguoi_phu_trach": "Giám đốc"},
+    {"ten": "CÔNG CỤ – MODEL", "diem": 1, "can_cu": ["CC-02"], "do_tin_cay": "CAO", "khoang_trong": "Chưa có người duyệt công cụ", "nguoi_phu_trach": "IT"},
+    {"ten": "DATA – DỮ LIỆU", "diem": 2, "can_cu": ["CC-03"], "do_tin_cay": "TRUNG BÌNH", "khoang_trong": "28% bản ghi khách thiếu số điện thoại", "nguoi_phu_trach": "Trưởng phòng Kinh doanh"},
+    {"ten": "SKILL – KỸ NĂNG", "diem": "CHƯA BIẾT", "can_cu": [], "do_tin_cay": "THẤP", "khoang_trong": "Chưa có bài làm thật để kiểm", "nguoi_phu_trach": "Nhân sự"},
+    {"ten": "WORKFLOW – QUY TRÌNH", "diem": 2, "can_cu": ["CC-05", "CC-06"], "do_tin_cay": "CAO", "khoang_trong": "Chưa có điểm duyệt khi dùng A.I", "nguoi_phu_trach": "Trưởng phòng Kinh doanh"},
+    {"ten": "OUTPUT – ĐẦU RA", "diem": 1, "can_cu": ["CC-06"], "do_tin_cay": "TRUNG BÌNH", "khoang_trong": "Báo giá không có tiêu chí nghiệm thu viết", "nguoi_phu_trach": "Trưởng phòng Kinh doanh"},
+    {"ten": "SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ", "diem": 0, "can_cu": ["CC-07"], "do_tin_cay": "THẤP", "khoang_trong": "Chưa có quy định sử dụng A.I", "nguoi_phu_trach": "Giám đốc"},
+    {"ten": "CON NGƯỜI – VĂN HÓA", "diem": 2, "can_cu": ["CC-04", "CC-07"], "do_tin_cay": "THẤP", "khoang_trong": "Nhân viên lo bị theo dõi, chưa có kênh góp ý", "nguoi_phu_trach": "Nhân sự"}
+  ],
+  "cong": [
+    {"ma": "CG-01", "truoc_buoc": "THỬ NGHIỆM", "yeu_cau": "Có quy định không đưa dữ liệu Đỏ lên công cụ chưa duyệt", "quan_trong": true, "trang_thai": "KHÔNG ĐẠT", "can_cu": ["CC-07"]},
+    {"ma": "CG-02", "truoc_buoc": "THỬ NGHIỆM", "yeu_cau": "Báo giá do A.I hỗ trợ có người duyệt trước khi gửi khách", "quan_trong": true, "trang_thai": "CHƯA BIẾT", "can_cu": []},
+    {"ma": "CG-03", "truoc_buoc": "MỞ RỘNG", "yeu_cau": "Có chỉ số nền cho thời gian lập báo giá", "quan_trong": false, "trang_thai": "KHÔNG ĐẠT", "can_cu": ["CC-01"]}
+  ],
+  "ra_soat": [
+    {"vai": "CHIẾN LƯỢC – KINH DOANH", "trang_thai": "ĐẠT"},
+    {"vai": "CHỦ DỮ LIỆU", "trang_thai": "CHƯA"}
+  ]
+}

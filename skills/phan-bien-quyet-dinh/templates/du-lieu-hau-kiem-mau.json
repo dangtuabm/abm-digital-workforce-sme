@@ -1,0 +1,25 @@
+{
+  "ma_hau_kiem": "HK-MAU-01",
+  "ho_so_goc": {
+    "ma_quyet_dinh": "QD-12",
+    "phien_ban": "v3",
+    "ngay_quyet": "2026-05-01",
+    "nguoi_quyet": "Giám đốc điều hành",
+    "ma_kiem_tra": "Tên file và phiên bản đã lưu cố định trên thư mục hồ sơ"
+  },
+  "ky_vong": [
+    {"ma": "KQ-1", "chi_so": "Tỷ lệ khách quay lại sau 90 ngày (%)", "muc_tieu": 35, "thap": 30, "cao": 40, "nguon": "CC-01", "tinh_den": "2026-05-01"},
+    {"ma": "KQ-2", "chi_so": "Doanh thu chi nhánh mới tháng thứ 3 (triệu đồng)", "muc_tieu": 900, "thap": 750, "cao": 1050, "nguon": "CC-02", "tinh_den": "2026-05-01"}
+  ],
+  "thuc_te": [
+    {"ma_ky_vong": "KQ-1", "chi_so": "Tỷ lệ khách quay lại sau 90 ngày (%)", "gia_tri": 31, "nguon": "CC-09", "tinh_den": "2026-08-01"},
+    {"ma_ky_vong": "KQ-2", "chi_so": "Doanh thu chi nhánh mới tháng thứ 3 (triệu đồng)", "gia_tri": 640, "nguon": "CC-10", "tinh_den": "2026-08-01"}
+  ],
+  "phan_bo_nguyen_nhan": [
+    {"ma": "CL-1", "ma_ky_vong": "KQ-2", "nhan": "THỰC THI", "co_che": "Khai trương trễ 6 tuần do giấy phép, mất mùa cao điểm", "can_cu": "CC-11", "do_tin_cay": "TRUNG BÌNH"},
+    {"ma": "CL-2", "ma_ky_vong": "KQ-2", "nhan": "YẾU TỐ BÊN NGOÀI", "co_che": "Đối thủ mở cửa hàng cách 300 m vào tháng 6", "can_cu": "CC-12", "do_tin_cay": "THẤP"}
+  ],
+  "bai_hoc": [
+    {"ma": "BH-1", "trang_thai": "BÀI HỌC RIÊNG CA", "noi_dung": "Mốc giấy phép phải là điều kiện trước khi chốt ngày khai trương", "pham_vi_ap_dung": "Mở điểm bán mới cần giấy phép địa phương", "nguoi_phu_trach": "Trưởng phòng Vận hành", "khi_nao_xem_lai": "Sau 3 lần mở điểm bán tiếp theo"}
+  ]
+}

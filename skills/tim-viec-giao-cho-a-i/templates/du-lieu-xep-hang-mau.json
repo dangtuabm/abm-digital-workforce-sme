@@ -1,0 +1,26 @@
+{
+  "ma_xep_hang": "XH-MAU-01",
+  "ghi_chu": "Ví dụ công ty phân phối thiết bị điện 80 người; điểm minh họa, không phải số thật.",
+  "phien_ban_danh_sach": "DSCH-v2 (đã rà ngày 20/10)",
+  "nguoi_duyet_tieu_chi": "Giám đốc điều hành",
+  "thang": {"thap_nhat": 0, "cao_nhat": 4},
+  "do_nhay_diem_trong_so": 5,
+  "danh_sach_ngan_toi_da": 2,
+  "tieu_chi": [
+    {"ma": "TC1", "ten": "Khớp mục tiêu kinh doanh", "trong_so": 20},
+    {"ma": "TC2", "ten": "Căn cứ về vấn đề", "trong_so": 15},
+    {"ma": "TC3", "ten": "Khối lượng việc", "trong_so": 10},
+    {"ma": "TC4", "ten": "Giả thuyết giá trị", "trong_so": 15},
+    {"ma": "TC5", "ten": "Sẵn sàng dữ liệu – quy trình", "trong_so": 15},
+    {"ma": "TC6", "ten": "Đo được", "trong_so": 10},
+    {"ma": "TC7", "ten": "Học nhanh – đảo ngược được", "trong_so": 10},
+    {"ma": "TC8", "ten": "Nhân rộng – tái sử dụng", "trong_so": 5}
+  ],
+  "ung_vien": [
+    {"ma": "CH-01", "ten": "Soạn nháp báo giá từ yêu cầu khách qua email", "cong": {"PHẠM VI – NGƯỜI PHỤ TRÁCH": "ĐẠT", "ĐỦ CĂN CỨ": "ĐẠT", "QUYỀN DỮ LIỆU": "ĐẠT", "KIỂM ĐƯỢC ĐẦU RA": "ĐẠT", "CON NGƯỜI KIỂM SOÁT": "ĐẠT", "TÁC HẠI – BẢO MẬT – DỮ LIỆU CÁ NHÂN": "ĐẠT"}, "diem": {"TC1": 4, "TC2": 3, "TC3": 4, "TC4": 3, "TC5": 3, "TC6": 4, "TC7": 3, "TC8": 2}, "cong_suc": "Thấp – trung bình", "rui_ro": "Sai giá nếu bảng giá cũ"},
+    {"ma": "CH-02", "ten": "Đối chiếu đơn hàng với phiếu xuất kho", "cong": {"PHẠM VI – NGƯỜI PHỤ TRÁCH": "ĐẠT", "ĐỦ CĂN CỨ": "ĐẠT", "QUYỀN DỮ LIỆU": "ĐẠT", "KIỂM ĐƯỢC ĐẦU RA": "ĐẠT", "CON NGƯỜI KIỂM SOÁT": "ĐẠT", "TÁC HẠI – BẢO MẬT – DỮ LIỆU CÁ NHÂN": "ĐẠT"}, "diem": {"TC1": 3, "TC2": 4, "TC3": 3, "TC4": 3, "TC5": 2, "TC6": 4, "TC7": 4, "TC8": 3}, "cong_suc": "Trung bình", "rui_ro": "Dữ liệu kho cập nhật chậm"},
+    {"ma": "CH-03", "ten": "Tóm tắt phản hồi khách hàng hằng tuần", "cong": {"PHẠM VI – NGƯỜI PHỤ TRÁCH": "ĐẠT", "ĐỦ CĂN CỨ": "ĐẠT", "QUYỀN DỮ LIỆU": "ĐẠT", "KIỂM ĐƯỢC ĐẦU RA": "ĐẠT", "CON NGƯỜI KIỂM SOÁT": "ĐẠT", "TÁC HẠI – BẢO MẬT – DỮ LIỆU CÁ NHÂN": "ĐẠT"}, "diem": {"TC1": 2, "TC2": 3, "TC3": 2, "TC4": "CHƯA BIẾT", "TC5": 3, "TC6": 2, "TC7": 4, "TC8": 3}, "cong_suc": "Thấp", "rui_ro": "Thấp"},
+    {"ma": "CH-04", "ten": "Chấm điểm tín dụng đại lý để duyệt công nợ", "cong": {"PHẠM VI – NGƯỜI PHỤ TRÁCH": "ĐẠT", "ĐỦ CĂN CỨ": "ĐẠT", "QUYỀN DỮ LIỆU": "CHƯA BIẾT", "KIỂM ĐƯỢC ĐẦU RA": "ĐẠT", "CON NGƯỜI KIỂM SOÁT": "ĐẠT", "TÁC HẠI – BẢO MẬT – DỮ LIỆU CÁ NHÂN": "CHƯA BIẾT"}, "diem": {"TC1": 4, "TC2": 3, "TC3": 3, "TC4": 4, "TC5": 2, "TC6": 3, "TC7": 1, "TC8": 2}, "cong_suc": "Cao", "rui_ro": "Cao — ảnh hưởng tài chính đại lý"},
+    {"ma": "CH-05", "ten": "Tự động gửi tin nhắc nợ cho khách không qua duyệt", "cong": {"PHẠM VI – NGƯỜI PHỤ TRÁCH": "ĐẠT", "ĐỦ CĂN CỨ": "ĐẠT", "QUYỀN DỮ LIỆU": "ĐẠT", "KIỂM ĐƯỢC ĐẦU RA": "ĐẠT", "CON NGƯỜI KIỂM SOÁT": "KHÔNG ĐẠT", "TÁC HẠI – BẢO MẬT – DỮ LIỆU CÁ NHÂN": "ĐẠT"}, "diem": {"TC1": 3, "TC2": 3, "TC3": 4, "TC4": 3, "TC5": 3, "TC6": 4, "TC7": 2, "TC8": 3}, "cong_suc": "Trung bình", "rui_ro": "Gửi sai, mất khách"}
+  ]
+}

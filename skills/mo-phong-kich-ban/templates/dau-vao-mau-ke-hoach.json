@@ -1,0 +1,33 @@
+{
+  "ma_mo_hinh": "MH-KEHOACH-QUAN-MOI-v1",
+  "mo_ta": "[Giả định] Số minh họa — chuỗi cơm văn phòng mở thêm 1 quán, kết quả kinh doanh một tháng ổn định, đơn vị nghìn đồng. Câu hỏi: cần bán bao nhiêu suất/tháng để hòa vốn, biến nào kéo lợi nhuận mạnh nhất?",
+  "bien_dau_vao": {
+    "gia_ban_suat":       {"don_vi": "nghìn đồng/suất", "thap": 40, "cao": 50, "nguon": "NG-1 bảng giá đối thủ khu vực và quán hiện có"},
+    "so_suat_thang":      {"don_vi": "suất/tháng", "thap": 3500, "cao": 7000, "nguon": "NG-2 doanh số 2 quán hiện có, khảo sát lượng khách"},
+    "chi_phi_bien_suat":  {"don_vi": "nghìn đồng/suất", "thap": 20, "cao": 26, "nguon": "NG-3 định mức nguyên liệu, bao bì, phí giao"},
+    "chi_phi_co_dinh_thang": {"don_vi": "nghìn đồng/tháng", "thap": 75000, "cao": 95000, "nguon": "NG-4 báo giá thuê mặt bằng, lương cố định, khấu hao"}
+  },
+  "cong_thuc": [
+    {"ma": "doanh_thu", "bieu_thuc": "gia_ban_suat * so_suat_thang"},
+    {"ma": "lai_gop", "bieu_thuc": "doanh_thu - chi_phi_bien_suat * so_suat_thang"},
+    {"ma": "loi_nhuan", "bieu_thuc": "lai_gop - chi_phi_co_dinh_thang"}
+  ],
+  "dau_ra": ["doanh_thu", "lai_gop", "loi_nhuan"],
+  "kich_ban": [
+    {"ma": "XAU",   "gia_tri": {"gia_ban_suat": 42, "so_suat_thang": 3800, "chi_phi_bien_suat": 25, "chi_phi_co_dinh_thang": 92000}},
+    {"ma": "CO_SO", "gia_tri": {"gia_ban_suat": 45, "so_suat_thang": 5000, "chi_phi_bien_suat": 23, "chi_phi_co_dinh_thang": 85000}},
+    {"ma": "TOT",   "gia_tri": {"gia_ban_suat": 47, "so_suat_thang": 6200, "chi_phi_bien_suat": 22, "chi_phi_co_dinh_thang": 85000}}
+  ],
+  "do_nhay": [
+    {"kich_ban": "CO_SO", "bien": "so_suat_thang", "cac_gia_tri": [3500, 4000, 4500, 5000, 5500, 6000]}
+  ],
+  "xep_hang_do_nhay": [
+    {"kich_ban": "CO_SO", "dau_ra": "loi_nhuan"}
+  ],
+  "hoa_von": [
+    {"kich_ban": "CO_SO", "bien": "so_suat_thang", "dau_ra": "loi_nhuan", "muc_tieu": 0, "thap": 3500, "cao": 7000}
+  ],
+  "nguong": [
+    {"ma": "NG-LO", "chi_so": "loi_nhuan", "phep_so": "<", "nguong": 0}
+  ]
+}

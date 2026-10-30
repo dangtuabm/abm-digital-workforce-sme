@@ -1,0 +1,44 @@
+{
+  "ma_mo_hinh": "MH-DONGTIEN-3THANG-v1",
+  "mo_ta": "[Giả định] Số minh họa — công ty phân phối thiết bị điện, dòng tiền 3 tháng tới, đơn vị triệu đồng. Câu hỏi: tháng nào tồn quỹ xuống dưới mức tối thiểu 300 triệu nếu khách trả chậm?",
+  "bien_dau_vao": {
+    "ton_quy_dau":        {"don_vi": "triệu đồng", "thap": 700, "cao": 900, "nguon": "NG-1 sổ quỹ và sao kê ngày 31/10"},
+    "doanh_thu_thang":    {"don_vi": "triệu đồng/tháng", "thap": 2400, "cao": 3400, "nguon": "NG-2 doanh thu 12 tháng và đơn đã ký"},
+    "ty_le_thu_trong_thang": {"don_vi": "tỷ lệ (0-1)", "thap": 0.45, "cao": 0.7, "nguon": "NG-3 báo cáo tuổi nợ 6 tháng"},
+    "phai_thu_dau_ky":    {"don_vi": "triệu đồng", "thap": 900, "cao": 1200, "nguon": "NG-3 báo cáo tuổi nợ 31/10"},
+    "ty_le_gia_von":      {"don_vi": "tỷ lệ (0-1)", "thap": 0.7, "cao": 0.76, "nguon": "NG-4 bảng giá vốn và hợp đồng nhà cung cấp"},
+    "chi_luong_thang":    {"don_vi": "triệu đồng/tháng", "thap": 340, "cao": 380, "nguon": "NG-5 bảng lương tổng (chỉ dùng số tổng)"},
+    "chi_co_dinh_thang":  {"don_vi": "triệu đồng/tháng", "thap": 170, "cao": 200, "nguon": "NG-6 hợp đồng thuê kho, điện nước"},
+    "tra_goc_vay_thang2": {"don_vi": "triệu đồng", "thap": 600, "cao": 600, "nguon": "NG-7 lịch trả nợ ngân hàng"}
+  },
+  "cong_thuc": [
+    {"ma": "chi_thang",      "bieu_thuc": "doanh_thu_thang * ty_le_gia_von + chi_luong_thang + chi_co_dinh_thang"},
+    {"ma": "thu_thang_1",    "bieu_thuc": "doanh_thu_thang * ty_le_thu_trong_thang + phai_thu_dau_ky"},
+    {"ma": "thu_thang_2",    "bieu_thuc": "doanh_thu_thang * ty_le_thu_trong_thang + doanh_thu_thang * (1 - ty_le_thu_trong_thang)"},
+    {"ma": "thu_thang_3",    "bieu_thuc": "thu_thang_2"},
+    {"ma": "ton_quy_thang_1", "bieu_thuc": "ton_quy_dau + thu_thang_1 - chi_thang"},
+    {"ma": "ton_quy_thang_2", "bieu_thuc": "ton_quy_thang_1 + thu_thang_2 - chi_thang - tra_goc_vay_thang2"},
+    {"ma": "ton_quy_thang_3", "bieu_thuc": "ton_quy_thang_2 + thu_thang_3 - chi_thang"}
+  ],
+  "dau_ra": ["thu_thang_1", "chi_thang", "ton_quy_thang_1", "ton_quy_thang_2", "ton_quy_thang_3"],
+  "kich_ban": [
+    {"ma": "XAU",   "gia_tri": {"ton_quy_dau": 800, "doanh_thu_thang": 2600, "ty_le_thu_trong_thang": 0.5,  "phai_thu_dau_ky": 1000, "ty_le_gia_von": 0.74, "chi_luong_thang": 350, "chi_co_dinh_thang": 180, "tra_goc_vay_thang2": 600}},
+    {"ma": "CO_SO", "gia_tri": {"ton_quy_dau": 800, "doanh_thu_thang": 3000, "ty_le_thu_trong_thang": 0.6,  "phai_thu_dau_ky": 1100, "ty_le_gia_von": 0.72, "chi_luong_thang": 350, "chi_co_dinh_thang": 180, "tra_goc_vay_thang2": 600}},
+    {"ma": "TOT",   "gia_tri": {"ton_quy_dau": 800, "doanh_thu_thang": 3300, "ty_le_thu_trong_thang": 0.65, "phai_thu_dau_ky": 1150, "ty_le_gia_von": 0.71, "chi_luong_thang": 360, "chi_co_dinh_thang": 180, "tra_goc_vay_thang2": 600}}
+  ],
+  "do_nhay": [
+    {"kich_ban": "CO_SO", "bien": "ty_le_thu_trong_thang", "cac_gia_tri": [0.45, 0.5, 0.55, 0.6, 0.65, 0.7]}
+  ],
+  "xep_hang_do_nhay": [
+    {"kich_ban": "CO_SO", "dau_ra": "ton_quy_thang_2"}
+  ],
+  "hoa_von": [
+    {"kich_ban": "CO_SO", "bien": "ty_le_thu_trong_thang", "dau_ra": "ton_quy_thang_2", "muc_tieu": 300, "thap": 0.45, "cao": 0.7},
+    {"kich_ban": "CO_SO", "bien": "doanh_thu_thang", "dau_ra": "ton_quy_thang_2", "muc_tieu": 300, "thap": 2400, "cao": 3400}
+  ],
+  "nguong": [
+    {"ma": "NG-TONQUY-THANG1", "chi_so": "ton_quy_thang_1", "phep_so": "<", "nguong": 300},
+    {"ma": "NG-TONQUY-THANG2", "chi_so": "ton_quy_thang_2", "phep_so": "<", "nguong": 300},
+    {"ma": "NG-TONQUY-THANG3", "chi_so": "ton_quy_thang_3", "phep_so": "<", "nguong": 300}
+  ]
+}

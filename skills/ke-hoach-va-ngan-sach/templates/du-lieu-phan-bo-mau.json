@@ -1,0 +1,17 @@
+{
+  "ma_phan_bo": "PB-2027-MAU",
+  "ghi_chu": "Ví dụ công ty phân phối vật liệu xây dựng; số liệu minh họa, không phải số thật.",
+  "nguon_luc": {
+    "ngan_sach_trieu_dong": {"tong": 2000, "da_cam_ket": 300, "van_hanh_thuong_xuyen": 900, "du_phong": 200},
+    "gio_cong_kinh_doanh": {"tong": 3000, "da_cam_ket": 400, "van_hanh_thuong_xuyen": 1600, "du_phong": 300}
+  },
+  "so_viec_toi_da": 4,
+  "gioi_han_nhom": {"TĂNG TRƯỞNG": {"toi_da": 2}, "DUY TRÌ": {"toi_thieu": 1}},
+  "danh_muc": [
+    {"ma": "SK-01", "ten": "Chuẩn hóa hóa đơn điện tử theo quy định", "bat_buoc": true, "gia_tri_da_duyet": 20, "nguon_gia_tri": "CC-01", "nguon_luc_can": {"ngan_sach_trieu_dong": 120, "gio_cong_kinh_doanh": 100}, "phu_thuoc": [], "loai_tru": [], "nhom": "DUY TRÌ"},
+    {"ma": "SK-02", "ten": "Mở kênh bán cho nhà thầu nhỏ", "bat_buoc": false, "gia_tri_da_duyet": 50, "nguon_gia_tri": "CC-02", "nguon_luc_can": {"ngan_sach_trieu_dong": 250, "gio_cong_kinh_doanh": 300}, "nguon_luc_can_cao": {"ngan_sach_trieu_dong": 330, "gio_cong_kinh_doanh": 380}, "phu_thuoc": ["SK-05"], "loai_tru": ["SK-03"], "nhom": "TĂNG TRƯỞNG"},
+    {"ma": "SK-03", "ten": "Mở chi nhánh tỉnh lân cận", "bat_buoc": false, "gia_tri_da_duyet": 45, "nguon_gia_tri": "CC-03", "nguon_luc_can": {"ngan_sach_trieu_dong": 400, "gio_cong_kinh_doanh": 250}, "phu_thuoc": [], "loai_tru": ["SK-02"], "nhom": "TĂNG TRƯỞNG"},
+    {"ma": "SK-04", "ten": "Chương trình giữ chân khách công trình", "bat_buoc": false, "gia_tri_da_duyet": 30, "nguon_gia_tri": "CC-04", "nguon_luc_can": {"ngan_sach_trieu_dong": 90, "gio_cong_kinh_doanh": 150}, "phu_thuoc": [], "loai_tru": [], "nhom": "TĂNG TRƯỞNG"},
+    {"ma": "SK-05", "ten": "Bảng giá theo hạng khách trên phần mềm bán hàng", "bat_buoc": false, "gia_tri_da_duyet": 15, "nguon_gia_tri": "CC-05", "nguon_luc_can": {"ngan_sach_trieu_dong": 60, "gio_cong_kinh_doanh": 80}, "phu_thuoc": [], "loai_tru": [], "nhom": "CHUYỂN ĐỔI"}
+  ]
+}

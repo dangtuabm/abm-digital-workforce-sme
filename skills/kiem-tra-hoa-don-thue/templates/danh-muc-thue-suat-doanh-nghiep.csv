@@ -1,0 +1,2 @@
+ma_hang_hoac_nhom,ten_hang_hoa_dich_vu,mo_ta_de_nhan_dien,thue_suat_doanh_nghiep_ap_dung,ap_dung_tu_ngay,ap_dung_den_ngay,can_cu_do_nguoi_co_chuyen_mon_ghi,nguoi_xac_nhan,ngay_xac_nhan,trang_thai,ghi_chu
+"[mã hàng/nhóm hàng]","[tên]","[đặc điểm để phân biệt với hàng gần giống]","[doanh nghiệp điền — A.I không tự điền]","[dd/mm/yyyy]","[dd/mm/yyyy hoặc để trống]","[người có chuyên môn ghi văn bản căn cứ]","[kế toán thuế/đại lý thuế/tư vấn]","[dd/mm/yyyy]","[ĐÃ XÁC NHẬN/CHƯA XÁC NHẬN]","Chỉ dòng ĐÃ XÁC NHẬN mới được dùng để kiểm"

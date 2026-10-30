@@ -1,0 +1,7 @@
+ma_dong,loai_no,doi_tuong,ma_chung_tu,ngay_chung_tu,ngay_den_han,so_tien,tien_te,trang_thai,nguon,nguoi_phu_trach,so_ngay_qua_han,nhom_tuoi,de_xuat,ghi_chu
+TN-001,PHAI_THU,Đại lý A,HD0101,2026-08-01,2026-08-31,120000000,VND,BINH_THUONG,S1,Chị Lan,,,,
+TN-002,PHAI_THU,Đại lý B,HD0102,2026-06-10,2026-07-10,85000000,VND,TRANH_CHAP,S1,Anh Minh,,,,
+TN-003,PHAI_THU,Cửa hàng C,HD0103,2026-09-20,2026-10-20,40000000,VND,BINH_THUONG,S1,Chị Lan,,,,
+TN-004,PHAI_THU,Đại lý D,HD0104,2026-10-15,2026-11-14,60000000,VND,BINH_THUONG,S1,Anh Minh,,,,
+TN-005,PHAI_THU,Đại lý A,HD0105,2026-05-02,,30000000,VND,DA_TRA_CHUA_CAN_TRU,S1,Chị Lan,,,,
+TN-006,PHAI_TRA,Nhà cung cấp E,PN0201,2026-09-01,2026-10-01,50000000,VND,BINH_THUONG,S2,Kế toán thanh toán,,,,

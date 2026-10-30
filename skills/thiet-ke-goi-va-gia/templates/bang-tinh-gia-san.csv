@@ -1,0 +1,5 @@
+goi,khoan_muc,loai_chi_phi,don_vi_tinh,so_luong_moi_don,don_gia,thanh_tien_moi_don,co_thue,nguon,nguoi_xac_nhan,muc_tin_cay,ghi_chu
+"[tên gói]","[nhân công/vật tư/đi lại/triển khai/hỗ trợ/đổi trả/hoa hồng kênh/phí thanh toán/khác]","[BIẾN ĐỔI/TĂNG THÊM/CỐ ĐỊNH PHÂN BỔ]","[đơn vị]","[số]","[đồng]","[đồng]","[CÓ/KHÔNG]","[nguồn]","[kế toán/vận hành]","[CAO/VỪA/THẤP]","[ghi chú]"
+"[tên gói]","TỔNG CHI PHÍ BIẾN ĐỔI / ĐƠN","","","","","[đồng]","","","","",""
+"[tên gói]","CHI PHÍ CỐ ĐỊNH CẦN BÙ / ĐƠN (theo sản lượng thấp)","","","","","[đồng]","","","","",""
+"[tên gói]","GIÁ SÀN KINH TẾ","","","","","[đồng]","","","","","Dưới mức này cần ngoại lệ do người có thẩm quyền duyệt"

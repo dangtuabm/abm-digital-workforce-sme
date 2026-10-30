@@ -1,7 +1,7 @@
 {
   "name": "abm-digital-workforce-sme",
-  "description": "100 Skill vận hành doanh nghiệp SME cho A.I Agent (8 phòng ban P01–P08).",
-  "version": "1.0.0",
+  "description": "100 Skill vận hành doanh nghiệp SME cho A.I Agent — 08 phòng ban · 50 Nhân sự số · 100 Skill (P00 Skill nền + P01–P08).",
+  "version": "2.0.0",
   "author": {
     "name": "Đặng Tú ABM",
     "email": "dntu85@gmail.com"

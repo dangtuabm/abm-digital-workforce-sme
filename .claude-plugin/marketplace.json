@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "100 Skill vận hành doanh nghiệp SME cho A.I Agent — ABM Digital Workforce.",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "abm-digital-workforce-sme",
       "source": "./",
-      "description": "Trọn bộ 100 Skill doanh nghiệp ABM (8 phòng ban P01–P08) cho Claude Code / Cowork."
+      "description": "Trọn bộ 100 Skill doanh nghiệp ABM (P00 Skill nền + 08 phòng ban P01–P08) cho Claude Code / Cowork."
     }
   ]
 }
