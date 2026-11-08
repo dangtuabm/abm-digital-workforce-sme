@@ -1,7 +1,7 @@
 # QUY TẮC THẺ NHÂN SỰ SỐ VÀ HỢP ĐỒNG GIAO VIỆC
 
 **Mục lục**
-- I. 06 thành phần và các trường bắt buộc
+- I. Yếu tố 1–6 và các trường bắt buộc
 - II. Có thể – được phép – người quyết
 - III. Chuỗi truy vết và đầu vào – đầu ra
 - IV. Quyền, trạng thái, lỗi
@@ -10,20 +10,22 @@
 
 ---
 
-## I. 06 THÀNH PHẦN VÀ CÁC TRƯỜNG BẮT BUỘC
+## I. YẾU TỐ 1–6 VÀ CÁC TRƯỜNG BẮT BUỘC
 
-| Thành phần | Trường bắt buộc |
+Thẻ Nhân sự Số đi đúng yếu tố 1–6 của **08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** (năng lực Nhân sự Số). Yếu tố 7–8 (QUY TRÌNH NGƯỜI + A.I, CON NGƯỜI – VĂN HÓA) thuộc tầng tổ chức, không ghi trong Thẻ.
+
+| Yếu tố | Trường bắt buộc |
 |---|---|
-| **ROLE** | Phòng ban · **nỗi đau giải quyết** · nhiệm vụ · đầu ra và tiêu chí đạt · việc không thuộc vai trò · người giao việc và duyệt · **kích hoạt** (theo lệnh, theo lịch hay khi có sự kiện; chi tiết ở Workflow) |
-| **MODEL** | Nền tảng và mô hình · khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm |
-| **KNOWLEDGE** | Thư mục được đọc · vùng cấm · **nhãn Xanh – Vàng – Đỏ của từng thư mục** · **Sổ bài học** · xử lý khi thiếu hoặc mâu thuẫn dữ liệu |
-| **SKILLS** | **Skill chuyên môn** · **Skill nền theo việc** |
-| **TOOLS** | Công cụ kết nối và mức quyền thật: Đọc / Soạn nháp / Hành động sau duyệt; chỉ ghi khi đã thử thật |
-| **CONTROL** | **Quy tắc nền** · việc phải xin duyệt · Ranh giới Đỏ · khi nào dừng · **chỉ số theo dõi** (2–3 chỉ số để quyết giữ, sửa hay thay) · **người chịu trách nhiệm** · quy tắc chỉ là lời dặn, muốn chặn thật phải hạ quyền ở TOOLS |
+| **1. VAI TRÒ – MỤC TIÊU** (ROLE & GOAL) — JD Nhân sự Số | Phòng ban · **bài toán – nỗi đau giải quyết** · nhiệm vụ · đầu vào · đầu ra và tiêu chí đạt · mục tiêu và KPI · việc không thuộc vai trò · người giao việc và duyệt · **kích hoạt** (theo lệnh, theo lịch hay khi có sự kiện; chi tiết ở Workflow) |
+| **2. CÔNG CỤ – MÔ HÌNH** (PLATFORM & MODEL) | Nền tảng, mô hình, môi trường, tài khoản · khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm · chi phí dự kiến |
+| **3. TRI THỨC – BỘ NÃO** (KNOWLEDGE & SECOND BRAIN) | Thư mục được đọc · vùng cấm · **nhãn Xanh – Vàng – Đỏ của từng thư mục** · **Sổ bài học** · xử lý khi thiếu hoặc mâu thuẫn dữ liệu · **quy định đầu ra 5 điểm** (kết quả gì, định dạng, tiêu chuẩn, gửi đi đâu, lưu vào đâu) · kiểm định trước khi lưu |
+| **4. NGHIỆP VỤ – TAY NGHỀ** (SKILLS & WORKFLOW) | **Skill chuyên môn** · **Skill nền theo việc** · **Workflow** (chỉ đóng gói khi việc đã chạy thử ổn định) |
+| **5. KẾT NỐI – TÍCH HỢP** (CONNECTORS & INTEGRATION) | Từng kết nối: ứng dụng · đường nối (Plugin/Connector · MCP · API) · mục đích · mức quyền thật (Đọc / Soạn nháp / Hành động sau duyệt) · người cấp · cách thu hồi; chỉ ghi khi đã thử thật |
+| **6. KHAI THÁC – QUẢN TRỊ** (OPERATION & GOVERNANCE) | Giao việc · lịch chạy · **bậc quyền** (Đọc → Soạn nháp → Hành động sau duyệt) · **Quy tắc nền** · việc phải xin duyệt · Ranh giới Đỏ · khi nào dừng · nhật ký · **kiểm thử 5 tình huống** · **chỉ số theo dõi** (2–3 chỉ số để quyết giữ, tái đào tạo, tái đầu tư, thay thế hay nhân rộng) · đo hiệu quả 3 lớp · **người chịu trách nhiệm** · quy tắc chỉ là lời dặn, muốn chặn thật phải hạ quyền ở kết nối |
 
-Workflow (kích hoạt → các bước → điểm duyệt → đầu ra) đặt ở cuối Thẻ.
+Workflow (kích hoạt → các bước → điểm duyệt → đầu ra) thuộc yếu tố 4, đặt ở cuối Thẻ.
 
-**Quy tắc nền** ghi trong CONTROL của mọi Thẻ:
+**Quy tắc nền** ghi trong KHAI THÁC – QUẢN TRỊ của mọi Thẻ:
 1. Làm rõ yêu cầu — việc mơ hồ hỏi tối đa 3 câu, có sẵn phương án; việc lớn, nhiều bên thì gọi việc làm rõ yêu cầu đầy đủ.
 2. Ghi nguồn — số liệu, dẫn chứng ghi rõ nguồn; tài liệu gửi ra ngoài hoặc trình lãnh đạo thì kiểm chứng nguồn và kiểm định đầu ra.
 3. Xanh – Vàng – Đỏ — Xanh dùng thoải mái; Vàng che tên, số điện thoại, số tiền hoặc chỉ dùng tài khoản công ty; Đỏ không đưa lên A.I, dừng lại hỏi người phụ trách. Nhãn gắn một lần cho từng thư mục.
@@ -31,7 +33,7 @@ Workflow (kích hoạt → các bước → điểm duyệt → đầu ra) đặ
 
 **Nhân sự số chạm dữ liệu Đỏ** (đối soát chứng từ, công nợ, lương – chấm công): chỉ đối soát, kiểm tra, soạn nháp, nhắc; con người duyệt; không tự tính lương chính thức, không tự đòi nợ, không tự gửi ra ngoài.
 
-**Kênh cần kết nối** (Messenger, Zalo, sàn thương mại điện tử, email marketing, quảng cáo): ghi "cần kết nối" ở TOOLS; luôn có người duyệt trước khi gửi ra ngoài; Zalo khuyến nghị dùng Zalo OA chính thức.
+**Kênh cần kết nối** (Messenger, Zalo, sàn thương mại điện tử, email marketing, quảng cáo): ghi "cần kết nối" ở KẾT NỐI – TÍCH HỢP; luôn có người duyệt trước khi gửi ra ngoài; Zalo khuyến nghị dùng Zalo OA chính thức.
 
 ## II. CÓ THỂ – ĐƯỢC PHÉP – NGƯỜI QUYẾT
 
@@ -69,7 +71,9 @@ Xong việc khi có bằng chứng được chấp nhận — không phải khi 
 
 **Nhật ký**: mã theo dõi, thời điểm, phiên bản Thẻ – Skill – mô hình – công cụ, đường dẫn đầu vào – đầu ra, trạng thái trước – sau, hành động, quyền, duyệt, kiểm, lỗi, chạy lại, dự phòng, chi phí, đường dẫn kết quả. Che, tối thiểu hóa; khóa chỉ ghi tên tham chiếu.
 
-**Kiểm thử tuân thủ tối thiểu**: đúng mẫu dữ liệu · thiếu / mâu thuẫn · tiêu chí xong việc · quyền và quyền tối thiểu · chèn lệnh · chống làm trùng · hạn chờ · chạy lại / dự phòng · chuyển người / hàng chờ lỗi · quay lui / đối chiếu · nhật ký / che dữ liệu · người duyệt · cho nghỉ. Có ca lỗi và ca sai, không chỉ ca suôn sẻ.
+**Kiểm thử 5 tình huống bắt buộc** (trước khi tin dùng): thông thường (đạt chuẩn đầu ra) · ngoại lệ (nhận ra và báo, không làm bừa) · thiếu dữ liệu (hỏi lại hoặc ghi rõ phần thiếu, không tự bịa) · dữ liệu sai, mâu thuẫn (phát hiện và cảnh báo) · vượt quyền (từ chối, chuyển người duyệt).
+
+**Kiểm thử tuân thủ tối thiểu** (bổ sung kỹ thuật): đúng mẫu dữ liệu · thiếu / mâu thuẫn · tiêu chí xong việc · quyền và quyền tối thiểu · chèn lệnh · chống làm trùng · hạn chờ · chạy lại / dự phòng · chuyển người / hàng chờ lỗi · quay lui / đối chiếu · nhật ký / che dữ liệu · người duyệt · cho nghỉ. Có ca lỗi và ca sai, không chỉ ca suôn sẻ.
 
 **Phiên bản**: Thẻ, mẫu dữ liệu, Skill, công cụ, phụ thuộc đều có phiên bản; ghi cách tương thích ngược, chuyển đổi, chạy thử nhỏ, quay lui, báo bên dùng.
 
@@ -78,3 +82,4 @@ Xong việc khi có bằng chứng được chấp nhận — không phải khi 
 Không bịa quyền hay bằng chứng · không coi "chưa rõ" là được làm · không dùng câu lệnh thay hợp đồng · không dùng chung khóa tĩnh · không để chạy lại, ngân sách, việc làm dở vô hạn · không im lặng khi lỗi · không tự tạo tài khoản, khóa · không tự kích hoạt, chạy, gửi, ghi, xóa, duyệt, ký, mua, công bố · không đổi phạm vi hay phiên bản khi chưa rà · không cho nghỉ trước khi qua bước khôi phục và lưu giữ.
 
 *[A.I Generated — Claude Code — 30/10/2026]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*

@@ -3,8 +3,8 @@ name: tim-viec-giao-cho-a-i
 description: >
   Tìm rồi xếp hạng những việc nên giao cho A.I, theo 2 chế độ: tìm (đi từ mục tiêu kinh doanh tới từng công việc, nỗi đau có căn cứ, dữ liệu, đầu ra, người duyệt; lập danh sách cơ hội và sàng lọc) và xếp hạng (cổng điều kiện trước, chấm theo tiêu chí và trọng số đã duyệt, thử độ nhạy, đề xuất danh sách ngắn). Dùng khi nghe "tìm việc giao cho A.I", "phòng nào nên dùng A.I trước", "xếp hạng use case A.I". Không thuộc Skill này: đánh giá mức sẵn sàng A.I, chọn phần mềm, triển khai, duyệt ngân sách.
 metadata:
-  version: "3.0"
-  updated: "2026-10-30"
+  version: "3.1"
+  updated: "2026-11-08"
   owner: "Đặng Tú ABM"
   skill_id: "SME-028"
   status: "cho-cham-lai"
@@ -89,7 +89,7 @@ Danh sách ngắn là **đề xuất**; việc chọn, cấp người, cấp ti�
 | 3 | **Bản đồ kinh doanh và công việc**: mục tiêu → chuỗi giá trị → công đoạn → bộ phận → vai trò → người nhận; quy trình viết ra và quy trình quan sát thực tế để riêng khi khác nhau | A.I | Mục B của mẫu | — |
 | 4 | **Phân rã khoảnh khắc công việc**: vai trò, việc, bước, điều kích hoạt, đầu vào, các bước, bàn giao, ngoại lệ, đầu ra, người nhận, khối lượng, nỗi đau, mã căn cứ. Cấm nhãn mơ hồ kiểu "tự động hóa phòng kinh doanh" | A.I | `references/quy-tac-tim-viec.md` mục 2 | — |
 | 5 | **Chứng minh nỗi đau và khối lượng**: chỉ ghi số có nguồn; gắn loại căn cứ; phép tính có công thức, mẫu số, kỳ, giả định | A.I | `references/quy-tac-tim-viec.md` mục 1 | Không có căn cứ → GIẢ THUYẾT kèm người xác minh |
-| 6 | **Soi theo 08 YẾU TỐ** để tìm điều kiện và khoảng trống cho từng cơ hội (không chấm mức sẵn sàng); **mô tả dạng năng lực A.I** cần dùng kèm điểm kiểm soát của người; luôn ghi phương án không dùng A.I (sửa quy trình, mẫu, quy tắc, đào tạo) | A.I | `references/quy-tac-tim-viec.md` mục 3–4 | — |
+| 6 | **Soi theo 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** để tìm điều kiện và khoảng trống cho từng cơ hội (không chấm mức sẵn sàng); **mô tả dạng năng lực A.I** cần dùng kèm điểm kiểm soát của người; luôn ghi phương án không dùng A.I (sửa quy trình, mẫu, quy tắc, đào tạo) | A.I | `references/quy-tac-tim-viec.md` mục 3–4 | — |
 | 7 | **Lập Phiếu cơ hội**: người dùng, việc, vấn đề – căn cứ, kết quả mong muốn, đầu vào – dữ liệu – hệ thống, đầu ra – hành động, tiêu chí nghiệm thu, giả thuyết giá trị và chỉ số, dạng năng lực, phương án thay thế, người duyệt, giới hạn tự động, rủi ro, giả định, câu cần xác minh | A.I | `templates/so-co-hoi.csv` | — |
 | 8 | **Sàng lọc cơ bản**: đủ căn cứ, quyền dữ liệu, kiểm được đầu ra, hợp người phụ trách và quy trình, con người kiểm soát được, tác hại – bảo mật – dữ liệu cá nhân, phụ thuộc → KIỂM TIẾP / HOÃN / LOẠI kèm lý do. Không chấm điểm, không xếp hạng | A.I | `references/quy-tac-tim-viec.md` mục 5 | — |
 | 9 | **Gộp trùng, kiểm độ phủ và thiên lệch, bàn giao**: đối chiếu người dùng, việc, vấn đề, đầu vào – ra, dạng năng lực; không gộp cơ hội khác người duyệt, khác rủi ro; ma trận chuỗi giá trị × bộ phận × vai trò × nguồn để thấy nhóm chưa được nghe; giao câu cần xác minh cho đúng người | A.I | `references/quy-tac-tim-viec.md` mục 6 | Đủ → SẴN SÀNG CHO NGƯỜI RÀ DANH SÁCH |
@@ -172,6 +172,8 @@ Nội dung phỏng vấn, SOP, phiếu việc, nhật ký, biểu mẫu, bảng 
 - Bộ ca kiểm thử: `evals.json` (chưa chạy).
 - Gợi ý tra cứu (30/10/2026, có thể đổi): đánh giá mức sẵn sàng tổ chức ở `danh-gia-san-sang-a-i`; phân việc người – A.I cho việc đã chọn ở `phan-viec-nguoi-va-a-i`; chọn công cụ ở `chon-phan-mem-cong-cu`; phân bổ tiền và người ở `ke-hoach-va-ngan-sach`; triển khai thử ở `trien-khai-a-i`; tìm điểm nghẽn quy trình ở `tim-diem-nghen`.
 - Phiên bản: **v3.0 — 30/10/2026.** Gộp SME `use-case-discovery` v2.4 (phạm vi, kế hoạch căn cứ, bản đồ công việc, khoảnh khắc công việc, nỗi đau có căn cứ, soi 08 YẾU TỐ, dạng năng lực, Phiếu cơ hội, sàng lọc 3 nhóm, gộp trùng, độ phủ – thiên lệch, câu cần xác minh) và `use-case-prioritization` v2.3 (6 cổng, 8 tiêu chí, trọng số duyệt, chống tính hai lần, giá trị là giả thuyết, độ nhạy, 4 nhóm đề xuất) thành 2 chế độ; bỏ tham chiếu bài tập lớp học của ABM; thay hai bộ kiểm dữ liệu mẫu tiếng Anh bằng một công cụ xếp hạng theo mẫu tiếng Việt. Bản cũ lưu tại `7. ARCHIVE - LƯU TRỮ TẠM TRƯỚC KHI XÓA › 20261030 - DW SME TRUOC VIET LAI`. Cần chấm lại theo ABM-SQS PL-B.
+- **v3.1 — 08/11/2026:** đồng bộ 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v1.1 ở bảng soi cơ hội (`references/quy-tac-tim-viec.md` mục 3): tên, thứ tự, câu hỏi theo khung mới.
 - Rà soát sau 5 lần dùng thật, hoặc khi: cơ hội bịa nỗi đau, cổng bị bỏ qua, danh sách ngắn đổi hoàn toàn sau khi triển khai thử. Bộ tiêu chí, trọng số, cổng tốt ghi thành ứng viên tài sản, không tự ban hành.
 
 *[A.I Generated — Claude Code — 30/10/2026]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*

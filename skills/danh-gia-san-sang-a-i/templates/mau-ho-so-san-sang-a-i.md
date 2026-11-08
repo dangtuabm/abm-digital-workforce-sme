@@ -19,18 +19,20 @@ Xem `so-can-cu-danh-gia.csv`. Độ phủ: [số đơn vị/vai trò đã hỏi 
 |---|---|---|---|---|---|---|---|---|
 | | | | | | | | | |
 
-## D. ĐÁNH GIÁ 08 YẾU TỐ
+## D. ĐÁNH GIÁ 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG
 
 | # | Yếu tố | Hiện trạng | Mã căn cứ | Điểm / CHƯA BIẾT | Mức tin cậy | Mâu thuẫn | Khoảng trống | Người phụ trách |
 |---|---|---|---|---|---|---|---|---|
-| 1 | BÀI TOÁN – MỤC TIÊU | | | | | | | |
-| 2 | CÔNG CỤ – MODEL | | | | | | | |
-| 3 | DATA – DỮ LIỆU | | | | | | | |
-| 4 | SKILL – KỸ NĂNG | | | | | | | |
-| 5 | WORKFLOW – QUY TRÌNH | | | | | | | |
-| 6 | OUTPUT – ĐẦU RA | | | | | | | |
-| 7 | SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ | | | | | | | |
+| 1 | VAI TRÒ – MỤC TIÊU | | | | | | | |
+| 2 | CÔNG CỤ – MÔ HÌNH | | | | | | | |
+| 3 | TRI THỨC – BỘ NÃO | | | | | | | |
+| 4 | NGHIỆP VỤ – TAY NGHỀ | | | | | | | |
+| 5 | KẾT NỐI – TÍCH HỢP | | | | | | | |
+| 6 | KHAI THÁC – QUẢN TRỊ | | | | | | | |
+| 7 | QUY TRÌNH NGƯỜI + A.I | | | | | | | |
 | 8 | CON NGƯỜI – VĂN HÓA | | | | | | | |
+
+Yếu tố 1–6: năng lực Nhân sự Số · Yếu tố 7–8: chuyển đổi tổ chức.
 
 Điểm tổng (chỉ khi có trọng số đã duyệt): [giá trị · công thức · độ phủ · độ nhạy]
 
@@ -72,3 +74,4 @@ Xem `so-can-cu-danh-gia.csv`. Độ phủ: [số đơn vị/vai trò đã hỏi 
 - Quyết định cuối và việc gửi ra ngoài: CHỜ người có quyền
 
 *[A.I Generated — Claude Code — 30/10/2026]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*

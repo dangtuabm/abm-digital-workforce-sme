@@ -19,7 +19,7 @@ Mỗi lần chuyển ghi: lý do · bằng chứng · người phụ trách / ng
 
 ## II. CỔNG ĐƯA VÀO VÀ VẬN HÀNH
 
-**Cổng đưa vào** (bắt buộc trước CHẠY THỬ / ĐANG DÙNG): nhu cầu thật · không trùng vô ích · Thẻ đủ 06 thành phần và phụ lục hợp đồng giao việc · người phụ trách · dữ liệu, công cụ, quyền đã duyệt · phân loại rủi ro · kiểm thử chất lượng và kiểm thử tuân thủ · cách vận hành, theo dõi · hạn mức chi phí, sức chứa · phương án sự cố, dự phòng, dừng khẩn · kế hoạch cho nghỉ. Thiếu hoặc "chưa rõ" ở cổng bắt buộc thì không qua.
+**Cổng đưa vào** (bắt buộc trước CHẠY THỬ / ĐANG DÙNG): nhu cầu thật · không trùng vô ích · Thẻ đủ yếu tố 1–6 và phụ lục hợp đồng giao việc · người phụ trách · dữ liệu, công cụ, quyền đã duyệt · phân loại rủi ro · kiểm thử chất lượng và kiểm thử tuân thủ · cách vận hành, theo dõi · hạn mức chi phí, sức chứa · phương án sự cố, dự phòng, dừng khẩn · kế hoạch cho nghỉ. Thiếu hoặc "chưa rõ" ở cổng bắt buộc thì không qua.
 
 **Vận hành — theo dõi**: số việc, hàng chờ, việc làm dở, sức chứa · chất lượng, tỷ lệ được chấp nhận · lỗi, chạy lại, dự phòng, chuyển người · sự cố · rà lại quyền và kết nối · chi phí · độ trôi · thay đổi, phiên bản · giá trị thực tế có bằng chứng. Nhiều đầu ra không phải là giá trị; không suy giá trị từ số lượt chạy, số lượng dùng hay số bản quyền đã mua.
 
@@ -60,3 +60,4 @@ Mọi thay đổi mô hình, câu lệnh, Skill, kho tài liệu, công cụ, qu
 Không xóa thẳng.
 
 *[A.I Generated — Claude Code — 30/10/2026]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*

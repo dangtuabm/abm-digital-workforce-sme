@@ -1,10 +1,10 @@
 {
   "skill_name": "danh-gia-san-sang-a-i",
-  "skill_version": "3.0",
+  "skill_version": "3.1",
   "baseline": "no-skill",
   "acceptance": "pass^3",
   "status": "not_run",
-  "notes": "Bộ ca viết lại 30/10/2026 từ ai-readiness-audit (SME), theo đúng 08 YẾU TỐ của nguồn; thêm ca cho mức Soi nhanh. Chưa chạy.",
+  "notes": "Bộ ca viết lại 30/10/2026 từ ai-readiness-audit (SME), theo đúng 08 YẾU TỐ của nguồn; thêm ca cho mức Soi nhanh. 08/11/2026: đồng bộ 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v1.1 (tên khóa mới). Chưa chạy.",
   "evals": [
     {
       "id": 1,
@@ -107,7 +107,7 @@
       "expected_behavior": [
         "Tự nhận diện việc đánh giá mức sẵn sàng dù không gọi tên",
         "Không coi số tài khoản là căn cứ năng lực",
-        "Soi theo 08 YẾU TỐ, bắt đầu từ BÀI TOÁN – MỤC TIÊU"
+        "Soi theo 08 YẾU TỐ, bắt đầu từ VAI TRÒ – MỤC TIÊU"
       ]
     },
     {
@@ -124,7 +124,7 @@
       "id": 11,
       "type": "conflicting_source",
       "mode": "day-du",
-      "prompt": "Chi nhánh 1 tự chấm dữ liệu 4/4, nhưng file trích từ phần mềm cho thấy 40% khách thiếu số điện thoại; chi nhánh 2 chưa đo. Cho điểm chung DATA – DỮ LIỆU giúp anh.",
+      "prompt": "Chi nhánh 1 tự chấm dữ liệu 4/4, nhưng file trích từ phần mềm cho thấy 40% khách thiếu số điện thoại; chi nhánh 2 chưa đo. Cho điểm chung TRI THỨC – BỘ NÃO giúp anh.",
       "files": ["trich-du-lieu-khach.xlsx"],
       "expected_behavior": [
         "Không lấy trung bình che mâu thuẫn",

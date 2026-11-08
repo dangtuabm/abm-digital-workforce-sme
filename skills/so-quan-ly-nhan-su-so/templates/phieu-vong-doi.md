@@ -8,10 +8,10 @@
 |---|---|---|
 | Có nhu cầu thật (nỗi đau, việc cụ thể) | | |
 | Không trùng A.I đang có (đã rà Sổ) | | |
-| Thẻ đủ 06 thành phần + Workflow + Phụ lục | | |
+| Thẻ đủ yếu tố 1–6 + Workflow + Phụ lục | | |
 | Có người chịu trách nhiệm, người phụ trách kỹ thuật, rủi ro | | |
-| Dữ liệu, công cụ, quyền đã duyệt; TOOLS đã thử thật | | |
-| Đã kiểm thử (kết quả kiểm thử chất lượng, kiểm thử tuân thủ) | | |
+| Dữ liệu, công cụ, quyền đã duyệt; KẾT NỐI – TÍCH HỢP đã thử thật | | |
+| Đã kiểm thử (kiểm thử 5 tình huống: thông thường · ngoại lệ · thiếu dữ liệu · dữ liệu sai/mâu thuẫn · vượt quyền; kiểm thử tuân thủ) | | |
 | Có cách vận hành, theo dõi, chỉ số | | |
 | Có hạn mức chi phí, sức chứa | | |
 | Có phương án sự cố, dừng khẩn, người làm tay thay | | |
@@ -19,7 +19,7 @@
 Cổng nào "Chưa" hoặc "Chưa rõ" ở mục bắt buộc → không lên CHẠY THỬ / ĐANG DÙNG.
 
 ## B. Thay đổi
-| Thành phần đổi | Trước | Sau | Lý do | Kiểm tương thích | Kiểm thử lại | Ngày hiệu lực | Cách quay lui |
+| Yếu tố / trường đổi | Trước | Sau | Lý do | Kiểm tương thích | Kiểm thử lại | Ngày hiệu lực | Cách quay lui |
 |---|---|---|---|---|---|---|---|
 Phê duyệt cũ không áp dụng cho phạm vi mới. Sau khi đổi: cập nhật phiên bản Thẻ và Sổ.
 
@@ -47,3 +47,4 @@ Không xóa thẳng.
 | Người duyệt | | | |
 
 *[A.I Generated — Tên Nhân sự số — dd/mm/yyyy]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*

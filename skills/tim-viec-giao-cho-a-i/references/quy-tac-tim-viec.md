@@ -35,20 +35,20 @@ Không thay một công việc bằng nhãn chung kiểu "A.I thay nhân viên c
 
 ## 3. Soi 08 YẾU TỐ cho từng cơ hội
 
-Dùng 08 YẾU TỐ làm góc soi để tìm **điều kiện và khoảng trống** của từng cơ hội, không chấm mức sẵn sàng:
+Dùng 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG làm góc soi để tìm **điều kiện và khoảng trống** của từng cơ hội, không chấm mức sẵn sàng:
 
 | Yếu tố | Câu hỏi cho cơ hội |
 |---|---|
-| BÀI TOÁN – MỤC TIÊU | Giải nỗi đau nào, phục vụ mục tiêu nào, ai chịu trách nhiệm kết quả? |
-| CÔNG CỤ – MODEL | Cần dạng năng lực nào; đã có công cụ được duyệt chưa? |
-| DATA – DỮ LIỆU | Dữ liệu đầu vào ở đâu, ai sở hữu, có quyền dùng, phân loại gì? |
-| SKILL – KỸ NĂNG | Người dùng cần biết gì để giao việc và kiểm kết quả? |
-| WORKFLOW – QUY TRÌNH | A.I chen vào bước nào, ai duyệt, lỗi thì làm tay ra sao? |
-| OUTPUT – ĐẦU RA | Đầu ra đạt khi nào, ai nghiệm thu? |
-| SỬ DỤNG – TƯƠNG TÁC – QUẢN TRỊ | Ai được dùng, ai rà, báo sự cố thế nào? |
-| CON NGƯỜI – VĂN HÓA | Người làm việc này lo ngại gì, có muốn dùng không? |
+| 1. VAI TRÒ – MỤC TIÊU | Giải nỗi đau nào, phục vụ mục tiêu nào; Nhân sự Số đảm nhận vai trò gì, thế nào là xong, ai chịu trách nhiệm kết quả? |
+| 2. CÔNG CỤ – MÔ HÌNH | Cần dạng năng lực nào, nền tảng và mô hình nào; đã có công cụ được duyệt chưa, chi phí ra sao? |
+| 3. TRI THỨC – BỘ NÃO | Dữ liệu đầu vào ở đâu, ai sở hữu, có quyền dùng, phân loại gì; đầu ra đạt khi nào, ai nghiệm thu, lưu vào đâu? |
+| 4. NGHIỆP VỤ – TAY NGHỀ | Việc này cần Skill hay Workflow nào của Nhân sự Số; quy trình làm đã ổn định để đóng gói chưa? |
+| 5. KẾT NỐI – TÍCH HỢP | Có cần nối vào phần mềm nào không; phần mềm có cổng không; ai cấp, thu hồi thế nào? |
+| 6. KHAI THÁC – QUẢN TRỊ | Ai giao việc; quyền ở bậc nào (Đọc → Soạn nháp → Hành động sau duyệt); điểm duyệt, nhật ký, báo sự cố thế nào; kiểm thử 5 tình huống ra sao? |
+| 7. QUY TRÌNH NGƯỜI + A.I | A.I chen vào bước nào của quy trình, ai duyệt, ai chịu trách nhiệm cuối cùng, lỗi hay ngoại lệ thì chuyển ai, làm tay ra sao? |
+| 8. CON NGƯỜI – VĂN HÓA | Người làm việc này lo ngại gì, có muốn dùng không; cần đào tạo gì để giao việc và kiểm kết quả? |
 
-08 YẾU TỐ là góc soi xuyên suốt, không phải 8 bước.
+08 YẾU TỐ là góc soi xuyên suốt, cả 8 xem xét ngay từ đầu, không phải 8 bước.
 
 ## 4. Sáu dạng năng lực A.I và phương án không dùng A.I
 
@@ -90,3 +90,4 @@ Không chấm điểm, không đặt trọng số, không xếp hạng ở bư�
 | "A.I tự trả lời khiếu nại khách" | "A.I soạn nháp phản hồi khiếu nại loại giao trễ; nhân viên chăm sóc duyệt trước khi gửi" |
 
 *[A.I Generated — Claude Code — 30/10/2026]*
+*[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*
