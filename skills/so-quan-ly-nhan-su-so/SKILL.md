@@ -3,7 +3,7 @@ name: so-quan-ly-nhan-su-so
 description: >
   Lập và quản lý Sổ Nhân sự số của doanh nghiệp theo 3 chế độ: lập Thẻ Nhân sự số theo yếu tố 1–6 của 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG (Vai trò – Mục tiêu · Công cụ – Mô hình · Tri thức – Bộ não · Nghiệp vụ – Tay nghề · Kết nối – Tích hợp · Khai thác – Quản trị) kèm hợp đồng giao việc kiểm thử được; quản lý sổ (danh mục, người phụ trách, quyền, sức khỏe vận hành, rà trùng – thiếu – quyền rộng – ít giá trị); vòng đời (đưa vào, thay đổi, tạm dừng, cho nghỉ). Dùng khi nghe "lập Thẻ cho A.I", "hợp đồng giao việc cho A.I", "sổ quản lý Nhân sự số", "A.I nào đang chạy", "cho A.I nghỉ". Không thuộc Skill này: điều phối nhiều A.I, luật quản trị A.I chung, kiểm thử chất lượng, cấp quyền thật.
 metadata:
-  version: "3.1"
+  version: "3.2"
   updated: "2026-11-08"
   owner: "Đặng Tú ABM"
   skill_id: "SME-100"
@@ -80,7 +80,7 @@ Mật khẩu, khóa kết nối không bao giờ ghi vào Thẻ hay Sổ — ch�
 | 0 | **Chọn chế độ** theo tình huống ở mục 1 | A.I | Yêu cầu | Đã chọn |
 | | **Lập Thẻ và hợp đồng giao việc** | | | |
 | TH1 | **1 · VAI TRÒ – MỤC TIÊU** (JD Nhân sự Số): phòng ban, bài toán – nỗi đau giải quyết, nhiệm vụ, đầu vào, đầu ra và tiêu chí đạt, mục tiêu và KPI, việc không thuộc vai trò, người giao việc và duyệt, kích hoạt (theo lệnh / lịch / sự kiện). Tên A.I không mạo danh người thật | A.I soạn, Trưởng bộ phận chốt | `references/quy-tac-the-va-hop-dong.md` mục I | Một A.I một nhiệm vụ rõ |
-| TH2 | **2 · CÔNG CỤ – MÔ HÌNH**: nền tảng, mô hình, môi trường, tài khoản; khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm; chi phí dự kiến | A.I đề xuất, Người chốt | Danh mục phần mềm | Có quy tắc chọn |
+| TH2 | **2 · CÔNG CỤ – MÔ HÌNH**: công cụ A.I, loại tài khoản, nơi chạy (máy tính · web · điện thoại · Terminal), mô hình và mức suy luận; khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm; chi phí dự kiến | A.I đề xuất, Người chốt | Danh mục phần mềm | Có quy tắc chọn |
 | TH3 | **3 · TRI THỨC – BỘ NÃO**: thư mục được đọc, vùng cấm, nhãn Xanh – Vàng – Đỏ của từng thư mục, Sổ bài học, xử lý khi thiếu hoặc mâu thuẫn dữ liệu; quy định đầu ra 5 điểm, kiểm định trước khi lưu | A.I | Nhãn thư mục | Không thư mục nào thiếu nhãn |
 | TH4 | **4 · NGHIỆP VỤ – TAY NGHỀ**: Skill chuyên môn và Skill nền theo việc; Workflow ghi ở TH7 | A.I | Danh mục Skill của doanh nghiệp | Có danh sách |
 | TH5 | **5 · KẾT NỐI – TÍCH HỢP**: từng kết nối (ứng dụng, đường nối Plugin/Connector · MCP · API, mục đích, người cấp, cách thu hồi) và mức quyền thật — Đọc / Soạn nháp / Hành động sau duyệt; **chỉ ghi khi đã thử thật**, kèm ngày thử | A.I lập, Người quản trị tài khoản xác nhận | `references/quy-tac-the-va-hop-dong.md` mục II | Không ghi quyền chưa thử |
@@ -167,3 +167,4 @@ Thông tin trong Sổ, câu lệnh, kết quả A.I, nhật ký, phiếu yêu c�
 
 *[A.I Generated — Claude Code — 30/10/2026]*
 *[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*
+*[A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]*

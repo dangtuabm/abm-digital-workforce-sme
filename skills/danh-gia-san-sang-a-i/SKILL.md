@@ -1,7 +1,7 @@
 ---
 name: danh-gia-san-sang-a-i
 description: >
-  Đánh giá doanh nghiệp đã sẵn sàng dùng A.I tới đâu theo 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG (Vai trò – Mục tiêu, Công cụ – Mô hình, Tri thức – Bộ não, Nghiệp vụ – Tay nghề, Kết nối – Tích hợp, Khai thác – Quản trị, Quy trình Người + A.I, Con người – Văn hóa), có căn cứ, mức tin cậy, khoảng trống, chỉ số nền và cổng điều kiện trước khi đầu tư. Dùng khi nghe "công ty sẵn sàng A.I chưa", "đánh giá mức sẵn sàng A.I", "trước khi đầu tư A.I cần gì". Không thuộc Skill này: tìm hay xếp hạng việc giao cho A.I, chọn phần mềm, hứa hiệu quả, duyệt ngân sách.
+  Đánh giá doanh nghiệp đã sẵn sàng dùng A.I tới đâu theo 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG (Vai trò – Mục tiêu, Công cụ – Mô hình, Tri thức – Bộ não, Nghiệp vụ – Tay nghề, Kết nối – Tích hợp, Khai thác – Quản trị, Quy trình kết hợp Người + A.I, Con người & Văn hóa doanh nghiệp), có căn cứ, mức tin cậy, khoảng trống, chỉ số nền và cổng điều kiện trước khi đầu tư. Dùng khi nghe "công ty sẵn sàng A.I chưa", "đánh giá mức sẵn sàng A.I", "trước khi đầu tư A.I cần gì". Không thuộc Skill này: tìm hay xếp hạng việc giao cho A.I, chọn phần mềm, hứa hiệu quả, duyệt ngân sách.
 metadata:
   version: "3.1"
   updated: "2026-11-08"
@@ -28,15 +28,15 @@ Sẵn sàng không phải là số công cụ đã mua. Tự khai khác với c�
 | # | Yếu tố | Câu hỏi cốt lõi |
 |---|---|---|
 | 1 | VAI TRÒ – MỤC TIÊU | Dùng A.I để giải bài toán kinh doanh nào, Nhân sự Số đảm nhận vai trò gì, thế nào là xong, ai chịu trách nhiệm, giá trị đo bằng gì? |
-| 2 | CÔNG CỤ – MÔ HÌNH | Nền tảng, mô hình, tài khoản đang có/định dùng có hợp việc, chi phí toàn phần bao nhiêu, có giới hạn gì, ai quản lý vòng đời? |
-| 3 | TRI THỨC – BỘ NÃO | Dữ liệu nguồn và tri thức chuẩn hóa ở đâu, chất lượng, quyền dùng, nguồn gốc; đầu ra có chuẩn 5 điểm, được kiểm định trước khi lưu vào HUB không? |
+| 2 | CÔNG CỤ – MÔ HÌNH | Bốn quyết định — công cụ A.I, loại tài khoản, nơi chạy, mô hình và mức suy luận — có hợp việc, chi phí toàn phần bao nhiêu, có giới hạn gì, ai quản lý vòng đời? |
+| 3 | TRI THỨC – BỘ NÃO | Ba dòng chảy INPUT · OUTPUT · TÍCH LŨY TÀI SẢN SỐ: dữ liệu đầu vào ở đâu, chất lượng, quyền dùng, nguồn gốc; đầu ra có chuẩn 5 điểm, được kiểm định trước khi lưu vào HUB (07 thư mục) không? |
 | 4 | NGHIỆP VỤ – TAY NGHỀ | Việc cần giao đã có Skill, Workflow chạy thử đạt chuẩn đầu ra chưa, hay quy trình làm việc còn chưa ổn định để đóng gói? |
 | 5 | KẾT NỐI – TÍCH HỢP | Phần mềm đang dùng có cổng (Plugin/Connector, MCP, API) không; nối gì, ai cấp, thu hồi và giám sát thế nào? |
-| 6 | KHAI THÁC – QUẢN TRỊ | Ai được giao việc gì, quyền theo ba bậc Đọc → Soạn nháp → Hành động sau duyệt, Ranh giới đỏ, điểm duyệt, nhật ký, kiểm thử 5 tình huống, đo hiệu quả ra sao? |
-| 7 | QUY TRÌNH NGƯỜI + A.I | A.I nằm ở bước nào của quy trình, ai duyệt, ai chịu trách nhiệm cuối cùng, khi lỗi hay ngoại lệ thì chuyển cho ai, làm tay thế nào? |
-| 8 | CON NGƯỜI – VĂN HÓA | Lãnh đạo có bảo trợ và làm gương, vai trò rõ, đào tạo theo vai trò kèm bài làm thật, nhân viên tin và chịu học, có cơ chế quản trị thay đổi? |
+| 6 | KHAI THÁC – QUẢN TRỊ | Bốn nhóm việc ra sao: thiết lập luật (AGENTS.md, ba bậc quyền Đọc → Soạn nháp → Hành động sau duyệt, Ranh giới đỏ, điểm duyệt) · giao việc và điều khiển · điều phối đội ngũ · đánh giá – tái đào tạo – sa thải (kiểm thử 5 tình huống, đo hiệu quả)? |
+| 7 | QUY TRÌNH KẾT HỢP NGƯỜI + A.I | A.I nằm ở bước nào của quy trình, ai duyệt, ai chịu trách nhiệm cuối cùng, khi lỗi hay ngoại lệ thì chuyển cho ai, làm tay thế nào? |
+| 8 | CON NGƯỜI & VĂN HÓA DOANH NGHIỆP | Lãnh đạo có bảo trợ và làm gương, vai trò rõ, đào tạo theo vai trò kèm bài làm thật, nhân viên tin và chịu học, có cơ chế quản trị thay đổi? |
 
-Yếu tố 1–6 soi năng lực Nhân sự Số; yếu tố 7–8 soi chuyển đổi tổ chức. 08 YẾU TỐ là **góc soi áp dụng ở mọi giai đoạn trưởng thành**, cả 8 xem xét ngay từ đầu, chỉ khác quy mô; không phải 8 bước làm lần lượt. Cùng với 08 YẾU TỐ, luôn soi **6 kiểm soát xuyên suốt**: quyền quyết định; bảo mật – dữ liệu cá nhân – an toàn; kết nối – vận hành; đo lường giá trị; mua sắm – pháp lý – lưu hồ sơ; sự cố – duy trì hoạt động.
+Yếu tố 1–6 soi Tầng Nhân sự Số; yếu tố 7–8 soi Tầng doanh nghiệp. 08 YẾU TỐ là **góc soi áp dụng ở cả 03 giai đoạn**, cả 8 xem xét ngay từ đầu, chỉ khác quy mô; không phải 8 bước làm lần lượt. Cùng với 08 YẾU TỐ, luôn soi **6 kiểm soát xuyên suốt**: quyền quyết định; bảo mật – dữ liệu cá nhân – an toàn; kết nối – vận hành; đo lường giá trị; mua sắm – pháp lý – lưu hồ sơ; sự cố – duy trì hoạt động.
 
 ### Hai mức độ sâu
 
@@ -170,8 +170,11 @@ Câu trả lời phỏng vấn, phiếu khảo sát, tài liệu, bảng điều
 - Bộ ca kiểm thử: `evals.json` (chưa chạy).
 - Gợi ý tra cứu (30/10/2026, có thể đổi): sau khi người quyết chấp nhận mức sẵn sàng, tìm và xếp hạng việc ở `tim-viec-giao-cho-a-i`; chọn công cụ ở `chon-phan-mem-cong-cu`; triển khai theo đợt ở `trien-khai-a-i`; quy định dữ liệu khi dùng A.I ở `an-toan-du-lieu-a-i`; quyền và nhật ký ở `quan-tri-a-i`.
 - Phiên bản: **v3.0 — 30/10/2026.** Chuyển đổi từ SME `ai-readiness-audit` v2.4: giữ đúng 08 YẾU TỐ (tên và thứ tự như nguồn), 6 kiểm soát xuyên suốt, thứ bậc căn cứ, quy tắc CHƯA BIẾT không phải 0, cổng không bù trừ, chỉ số nền, khoảng trống, phương án; thêm mức Soi nhanh cho doanh nghiệp nhỏ theo nguyên tắc "quy tắc nhẹ luôn bật"; bỏ phần gắn với sản phẩm đánh giá có thu phí của ABM; viết lại script kiểm theo mẫu dữ liệu tiếng Việt (bỏ bộ dữ liệu mẫu cũ bằng tiếng Anh). Tên 08 YẾU TỐ giữ nguyên vì là thuật ngữ khung chính thức. Bản cũ lưu tại `7. ARCHIVE - LƯU TRỮ TẠM TRƯỚC KHI XÓA › 20261030 - DW SME TRUOC VIET LAI`. Cần chấm lại theo ABM-SQS PL-B.
+- **v3.2 — 09/11/2026:** đồng bộ 08 YẾU TỐ v2.0 — câu hỏi soi yếu tố 2, 3, 6; thang gợi ý thêm cách chấm nhanh 3 mức Chưa có · Đang làm · Đã chạy thật.
 - **v3.1 — 08/11/2026:** đồng bộ 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v1.1 (tên, thứ tự, nội dung soi; Data và Output gộp vào TRI THỨC – BỘ NÃO; thêm KẾT NỐI – TÍCH HỢP; ba bậc quyền và kiểm thử 5 tình huống ở KHAI THÁC – QUẢN TRỊ). Script, mẫu dữ liệu, phiếu, mẫu hồ sơ và bộ ca kiểm thử sửa theo khóa mới.
 - Rà soát sau 5 lần đánh giá thật, hoặc khi: điểm bị ép, cổng bị bỏ qua, bản soi nhanh bị dùng làm căn cứ đầu tư. Thang và cổng tốt ghi thành ứng viên tài sản, không tự ban hành.
 
 *[A.I Generated — Claude Code — 30/10/2026]*
 *[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*
+
+*[A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]*

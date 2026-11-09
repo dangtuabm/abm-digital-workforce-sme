@@ -1,6 +1,6 @@
 {
   "ma_danh_gia": "SS-MAU-01",
-  "ghi_chu": "Ví dụ công ty sản xuất bao bì 120 người; dữ liệu minh họa, không phải số thật. Khóa yếu tố theo 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v1.1 (08/11/2026).",
+  "ghi_chu": "Ví dụ công ty sản xuất bao bì 120 người; dữ liệu minh họa, không phải số thật. Khóa yếu tố theo 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v2.0 (09/11/2026).",
   "pham_vi": {
     "cau_hoi": "Cần chuẩn bị gì trước khi đầu tư A.I cho phòng kinh doanh và kế toán",
     "don_vi": "Phòng Kinh doanh, Phòng Kế toán",
@@ -25,8 +25,8 @@
     {"ten": "NGHIỆP VỤ – TAY NGHỀ", "diem": "CHƯA BIẾT", "can_cu": [], "do_tin_cay": "THẤP", "khoang_trong": "Chưa có Skill lập báo giá nào được chạy thử trên việc thật để kiểm", "nguoi_phu_trach": "Chuyên viên chuyển đổi"},
     {"ten": "KẾT NỐI – TÍCH HỢP", "diem": 1, "can_cu": ["CC-02"], "do_tin_cay": "TRUNG BÌNH", "khoang_trong": "Chưa có danh mục kết nối; chưa rõ phần mềm bán hàng có cổng API và cách thu hồi quyền", "nguoi_phu_trach": "IT"},
     {"ten": "KHAI THÁC – QUẢN TRỊ", "diem": 0, "can_cu": ["CC-07"], "do_tin_cay": "THẤP", "khoang_trong": "Chưa có quy định sử dụng A.I, chưa có bảng quyền ba bậc và kiểm thử 5 tình huống", "nguoi_phu_trach": "Giám đốc"},
-    {"ten": "QUY TRÌNH NGƯỜI + A.I", "diem": 2, "can_cu": ["CC-05", "CC-06"], "do_tin_cay": "CAO", "khoang_trong": "Chưa có điểm duyệt khi dùng A.I, chưa rõ người chịu trách nhiệm cuối và đường xử lý ngoại lệ", "nguoi_phu_trach": "Trưởng phòng Kinh doanh"},
-    {"ten": "CON NGƯỜI – VĂN HÓA", "diem": 2, "can_cu": ["CC-04", "CC-07"], "do_tin_cay": "THẤP", "khoang_trong": "Nhân viên lo bị theo dõi, chưa có kênh góp ý, chưa đào tạo theo vai trò kèm bài làm thật", "nguoi_phu_trach": "Nhân sự"}
+    {"ten": "QUY TRÌNH KẾT HỢP NGƯỜI + A.I", "diem": 2, "can_cu": ["CC-05", "CC-06"], "do_tin_cay": "CAO", "khoang_trong": "Chưa có điểm duyệt khi dùng A.I, chưa rõ người chịu trách nhiệm cuối và đường xử lý ngoại lệ", "nguoi_phu_trach": "Trưởng phòng Kinh doanh"},
+    {"ten": "CON NGƯỜI & VĂN HÓA DOANH NGHIỆP", "diem": 2, "can_cu": ["CC-04", "CC-07"], "do_tin_cay": "THẤP", "khoang_trong": "Nhân viên lo bị theo dõi, chưa có kênh góp ý, chưa đào tạo theo vai trò kèm bài làm thật", "nguoi_phu_trach": "Nhân sự"}
   ],
   "cong": [
     {"ma": "CG-01", "truoc_buoc": "THỬ NGHIỆM", "yeu_cau": "Có quy định không đưa dữ liệu Đỏ lên công cụ chưa duyệt", "quan_trong": true, "trang_thai": "KHÔNG ĐẠT", "can_cu": ["CC-07"]},

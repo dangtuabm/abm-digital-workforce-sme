@@ -29,10 +29,12 @@ Xem `so-can-cu-danh-gia.csv`. Độ phủ: [số đơn vị/vai trò đã hỏi 
 | 4 | NGHIỆP VỤ – TAY NGHỀ | | | | | | | |
 | 5 | KẾT NỐI – TÍCH HỢP | | | | | | | |
 | 6 | KHAI THÁC – QUẢN TRỊ | | | | | | | |
-| 7 | QUY TRÌNH NGƯỜI + A.I | | | | | | | |
-| 8 | CON NGƯỜI – VĂN HÓA | | | | | | | |
+| 7 | QUY TRÌNH KẾT HỢP NGƯỜI + A.I | | | | | | | |
+| 8 | CON NGƯỜI & VĂN HÓA DOANH NGHIỆP | | | | | | | |
 
-Yếu tố 1–6: năng lực Nhân sự Số · Yếu tố 7–8: chuyển đổi tổ chức.
+Chấm nhanh cho lãnh đạo (văn bản gốc v2.0): mỗi yếu tố ghi 1 trong 3 mức **Chưa có · Đang làm · Đã chạy thật** bên cạnh điểm theo thang đã duyệt. 2 yếu tố yếu nhất (việc ưu tiên 60 ngày): [ ] · [ ]
+
+Yếu tố 1–6: Tầng Nhân sự Số · Yếu tố 7–8: Tầng doanh nghiệp.
 
 Điểm tổng (chỉ khi có trọng số đã duyệt): [giá trị · công thức · độ phủ · độ nhạy]
 
@@ -75,3 +77,5 @@ Yếu tố 1–6: năng lực Nhân sự Số · Yếu tố 7–8: chuyển đ�
 
 *[A.I Generated — Claude Code — 30/10/2026]*
 *[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*
+
+*[A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]*

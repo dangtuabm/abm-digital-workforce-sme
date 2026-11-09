@@ -18,9 +18,9 @@ Chọn một phương án cho mỗi câu. Không biết thì chọn "Chưa rõ".
 | 5a | KẾT NỐI – TÍCH HỢP | Phần mềm đang dùng (bán hàng, kế toán, CRM) có cổng để A.I nối vào không, ai cấp và thu hồi? | Không biết · Có nhưng chưa ai quản lý · Có danh mục, người cấp, cách thu hồi · Chưa rõ |
 | 6a | KHAI THÁC – QUẢN TRỊ | Có quy định dùng A.I (được/không được đưa gì lên, A.I chỉ đọc, soạn nháp hay được hành động sau duyệt) chưa? | Chưa · Nhắc miệng · Có văn bản và phân quyền · Chưa rõ |
 | 6b | | Khi có sự cố (lộ dữ liệu, sai lớn) thì báo ai? | Không rõ · Báo thẳng giám đốc · Có đường báo và người xử lý · Chưa rõ |
-| 7a | QUY TRÌNH NGƯỜI + A.I | Quy trình chính đã viết ra (SOP), có điểm người duyệt trước khi gửi khách chưa? | Chưa · Một vài · Đa số có và đang dùng · Chưa rõ |
+| 7a | QUY TRÌNH KẾT HỢP NGƯỜI + A.I | Quy trình chính đã viết ra (SOP), có điểm người duyệt trước khi gửi khách chưa? | Chưa · Một vài · Đa số có và đang dùng · Chưa rõ |
 | 7b | | Khi A.I lỗi hoặc gặp ngoại lệ, việc chuyển cho ai, vẫn chạy tay được không? | Không · Được nhưng chưa ai nghĩ tới · Có người chịu trách nhiệm và cách làm dự phòng · Chưa rõ |
-| 8a | CON NGƯỜI – VĂN HÓA | Lãnh đạo có trực tiếp dùng và đặt mục tiêu A.I không? | Không · Có nói nhưng ít làm · Có, bằng hành động · Chưa rõ |
+| 8a | CON NGƯỜI & VĂN HÓA DOANH NGHIỆP | Lãnh đạo có trực tiếp dùng và đặt mục tiêu A.I không? | Không · Có nói nhưng ít làm · Có, bằng hành động · Chưa rõ |
 | 8b | | Nhân viên đã được hướng dẫn giao việc và kiểm kết quả A.I theo vai trò chưa? | Chưa · Vài người tự học · Có đào tạo kèm bài làm thật · Chưa rõ |
 | 8c | | Nhân viên lo ngại (mất việc, thêm việc) có được trả lời không? | Chưa · Thỉnh thoảng · Có kênh góp ý an toàn · Chưa rõ |
 

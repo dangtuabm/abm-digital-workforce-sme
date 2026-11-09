@@ -12,12 +12,12 @@
 
 ## I. YẾU TỐ 1–6 VÀ CÁC TRƯỜNG BẮT BUỘC
 
-Thẻ Nhân sự Số đi đúng yếu tố 1–6 của **08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** (năng lực Nhân sự Số). Yếu tố 7–8 (QUY TRÌNH NGƯỜI + A.I, CON NGƯỜI – VĂN HÓA) thuộc tầng tổ chức, không ghi trong Thẻ.
+Thẻ Nhân sự Số đi đúng yếu tố 1–6 của **08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** (Tầng Nhân sự Số). Yếu tố 7–8 (QUY TRÌNH KẾT HỢP NGƯỜI + A.I, CON NGƯỜI & VĂN HÓA DOANH NGHIỆP) thuộc Tầng doanh nghiệp, không ghi trong Thẻ.
 
 | Yếu tố | Trường bắt buộc |
 |---|---|
 | **1. VAI TRÒ – MỤC TIÊU** (ROLE & GOAL) — JD Nhân sự Số | Phòng ban · **bài toán – nỗi đau giải quyết** · nhiệm vụ · đầu vào · đầu ra và tiêu chí đạt · mục tiêu và KPI · việc không thuộc vai trò · người giao việc và duyệt · **kích hoạt** (theo lệnh, theo lịch hay khi có sự kiện; chi tiết ở Workflow) |
-| **2. CÔNG CỤ – MÔ HÌNH** (PLATFORM & MODEL) | Nền tảng, mô hình, môi trường, tài khoản · khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm · chi phí dự kiến |
+| **2. CÔNG CỤ – MÔ HÌNH** (PLATFORM & MODEL) | Công cụ A.I · loại tài khoản · nơi chạy (máy tính / web / điện thoại / Terminal) · mô hình và mức suy luận · khi nào dùng mô hình mạnh, khi nào dùng mô hình tiết kiệm · chi phí dự kiến |
 | **3. TRI THỨC – BỘ NÃO** (KNOWLEDGE & SECOND BRAIN) | Thư mục được đọc · vùng cấm · **nhãn Xanh – Vàng – Đỏ của từng thư mục** · **Sổ bài học** · xử lý khi thiếu hoặc mâu thuẫn dữ liệu · **quy định đầu ra 5 điểm** (kết quả gì, định dạng, tiêu chuẩn, gửi đi đâu, lưu vào đâu) · kiểm định trước khi lưu |
 | **4. NGHIỆP VỤ – TAY NGHỀ** (SKILLS & WORKFLOW) | **Skill chuyên môn** · **Skill nền theo việc** · **Workflow** (chỉ đóng gói khi việc đã chạy thử ổn định) |
 | **5. KẾT NỐI – TÍCH HỢP** (CONNECTORS & INTEGRATION) | Từng kết nối: ứng dụng · đường nối (Plugin/Connector · MCP · API) · mục đích · mức quyền thật (Đọc / Soạn nháp / Hành động sau duyệt) · người cấp · cách thu hồi; chỉ ghi khi đã thử thật |
@@ -83,3 +83,4 @@ Không bịa quyền hay bằng chứng · không coi "chưa rõ" là được l
 
 *[A.I Generated — Claude Code — 30/10/2026]*
 *[A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]*
+*[A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]*

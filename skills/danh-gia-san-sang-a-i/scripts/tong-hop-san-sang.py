@@ -12,9 +12,9 @@ import json
 import sys
 from pathlib import Path
 
-# 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v1.1 (08/11/2026) — đúng tên, đúng thứ tự
+# 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG v2.0 (09/11/2026) — đúng tên, đúng thứ tự
 TAM_YEU_TO = ["VAI TRÒ – MỤC TIÊU", "CÔNG CỤ – MÔ HÌNH", "TRI THỨC – BỘ NÃO", "NGHIỆP VỤ – TAY NGHỀ",
-              "KẾT NỐI – TÍCH HỢP", "KHAI THÁC – QUẢN TRỊ", "QUY TRÌNH NGƯỜI + A.I", "CON NGƯỜI – VĂN HÓA"]
+              "KẾT NỐI – TÍCH HỢP", "KHAI THÁC – QUẢN TRỊ", "QUY TRÌNH KẾT HỢP NGƯỜI + A.I", "CON NGƯỜI & VĂN HÓA DOANH NGHIỆP"]
 LOAI_CAN_CU = {"QUAN SÁT", "TÀI LIỆU", "TỪ HỆ THỐNG", "TỰ KHAI", "ƯỚC TÍNH", "CHƯA KIỂM"}
 TRANG_THAI_CONG = {"ĐẠT", "KHÔNG ĐẠT", "CHƯA BIẾT"}
 SAU_VAI_RA = {"CHIẾN LƯỢC – KINH DOANH", "CHỦ DỮ LIỆU", "KỸ THUẬT – BẢO MẬT", "CHỦ QUY TRÌNH",
@@ -138,3 +138,4 @@ if __name__ == "__main__":
     raise SystemExit(main())
 
 # [A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1]
+# [A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]

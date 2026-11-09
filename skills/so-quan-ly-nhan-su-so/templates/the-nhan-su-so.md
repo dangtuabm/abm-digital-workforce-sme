@@ -12,7 +12,7 @@
 - PHỤ LỤC — HỢP ĐỒNG GIAO VIỆC
 - Xác nhận và lịch sử phiên bản
 
-> Thẻ đi đúng **yếu tố 1–6 của 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** (năng lực Nhân sự Số): VAI TRÒ – MỤC TIÊU · CÔNG CỤ – MÔ HÌNH · TRI THỨC – BỘ NÃO · NGHIỆP VỤ – TAY NGHỀ · KẾT NỐI – TÍCH HỢP · KHAI THÁC – QUẢN TRỊ. Workflow là một phần của yếu tố 4, đặt ở cuối Thẻ cho dễ đọc. Phụ lục hợp đồng giao việc là phần chi tiết kiểm thử được của yếu tố 1, 5 và 6, **không phải một yếu tố riêng**. Yếu tố 7 (QUY TRÌNH NGƯỜI + A.I) và 8 (CON NGƯỜI – VĂN HÓA) thuộc tầng tổ chức, ghi ở bản đồ quy trình và kế hoạch đội ngũ, không ghi trong Thẻ. Doanh nghiệp chỉ bổ sung trường bên trong, không đổi khung. Nhân sự Số không có tư cách pháp lý; trách nhiệm cuối cùng thuộc người được giao.
+> Thẻ đi đúng **yếu tố 1–6 của 08 YẾU TỐ TRIỂN KHAI A.I THÀNH CÔNG** (Tầng Nhân sự Số): VAI TRÒ – MỤC TIÊU · CÔNG CỤ – MÔ HÌNH · TRI THỨC – BỘ NÃO · NGHIỆP VỤ – TAY NGHỀ · KẾT NỐI – TÍCH HỢP · KHAI THÁC – QUẢN TRỊ. Workflow là một phần của yếu tố 4, đặt ở cuối Thẻ cho dễ đọc. Phụ lục hợp đồng giao việc là phần chi tiết kiểm thử được của yếu tố 1, 5 và 6, **không phải một yếu tố riêng**. Yếu tố 7 (QUY TRÌNH KẾT HỢP NGƯỜI + A.I) và 8 (CON NGƯỜI & VĂN HÓA DOANH NGHIỆP) thuộc Tầng doanh nghiệp, ghi ở bản đồ quy trình và kế hoạch đội ngũ, không ghi trong Thẻ. Doanh nghiệp chỉ bổ sung trường bên trong, không đổi khung. Nhân sự Số không có tư cách pháp lý; trách nhiệm cuối cùng thuộc người được giao.
 
 ## Thông tin Thẻ
 | Trường | Nội dung |
@@ -44,13 +44,15 @@
 ## 2. CÔNG CỤ – MÔ HÌNH (PLATFORM & MODEL)
 | Trường | Nội dung |
 |---|---|
-| Nền tảng và mô hình | [nền tảng A.I doanh nghiệp đang dùng · mô hình · phiên bản] |
-| Môi trường chạy · tài khoản | [đám mây / máy tính / kết hợp · tài khoản công ty trả phí cho việc quan trọng] |
+| Công cụ A.I | [hệ và dạng dùng, vd: Codex · Claude Code / Cowork · ChatGPT Work · Gemini · Agent tự dựng] |
+| Loại tài khoản | [trả phí cá nhân / doanh nghiệp — việc quan trọng dùng tài khoản công ty trả phí, thu hồi được khi nhân sự nghỉ] |
+| Nơi chạy | [máy tính / web / điện thoại / Terminal] |
+| Mô hình và mức suy luận | [mô hình · mức suy luận · phiên bản] |
 | Khi nào dùng mô hình mạnh | [vd: phân tích nhiều nguồn, soạn văn bản gửi lãnh đạo, ca khó] |
 | Khi nào dùng mô hình tiết kiệm | [vd: phân loại, tóm tắt ngắn, nhắc việc] |
 | Chi phí dự kiến | [vd: … đồng/tháng — gồm cả thời gian kiểm tra, sửa lỗi] |
 
-## 3. TRI THỨC – BỘ NÃO (KNOWLEDGE & SECOND BRAIN) — đầu vào và đầu ra
+## 3. TRI THỨC – BỘ NÃO (KNOWLEDGE & SECOND BRAIN) — INPUT · OUTPUT · TÍCH LŨY TÀI SẢN SỐ
 | Thư mục / nguồn được đọc | Nhãn Xanh – Vàng – Đỏ | Ghi chú |
 |---|---|---|
 | [vd: Kho vận › Tồn kho hằng ngày] | Xanh | |
@@ -95,6 +97,7 @@ Chỉ ghi kết nối vai trò thật sự cần và **đã thử thật**. Chư
 | **Kiểm thử 5 tình huống** (trước khi tin dùng) | thông thường · ngoại lệ · thiếu dữ liệu · dữ liệu sai/mâu thuẫn · vượt quyền — kết quả ở Phụ lục G |
 | **Chỉ số theo dõi** (2–3, để quyết giữ, tái đào tạo, tái đầu tư, thay thế hay nhân rộng) | [vd: tỷ lệ đơn có lịch giao đúng hạn · số lần người phải sửa mỗi tuần · chi phí A.I mỗi đơn] |
 | Đo hiệu quả 3 lớp | Giờ tiết kiệm · Năng lực được giải phóng · Lợi ích tài chính (chỉ ghi khi có bằng chứng) |
+| Tái đào tạo | Sửa từ gốc đến ngọn: dữ liệu trong HUB → Skill → AGENTS.md → cách đặt câu lệnh; mỗi lần sửa ghi một dòng vào Sổ bài học |
 | **Người chịu trách nhiệm** | [chức danh — chịu trách nhiệm kết quả của Nhân sự số này] |
 | Lưu ý | **Quy tắc chỉ là lời dặn; muốn chặn thật phải hạ quyền ở kết nối (yếu tố 5) và trên phần mềm.** |
 
@@ -162,4 +165,4 @@ Thay đổi Thẻ, Skill, mô hình, công cụ, quyền: ghi trước – sau, 
 *[A.I Generated — Tên Nhân sự số — dd/mm/yyyy]*
 
 <!-- Mẫu Thẻ: A.I Generated — Claude Code — 08/11/2026 — đồng bộ 08 YẾU TỐ v1.1 (06 thành phần cũ → yếu tố 1–6) -->
-
+*[A.I Generated — Claude Code — 09/11/2026 — đồng bộ 08 YẾU TỐ v2.0]*
